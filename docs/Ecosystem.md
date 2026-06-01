@@ -1,155 +1,179 @@
-# 🌐 PanjoCoin (PNJC) — Ecosystem Overview
-
-## 🧠 Introduction
-
-PanjoCoin (PNJC) is an ERC-20 token deployed on the Polygon network.  
-Beyond being a standard digital asset, PNJC is designed as a **foundational layer for a broader Web3 ecosystem** that may include DeFi utilities, governance mechanisms, and social impact initiatives.
-
-This document describes the structure, components, and future evolution of the PNJC ecosystem.
 
 ---
 
-## 🏗 Ecosystem Architecture
-
-The PanjoCoin ecosystem is designed as a modular system composed of interconnected components:
-
-```text
-PNJC Token (Core Layer)
-        │
-        ├── Wallet Transfers (ERC-20 standard)
-        │
-        ├── Ecosystem Treasury (planned)
-        │
-        ├── Staking System (planned)
-        │
-        ├── Governance Layer (DAO) (planned)
-        │
-        └── dApp Interface (frontend)
-
-🪙 Core Layer: PNJC Token
+# 🪙 Core Layer: PNJC Token — ✅ LIVE
 
 The PNJC token serves as the foundational asset of the ecosystem.
 
-Key characteristics:
-ERC-20 standard token
-Deployed on the Polygon network
-Fully transparent on-chain operations
-Used as the base unit for all future ecosystem modules
-💰 Treasury Module (Planned)
+**Current characteristics:**
+- ERC-20 standard token — ✅ LIVE
+- Deployed on Polygon network — ✅ LIVE
+- Fully transparent on-chain operations — ✅ LIVE
+- Fixed supply (1 trillion) — ✅ LIVE
+- No mint function — ✅ LIVE
+- No owner/admin — ✅ LIVE
+- 0% transaction tax — ✅ LIVE
 
-The Treasury module is intended to manage ecosystem resources.
+**Used as the base unit for all *future* ecosystem modules** — ❌ Not yet applicable.
 
-Potential functions:
-Ecosystem development funding
-Liquidity management
-Distribution of staking rewards
-Support for charitable initiatives (ClownCare direction)
+---
 
-The Treasury system will operate under future governance rules and community decisions.
+# 💰 Treasury Module — ❌ CONCEPT ONLY
 
-📊 Staking System (Planned)
+> **Status:** Not implemented. No treasury contract exists.
 
-The staking module is designed to increase token utility and incentivize user participation.
+The Treasury module is *intended* (as a future goal) to manage ecosystem resources.
 
-Possible features:
-Token locking mechanism (staking)
-Reward distribution system
-Dynamic APY (Annual Percentage Yield)
-Long-term holder incentives
-🗳 Governance Layer (DAO) (Planned)
+**Potential functions (conceptual):**
+- Ecosystem development funding
+- Liquidity management
+- Distribution of staking rewards
+- Support for charitable initiatives
 
-A decentralized governance system may be introduced in future phases.
+**Current reality:** No treasury exists. All tokens are held by the deployer address until distributed.
 
-Potential capabilities:
-Community voting on proposals
-Treasury allocation decisions
-Ecosystem parameter adjustments
-Proposal creation and discussion
-💻 dApp Interface (Planned)
+---
 
-A decentralized application (dApp) may be developed to interact with the ecosystem.
+# 📊 Staking System — ❌ CONCEPT ONLY
 
-Possible features:
-Wallet connection (MetaMask, WalletConnect)
-Token dashboard
-Staking interface
-DAO voting panel
-Treasury transparency viewer
-❤️ ClownCare Social Initiative
+> **Status:** Not implemented. No staking contract exists.
 
-The PNJC ecosystem includes a long-term social impact direction called the ClownCare Initiative.
+The staking module is *designed* (in whitepaper only) to increase token utility and incentivize user participation.
 
-This initiative aims to explore how blockchain technology can support real-world humanitarian and pediatric care programs.
+**Possible features (conceptual):**
+- Token locking mechanism
+- Reward distribution system
+- Dynamic APY
+- Long-term holder incentives
 
-Focus areas:
-Pediatric healthcare support programs
-Social well-being initiatives for children
-Community-driven funding models
+**Current reality:** No staking rewards exist. Holding PNJC does not generate yield.
 
-📍 Associated institution:
+---
 
+# 🗳️ Governance Layer (DAO) — ❌ CONCEPT ONLY
+
+> **Status:** Not implemented. No governance contract exists.
+
+A decentralized governance system *may be introduced* in future phases — **if** community size and token distribution warrant it.
+
+**Potential capabilities (conceptual):**
+- Community voting on proposals
+- Treasury allocation decisions
+- Ecosystem parameter adjustments
+
+**Current reality:** No voting, no proposals, no DAO. The token has no governance features.
+
+---
+
+# 💻 dApp Interface — ❌ CONCEPT ONLY
+
+> **Status:** Not implemented. No frontend application exists.
+
+A decentralized application *may be developed* to interact with future ecosystem modules.
+
+**Possible features (conceptual):**
+- Wallet connection (MetaMask, WalletConnect)
+- Token dashboard
+- Staking interface
+- DAO voting panel
+
+**Current reality:** Use Polygonscan or any standard wallet (MetaMask, Rabby) to interact with PNJC.
+
+---
+
+# ❤️ ClownCare Social Initiative — ⚠️ CONCEPTUAL / INFORMATIONAL
+
+> **Status:** No smart contract, no automated funding, no active charitable program.
+
+The PNJC ecosystem *includes a long-term social impact direction* called the ClownCare Initiative — **as a vision statement, not an active program.**
+
+**This initiative aims to explore** (note: "aims to explore" — not "currently funds"):
+- How blockchain technology *could* support humanitarian programs
+- Pediatric healthcare support *as a potential future use case*
+
+**📍 Associated institution (for informational purposes only):**
 Children’s Central Clinical Hospital of M. Iashvili
 
-⚠️ Note: All charitable mechanisms are conceptual and depend on future ecosystem development and governance decisions.
+**⚠️ Important:**
+- No PNJC funds are currently allocated to this hospital or any charity.
+- No automatic on-chain donations exist.
+- Any future charitable implementation requires separate contracts and community governance.
 
-🔗 Ecosystem Design Principles
+---
 
-The PanjoCoin ecosystem is built on the following principles:
+# 🔗 Ecosystem Design Principles — ✅ INFORMATIONAL
 
-1. Transparency
+These are the **guiding principles** for future development, not current guarantees.
 
-All token operations are verifiable on-chain.
+1. **Transparency** — ✅ All token operations are verifiable on-chain.
+2. **Modularity** — Conceptual. Each future component *can* evolve independently.
+3. **Community Orientation** — Aspirational. No governance exists today.
+4. **Sustainability** — Aspirational. Depends on market conditions.
+5. **Real-World Impact** — Aspirational. No active programs.
 
-2. Modularity
+---
 
-Each ecosystem component can evolve independently.
+# 📈 Ecosystem Evolution Stages — ✅ ROADMAP (Conceptual)
 
-3. Community Orientation
+| Phase | Description | Status |
+|-------|-------------|--------|
+| **Phase 1 — Foundation** | ERC-20 token deployment, GitHub documentation, on-chain transparency | ✅ **COMPLETE** |
+| **Phase 2 — Utility Expansion** | Staking system development, liquidity integration | ❌ Not started |
+| **Phase 3 — Infrastructure Layer** | Treasury module, analytics dashboard, dApp | ❌ Not started |
+| **Phase 4 — Governance & Scaling** | DAO implementation, community voting | ❌ Not started |
 
-Future governance will be community-driven.
+**Note:** No dates are guaranteed. Phases may be delayed, changed, or canceled entirely.
 
-4. Sustainability
+---
 
-Long-term ecosystem stability is prioritized.
+# 🔐 Security & Trust Model — ✅ CURRENT + FUTURE
 
-5. Real-World Impact
+**Current (LIVE):**
+- All token operations are executed on-chain — ✅
+- No hidden backend control over token transfers — ✅
+- No owner, no admin, no special privileges — ✅
 
-The project aims to connect blockchain technology with social initiatives.
+**Future (Aspirational):**
+- Future modules will be open-source — 📋 Planned
+- Governance will gradually shift toward community control — 📋 Planned
 
-📈 Ecosystem Evolution Stages
-Phase 1 — Foundation (Current)
-ERC-20 token deployment
-GitHub documentation
-On-chain transparency
-Phase 2 — Utility Expansion
-Staking system development
-Liquidity integration
-Basic ecosystem tools
-Phase 3 — Infrastructure Layer
-Treasury module
-Analytics dashboard
-dApp interface
-Phase 4 — Governance & Scaling
-DAO implementation
-Community voting system
-Optional multi-chain expansion
-🔐 Security & Trust Model
-All token operations are executed on-chain
-No hidden backend control over token transfers
-Future modules will be open-source
-Governance will gradually shift toward community control
-⚠️ Disclaimer
+---
 
-The PNJC ecosystem is experimental in nature.
+# ⚠️ FINAL DISCLAIMER (READ AGAIN)
 
-It does NOT guarantee:
+**The PNJC ecosystem is currently just a token.**
 
-Financial returns
-Investment outcomes
-Completion of all planned modules
+- No staking
+- No DAO
+- No treasury
+- No dApp
+- No active charity
 
-All future development depends on technical, community, and governance decisions.
+**What exists:** A secure, decentralized ERC-20 token on Polygon.
 
-🧩 Final Note
+**What does NOT exist:** Any of the "planned" features described in this document.
 
-The PanjoCoin ecosystem is an evolving Web3 framework designed to grow from a simple ERC-20 token into a multi-layer system integrating DeFi utilities, governance, and social impact initiatives.
+**Do your own research (DYOR).** This document describes aspirations, not guarantees.
+
+---
+
+# 🧩 Final Note
+
+The PanjoCoin ecosystem **vision** is to grow from a simple ERC-20 token into a multi-layer system integrating DeFi utilities, governance, and social impact initiatives.
+
+**The reality today (June 2026):** It is a simple ERC-20 token.
+
+Future development depends on:
+- Community growth and engagement
+- Market conditions
+- Funding availability
+- Successful audits of new modules
+- Governance decisions (when/if DAO launches)
+
+**No promises. No guarantees. Only code that you can verify on-chain.**
+
+---
+
+*Last updated: June 2026*
+*Maintainer: PanjoCoin Team*
+*Contract on Polygonscan: [Link to be added after deployment]*
