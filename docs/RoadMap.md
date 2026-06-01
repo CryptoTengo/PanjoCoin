@@ -1,6 +1,4 @@
-Below is the **professional English translation** of the final, honest `Roadmap.md` — including the verified contract address and the real utility (ClownCare charity funding).
 
-```markdown
 # 🗺 PanjoCoin (PNJC) — Roadmap
 
 > **Last updated: June 2026**
