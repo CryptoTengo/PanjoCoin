@@ -1,4 +1,4 @@
-ბოლო Tokenomics PNJC
+Tokenomics PNJC
 📄 PanjoCoin (PNJC) — Official Tokenomics Document
 Institutional Compliance Edition v1.3
 Fully synchronized with Official White Paper v1.4
