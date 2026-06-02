@@ -1,89 +1,149 @@
-# 📄 PanjoCoin (PNJC) — Official Whitepaper  
-Version 3.0 (Unified Institutional Standard)
+# Whitepaper.md
+
+# PanjoCoin (PNJC) — Official Whitepaper
+
+Version 1.0
 
 ---
 
-## 🧾 BASIC INFORMATION
+## Project Overview
 
-- Blockchain: Polygon Mainnet  
-- Contract Address: 0x781C0d15347Cb0B94C42C65c7a67E70371205De5  
-- Token Standard: ERC-20 + EIP-2612 + ERC20Burnable  
-- Compiler: Solidity v0.8.34  
-- Total Supply: 1,000,000,000,000 PNJC  
-- Supply Type: Fixed (No Mint Function)  
-- Ownership: No admin control / no upgradeable proxy  
+PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on Polygon Mainnet.
+
+The project is focused on transparent tokenomics, decentralized trading, and a structured roadmap for future ecosystem expansion.
 
 ---
 
-## ⚖️ LEGAL DISCLAIMER
+## Basic Information
 
-PNJC is a decentralized utility token.
-
-It does not represent:
-- equity
-- investment contract
-- financial guarantee
-- regulated security
-
-Users assume full risk responsibility.
-
----
-
-## 🧠 PROJECT OVERVIEW
-
-PNJC is a fixed-supply ERC-20 token on Polygon.
-
-It is used for:
-- decentralized trading on DEX liquidity pools  
-- peer-to-peer value transfer  
-- transparent on-chain market participation  
-- ecosystem expansion (planned features only)  
-- allocation-based charity funding model  
+| Parameter     | Value                             |
+| ------------- | --------------------------------- |
+| Token Name    | PanjoCoin                         |
+| Symbol        | PNJC                              |
+| Blockchain    | Polygon Mainnet                   |
+| Standard      | ERC-20 + EIP-2612 + ERC20Burnable |
+| Compiler      | Solidity v0.8.34                  |
+| Decimals      | 18                                |
+| Total Supply  | 1,000,000,000,000 PNJC            |
+| Mint Function | Disabled                          |
+| Burn Function | Enabled                           |
 
 ---
 
-## 🟢 CURRENT ON-CHAIN UTILITY
+## Current On-Chain Utility
 
 PNJC currently functions as:
 
-- DEX trading asset (liquidity-based market token)  
-- ERC-20 transferable value unit  
-- burn-enabled deflationary asset  
-- decentralized price discovery instrument  
+* a DEX-traded ERC-20 asset
+* a decentralized value transfer token
+* a liquidity-backed market asset
+* a burn-enabled supply asset
+
+Status: Live (On-Chain Implemented)
 
 ---
 
-## 🟡 PLANNED FEATURES (NOT DEPLOYED)
+## Current Live Features
 
-- DAO governance (future implementation)  
-- staking system (future implementation)  
-- vesting contracts (future implementation)  
-- ecosystem dApp (CryptoTengo Hub)  
-- treasury governance decentralization  
+The following components are currently deployed and verifiable on-chain:
 
----
-
-## ❤️ CHARITY MODEL
-
-5% of total supply is allocated to a Charity Reserve Wallet.
-
-- allocation-based model only  
-- no smart contract automation  
-- off-chain execution with on-chain transparency  
-- supports external humanitarian initiatives  
+* ERC-20 token contract
+* Fixed token supply
+* Burn functionality
+* EIP-2612 Permit support
+* Public wallet allocation structure
 
 ---
 
-## 🔐 SECURITY MODEL
+## Planned Features
 
-- no mint function  
-- no upgradeable contracts  
-- no admin override  
-- immutable supply  
-- fully non-custodial system  
+The following features are roadmap objectives and are not currently deployed on-chain.
+
+Potential future implementations may include:
+
+* DAO Governance
+* Treasury Decentralization
+* Staking Infrastructure
+* Vesting Contracts
+* CryptoTengo Hub Ecosystem
+
+Status: Planned (Not Yet Deployed)
 
 ---
 
-## 📊 CLASSIFICATION
+## Token Distribution Overview
 
-PNJC is a fixed-supply ERC-20 token with live DEX utility and planned ecosystem expansion.
+Total Supply:
+
+1,000,000,000,000 PNJC
+
+Distribution details are maintained in the Tokenomics document.
+
+---
+
+## Charity Model
+
+A dedicated Charity Reserve Wallet has been allocated within the token distribution structure.
+
+The Charity Model operates as:
+
+* an allocation-based treasury structure
+* an off-chain execution model
+* an on-chain transparent funding allocation
+
+The Charity Model:
+
+* is not a smart contract protocol
+* is not an automated donation system
+* does not guarantee funding outcomes
+
+Status: Allocation-Based Treasury Model
+
+---
+
+## Security Principles
+
+The token contract includes:
+
+* fixed supply architecture
+* disabled mint functionality
+* transparent on-chain execution
+
+The project seeks to follow recognized smart contract security practices.
+
+---
+
+## Risk Notice
+
+Participation in cryptocurrency markets involves substantial risk.
+
+Risk factors may include:
+
+* market volatility
+* liquidity fluctuations
+* smart contract vulnerabilities
+* blockchain infrastructure disruptions
+* regulatory changes
+
+No guarantee of future adoption, market value, liquidity, or ecosystem expansion is provided.
+
+---
+
+## Future Development Notice
+
+Roadmap items represent development objectives and strategic direction.
+
+Future implementation depends on:
+
+* technical feasibility
+* available resources
+* community participation
+* legal and regulatory considerations
+
+Roadmap items should not be interpreted as guarantees.
+
+---
+
+## Official Token Classification
+
+PanjoCoin (PNJC) is a fixed-supply ERC-20 token on Polygon Mainnet with active on-chain trading utility, transparent supply mechanics, and a roadmap for future ecosystem expansion.
