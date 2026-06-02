@@ -1,42 +1,42 @@
-# 🗺 PanjoCoin (PNJC) — Roadmap
+# Roadmap — PNJC
 
 ---
 
-## 🟢 PHASE 1 — DEPLOYMENT (COMPLETED)
+## 🟢 PHASE 1 — LIVE
 
-- ERC-20 contract deployment on Polygon  
-- liquidity setup on DEX  
+- Smart contract deployment on Polygon  
+- DEX liquidity creation  
 - fixed supply activation  
 
 ---
 
-## 🟡 PHASE 2 — MARKET EXPANSION (PLANNED)
+## 🟡 PHASE 2 — EXPANSION
 
 - additional liquidity pools  
-- analytics listing (CG / CMC)  
+- analytics listings (CMC / CG)  
 - community growth systems  
 
 ---
 
-## 🟡 PHASE 3 — ECOSYSTEM (PLANNED)
+## 🟡 PHASE 3 — ECOSYSTEM
 
-- DAO governance module  
-- staking system  
-- vesting contracts  
+- staking infrastructure  
+- DAO governance  
+- vesting system  
 - CryptoTengo Hub dApp  
 
 ---
 
-## 🟡 PHASE 4 — DECENTRALIZATION (PLANNED)
+## 🟡 PHASE 4 — DECENTRALIZATION
 
 - multisig treasury governance  
-- community voting mechanisms  
-- progressive decentralization  
+- community voting system  
+- progressive decentralization model  
 
 ---
 
-## ❤️ PHASE 5 — CHARITY EXPANSION (PLANNED)
+## ❤️ PHASE 5 — CHARITY EXPANSION
 
-- allocation-based charity execution model  
-- external humanitarian partnerships  
-- transparent reporting system  
+- structured off-chain humanitarian funding  
+- transparency reporting  
+- external partnership scaling  
