@@ -2,9 +2,17 @@
 
 ## Overview
 
-This directory is reserved for the future web interface of the PanjoCoin ecosystem.
+This directory contains the future frontend application for the PanjoCoin ecosystem.
 
-The frontend application will provide a user-friendly interface for interacting with the PNJC ecosystem and related services.
+The frontend will provide a user-friendly interface for interacting with the PNJC token, ecosystem services, and future decentralized applications.
+
+## Objectives
+
+* Provide public access to ecosystem information
+* Enable wallet connectivity
+* Display token and ecosystem analytics
+* Support future staking and governance modules
+* Increase transparency and accessibility
 
 ## Planned Features
 
@@ -12,58 +20,38 @@ The frontend application will provide a user-friendly interface for interacting 
 
 * MetaMask support
 * WalletConnect support
-* Polygon network integration
+* Polygon network support
 
-### Token Information
+### Token Dashboard
 
-* PNJC token overview
-* Contract address display
+* Contract information
 * Supply information
 * Holder statistics
-
-### Ecosystem Dashboard
-
 * Ecosystem overview
-* Roadmap progress
-* Documentation access
-* Project announcements
 
-### DEX Integration
+### Ecosystem Access
 
-* Quick access to trading interfaces
-* Liquidity information
-* Trading links
+* Documentation portal
+* Roadmap tracking
+* Community resources
 
-### ClownCare Initiative
-
-* Information about the ClownCare program
-* Charity initiative updates
-* Impact reports
-
-## Future Development
-
-Potential future modules may include:
+### Future Features
 
 * Staking dashboard
-* Governance portal (DAO)
+* Governance portal
 * Treasury transparency dashboard
-* Community voting interface
-* Analytics and reporting tools
+* Charity reporting interface
 
 ## Status
 
 Frontend development has not yet started.
 
-This directory is reserved for future implementation of the PanjoCoin web application.
+This directory is reserved for future implementation.
 
-## Technology Stack (Planned)
+## Planned Technology Stack
 
 * React
 * TypeScript
 * Ethers.js
 * WalletConnect
 * Polygon Network
-
-## Repository
-
-https://github.com/CryptoTengo/PanjoCoin
