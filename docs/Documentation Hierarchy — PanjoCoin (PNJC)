@@ -1,135 +1,51 @@
-# 📚 Documentation Hierarchy — PanjoCoin (PNJC)
-
-Version 1.0
+# Documentation Hierarchy — PNJC
 
 ---
 
-## Purpose
+## 1. SMART CONTRACT (HIGHEST AUTHORITY)
 
-This document defines the official hierarchy of information sources within the PanjoCoin (PNJC) ecosystem.
+Defines:
 
-The purpose of this hierarchy is to establish a clear order of authority between technical, economic, strategic, and roadmap documentation.
-
-In the event of any inconsistency, the higher-ranked source shall prevail.
-
----
-
-# 1. Smart Contract (Highest Authority)
-
-Status: Live
-
-The deployed smart contract represents the highest authority within the PanjoCoin ecosystem.
-
-The smart contract defines:
-
-* token supply
-* token mechanics
-* transfer logic
-* burn functionality
-* permit functionality
-* immutable on-chain behavior
-
-If any documentation differs from the deployed contract, the smart contract shall be considered the authoritative source.
-
-Contract Address:
-
-0x781C0d15347Cb0B94C42C65c7a67E70371205De5
-
-Authority Level: Highest
+- supply  
+- transfers  
+- burn logic  
+- token mechanics  
 
 ---
 
-# 2. Whitepaper
+## 2. WHITEPAPER
 
-Status: Official Strategic Documentation
+Defines:
 
-The Whitepaper provides the strategic overview of the PanjoCoin ecosystem.
-
-It defines:
-
-* project vision
-* ecosystem objectives
-* current utility
-* planned development direction
-* governance principles
-* risk disclosures
-
-The Whitepaper does not override smart contract behavior.
-
-Authority Level: Strategic
+- economic model  
+- utility  
+- vision  
+- risk structure  
 
 ---
 
-# 3. Tokenomics
+## 3. TOKENOMICS
 
-Status: Official Economic Documentation
+Defines:
 
-The Tokenomics document defines the economic structure of the ecosystem.
-
-It describes:
-
-* total supply
-* token allocation
-* treasury structure
-* distribution model
-* economic principles
-
-If allocation descriptions conflict with on-chain balances, blockchain data shall prevail.
-
-Authority Level: Economic
+- supply allocation  
+- wallet distribution  
+- economic structure  
 
 ---
 
-# 4. Roadmap
+## 4. ROADMAP
 
-Status: Future Development Documentation
+Defines:
 
-The Roadmap outlines planned development objectives.
-
-Roadmap items represent intentions and objectives only.
-
-They are not guarantees and may be modified, postponed, expanded, or cancelled based on:
-
-* technical feasibility
-* regulatory requirements
-* available resources
-* ecosystem growth
-* community participation
-
-Authority Level: Informational
+- future development direction  
+- planned systems  
+- expansion phases  
 
 ---
 
-# 5. Supporting Documentation
+## RULE
 
-Supporting documentation may include:
+In case of conflict:
 
-* Security documentation
-* Charity documentation
-* Repository documentation
-* Technical notes
-* Community resources
-
-These documents provide additional context and clarification but do not override higher-level documentation.
-
-Authority Level: Supplementary
-
----
-
-# Conflict Resolution Rule
-
-In case of conflicting information, the following order of authority applies:
-
-1. Smart Contract
-2. Whitepaper
-3. Tokenomics
-4. Roadmap
-5. Supporting Documentation
-
----
-
-# Official Classification
-
-PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on Polygon Mainnet with transparent on-chain mechanics and a roadmap for future ecosystem development.
-
-This hierarchy is intended to maintain documentation consistency, transparency, and audit readiness across all official project materials.
+Smart Contract > Whitepaper > Tokenomics > Roadmap
