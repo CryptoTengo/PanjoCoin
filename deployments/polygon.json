@@ -1,1 +1,12 @@
-
+{
+"project": "PanjoCoin",
+"symbol": "PNJC",
+"network": "Polygon Mainnet",
+"chainId": 137,
+"standard": "ERC-20",
+"contractAddress": "0x781C0d15347Cb0B94C42C65c7a67E70371205De5",
+"contractVerified": true,
+"blockExplorer": "https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5",
+"repository": "https://github.com/CryptoTengo/PanjoCoin",
+"deploymentStatus": "Active"
+}
