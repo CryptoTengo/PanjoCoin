@@ -1,102 +1,61 @@
-# README.md
-
 # PanjoCoin (PNJC)
 
 PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on Polygon Mainnet.
 
-The project combines transparent tokenomics, decentralized market participation, and a roadmap for future ecosystem development.
+It is designed as a decentralized, liquidity-backed digital asset with transparent on-chain mechanics and a structured roadmap for future ecosystem expansion.
 
 ---
 
-## Basic Information
+## 🧾 BASIC INFORMATION
 
-| Parameter     | Value                             |
-| ------------- | --------------------------------- |
-| Token Name    | PanjoCoin                         |
-| Symbol        | PNJC                              |
-| Blockchain    | Polygon Mainnet                   |
-| Standard      | ERC-20 + EIP-2612 + ERC20Burnable |
-| Compiler      | Solidity v0.8.34                  |
-| Decimals      | 18                                |
-| Total Supply  | 1,000,000,000,000 PNJC            |
-| Mint Function | Disabled                          |
-| Burn Function | Enabled                           |
+- Token Name: PanjoCoin  
+- Symbol: PNJC  
+- Blockchain: Polygon Mainnet  
+- Standard: ERC-20 + EIP-2612 + ERC20Burnable  
+- Compiler: Solidity v0.8.34  
+- Total Supply: 1,000,000,000,000 PNJC  
+- Supply Type: Fixed (No Mint Function)  
+- Ownership: No admin / immutable design assumption  
 
 ---
 
-## Smart Contract
-
-Contract Address:
-
-0x781C0d15347Cb0B94C42C65c7a67E70371205De5
-
----
-
-## Current Utility
+## 🧠 CURRENT UTILITY (LIVE)
 
 PNJC currently functions as:
 
-* a DEX-traded ERC-20 asset
-* a decentralized value transfer token
-* a liquidity-backed market asset
-* a burn-enabled supply asset
+- a DEX-traded ERC-20 asset  
+- a liquidity-backed market instrument  
+- a decentralized transfer token  
+- a burn-enabled supply asset  
 
 ---
 
-## Live Components
+## 🟢 LIVE SYSTEMS
 
-The following components are currently deployed and verifiable on-chain:
-
-* ERC-20 token contract
-* Fixed supply architecture
-* Burn functionality
-* EIP-2612 Permit support
-* Wallet allocation structure
-* On-chain transparency
-
-Status: Live (On-Chain Implemented)
+- ERC-20 Token Contract  
+- Fixed Supply Architecture  
+- Burn Mechanism  
+- EIP-2612 Permit  
+- On-chain wallet allocations  
 
 ---
 
-## Planned Features
+## 🟡 PLANNED SYSTEMS
 
-The following components are roadmap objectives and are not currently deployed:
-
-* DAO Governance
-* Treasury Decentralization
-* Staking Infrastructure
-* Vesting Contracts
-* CryptoTengo Hub Ecosystem
-
-Status: Planned (Not Yet Deployed)
+- DAO Governance  
+- Staking Infrastructure  
+- Vesting Contracts  
+- Ecosystem dApp (CryptoTengo Hub)  
+- Treasury Decentralization  
 
 ---
 
-## Transparency
+## 🔐 TRANSPARENCY
 
-All token allocations and blockchain transactions are publicly verifiable on-chain.
-
----
-
-## Documentation
-
-* Whitepaper
-* Tokenomics
-* Roadmap
-* Security
-* Charity
+All transactions and allocations are fully verifiable on-chain.
 
 ---
 
-## Disclaimer
+## ⚠️ DISCLAIMER
 
-PanjoCoin (PNJC) is a utility token.
-
-It does not represent:
-
-* equity ownership
-* investment contracts
-* securities
-* guaranteed financial returns
-
-Users are solely responsible for compliance with applicable laws and regulations within their jurisdiction.
+PNJC is a utility token and does not represent equity, investment rights, or guaranteed financial returns.
