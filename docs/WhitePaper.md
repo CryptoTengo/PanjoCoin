@@ -1,93 +1,214 @@
-# PanjoCoin (PNJC) — Whitepaper
+# 📄 PanjoCoin (PNJC) — Whitepaper
 
-Version 3.0
-
----
-
-## PROJECT OVERVIEW
-
-PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on Polygon Mainnet.
-
-The project focuses on:
-
-- decentralized liquidity-based trading
-- transparent tokenomics
-- on-chain verifiable mechanics
-- roadmap-based ecosystem expansion
+**Version 1.0 | 2026**
 
 ---
 
-## 🧠 CURRENT ECONOMIC FUNCTION (LIVE LAYER)
+# 1. 🧠 EXECUTIVE SUMMARY
 
-PNJC functions as:
+PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on the Polygon network, designed to operate as a decentralized liquidity asset with a long-term transition toward a utility-driven ecosystem.
 
-- a DEX liquidity trading asset  
-- a decentralized value transfer token  
-- a burn-enabled supply reduction asset  
+The project is currently in its early infrastructure phase, focusing on:
 
-Token demand is driven by:
+* transparent on-chain token mechanics
+* liquidity-driven market participation
+* community-first distribution model
+* progressive ecosystem development
 
-- market liquidity participation  
-- trading activity  
-- decentralized exchange usage  
-
----
-
-## 🟢 LIVE FEATURES
-
-- Fixed supply (1T PNJC)  
-- Burn function enabled  
-- ERC-20 standard implementation  
-- EIP-2612 Permit  
-- Transparent wallet allocation  
+PNJC is structured to evolve from a standalone tradable asset into a broader ecosystem token supporting staking, governance, and decentralized applications within the CryptoTengo ecosystem.
 
 ---
 
-## 🟡 PLANNED FEATURES
+# 2. 🌐 VISION
 
-- DAO governance system  
-- staking mechanisms  
-- vesting contracts  
-- ecosystem dApp (CryptoTengo Hub)  
-- treasury decentralization model  
+The vision of PanjoCoin is to establish a hybrid token model combining:
 
----
+* meme-driven community growth
+* transparent decentralized finance mechanics
+* gradual transition into utility-based ecosystem infrastructure
 
-## ❤️ CHARITY MODEL
+The long-term objective is to create a sustainable Web3 ecosystem where PNJC acts as:
 
-The Charity Reserve Wallet represents 5% of total supply.
-
-It is:
-
-- allocation-based  
-- non-automated  
-- executed off-chain  
-- transparent on-chain  
+* liquidity anchor asset
+* governance participation token
+* reward and incentive layer
 
 ---
 
-## 🔐 SECURITY MODEL
+# 3. ⚙️ TOKEN OVERVIEW
 
-- no mint function  
-- no upgradeable proxy contracts  
-- no hidden admin logic  
-- immutable supply architecture  
+* Token Name: PanjoCoin
+* Symbol: PNJC
+* Standard: ERC-20
+* Network: Polygon
+* Total Supply: 1,000,000,000,000 PNJC
+* Decimals: 18
+
+### Core Properties:
+
+* Fixed supply architecture
+* Burn-enabled mechanism
+* EIP-2612 Permit support
+* On-chain verifiability
 
 ---
 
-## ⚠️ RISK DISCLOSURE
+# 4. 🟢 LIVE IMPLEMENTATION (CURRENT STATE)
 
-Crypto markets are volatile and unpredictable.
+The following features are already implemented and active on-chain:
+
+* ERC-20 smart contract deployment on Polygon
+* Fixed total supply (no minting capability)
+* Burn functionality for supply reduction
+* EIP-2612 Permit functionality (gasless approvals)
+* Transparent wallet-based distribution model
+* Publicly verifiable contract on-chain
+
+At this stage, PNJC functions primarily as a decentralized trading and liquidity asset.
+
+---
+
+# 5. 🟡 TOKEN DISTRIBUTION MODEL
+
+The token distribution is structured to support liquidity stability and ecosystem growth:
+
+* Liquidity Pool: 50%
+* Community & Airdrops: 15%
+* Marketing & Growth: 30–35%
+* Team / Development: 0–5% (optional, vesting-based future structure)
+
+> Note: Final allocation may be updated as vesting and governance structures are introduced.
+
+---
+
+# 6. 🟡 DEVELOPMENT ROADMAP (IN PROGRESS)
+
+The following components are currently in design and development phase:
+
+### 🔹 Staking System
+
+* Reward-based staking model for PNJC holders
+* Designed to incentivize long-term holding behavior
+* Mechanism currently under architecture planning
+
+### 🔹 Vesting Contracts
+
+* Planned implementation for team and ecosystem allocations
+* Will ensure gradual token release schedules
+* Not yet deployed
+
+### 🔹 DAO Governance Layer
+
+* Conceptual governance model for community participation
+* Voting mechanisms based on token holdings
+* Currently in early design phase
+
+### 🔹 Ecosystem dApp (CryptoTengo Hub)
+
+* Planned Web3 application layer
+* Will include token utilities, dashboard, and analytics tools
+* Under development planning stage
+
+---
+
+# 7. ⚪ FUTURE ECOSYSTEM VISION
+
+The long-term vision of PanjoCoin includes expansion into a full ecosystem layer featuring:
+
+* decentralized governance infrastructure (DAO)
+* staking-based reward economy
+* treasury management system
+* ecosystem utility integrations
+* potential NFT / gamification modules
+* DeFi interoperability expansion
+
+These features are not yet implemented and remain part of the strategic roadmap.
+
+---
+
+# 8. 🔥 TOKEN UTILITY (CURRENT & FUTURE)
+
+### Current Utility:
+
+* Tradable asset on decentralized exchanges
+* Liquidity participation token
+* Community-driven market asset
+
+### Future Utility (Planned):
+
+* staking rewards participation
+* governance voting rights
+* ecosystem service access (CryptoTengo Hub)
+* incentive distribution within ecosystem applications
+
+---
+
+# 9. 🔐 SECURITY MODEL
+
+The PNJC smart contract is built with a focus on transparency and minimal attack surface:
+
+* No mint function (fixed supply)
+* No proxy upgradeability
+* No hidden administrative logic
+* Burn mechanism is publicly verifiable
+* Contract deployed using standard ERC-20 OpenZeppelin patterns
+
+Future security enhancements may include:
+
+* external audits
+* multi-signature treasury control
+* formal verification processes
+
+---
+
+# 10. ❤️ CHARITY & COMMUNITY RESERVE
+
+A designated portion of supply is allocated for charitable and community initiatives.
+
+* Allocation: 5% of total supply
+* Wallet-based transparency
+* Distribution managed manually via on-chain transactions
+* Used for community-driven and charitable initiatives within CryptoTengo ecosystem
+
+> Future improvements may include partial automation and governance-based allocation control.
+
+---
+
+# 11. ⚠️ RISK DISCLOSURE
+
+Participation in PNJC involves financial risk. Cryptocurrency markets are highly volatile and unpredictable.
 
 No guarantees are made regarding:
 
-- price performance  
-- liquidity stability  
-- ecosystem adoption  
-- future utility expansion  
+* price performance
+* liquidity stability
+* ecosystem adoption
+* future utility implementation
+
+Users are responsible for conducting independent research (DYOR) before interacting with the token.
 
 ---
 
-## CLASSIFICATION
+# 12. 📊 TRANSPARENCY PRINCIPLES
 
-PNJC is a fixed-supply ERC-20 token on Polygon with active DEX utility and planned ecosystem expansion.
+PanjoCoin follows a transparency-first development model:
+
+* all contract logic is publicly verifiable
+* token distribution is on-chain trackable
+* roadmap is publicly documented
+* ecosystem development is progressively disclosed
+
+---
+
+# 13. 🚀 CONCLUSION
+
+PanjoCoin is positioned as an early-stage decentralized asset transitioning toward a structured Web3 ecosystem.
+
+The project prioritizes:
+
+* transparency
+* scalability on Polygon
+* progressive utility expansion
+* community-driven development
+
+PNJC is currently in its foundational phase, with ecosystem features actively being designed and implemented in stages.
