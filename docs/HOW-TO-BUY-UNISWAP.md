@@ -1,61 +1,82 @@
-🚀 Step-by-Step Buying Process (PNJC / USDC)
-Step 1: Add Polygon Network to Your Wallet
+## 🚀 Step-by-Step Buying Process (PNJC / USDC)
 
-If the network is already added → skip to Step 2
+---
 
-MetaMask:
-Open MetaMask → click network dropdown (top left)
-Click "Add Network" → "Add Manually"
-Enter the following details:
-Parameter	Value
-Network Name	Polygon Mainnet
-RPC URL	https://polygon-rpc.com
+### Step 1: Add Polygon Network to Your Wallet
 
-Chain ID	137
-Symbol	POL
-Block Explorer	https://polygonscan.com
-Click Save
+> **If the network is already added → skip to Step 2**
 
-ℹ️ Polygon has migrated from MATIC to POL. POL is now used.
+#### 🦊 MetaMask:
 
-Trust Wallet / other wallets:
-Search for Polygon network and add it
-Gas will automatically display as POL
-Step 2: Get POL for Fees
+1. Open MetaMask → click network dropdown (top-left)
+2. Click **"Add Network"** → **"Add Manually"**
+3. Enter the following details:
 
-You need POL to pay for transactions on Polygon.
+| Parameter | Value |
+| :--- | :--- |
+| **Network Name** | Polygon Mainnet |
+| **RPC URL** | `https://polygon-rpc.com` |
+| **Chain ID** | `137` |
+| **Symbol** | **POL** |
+| **Block Explorer** | `https://polygonscan.com` |
 
-Buy POL on an exchange (Binance, Coinbase, Kraken, etc.)
-Send at least 0.5 POL to your wallet
+4. Click **Save**
 
-💡 Fees are very low (~0.01–0.05 POL per transaction)
+> ℹ️ **Note:** Polygon has migrated from MATIC to POL. **POL** is now the native gas token.
 
-Step 3: Get USDC (for buying PNJC)
+#### 📱 Trust Wallet / Other wallets:
 
-You need USDC on Polygon network:
+- Search for **Polygon Mainnet** and add it
+- Gas token will automatically display as **POL**
 
-Buy USDC on an exchange
-When withdrawing, select Polygon network (NOT Ethereum!)
-Send USDC to your wallet
+---
 
-⚠️ Make sure it is USDC on Polygon
-Contract: 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174
+### Step 2: Get POL for Gas Fees
 
-Step 4: Connect Wallet to Uniswap
-Go to https://app.uniswap.org
-Click "Launch App"
-Click "Connect Wallet"
-Choose MetaMask or another wallet
-Approve connection
-Switch network to Polygon (POL should be displayed)
-Step 5: Select PNJC / USDC Pair
-Field	Selection
-From	USDC (Polygon)
-To	PNJC
+You need **POL** to pay for transactions on Polygon.
 
-If PNJC does not appear:
+1. Buy **POL** on any exchange (Binance, Coinbase, Kraken, etc.)
+2. Send at least **0.5 POL** to your wallet address
 
-Click Select token
-Go to Import token
-Paste PNJC contract address:
-0x781C0d15347Cb0B94C42C65c7a67E70371205De5
+> 💡 **Gas fees are very low** — approximately **0.01–0.05 POL** per transaction.
+
+---
+
+### Step 3: Get USDC (to Swap for PNJC)
+
+You need **USDC on Polygon network** to buy PNJC.
+
+1. Buy **USDC** on an exchange
+2. When withdrawing, select **Polygon network** (NOT Ethereum!)
+3. Send USDC to your wallet
+
+> ⚠️ **Important:** Make sure it is USDC on Polygon (not ERC-20).
+>
+> **USDC Contract on Polygon:**  
+> `0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174`
+
+---
+
+### Step 4: Connect Wallet to Uniswap
+
+1. Go to [app.uniswap.org](https://app.uniswap.org)
+2. Click **"Launch App"**
+3. Click **"Connect Wallet"** (top-right corner)
+4. Choose **MetaMask** (or your wallet)
+5. Approve the connection
+6. Switch network to **Polygon** — POL should be displayed as the gas token
+
+---
+
+### Step 5: Select PNJC / USDC Trading Pair
+
+| Field | Selection |
+| :--- | :--- |
+| **From** | USDC (Polygon) |
+| **To** | PNJC |
+
+#### If PNJC does not appear automatically:
+
+1. Click **"Select token"** (in the "To" field)
+2. Click **"Manage token lists"** → **"Import token"**
+3. Paste the PNJC contract address:
