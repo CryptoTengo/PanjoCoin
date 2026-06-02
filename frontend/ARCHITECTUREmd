@@ -1,0 +1,50 @@
+# Frontend Architecture
+
+## Overview
+
+The PanjoCoin frontend is planned as a modular web application designed to provide access to ecosystem information and future decentralized services.
+
+## High-Level Structure
+
+Frontend
+│
+├── Home Page
+├── Ecosystem Dashboard
+├── Documentation Portal
+├── Token Information
+├── Community Section
+└── Future dApp Modules
+
+## Planned Modules
+
+### Home
+
+Project overview and ecosystem introduction.
+
+### Dashboard
+
+Token metrics and ecosystem statistics.
+
+### Documentation
+
+Access to Whitepaper, Tokenomics, Roadmap, Security Policy, Legal Disclaimer, Architecture, and Charity documents.
+
+### Community
+
+Links to official social media and community channels.
+
+### Future dApp
+
+Wallet integration and ecosystem interaction tools.
+
+## Design Principles
+
+* Transparency
+* Accessibility
+* Security
+* Simplicity
+* Scalability
+
+## Future Expansion
+
+The architecture may evolve to support staking, governance, analytics, and treasury modules.
