@@ -1,29 +1,38 @@
-# 🔐 Security Model — PanjoCoin (PNJC)
+# Security Policy — PNJC
 
 ---
 
 ## CORE SECURITY PRINCIPLES
 
+- fixed supply architecture  
 - no mint function  
 - no upgradeable proxy contracts  
-- no admin override functions  
-- immutable supply logic  
-- fully non-custodial architecture  
+- no hidden admin functions  
+- transparent on-chain logic  
 
 ---
 
-## WALLET SECURITY
+## ASSUMPTION MODEL
 
-- treasury wallets secured via multisig (planned)  
-- hardware wallet storage recommended  
-- separation of allocations by category  
+The deployed smart contract is considered:
+
+- immutable  
+- non-upgradable  
+- fully autonomous  
 
 ---
 
-## RISK MODEL
+## RISK FACTORS
 
-Users acknowledge:
-- smart contract risk  
-- liquidity risk  
 - market volatility  
-- infrastructure dependency risks  
+- liquidity risk  
+- blockchain infrastructure failures  
+- third-party wallet risks  
+
+---
+
+## GOVERNANCE SECURITY (PLANNED)
+
+- multisig treasury control  
+- hardware wallet key storage  
+- staged fund release mechanisms  
