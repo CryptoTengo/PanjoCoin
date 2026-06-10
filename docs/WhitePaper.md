@@ -1,128 +1,136 @@
-📄 PanjoCoin (PNJC) — Official Whitepaper
+# 📄 PanjoCoin (PNJC) — Official Whitepaper
 
- June 11, 2026
- 
-Full compliance with smart contract and on-chain distribution
-🐕 Official token of Panjo the Shar Pei in support of SmileDonate (ClownCare)
-*✅ DEX READY 
+**Version 9.0 | June 11, 2026**
 
-📖 Prologue: The Legend of Panjo the Shar Pei
-In a quiet district of Tbilisi, where old chestnut trees lean over the avenue, stands the M. Iashvili Central Children's Hospital. A place where every day, young patients fight the most serious illnesses: oncological hematology, neurosurgical pathologies.
+*Full compliance with smart contract and on-chain distribution*
 
-One day, a Shar Pei named Panjo (affectionately — Panjo) was passing by the hospital. He had neither money nor power. Only a charming wrinkled face and a huge loving heart.
+🐕 **Official token of Panjo the Shar Pei in support of SmileDonate (ClownCare)**
 
-Suddenly, from the third floor — where the oncology-hematology and neurosurgery wards are located — he heard a child crying. It wasn't a tantrum. It was the cry of a child who had been fighting pain for too long.
+✅ DEX READY | ✅ 100/100
+
+---
+
+## 📖 Prologue: The Legend of Panjo the Shar Pei
+
+In a quiet district of Tbilisi, where old chestnut trees lean over the avenue, stands the **M. Iashvili Central Children's Hospital**. A place where every day, young patients fight the most serious illnesses: oncological hematology, neurosurgical pathologies.
+
+One day, a **Shar Pei named Panjo** (affectionately — Panjo) was passing by the hospital. He had neither money nor power. Only a charming wrinkled face and a huge loving heart.
+
+Suddenly, from the **third floor** — where the oncology-hematology and neurosurgery wards are located — he heard a child crying. It wasn't a tantrum. It was the cry of a child who had been fighting pain for too long.
 
 Panjo stopped. Looked up. Saw a small tear-streaked face in the window.
 
-Shar Peis cannot speak, but they know how to love. And Panjo smiled — the way only they can: wide, with squinted eyes and his tongue hanging out, turning his wrinkled face into a bundle of joy.
+Shar Peis cannot speak, but they know how to love. And Panjo **smiled** — the way only they can: wide, with squinted eyes and his tongue hanging out, turning his wrinkled face into a bundle of joy.
 
 Not for food. Not for praise. Simply because he couldn't do otherwise.
 
-He started shuffling his paws comically, wagging his tail, pretending to catch an invisible ball. And after a few seconds, a miracle happened: the child smiled back.
+He started shuffling his paws comically, wagging his tail, pretending to catch an invisible ball. And after a few seconds, a miracle happened: **the child smiled back**.
 
 That smile became the greatest reward of Panjo's life.
 
 From that day on, he kept coming back to the hospital. He would sit under the third-floor windows and wait. And when he saw a familiar face, he would begin his performance. The children waited for him. The children laughed. And with the laughter, the pain receded.
 
-Thus came the first "Panjo the Shar Pei's Coin" — not as a symbol of wealth, but as a symbol of a smile that cannot be bought but can be given.
+Thus came the first **"Panjo the Shar Pei's Coin"** — not as a symbol of wealth, but as a symbol of a smile that cannot be bought but can be given.
 
-Today, this story lives on the Polygon blockchain. Every PNJC token is not just a digital coin. It is a piece of that very smile of a wrinkled Shar Pei that once changed the life of one child at the Iashvili Hospital.
+Today, this story lives on the Polygon blockchain. Every **PNJC** token is not just a digital coin. It is a piece of that very smile of a wrinkled Shar Pei that once changed the life of one child at the Iashvili Hospital.
 
-📑 Table of Contents
-Prologue: The Legend of Panjo the Shar Pei
+---
 
-Executive Summary
+## 📑 Table of Contents
 
-Vision & Mission
+1. [Prologue: The Legend of Panjo the Shar Pei](#-prologue-the-legend-of-panjo-the-shar-pei)
+2. [Executive Summary](#-executive-summary)
+3. [Vision & Mission](#-vision--mission)
+4. [Technical Specifications](#-technical-specifications)
+5. [Tokenomics & Distribution](#-tokenomics--distribution)
+6. [Staged Market Release Mechanism](#-staged-market-release-mechanism)
+7. [Investor Protection Mechanisms](#-investor-protection-mechanisms)
+8. [Deflationary Model](#-deflationary-model)
+9. [Liquidity Model](#-liquidity-model)
+10. [Treasury Management](#-treasury-management)
+11. [Charity Mission: SmileDonate & ClownCare](#-charity-mission-smiledonate--clowncare)
+12. [Agile Development Note & Roadmap](#-agile-development-note--roadmap)
+13. [How to Buy PNJC (with Slippage Settings)](#-how-to-buy-pnjc-with-slippage-settings)
+14. [Investor's Risk Checklist](#-investors-risk-checklist)
+15. [FAQ (Frequently Asked Questions)](#-faq-frequently-asked-questions)
+16. [Glossary for Beginners](#-glossary-for-beginners)
+17. [Social Channels & Community](#-social-channels--community)
+18. [Risks & Disclaimers](#-risks--disclaimers)
+19. [Conclusion](#-conclusion)
+20. [Official Links](#-official-links)
+21. [Epilogue](#-epilogue)
 
-Technical Specifications
+---
 
-Tokenomics & Distribution
+## 1. 🧠 Executive Summary
 
-Staged Market Release Mechanism
+**PanjoCoin (PNJC)** is a deflationary ERC-20 token with a fixed supply, deployed on the Polygon network. The project combines meme coin culture with institutional-grade transparency and a real social mission, inspired by the legend of Panjo the Shar Pei — a symbol of kindness and selfless giving.
 
-Investor Protection Mechanisms
+### Key Facts
 
-Deflationary Model
+| Parameter | Value |
+| :--- | :--- |
+| **Ticker** | PNJC |
+| **Network** | Polygon (PoS) |
+| **Total Supply** | 1,000,000,000,000 (1 trillion) |
+| **Initial Circulation** | ~100 billion (10%) |
+| **Release Mechanism** | Staged (10% initially → +10% of remaining every 6 months) |
+| **Charity Allocation** | 5% → SmileDonate → ClownCare |
+| **Contract Status** | Verified, no owner, no mint |
 
-Liquidity Model
+### Why PNJC Differs from 99% of Meme Tokens
 
-Treasury Management
+| Principle | Implementation | Advantage |
+| :--- | :--- | :--- |
+| **Scarcity** | `_MAX_TOTAL_SUPPLY = 1T`, no `mint()` | Inflation protection |
+| **Trustless** | No `Ownable`, no `owner()` | Rug-pull impossible |
+| **0% Tax** | No fee mechanisms | Maximum liquidity |
+| **Transparency** | 8 public wallets | Fully verifiable |
+| **Social Mission** | 5% to charity | Real on-chain impact |
 
-Charity Mission: SmileDonate & ClownCare
+---
 
-🧠 Agile Development Note & Roadmap
+## 2. 🌐 Vision & Mission
 
-🚀 How to Buy PNJC (with Slippage Settings)
+### Vision
 
-⚠️ Investor's Risk Checklist
+To create a sustainable funding model for pediatric medical clowning through a decentralized crypto ecosystem, where every token holder becomes **a participant in healing through smiles**.
 
-❓ FAQ (Frequently Asked Questions)
+### Mission
 
-📖 Glossary for Beginners
+1. Provide regular funding for the ClownCare program in the oncology-hematology and neurosurgery wards of the M. Iashvili Central Children's Hospital.
+2. Expand the program to other wards and hospitals in Georgia and beyond.
+3. Prove that meme coins can be an effective tool for charity, not just speculation.
 
-Social Channels & Community
+### Philosophical Foundation
 
-Risks & Disclaimers
-
-Conclusion
-
-Official Links
-
-Epilogue
-
-1. 🧠 Executive Summary
-PanjoCoin (PNJC) is a deflationary ERC-20 token with a fixed supply, deployed on the Polygon network. The project combines meme coin culture with institutional-grade transparency and a real social mission, inspired by the legend of Panjo the Shar Pei — a symbol of kindness and selfless giving.
-
-Key Facts
-Parameter	Value
-Ticker	PNJC
-Network	Polygon (PoS)
-Total Supply	1,000,000,000,000 (1 trillion)
-Initial Circulation	~100 billion (10%)
-Release Mechanism	Staged (10% initially → +10% of remaining every 6 months)
-Charity Allocation	5% → SmileDonate → ClownCare
-Contract Status	Verified, no owner, no mint
-Why PNJC Differs from 99% of Meme Tokens
-Principle	Implementation	Advantage
-Scarcity	_MAX_TOTAL_SUPPLY = 1T, no mint()	Inflation protection
-Trustless	No Ownable, no owner()	Rug-pull impossible
-0% Tax	No fee mechanisms	Maximum liquidity
-Transparency	8 public wallets	Fully verifiable
-Social Mission	5% to charity	Real on-chain impact
-2. 🌐 Vision & Mission
-Vision
-To create a sustainable funding model for pediatric medical clowning through a decentralized crypto ecosystem, where every token holder becomes a participant in healing through smiles.
-
-Mission
-Provide regular funding for the ClownCare program in the oncology-hematology and neurosurgery wards of the M. Iashvili Central Children's Hospital.
-
-Expand the program to other wards and hospitals in Georgia and beyond.
-
-Prove that meme coins can be an effective tool for charity, not just speculation.
-
-Philosophical Foundation
 The project is built upon two fundamental sources:
 
 👉 The Legend of Panjo the Shar Pei — a symbol of selfless kindness and transparency.
-👉 Founder's article: "Meme Coins — A Threat or an Opportunity for the Crypto Industry?"
+👉 Founder's article: ["Meme Coins — A Threat or an Opportunity for the Crypto Industry?"](https://medium.com/@cryptotengo/meme-coins-a-threat-or-an-opportunity-for-the-crypto-industry-0f757c08cf31)
 
-3. ⚙️ Technical Specifications
-3.1. Token Parameters
-Parameter	Value	Status
-Token Name	PanjoCoin	✅ LIVE
-Ticker	PNJC	✅ LIVE
-Network	Polygon (PoS)	✅ LIVE
-Standard	ERC-20 + EIP-2612 + ERC20Burnable	✅ LIVE
-Contract Address	0x781C0d15347Cb0B94C42C65c7a67E70371205De5	✅ Verified
-Total Supply	1,000,000,000,000 PNJC	✅ FIXED
-Decimals	18	✅
-Mint Function	❌ Absent	✅ Absolute protection
-Owner / Admin	❌ Absent	✅ Rug-pull impossible
-Proxy / Upgrade	❌ Absent	✅ Immutable code
-3.2. Key Code Constants
-solidity
+---
+
+## 3. ⚙️ Technical Specifications
+
+### 3.1. Token Parameters
+
+| Parameter | Value | Status |
+| :--- | :--- | :--- |
+| **Token Name** | PanjoCoin | ✅ LIVE |
+| **Ticker** | PNJC | ✅ LIVE |
+| **Network** | Polygon (PoS) | ✅ LIVE |
+| **Standard** | ERC-20 + EIP-2612 + ERC20Burnable | ✅ LIVE |
+| **Contract Address** | `0x781C0d15347Cb0B94C42C65c7a67E70371205De5` | ✅ Verified |
+| **Total Supply** | 1,000,000,000,000 PNJC | ✅ FIXED |
+| **Decimals** | 18 | ✅ |
+| **Mint Function** | ❌ Absent | ✅ Absolute protection |
+| **Owner / Admin** | ❌ Absent | ✅ Rug-pull impossible |
+| **Proxy / Upgrade** | ❌ Absent | ✅ Immutable code |
+
+### 3.2. Key Code Constants
+
+```solidity
 // FROM SMART CONTRACT (PNJC.sol):
 uint256 private constant _MAX_TOTAL_SUPPLY = 1_000_000_000_000 * 10**18;
 // 1,000,000,000,000 PNJC (one trillion)
@@ -130,6 +138,7 @@ uint256 private constant _MAX_TOTAL_SUPPLY = 1_000_000_000_000 * 10**18;
 // No mint() function
 // No Ownable import
 // Inherits: ERC20, ERC20Permit, ERC20Burnable
+
 3.3. Trading Infrastructure
 Parameter	Value	Status
 Primary DEX	Uniswap V3	⏳ To be created after launch
@@ -152,8 +161,9 @@ The PNJC smart contract is a pure ERC-20 token and contains no built-in distribu
 6	Founder (Tengo)	5%	50,000,000,000	0xF48840486697AE3c15D38E30e45cECB9897CfA74
 7	Charity Reserve (SmileDonate)	5%	50,000,000,000	0xa22E471BF4e405c92bDD074792d8d36923e31055
 TOTAL	100%	1,000,000,000,000	All wallets public
+
 4.3. Distribution Visualization
-text
+
 ┌─────────────────────────────────────────────────────────────────┐
 │                    PNJC TOTAL SUPPLY: 1T                        │
 ├─────────────────────────────────────────────────────────────────┤
@@ -167,6 +177,7 @@ text
 │  ████████                                       8% Community    │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
+
 ✅ All addresses are verified. Every PNJC holder can check any wallet's balance in real time via PolygonScan.
 
 5. 🔄 Staged Market Release Mechanism
@@ -177,111 +188,18 @@ Every 6 months thereafter, an additional 10% of the remaining locked supply is r
 5.2. Calculation Formula
 Let:
 
-S
-total
-=
-1
-,
-000
-,
-000
-,
-000
-,
-000
-S 
-total
-​
- =1,000,000,000,000 PNJC
+Sₜₒₜₐₗ = 1,000,000,000,000 PNJC
 
-R
-0
-=
-0.10
-×
-S
-total
-=
-100
-,
-000
-,
-000
-,
-000
-R 
-0
-​
- =0.10×S 
-total
-​
- =100,000,000,000 PNJC (initial release)
+R₀ = 0.10 × Sₜₒₜₐₗ = 100,000,000,000 PNJC (initial release)
 
-B
-0
-=
-S
-total
-−
-R
-0
-=
-900
-,
-000
-,
-000
-,
-000
-B 
-0
-​
- =S 
-total
-​
- −R 
-0
-​
- =900,000,000,000 PNJC (initially locked)
+B₀ = Sₜₒₜₐₗ - R₀ = 900,000,000,000 PNJC (initially locked)
 
 Every 6 months:
 
-R
-n
-=
-0.10
-×
-B
-n
-−
-1
-R 
-n
-​
- =0.10×B 
-n−1
-​
- 
-B
-n
-=
-B
-n
-−
-1
-−
-R
-n
-B 
-n
-​
- =B 
-n−1
-​
- −R 
-n
-​
- 
+Rₙ = 0.10 × Bₙ₋₁
+
+Bₙ = Bₙ₋₁ - Rₙ
+
 5.3. Release Schedule (First 3 Years)
 Period	Market Release	Cumulative Release	Remaining Locked
 T+0 (Listing)	100B (10%)	100B (10%)	900B (90%)
@@ -337,10 +255,10 @@ Total in circulation	1T	~100B (10%)	90% locked
 7.1. Burnable Mechanism
 The PNJC smart contract inherits ERC20Burnable:
 
-solidity
 // Any holder can burn their tokens:
 function burn(uint256 amount) external;
 function burnFrom(address account, uint256 amount) external;
+
 7.2. Sources of Deflation
 Factor	Effect
 Fixed supply	Supply is hard-capped at 1 trillion
@@ -451,7 +369,7 @@ Before buying PNJC, ask yourself these questions:
 Question	Your Answer	Status
 I understand that cryptocurrencies are extremely volatile?	✅ / ❌	Personal responsibility
 I am prepared to lose 100% of my investment?	✅ / ❌	Personal responsibility
-I have verified the contract address on PolygonScan?	✅ / ❌	PolygonScan
+I have verified the contract address on PolygonScan?	✅ / ❌	Verify here
 I have confirmed that the token has no owner() and no mint()?	✅ / ❌	Yes, by code
 I understand that 90% of tokens are locked and released in stages?	✅ / ❌	Yes, per tokenomics
 I do not expect guaranteed profit?	✅ / ❌	Yes, risks are high
@@ -523,14 +441,20 @@ Technical vulnerabilities	Low	OpenZeppelin + verification
 Regulatory risks	Low	Full decentralization (no owner)
 17.2. Important Disclaimers
 ⚠️ PanjoCoin (PNJC) is NOT:
-— A security or investment contract
-— An instrument with guaranteed returns
-— A financial pyramid scheme
+
+A security or investment contract
+
+An instrument with guaranteed returns
+
+A financial pyramid scheme
 
 ⚠️ Participating in this project means:
-— Full responsibility for your own decisions (DYOR)
-— Understanding all risks of the cryptocurrency market
-— No claims against the team in case of financial loss
+
+Full responsibility for your own decisions (DYOR)
+
+Understanding all risks of the cryptocurrency market
+
+No claims against the team in case of financial loss
 
 18. 🏁 Conclusion
 18.1. Summary
