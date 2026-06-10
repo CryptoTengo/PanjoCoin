@@ -1,92 +1,235 @@
-PNJC Final Legal Disclaimer
-📄 PanjoCoin (PNJC) — Official Legal Notice and Disclaimer
-Institutional Edition v1.0
-Legal status of the asset, limitation of liability, territorial restrictions, and risk management when interacting with the ecosystem.
-________________________________________
-Important Notice for All Users
-PLEASE READ THIS DOCUMENT CAREFULLY.
-https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5#code
-Interacting with the PanjoCoin (PNJC) project, including acquiring, holding, exchanging, staking, participating in DAO voting, or using any other functions of the ecosystem, automatically constitutes your full, complete, and unconditional agreement to all provisions, rules, and limitations set forth in this Legal Disclaimer.
-If you do not agree with any of the terms, requirements, or restrictions contained in this document, you must immediately cease any interaction with the PanjoCoin project, its smart contracts, website, and official communication channels.
-________________________________________
-1. Legal Status of the Asset (Not a Financial Product)
-The PanjoCoin (PNJC) token is developed and functions solely as a utility meme coin with a fixed supply. Its creation and circulation within the ecosystem are intended exclusively for entertainment, social, gaming, and charitable purposes, as well as to facilitate decentralized governance (DAO) mechanics.
-Under no circumstances does the PNJC token:
-•	Constitute a security under the laws of any jurisdiction;
-•	Represent a share, investment unit, debt obligation, or equity stake in any legal entity or company;
-•	Grant any rights to manage a commercial company, share in property, or rights to receive dividends, profit distributions, or liquidation value;
-•	Serve as a derivative financial instrument, currency, legal tender, or any other type of financial product.
-This document, as well as the project's official White Paper, is not a prospectus, public offering, invitation to invest, or offer to purchase securities or other regulated financial assets in any country worldwide.
-________________________________________
-2. Absence of Financial and Investment Advice
-All information contained in this document, the White Paper, the official project website, social media channels (X/Twitter, Telegram, Discord, Medium, and others), or communicated by project representatives, is for informational purposes only.
-•	No project materials may be considered, interpreted, or used as investment, financial, legal, tax, brokerage, or any other professional advice.
-•	The project team, founders, developers, and partners do not solicit the purchase of PNJC tokens nor promote them as a means of enrichment.
-•	Every market participant must adhere to the principle of DYOR (Do Your Own Research). Before conducting any transactions with PNJC, you must independently assess all risks and, if necessary, consult with independent licensed professionals in your jurisdiction.
-________________________________________
-3. High Risks and Absence of Financial Guarantees
-The cryptocurrency market, digital assets, and especially meme coins are characterized by extreme volatility, unpredictability, and speculative nature. Acquiring and holding PNJC involves the risk of total loss of invested funds.
-The project team, founders, developers, and affiliated parties explicitly state that they DO NOT GUARANTEE:
-•	The preservation of stable value or purchasing power of the token;
-•	Any future increase in the token's market price;
-•	The continued availability of liquidity on decentralized (DEX) or centralized (CEX) exchanges;
-•	The successful, uninterrupted, or complete achievement of the goals described in the Roadmap;
-•	Any financial profit or benefit from holding, staking, or using the token.
-The PNJC token, smart contracts, and related services are provided to users under the international standards of "as is" and "as available." Any interaction with them is conducted by the user solely at their own risk and personal responsibility.
-________________________________________
-4. Forward-Looking Statements and Roadmap Status
-All statements contained in PanjoCoin's documentation regarding future plans (including, but not limited to: DAO launch, deployment of staking pools, NFT collection releases, payment gateway integrations, exchange listings, buyback and burn programs, and scaling of charitable initiatives) are merely indicative goals of the team.
-•	These statements do not constitute legally binding promises, guarantees, or assurances.
-•	Implementation of plans depends on numerous external factors, including market conditions, legislative changes, technical challenges, and community activity.
-•	The team reserves the right to modify, reschedule, suspend, or completely cancel any items in the Roadmap and economic models without prior notice to users.
-________________________________________
-5. Territorial Restrictions (Restricted Jurisdictions)
-The distribution, acquisition, holding, and use of PNJC tokens may be limited or completely prohibited by law in several countries. The PanjoCoin project is not intended for use by persons whose national legislation prohibits transactions with digital assets.
-5.1 Complete Prohibition on Participation
-Participation in the project, purchase of tokens, staking, and any other interaction with the ecosystem is strictly prohibited for citizens, residents (including tax residents), as well as persons physically located within the territory or under the jurisdiction of the following countries and regions:
-•	United States of America (including all territories and insular possessions);
-•	People's Republic of China (PRC);
-•	Canada;
-•	Republic of Korea (South Korea);
-•	Islamic Republic of Iran;
-•	Democratic People's Republic of Korea (DPRK / North Korea);
-•	Syrian Arab Republic;
-•	Republic of Cuba.
-5.2 Sanctioned and Occupied Territories
-Participation in the project is also completely prohibited for any individuals and legal entities that are located in, under the jurisdiction of, residents of, or controlled by citizens of countries and regions subject to comprehensive, partial, or significant sectoral sanctions imposed by the U.S. Office of Foreign Assets Control (OFAC), the United Nations (UN), and the European Union (EU), as well as territories with uncertain or disputed legal status, including but not limited to:
-•	Russian Federation;
-•	Republic of Belarus;
-•	Bolivarian Republic of Venezuela;
-•	Republic of the Union of Myanmar;
-•	Islamic Emirate of Afghanistan;
-•	High-risk zones and territories (including Sudan, Somalia, Democratic Republic of the Congo, Libya, and Yemen).
-5.3 Individual Responsibility
-The list of restricted jurisdictions may be supplemented or amended unilaterally without prior notice depending on the dynamics of global sanctions, geopolitical, and regulatory regimes.
-Each user bears sole and personal responsibility for complying with the laws of their country. If the use of digital assets, meme coins, or participation in a DAO is restricted, requires licensing, or is prohibited in the user's country, they must immediately cease using the website, dApp interfaces, and any PanjoCoin smart contracts.
-________________________________________
-6. Limitation of Technical and Software Liability
-The project team, core developers, and auditors take commercially reasonable measures to ensure the security of the codebase. Nevertheless, blockchain infrastructure is subject to specific technological risks.
-The PanjoCoin team shall not be liable for any direct, indirect, incidental, or intentional losses, lost profits, or damages arising from:
-•	The presence of hidden vulnerabilities, bugs, or errors in the code of PNJC token smart contracts, staking modules, or DAO;
-•	Malicious hacker attacks, exploits, phishing, distributed denial-of-service (DDoS) attacks, or compromise of interfaces;
-•	Technical failures, hard forks, delays, congestion, or complete downtime of the underlying Polygon (L2) or Ethereum (L1) blockchain network;
-•	Issues, bankruptcy, closure, or fraudulent actions of third-party services, decentralized (DEX) and centralized (CEX) exchanges, or wallets;
-•	User loss of access to their private keys, seed phrases, or as a result of asset theft from the user's non-custodial wallets;
-•	User errors when making transactions (sending tokens to the wrong address, selecting an incorrect network, slippage errors, etc.).
-________________________________________
-7. Charitable Activity Model
-The PanjoCoin ecosystem includes a programmatic Charity Reserve. Users should consider the following conditions:
-•	Allocation of funds for charitable purposes is coordinated through DAO proposals, but the actual transfer to fiat accounts or foundation addresses is carried out through regulated verification procedures to avoid violation of anti-money laundering (AML) laws.
-•	The PNJC token itself is not a charitable organization or foundation. The project provides a technological on-chain infrastructure for asset distribution.
-•	No donations made in PNJC tokens, nor purchases of tokens on the market, guarantee the user any tax deductions, benefits, or tax exemption certificates unless expressly provided for by local law regarding the ultimate recipient (NGO).
-________________________________________
-8. Acceptance of Legal Disclaimer Terms
-By interacting with PNJC, you confirm and warrant that:
-1.	You have carefully read, fully understood, and agree to all sections of this Legal Disclaimer and the White Paper.
-2.	You possess the necessary legal capacity, competence, and have reached the age of majority under the laws of your country to conduct transactions with digital assets.
-3.	Your jurisdiction is not included in the restricted lists (Section 5), and you are not subject to personal sanctions.
-4.	You acknowledge the speculative nature of crypto assets, assume all financial and technical risks, and waive any legal claims, lawsuits, or demands for damages against the creators, developers, and community members of PanjoCoin.
-________________________________________
-© 2026 PanjoCoin. All rights reserved.
-This document is an integral part of the PanjoCoin information architecture and is subject to enforcement in accordance with the principles of the decentralized Web3 community.
+# PanjoCoin (PNJC) — Legal Disclaimer
 
+Version 1.0
+
+## Important Notice
+
+Please read this document carefully before interacting with PanjoCoin (PNJC), its smart contracts, documentation, websites, social media channels, decentralized applications, or any related ecosystem components.
+
+By acquiring, holding, transferring, exchanging, using, or otherwise interacting with PNJC or any current or future ecosystem features, including potential staking modules, governance mechanisms, treasury systems, charitable initiatives, or decentralized applications, you acknowledge that you have read, understood, and accepted this Legal Disclaimer.
+
+If you do not agree with any provision of this document, you should not interact with the PanjoCoin ecosystem.
+
+---
+
+# 1. Nature of the Project
+
+PanjoCoin (PNJC) is a decentralized ERC-20 token deployed on the Polygon blockchain.
+
+PNJC is designed as a fixed-supply digital asset intended for participation in decentralized ecosystems, community engagement, governance experimentation, charitable initiatives, and other utility-based activities that may be introduced in the future.
+
+The project operates within a decentralized blockchain environment and should not be interpreted as a traditional investment vehicle.
+
+---
+
+# 2. No Securities Offering
+
+PNJC is not intended to constitute:
+
+* a security;
+* a share or ownership interest;
+* a stock or equity instrument;
+* a debt instrument;
+* a collective investment scheme;
+* a derivative contract;
+* a deposit product;
+* legal tender;
+* a regulated financial instrument.
+
+Nothing contained in the Whitepaper, Roadmap, Tokenomics, Technical Specification, website, social channels, GitHub repositories, or other materials constitutes:
+
+* investment advice;
+* financial advice;
+* legal advice;
+* tax advice;
+* solicitation of investment;
+* public offering of securities;
+* promise of future returns.
+
+---
+
+# 3. No Guarantees
+
+No guarantee is made regarding:
+
+* token price;
+* market value;
+* liquidity availability;
+* exchange listings;
+* adoption levels;
+* ecosystem growth;
+* governance participation;
+* future utility development;
+* roadmap completion.
+
+All forward-looking statements represent current intentions only and may change without notice.
+
+---
+
+# 4. Forward-Looking Statements
+
+Project documentation may contain statements relating to future plans, including but not limited to:
+
+* staking systems;
+* governance mechanisms;
+* treasury frameworks;
+* charitable initiatives;
+* decentralized applications;
+* partnerships;
+* ecosystem expansion.
+
+Such statements are aspirational and informational in nature.
+
+They do not constitute guarantees, commitments, contractual obligations, or legally enforceable promises.
+
+Implementation may be delayed, modified, replaced, suspended, or cancelled at any time.
+
+---
+
+# 5. Risk Disclosure
+
+Cryptocurrency and blockchain-based assets involve substantial risks.
+
+Risks include, but are not limited to:
+
+* total loss of value;
+* extreme market volatility;
+* smart contract vulnerabilities;
+* software defects;
+* protocol failures;
+* blockchain congestion;
+* network attacks;
+* governance failures;
+* regulatory changes;
+* loss of wallet access;
+* theft of private keys;
+* user operational errors.
+
+Users assume full responsibility for evaluating and accepting all associated risks.
+
+---
+
+# 6. Technical Disclaimer
+
+Although reasonable efforts may be made to maintain secure and reliable infrastructure, no software system can be guaranteed to be free from vulnerabilities or defects.
+
+The PanjoCoin ecosystem is provided on an:
+
+"AS IS" and "AS AVAILABLE" basis.
+
+No warranties, express or implied, are provided regarding:
+
+* functionality;
+* security;
+* availability;
+* performance;
+* uninterrupted operation;
+* compatibility with third-party services.
+
+---
+
+# 7. Third-Party Services
+
+The project may interact with or reference third-party services including:
+
+* wallets;
+* decentralized exchanges;
+* centralized exchanges;
+* blockchain explorers;
+* analytics platforms;
+* social platforms;
+* infrastructure providers.
+
+The PanjoCoin project does not control such services and accepts no responsibility for their actions, failures, downtime, security incidents, or policies.
+
+---
+
+# 8. Charity Initiatives
+
+PanjoCoin may maintain a Charity Reserve as part of its token allocation model.
+
+The existence of charitable initiatives does not create any legal obligation to conduct specific donations, fund specific organizations, or guarantee any charitable outcomes.
+
+Any charitable activities remain subject to legal, operational, governance, compliance, treasury, and community considerations.
+
+The PNJC token itself is not a charitable organization, foundation, or regulated nonprofit entity.
+
+---
+
+# 9. Regulatory Compliance
+
+Users are solely responsible for ensuring compliance with all laws, regulations, tax requirements, sanctions programs, and digital asset restrictions applicable within their jurisdiction.
+
+The project does not represent that PNJC is lawful in every jurisdiction.
+
+Access to the ecosystem may be restricted where prohibited by applicable law.
+
+---
+
+# 10. User Responsibility
+
+By interacting with PNJC, users represent and warrant that:
+
+* they possess legal capacity under applicable law;
+* they understand the risks of blockchain technology;
+* they are responsible for protecting private keys and wallet credentials;
+* they have conducted their own research (DYOR);
+* they accept full responsibility for their actions and decisions.
+
+---
+
+# 11. Limitation of Liability
+
+To the maximum extent permitted by applicable law, the founders, contributors, developers, maintainers, community participants, and affiliated contributors of the PanjoCoin ecosystem shall not be liable for any direct, indirect, incidental, consequential, special, punitive, or other losses arising from:
+
+* use of PNJC;
+* inability to use PNJC;
+* market losses;
+* smart contract failures;
+* software defects;
+* third-party service failures;
+* regulatory actions;
+* governance decisions;
+* security incidents;
+* blockchain disruptions.
+
+Users interact with the ecosystem entirely at their own risk.
+
+---
+
+# 12. Documentation Hierarchy
+
+In the event of inconsistencies between project documents, the following hierarchy applies:
+
+1. Verified Smart Contract
+2. Technical Specification
+3. Whitepaper
+4. Tokenomics
+5. Roadmap
+6. Informational Materials
+
+The verified smart contract represents the ultimate source of truth regarding on-chain behavior.
+
+---
+
+# 13. Changes to Documentation
+
+This disclaimer may be updated, revised, expanded, or modified as the ecosystem evolves.
+
+Users are responsible for reviewing the latest available version.
+
+Continued interaction with the ecosystem constitutes acceptance of any revisions.
+
+---
+
+# 14. Acceptance
+
+By acquiring, holding, transferring, exchanging, or otherwise interacting with PNJC, users acknowledge that they:
+
+* have read this disclaimer;
+* understand its contents;
+* accept all associated risks;
+* assume full responsibility for their actions;
+* waive claims to the fullest extent permitted by applicable law.
+
+© PanjoCoin (PNJC). All rights reserved.
