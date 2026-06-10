@@ -1,4 +1,4 @@
-📄 PanjoCoin (PNJC) — Official Whitepaper v.9.0
+📄 PanjoCoin (PNJC) — Official Whitepaper
 
  June 11, 2026
  
