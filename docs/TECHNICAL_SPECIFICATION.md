@@ -6,12 +6,12 @@ Version 1.0 — Engineering & Audit Standard
 
 ## 🧾 PROJECT IDENTIFICATION
 
-- Project Name: PanjoCoin (PNJC)
-- Blockchain: Polygon Mainnet
-- Token Standard: ERC-20
-- Extensions: EIP-2612 (Permit), ERC20Burnable
-- Compiler Version: Solidity v0.8.34
-- Supply Model: Fixed Supply (Immutable after deployment)
+* Project Name: PanjoCoin (PNJC)
+* Blockchain: Polygon Mainnet
+* Token Standard: ERC-20
+* Extensions: EIP-2612 (Permit), ERC20Burnable
+* Compiler Version: Solidity v0.8.34
+* Supply Model: Fixed Supply (Immutable after deployment)
 
 ---
 
@@ -28,10 +28,10 @@ https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5
 
 PanjoCoin is a non-upgradeable ERC-20 smart contract deployed on Polygon, designed for:
 
-- decentralized token transfers
-- liquidity-based market interaction
-- gas-optimized approvals (EIP-2612)
-- burn-based supply reduction
+* decentralized token transfers
+* liquidity-based market interaction
+* gas-optimized approvals (EIP-2612)
+* burn-based supply reduction
 
 The architecture follows a **minimal trust, deterministic execution model**.
 
@@ -43,64 +43,74 @@ The architecture follows a **minimal trust, deterministic execution model**.
 
 Implements OpenZeppelin ERC-20 standard functions:
 
-- transfer(address to, uint256 amount)
-- approve(address spender, uint256 amount)
-- transferFrom(address from, address to, uint256 amount)
-- balanceOf(address account)
-- totalSupply()
+* transfer(address to, uint256 amount)
+* approve(address spender, uint256 amount)
+* transferFrom(address from, address to, uint256 amount)
+* balanceOf(address account)
+* totalSupply()
 
 ---
 
 ## 2. PERMIT LAYER (EIP-2612)
 
 ### Functionality:
+
 Allows gasless approvals via signed messages.
 
 ### Flow:
+
 1. User signs off-chain approval message
 2. Signature is submitted on-chain
 3. Contract validates signature via EIP-712 domain separator
 4. Allowance is updated without requiring approve() transaction
 
 ### Benefit:
-- reduces gas costs
-- improves UX
-- enables seamless dApp integration
+
+* reduces gas costs
+* improves UX
+* enables seamless dApp integration
 
 ---
 
 ## 3. BURN MECHANISM (ERC20Burnable)
 
 ### Function:
-- burn(uint256 amount)
+
+* burn(uint256 amount)
 
 ### Behavior:
-- permanently removes tokens from circulation
-- reduces totalSupply()
-- irreversible operation
+
+* permanently removes tokens from circulation
+* reduces totalSupply()
+* irreversible operation
 
 ### Constraints:
-- cannot mint burned tokens back
-- no supply re-expansion mechanism exists
+
+* cannot mint burned tokens back
+* no supply re-expansion mechanism exists
 
 ---
 
 # 🔥 TOKEN SUPPLY MODEL
 
 ## Total Supply:
+
 1,000,000,000,000 PNJC
 
 ## Supply Type:
+
 Fixed (Hard Cap)
 
 ## Mint Logic:
-- No mint function exists
-- No hidden mint role
-- No upgrade path enabling minting
+
+* No mint function exists
+* No hidden mint role
+* No upgrade path enabling minting
 
 ## Burn Logic:
-- voluntary burn only
-- irreversible destruction of tokens
+
+* voluntary burn only
+* irreversible destruction of tokens
 
 ---
 
@@ -108,20 +118,20 @@ Fixed (Hard Cap)
 
 ## Transaction Types Supported:
 
-- Standard ERC-20 transfers
-- Allowance-based transfers (transferFrom)
-- Gasless approvals (permit)
-- Token burning
+* Standard ERC-20 transfers
+* Allowance-based transfers (transferFrom)
+* Gasless approvals (permit)
+* Token burning
 
 ---
 
 ## Execution Characteristics:
 
-- deterministic execution
-- no dynamic fee logic
-- no tax mechanisms
-- no blacklist/whitelist filters
-- no transfer restrictions
+* deterministic execution
+* no dynamic fee logic
+* no tax mechanisms
+* no blacklist/whitelist filters
+* no transfer restrictions
 
 ---
 
@@ -129,10 +139,10 @@ Fixed (Hard Cap)
 
 ## Design Assumptions:
 
-- contract is deployed as final implementation
-- no proxy pattern is used
-- no upgradeable architecture exists
-- no admin override functions exist
+* contract is deployed as final implementation
+* no proxy pattern is used
+* no upgradeable architecture exists
+* no admin override functions exist
 
 ## Result:
 
@@ -148,10 +158,10 @@ The system does not rely on centralized control mechanisms.
 
 ## 2. NO ADMIN PRIVILEGES
 
-- no owner-controlled minting
-- no freeze functions
-- no emergency withdraw logic
-- no privileged transfer overrides
+* no owner-controlled minting
+* no freeze functions
+* no emergency withdraw logic
+* no privileged transfer overrides
 
 ## 3. TRANSPARENT EXECUTION
 
@@ -163,9 +173,9 @@ All operations are fully visible on-chain via Polygon Explorer.
 
 PanjoCoin relies on:
 
-- Polygon Mainnet consensus layer
-- Ethereum Virtual Machine (EVM)
-- Standard wallet infrastructure (MetaMask, WalletConnect, etc.)
+* Polygon Mainnet consensus layer
+* Ethereum Virtual Machine (EVM)
+* Standard wallet infrastructure (MetaMask, WalletConnect, etc.)
 
 No external oracle dependencies exist.
 
@@ -175,10 +185,10 @@ No external oracle dependencies exist.
 
 ## Key Characteristics:
 
-- low gas cost execution (Polygon L2)
-- optimized ERC-20 implementation
-- EIP-2612 reduces approval overhead
-- no complex computation loops
+* low gas cost execution (Polygon L2)
+* optimized ERC-20 implementation
+* EIP-2612 reduces approval overhead
+* no complex computation loops
 
 ---
 
@@ -186,24 +196,24 @@ No external oracle dependencies exist.
 
 ## Potential risks:
 
-- network congestion (Polygon)
-- RPC provider failures
-- wallet-side signature errors
-- user private key compromise
+* network congestion (Polygon)
+* RPC provider failures
+* wallet-side signature errors
+* user private key compromise
 
 ## Contract-level risks:
 
-- none identified within deterministic logic scope
+No critical smart-contract vulnerabilities have been identified during internal review. However, all blockchain systems remain subject to ecosystem, infrastructure, integration, and operational risks.
 
 ---
 
 # 🔄 UPGRADEABILITY STATUS
 
-| Feature | Status |
-|----------|--------|
-| Proxy Pattern | Not used |
+| Feature       | Status          |
+| ------------- | --------------- |
+| Proxy Pattern | Not used        |
 | Upgrade Logic | Not implemented |
-| Admin Upgrade | Impossible |
+| Admin Upgrade | Impossible      |
 
 ---
 
@@ -211,9 +221,9 @@ No external oracle dependencies exist.
 
 All contract interactions are:
 
-- publicly verifiable
-- immutable after execution
-- recorded on-chain permanently
+* publicly verifiable
+* immutable after execution
+* recorded on-chain permanently
 
 Explorer:
 https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5
@@ -224,9 +234,9 @@ https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5
 
 This technical specification defines the lowest-level behavior of:
 
-- Tokenomics
-- Whitepaper
-- Ecosystem documentation
+* Tokenomics
+* Whitepaper
+* Ecosystem documentation
 
 Hierarchy rule applies:
 
@@ -238,10 +248,10 @@ Smart Contract > Technical Specification > Whitepaper > Tokenomics > Roadmap
 
 PanjoCoin (PNJC) is a deterministic, fixed-supply ERC-20 token on Polygon implementing:
 
-- ERC-20 standard compliance
-- EIP-2612 gasless approval system
-- ERC20Burnable deflation mechanism
-- immutable, non-upgradeable architecture
-- zero-admin control model
+* ERC-20 standard compliance
+* EIP-2612 gasless approval system
+* ERC20Burnable deflation mechanism
+* immutable, non-upgradeable architecture
+* zero-admin control model
 
 The system is designed for decentralized trading, transparent accounting, and long-term ecosystem expansion.
