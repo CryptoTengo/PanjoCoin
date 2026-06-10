@@ -1,9 +1,9 @@
 # 📊 PanjoCoin (PNJC) — Official Tokenomics v.1.0
 
 **Version 1.0 | June 10, 2026**  
-*Full compliance with smart contract and Whitepaper v.7.1*  
+*Full compliance with smart contract and Whitepaper v.1*  
 *🐕 Official token of Panjo the Shar Pei in support of SmileDonate (ClownCare)*  
-*✅ 100/100*
+
 
 ---
 
