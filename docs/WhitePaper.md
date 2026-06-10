@@ -70,14 +70,58 @@ At this stage, PNJC functions primarily as a decentralized trading and liquidity
 
 # 5. 🟡 TOKEN DISTRIBUTION MODEL
 
-The token distribution is structured to support liquidity stability and ecosystem growth:
+# 5. 🟡 TOKEN DISTRIBUTION MODEL
 
-* Liquidity Pool: 50%
-* Community & Airdrops: 15%
-* Marketing & Growth: 30–35%
-* Team / Development: 0–5% (optional, vesting-based future structure)
+The PanjoCoin (PNJC) token supply is permanently fixed at:
 
-> Note: Final allocation may be updated as vesting and governance structures are introduced.
+**1,000,000,000,000 PNJC**
+
+No additional tokens can ever be minted after deployment.
+
+The initial allocation is structured to support liquidity, ecosystem growth, community development, governance initiatives, and charitable activities.
+
+| Allocation Category | Percentage |
+| ------------------- | ---------- |
+| Liquidity           | 50%        |
+| Treasury            | 12%        |
+| DAO Treasury        | 10%        |
+| Core Team           | 10%        |
+| Community           | 8%         |
+| Founder             | 5%         |
+| Charity Reserve     | 5%         |
+
+### Allocation Overview
+
+#### Liquidity (50%)
+
+Allocated to decentralized exchange liquidity pools to support trading activity, market accessibility, and ecosystem stability.
+
+#### Treasury (12%)
+
+Reserved for long-term ecosystem development, strategic initiatives, infrastructure expenses, partnerships, and operational growth.
+
+#### DAO Treasury (10%)
+
+Designated for future community-governed initiatives, grants, ecosystem incentives, and decentralized governance programs once the DAO layer is implemented.
+
+#### Core Team (10%)
+
+Allocated for development, maintenance, ecosystem expansion, and long-term project execution. Future vesting mechanisms may be introduced to align incentives with sustainable growth.
+
+#### Community (8%)
+
+Reserved for community incentives, educational initiatives, campaigns, engagement programs, and ecosystem participation rewards.
+
+#### Founder (5%)
+
+Allocated to support project creation, strategic leadership, ecosystem development, and long-term growth initiatives. Future vesting structures may be implemented.
+
+#### Charity Reserve (5%)
+
+Dedicated to charitable, humanitarian, and community-impact initiatives. All transfers from the Charity Reserve are intended to remain publicly verifiable on-chain.
+
+> Note: Future vesting, governance, treasury management, and allocation control mechanisms may be introduced as part of the ecosystem expansion roadmap. Any such implementation will be publicly disclosed and documented.
+
 
 ---
 
