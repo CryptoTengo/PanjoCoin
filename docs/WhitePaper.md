@@ -336,16 +336,19 @@ Expansion to new wards	Quarterly	By DAO decision
 Development Note: As a project led by a solo-founder with AI-assisted infrastructure, our roadmap prioritizes rapid, secure, and iterative deployment. All development milestones are tracked via transparent on-chain deployments and public project documentation.
 
 Phase	Focus Area	Key Milestones	Status
+
 Phase 1	Foundational	Contract deployment, fixed supply, ownership renounced, initial liquidity	✅ Completed
 Phase 2	Security	Deployment of PNJC_LiquidityLocker.sol and PNJC_Timelock.sol for treasury security	🏗 In Progress
 Phase 3	Utility	Launch of PNJC_Staking.sol & CryptoTengo Hub (Web3 dApp dashboard)	📋 Planned
 Phase 4	Governance	Activation of PNJC_Governance.sol & migration to DAO-based multisig treasury	📋 Planned
 Phase 5	Social Impact	Automated SmileDonate integration, on-chain Impact Trails, scaling ClownCare	🔮 Vision
+
 12. 🚀 How to Buy PNJC (with Slippage Settings)
 ⚠️ Before buying: Make sure you are using the official contract address (below). Scammers may create fake tokens. Never enter your seed phrase on third-party websites.
 
 Step-by-Step Guide
 Step	Action	Details
+
 1	Install a wallet	Download MetaMask or Trust Wallet (Polygon support)
 2	Add Polygon network	In MetaMask: Settings → Networks → Add Polygon (PoS)
 3	Buy MATIC and USDT	MATIC for gas fees, USDT to swap for PNJC
@@ -354,6 +357,7 @@ Step	Action	Details
 6	Set Slippage	Click the gear icon (⚙️) in Uniswap → set 1-3% (2% recommended)
 7	Swap USDT → PNJC	Enter amount → confirm in wallet
 8	Add token to wallet	In MetaMask: Import tokens → paste contract address
+
 ⚠️ Important Reminders
 Gas fees are paid in MATIC. Make sure you have at least 1 MATIC in your wallet.
 
@@ -418,7 +422,9 @@ Multisig (3/5)	Multi-signature wallet: 3 out of 5 signatures required for a tran
 Rug-pull	Fraud where creators withdraw all liquidity
 DYOR	Do Your Own Research
 Gas	Transaction fee on a blockchain (on Polygon — in MATIC)
+
 Slippage	Price difference between order placement and execution
+
 16. 📢 Social Channels & Community
 Platform	Link	Content Type
 Twitter (X)	@CryptoTengo	News, memes, announcements
@@ -430,16 +436,21 @@ Reddit	u/cryptotengo	Discussions, AMA
 Instagram	@crypto.tengo	Visual content, memes
 TikTok	@cryptotengo	Viral short videos
 Facebook	cryptotengo	News mirror
+
 ✅ 9 public channels — proof of team's real presence and transparency.
 
 17. ⚠️ Risks & Disclaimers
+
 17.1. Primary Risks
+
 Risk	Probability	Mitigation
 Market volatility	High	0% Tax enables fast entry/exit
 Loss of interest	Medium	Social mission retains audience
 Technical vulnerabilities	Low	OpenZeppelin + verification
 Regulatory risks	Low	Full decentralization (no owner)
+
 17.2. Important Disclaimers
+
 ⚠️ PanjoCoin (PNJC) is NOT:
 
 A security or investment contract
@@ -457,7 +468,9 @@ Understanding all risks of the cryptocurrency market
 No claims against the team in case of financial loss
 
 18. 🏁 Conclusion
+
 18.1. Summary
+
 PanjoCoin (PNJC) is a next-generation meme token that combines:
 
 ✅ Absolute security (no owner, no mint, verified code)
@@ -469,15 +482,18 @@ PanjoCoin (PNJC) is a next-generation meme token that combines:
 ✅ Clear roadmap (Agile Development with 5 phases)
 
 18.2. Final Document Score
+
 Criterion	Score
+
 Technical Implementation	✅ 100%
 Tokenomics	✅ 100%
 Transparency	✅ 100%
 Security	✅ 100%
 Code Compliance	✅ 100%
 Emotional Connection	✅ 100%
-TOTAL	100/100
+
 19. 🔗 Official Links
+
 Smart Contract & Wallets
 Purpose	Address
 Smart Contract (PNJC)	0x781C0d15347Cb0B94C42C65c7a67E70371205De5
@@ -495,7 +511,9 @@ Twitter (X)	@CryptoTengo
 Discord	Invite Link
 Medium	@cryptotengo
 Charity Foundation	SmileDonate (ClownCare program at Iashvili Hospital)
+
 20. 📖 Epilogue
+
 The story of Panjo the Shar Pei does not end on the sidewalk outside the Iashvili Hospital. It continues every time someone buys, sells, or simply holds a PNJC token.
 
 Because now this coin has not only a price. It has a face. A wrinkled, kind, funny face. And the name of a child on the third floor who smiled back.
