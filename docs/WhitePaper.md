@@ -70,8 +70,6 @@ At this stage, PNJC functions primarily as a decentralized trading and liquidity
 
 # 5. 🟡 TOKEN DISTRIBUTION MODEL
 
-# 5. 🟡 TOKEN DISTRIBUTION MODEL
-
 The PanjoCoin (PNJC) token supply is permanently fixed at:
 
 **1,000,000,000,000 PNJC**
