@@ -141,7 +141,7 @@ The following components are currently in design and development phase:
 
 ### 🔹 DAO Governance Layer
 
-* Conceptual governance model for community participation
+* Until DAO governance becomes operational, assets allocated to the DAO Treasury may be held in designated treasury wallets under the project's transparency framework.
 * Voting mechanisms based on token holdings
 * Currently in early design phase
 
@@ -207,7 +207,12 @@ Future security enhancements may include:
 
 A designated portion of supply is allocated for charitable and community initiatives.
 
-* Allocation: 5% of total supply
+* ### Allocation
+
+The Charity Reserve represents **5% of the total PNJC supply** and forms part of the official token allocation model described in the Token Distribution section of this Whitepaper.
+
+The reserve is intended to support charitable, humanitarian, and community-impact initiatives within the broader CryptoTengo ecosystem.
+
 * Wallet-based transparency
 * Distribution managed manually via on-chain transactions
 * Used for community-driven and charitable initiatives within CryptoTengo ecosystem
