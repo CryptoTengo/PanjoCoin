@@ -1,12 +1,12 @@
 # 📄 PanjoCoin (PNJC) — Official Whitepaper
 
-**Version 9.0 | June 11, 2026**
+June 11, 2026**
 
 *Full compliance with smart contract and on-chain distribution*
 
 🐕 **Official token of Panjo the Shar Pei in support of SmileDonate (ClownCare)**
 
-✅ DEX READY | ✅ 100/100
+✅ DEX READY 
 
 ---
 
