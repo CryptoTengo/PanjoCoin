@@ -1,7 +1,9 @@
 📋 Executive Summary of Tokenomics
+
 PanjoCoin (PNJC) tokenomics represents a scarcity-driven deflationary model, fully compliant with the smart contract architecture. The contract implements a pure ERC-20 token with fixed supply, no mint function, no owner (ownership model intentionally excluded by design), with EIP-2612 (Permit) support and burn mechanism.
 
 Principle	Contract Implementation	Advantage
+
 Scarcity	_MAX_TOTAL_SUPPLY = 1T, no mint()	Inflation protection
 Trustless	No Ownable, no owner(). Fixed supply, no admin functions	No centralized control
 0% Tax	No fee mechanisms	Maximum liquidity
