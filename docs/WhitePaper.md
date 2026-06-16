@@ -72,7 +72,7 @@ Today, this story lives on the Polygon blockchain. Every **PNJC** token is not j
 | **Ticker** | PNJC |
 | **Network** | Polygon (PoS) |
 | **Total Supply** | 1,000,000,000,000 (1 trillion) |
-| **Initial Circulation** | ~130 billion (13%) |
+| **Initial Circulation** | Initial Circulating Supply: ~100–130 billion PNJC (~10–13% of total supply) |
 | **Release Mechanism** | Staged (10% initially → +10% of remaining every 6 months) |
 | **Charity Allocation** | 5% allocated to Charity Reserve wallet designated for SmileDonate and ClownCare activities |
 | **Contract Status** | Verified, no owner, no mint |
@@ -137,7 +137,9 @@ uint256 private constant _MAX_TOTAL_SUPPLY = 1_000_000_000_000 * 10**18;
 // No mint() function
 // No Ownable import
 // Inherits: ERC20, ERC20Permit, ERC20Burnable
+
 3.3. Trading Infrastructure
+
 Parameter	Value	Status
 Primary DEX	Uniswap V3	⏳ To be created after launch
 Trading Pair	PNJC / USDT (or PNJC / POL)	⏳ To be created
@@ -146,10 +148,13 @@ Data Aggregators	❌ Applications not submitted	—
 📌 Important clarification: At this stage, the project focuses exclusively on DEX (Uniswap V3). CEX listings and data aggregator applications are not planned until the project proves its viability and achieves sufficient market capitalization.
 
 4. 📊 Tokenomics & Distribution
+
 4.1. Architectural Decision
+
 The PNJC smart contract is a pure ERC-20 token and contains no built-in distribution, vesting, or locking mechanisms. All tokens (1 trillion PNJC) were minted to the initialOwner address at deployment, then immediately distributed across 7 target wallets via on-chain transactions. The deployer address now holds 0 PNJC.
 
 4.2. Final On-Chain Distribution
+
 #	Purpose	Share	Amount (PNJC)	Wallet Address (Polygon)
 1	Liquidity (DEX)	50%	500,000,000,000	0xf55B994FDD7019d8E99c632c76A6e0AdE765988A
 2	Project Treasury	12%	120,000,000,000	0xD539a54f54e9B174F831D9Da6b48ac15441fC581
@@ -178,40 +183,62 @@ text
 ✅ All addresses are verified. Distribution transactions are confirmed on-chain. Every PNJC holder can check any wallet's balance in real time via PolygonScan.
 
 5. 🔄 Staged Market Release Mechanism
-5.1. Core Principle
-At the time of listing (T+0), only 10% of total supply (100 billion PNJC) is in free circulation.
-Every 6 months thereafter, an additional 10% of the remaining locked supply is released to the market.
 
-5.2. Calculation Formula
+5.1. Core Principle
+
+At listing (T+0), approximately 10% of total supply (~100,000,000,000 PNJC) is targeted as initial market liquidity.
+
+However, due to pre-distribution operational transfers executed off-contract prior to listing, the actual circulating supply at T+0 may range up to ~13% (~130,000,000,000 PNJC).
+
+The staged release mechanism applies only to the remaining non-circulating supply at the moment of listing, which is treated as locked and subject to deterministic release rules.
+
+5.2. Mathematical Model
+
 Let:
 
 S_total = 1,000,000,000,000 PNJC
+R_0 = initial circulating supply at T+0
+B_0 = S_total − R_0 (remaining locked supply at T+0)
 
-R_0 = 0.10 × S_total = 100,000,000,000 PNJC (initial release)
+Where:
 
-B_0 = S_total - R_0 = 900,000,000,000 PNJC (initially locked)
+R_0 ≈ 100,000,000,000 PNJC (target)
+B_0 ≈ 900,000,000,000 PNJC (remaining locked baseline)
 
-Every 6 months:
+Every 6 months, the release follows a decaying proportional model:
 
-text
-R_n = 0.10 × B_n-1
-B_n = B_n-1 - R_n
-5.3. Release Schedule (First 3 Years)
-Period	Market Release	Cumulative Release	Remaining Locked
-T+0 (Listing)	100B (10%)	100B (10%)	900B (90%)
-T+6 months	90B (9%)	190B (19%)	810B (81%)
-T+12 months	81B (8.1%)	271B (27.1%)	729B (72.9%)
-T+18 months	72.9B (7.29%)	343.9B (34.39%)	656.1B (65.61%)
-T+24 months	65.61B (6.56%)	409.51B (40.95%)	590.49B (59.05%)
-T+30 months	59.05B (5.90%)	468.56B (46.86%)	531.44B (53.14%)
-T+36 months	53.14B (5.31%)	521.70B (52.17%)	478.30B (47.83%)
-Note: Each release represents 10% of remaining unlocked supply, not fixed percentage of total supply.
-5.4. Advantages of This Model
+R_n = 0.10 × B_(n−1)
+B_n = B_(n−1) − R_n
+
+This means each release is calculated as 10% of the remaining locked supply at that time, not of total supply.
+
+5.3. Release Schedule (First 3 Years — Theoretical Model)
+
+Period	Market Release	Cumulative Circulation	Remaining Locked
+T+0 (Listing)	~100B (10%)	~100–130B (10–13%)	~900B–870B
+T+6 months	90B (9%)	~190–220B	~810B–780B
+T+12 months	81B (8.1%)	~271–301B	~729B–699B
+T+18 months	72.9B (7.29%)	~344–374B	~656B–626B
+T+24 months	65.61B (6.56%)	~409–440B	~590B–560B
+T+30 months	59.05B (5.90%)	~468–499B	~532B–501B
+T+36 months	53.14B (5.31%)	~521–552B	~479B–448B
+
+5.4. Important Structural Clarification
+
+The 10% figure refers to the target initial market liquidity design
+The ~13% upper bound reflects pre-distribution operational execution before listing
+The staged release applies only to remaining non-circulating supply at T+0
+The total supply remains permanently fixed at 1,000,000,000,000 PNJC
+No minting, inflation, or supply expansion occurs at any stage
+
+5.5. Advantages of This Model
+
 Advantage	Description
-No dump at listing	Only 10% of supply on the market initially
-Predictability	Anyone can calculate the schedule
-Exponential deceleration	Each subsequent release is smaller
-Team alignment	Team and Founder follow the same schedule
+No listing dump pressure	Controlled initial circulation (~10–13%)
+Predictable emissions	Deterministic mathematical decay model
+Exponential deceleration	Each release is smaller than the previous
+Long-term alignment	Supply unlock aligns with ecosystem growth
+Transparent design	Fully verifiable on-chain supply behavior
 6. 🔒 Investor Protection Mechanisms
 6.1. Liquidity Lock (Planned)
 Parameter	Value
