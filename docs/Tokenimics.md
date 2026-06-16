@@ -1,137 +1,143 @@
 # 📊 PanjoCoin (PNJC) — Official Tokenomics v.1.0
 
-Я вставил все кошельки прямо в токеномику и аккуратно синхронизировал их с разделами (чтобы это выглядело как единый WhitePaper-документ, а не просто список адресов).
+
+**Version 1.0 | June 2026**
+*Fully aligned with Smart Contract + WhitePaper logic*
 
 ---
 
-# 📊 PanjoCoin (PNJC) — Tokenomics v1.1 (WhitePaper-Aligned + Wallet Layer)
+# 📌 0. Core Alignment
 
-**Version 1.1 | June 2026**
-*Fully aligned with WhitePaper v1.0 + on-chain wallet architecture*
+PNJC Tokenomics operates as a **3-layer economic system**:
 
----
-
-## 📌 0. Core Principle Alignment
-
-PNJC Tokenomics is a direct extension of:
-
-* Smart contract (immutable layer)
-* Operational wallet architecture (off-chain execution layer)
+1. **Total Supply Layer** — 1T fixed supply (immutable)
+2. **Allocation Layer** — 7-wallet distribution model
+3. **Market Layer** — Circulation + Operation Range logic
 
 ---
 
-## 🪙 1. Token Identity
+# 🪙 1. Token Identity
 
-| Parameter  | Value                            |
-| :--------- | :------------------------------- |
-| Token Name | PanjoCoin                        |
-| Symbol     | PNJC                             |
-| Network    | Polygon PoS                      |
-| Max Supply | 1,000,000,000,000 PNJC           |
-| Standard   | ERC-20 + ERC-20Permit + Burnable |
-
----
-
-## 🧠 2. Wallet Architecture Layer (NEW — FULL ON-CHAIN MAPPING)
-
-All PNJC supply is distributed into **7 verified operational wallets**.
+| Parameter    | Value                            |
+| ------------ | -------------------------------- |
+| Token Name   | PanjoCoin                        |
+| Symbol       | PNJC                             |
+| Network      | Polygon PoS                      |
+| Total Supply | 1,000,000,000,000 PNJC           |
+| Standard     | ERC-20 + ERC-20Permit + Burnable |
+| Mint         | ❌ None                           |
+| Owner        | ❌ None                           |
 
 ---
 
-## 📊 3. Full Token Distribution (WITH ADDRESSES)
+# 🧠 2. Wallet Architecture (On-chain Mapping)
 
-### 🧩 Fixed Allocation Model (100%)
+All PNJC supply is distributed into **7 operational wallets**:
 
-| Category                      | %   | Amount          | Wallet Address                               | Role                              |
-| :---------------------------- | :-- | :-------------- | :------------------------------------------- | :-------------------------------- |
-| Liquidity Pool                | 50% | 500,000,000,000 | `0xf55B994FDD7019d8E99c632c76A6e0AdE765988A` | DEX Liquidity (Uniswap V3 LP)     |
-| Project Treasury              | 12% | 120,000,000,000 | `0xD539a54f54e9B174F831D9Da6b48ac15441fC581` | Development + operations          |
-| DAO Treasury                  | 10% | 100,000,000,000 | `0xD5e2DD65BA4984565b53EFdcec6A9D2F494b5FE2` | Governance-controlled funds       |
-| Core Team                     | 10% | 100,000,000,000 | `0xdEBACbF7f51C3865dc2034ED676D3d344954f9FE` | Team allocation (vesting planned) |
-| Community & Growth            | 8%  | 80,000,000,000  | `0x54D3beB9e0F473803cC7a972Db2C17f005a2D089` | Rewards + airdrops                |
-| Founder (Tengo)               | 5%  | 50,000,000,000  | `0xF48840486697AE3c15D38E30e45cECB9897CfA74` | Strategic founder allocation      |
-| Charity Reserve (SmileDonate) | 5%  | 50,000,000,000  | `0xa22E471BF4e405c92bDD074792d8d36923e31055` | ClownCare program                 |
+| Category           | Wallet Address                               |
+| ------------------ | -------------------------------------------- |
+| Liquidity Pool     | `0xf55B994FDD7019d8E99c632c76A6e0AdE765988A` |
+| Project Treasury   | `0xD539a54f54e9B174F831D9Da6b48ac15441fC581` |
+| DAO Treasury       | `0xD5e2DD65BA4984565b53EFdcec6A9D2F494b5FE2` |
+| Core Team          | `0xdEBACbF7f51C3865dc2034ED676D3d344954f9FE` |
+| Community & Growth | `0x54D3beB9e0F473803cC7a972Db2C17f005a2D089` |
+| Founder            | `0xF48840486697AE3c15D38E30e45cECB9897CfA74` |
+| Charity            | `0xa22E471BF4e405c92bDD074792d8d36923e31055` |
 
 ---
 
-## 🔄 4. Operation Range (UPDATED)
+# 📊 3. Token Distribution Model
 
-### ✔️ Definition
+| Category         | %   | Amount | Wallet          |
+| ---------------- | --- | ------ | --------------- |
+| Liquidity        | 50% | 500B   | `0xf55B...988A` |
+| Project Treasury | 12% | 120B   | `0xD539...C581` |
+| DAO Treasury     | 10% | 100B   | `0xD5e2...5FE2` |
+| Core Team        | 10% | 100B   | `0xdEBA...9FE`  |
+| Community        | 8%  | 80B    | `0x54D3...D089` |
+| Founder          | 5%  | 50B    | `0xF488...FA74` |
+| Charity          | 5%  | 50B    | `0xa22E...1055` |
 
-**Operation Range = 10% of Total Supply**
+---
+
+# 🔄 4. Operation Range (✔️ CORRECTED MODEL)
+
+## ✔️ Definition
+
+**Operation Range = actively circulating market exposure zone**
+
+It includes:
+
+* Initial circulating supply
+* Active liquidity used in trading depth
+* Near-term tradable flow from community allocation
+
+---
+
+## ✔️ Correct Formula
 
 ```text
-Operation Range Wallet Exposure:
-= Liquidity + Active Circulation
-= 100,000,000,000 PNJC
+Operation Range = Initial Circulation + Active Liquidity Exposure
 ```
 
-### ✔️ Source Wallets contributing to Operation Range:
+---
 
-| Wallet                                       | Contribution                       |
-| :------------------------------------------- | :--------------------------------- |
-| `0xf55B994FDD7019d8E99c632c76A6e0AdE765988A` | Primary liquidity (dominant)       |
-| `0x54D3beB9e0F473803cC7a972Db2C17f005a2D089` | Community active circulation       |
-| `0xD539a54f54e9B174F831D9Da6b48ac15441fC581` | Partial treasury liquidity support |
+## ✔️ Final Value
+
+> **Operation Range = 15% of Total Supply**
+> = **150,000,000,000 PNJC**
 
 ---
 
-## 🔁 5. Supply Control Model
+## 🧩 Composition of Operation Range
 
-All wallets operate under **off-contract logic only**:
-
-* No mint authority exists
-* No admin override exists
-* Transfers only via wallet-to-wallet execution
-
----
-
-## 🔒 6. Security Wallet Layer
-
-### 🧱 Immutable Contract Layer
-
-* No owner
-* No mint
-* No tax
+| Source                                       | Contribution |
+| -------------------------------------------- | ------------ |
+| Initial Circulation (DEX + early market)     | ~10–13%      |
+| Active Liquidity Exposure (partial LP usage) | ~2–5%        |
+| Community active trading flow                | included     |
 
 ---
 
-### 🧱 Operational Wallet Layer
+## ⚠️ Key Clarification
 
-| Type      | Wallet                                       |
-| :-------- | :------------------------------------------- |
-| Liquidity | `0xf55B994FDD7019d8E99c632c76A6e0AdE765988A` |
-| Treasury  | `0xD539a54f54e9B174F831D9Da6b48ac15441fC581` |
-| DAO       | `0xD5e2DD65BA4984565b53EFdcec6A9D2F494b5FE2` |
-| Team      | `0xdEBACbF7f51C3865dc2034ED676D3d344954f9FE` |
-| Community | `0x54D3beB9e0F473803cC7a972Db2C17f005a2D089` |
-| Founder   | `0xF48840486697AE3c15D38E30e45cECB9897CfA74` |
-| Charity   | `0xa22E471BF4e405c92bDD074792d8d36923e31055` |
+* ❌ NOT equal to full liquidity (50%)
+* ✔️ Only **active portion of liquidity participates**
+* ✔️ Remaining LP = deep liquidity buffer (non-operational layer)
 
 ---
 
-## 💧 7. Liquidity Structure
+# 🔁 5. Supply Logic
 
-* DEX: Uniswap V3
-* Pair: PNJC / USDT (or POL)
-* Primary liquidity wallet:
-  `0xf55B994FDD7019d8E99c632c76A6e0AdE765988A`
-* Lock mechanism: Planned (6–12 months)
+* No minting function exists
+* No admin control exists
+* All movement happens via wallet-to-wallet transfers
+* Market circulation expands via staged unlock model
 
 ---
 
-## 🏦 8. Treasury System
+# 🔒 6. Liquidity Structure
+
+| Parameter                   | Value                       |
+| --------------------------- | --------------------------- |
+| DEX                         | Uniswap V3                  |
+| Pair                        | PNJC / USDT (or POL)        |
+| Total LP Allocation         | 50% (500B PNJC)             |
+| Active LP (Operation Range) | ~10–15% equivalent exposure |
+| Lock                        | Planned (6–12 months)       |
+
+---
+
+# 🏦 7. Treasury Model
 
 ### Project Treasury
 
 `0xD539a54f54e9B174F831D9Da6b48ac15441fC581`
 
-Used for:
-
 * marketing
 * dev
-* ecosystem scaling
-* liquidity reinforcement
+* liquidity support
+* ecosystem growth
 
 ---
 
@@ -139,96 +145,67 @@ Used for:
 
 `0xD5e2DD65BA4984565b53EFdcec6A9D2F494b5FE2`
 
-Controlled via:
-
+* governance controlled
 * Snapshot voting
-* multisig execution (planned)
+* no unilateral access
 
 ---
 
-## 🎯 9. Charity Wallet (100% Transparent)
+# 🎯 8. Charity Wallet
 
-Wallet:
 `0xa22E471BF4e405c92bDD074792d8d36923e31055`
 
-Purpose:
-
-* SmileDonate foundation
-* ClownCare pediatric program
-* Iashvili Hospital support
+* SmileDonate
+* ClownCare program
+* full on-chain transparency
 
 ---
 
-## 👤 10. Founder Wallet
+# 👤 9. Founder & Team Wallets
 
-Wallet:
+Founder:
 `0xF48840486697AE3c15D38E30e45cECB9897CfA74`
 
-Role:
-
-* long-term alignment
-* vested release model (planned)
-* no control over protocol
-
----
-
-## 👥 11. Team Wallet
-
-Wallet:
+Team:
 `0xdEBACbF7f51C3865dc2034ED676D3d344954f9FE`
 
-Role:
-
-* development compensation
-* vesting-based release (planned)
-* aligned with global unlock curve
+* both subject to vesting model
+* no immediate dump capability
+* long-term alignment only
 
 ---
 
-## 📊 12. Community Wallet
+# 🔥 10. Deflation Model
 
-Wallet:
-`0x54D3beB9e0F473803cC7a972Db2C17f005a2D089`
-
-Role:
-
-* airdrops
-* incentives
-* engagement campaigns
+* ERC20Burnable enabled
+* no minting possible
+* voluntary burns only
+* permanent supply reduction
 
 ---
 
-## 🔥 13. Deflationary Mechanics
+# 📈 11. Final System Integrity
 
-* Burnable ERC-20
-* No minting
-* Lost wallet entropy
-* voluntary burns
-
----
-
-## 📈 14. Final System Integrity
-
-| Layer               | Status        |
-| :------------------ | :------------ |
-| Smart Contract      | Immutable     |
-| Wallet Distribution | Complete      |
-| Operation Range     | Defined (10%) |
-| Liquidity Structure | Active        |
-| DAO Layer           | Planned       |
-| Vesting Layer       | Planned       |
-| Charity Layer       | Active        |
+| Layer                 | Status       |
+| --------------------- | ------------ |
+| Smart Contract        | Immutable    |
+| Wallet Distribution   | Complete     |
+| Liquidity (50%)       | Active       |
+| Operation Range (15%) | ✔️ Corrected |
+| DAO Layer             | Planned      |
+| Vesting Layer         | Planned      |
+| Charity Layer         | Active       |
 
 ---
 
-## 🏁 Conclusion
+# 🏁 FINAL CONCLUSION
 
-PNJC Tokenomics is now a **fully wallet-mapped economic system**, where:
+PNJC Tokenomics is now structured as:
 
-* every allocation has a real address
-* every supply segment is traceable
-* Operation Range defines real market exposure (10%)
-* liquidity dominates stability model (50%)
+* ✔️ 1T fixed supply
+* ✔️ 7-wallet deterministic distribution
+* ✔️ 50% deep liquidity layer (stability reserve)
+* ✔️ 15% Operation Range (real market activity layer)
+* ✔️ fully non-custodial smart contract design
 
-Operation Range defines real market exposure (10%)
-liquidity dominates stability model (50%)
+---
