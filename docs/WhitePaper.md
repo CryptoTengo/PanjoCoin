@@ -159,6 +159,7 @@ The PNJC smart contract is a pure ERC-20 token and contains no built-in distribu
 6	Founder (Tengo)	5%	50,000,000,000	0xF48840486697AE3c15D38E30e45cECB9897CfA74
 7	Charity Reserve (SmileDonate)	5%	50,000,000,000	0xa22E471BF4e405c92bDD074792d8d36923e31055
 TOTAL	100%	1,000,000,000,000	All wallets public
+Note: Allocation is off-contract and executed via on-chain transfers and planned vesting/locking mechanisms.
 4.3. Distribution Visualization
 text
 ┌─────────────────────────────────────────────────────────────────┐
@@ -204,6 +205,7 @@ T+18 months	72.9B (7.29%)	343.9B (34.39%)	656.1B (65.61%)
 T+24 months	65.61B (6.56%)	409.51B (40.95%)	590.49B (59.05%)
 T+30 months	59.05B (5.90%)	468.56B (46.86%)	531.44B (53.14%)
 T+36 months	53.14B (5.31%)	521.70B (52.17%)	478.30B (47.83%)
+Note: Each release represents 10% of remaining unlocked supply, not fixed percentage of total supply.
 5.4. Advantages of This Model
 Advantage	Description
 No dump at listing	Only 10% of supply on the market initially
@@ -215,11 +217,10 @@ Team alignment	Team and Founder follow the same schedule
 Parameter	Value
 Wallet	0xf55B994FDD7019d8E99c632c76A6e0AdE765988A
 Volume	500,000,000,000 PNJC (50% of supply)
-Initial LP Release	50 billion (10% of Liquidity Wallet)
-Lock Platform	Unicrypt / PinkSale
+Initial LP Release: 50 billion PNJC (10% of total supply; 10% of liquidity allocation wallet)                                                                   Lock Platform	Unicrypt / PinkSale
 Lock Duration	6–12 months from DEX launch
 Status	⏳ Planned — to be executed at DEX launch
-✅ Value to investors: Once locked, liquidity remains on DEX regardless of any individual wallet compromises.
+✅ Value to investors: Once implemented and locked, liquidity is intended to remain on DEX and is not directly controlled by project wallets during lock period.
 
 6.2. Vesting (Team + Founder)
 Parameter	Value
@@ -275,7 +276,7 @@ Inflationary staking	❌ Absent
 Parameter	Value
 DEX	Uniswap V3
 Trading Pair	PNJC / USDT (or PNJC / POL)
-Initial Liquidity	50 billion PNJC + equivalent in stablecoins
+Initial Liquidity: 50 billion PNJC (initial tranche from 500B liquidity allocation)
 Fee Tier	0.05% or 0.30%
 Lock	6–12 months via Unicrypt/PinkSale
 Status	⏳ Planned — to be executed at DEX launch
