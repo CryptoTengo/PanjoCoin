@@ -1,196 +1,191 @@
-# TOKEN DISTRIBUTION — PanjoCoin (PNJC)
+# 📊 TOKEN DISTRIBUTION — PanjoCoin (PNJC)
 
-Version 1.0
+**June 13, 2026**
 
----
-
-# Overview
-
-This document defines the allocation structure of the total PanjoCoin (PNJC) supply.
-
-The purpose of this allocation model is to provide transparency regarding token distribution, treasury management, ecosystem development, and charitable initiatives.
-
-Total Supply is permanently fixed and cannot be increased.
+Strictly aligned with Official Tokenomics v1.0 & WhitePaper v1.0
 
 ---
 
-## Total Supply
+# 📌 1. Overview
+
+This document defines the **on-chain allocation and distribution structure** of PanjoCoin (PNJC).
+
+All allocations are fixed, pre-defined at genesis, and fully derived from the deployed smart contract supply model.
+
+Total supply is:
 
 **1,000,000,000,000 PNJC**
 
-Supply Type:
+---
 
-* Fixed Supply
-* Non-Inflationary
-* No Mint Function
-* Immutable after Deployment
+# 🪙 2. Total Supply Allocation
+
+The entire supply is permanently distributed into seven on-chain allocation wallets.
+
+| Category         | Allocation % | Amount (PNJC)   |
+| ---------------- | ------------ | --------------- |
+| Liquidity        | 50%          | 500,000,000,000 |
+| Project Treasury | 12%          | 120,000,000,000 |
+| DAO Treasury     | 10%          | 100,000,000,000 |
+| Core Team        | 10%          | 100,000,000,000 |
+| Community        | 8%           | 80,000,000,000  |
+| Founder          | 5%           | 50,000,000,000  |
+| Charity          | 5%           | 50,000,000,000  |
 
 ---
 
-# Supply Allocation
+# 🔒 3. Allocation Principles
 
-| Category                     | Allocation | Amount (PNJC)   |
-| ---------------------------- | ---------- | --------------- |
-| Ecosystem Treasury Reserve   | 90%        | 900,000,000,000 |
-| Charity Reserve              | 5%         | 50,000,000,000  |
-| Initial DEX Liquidity        | 3%         | 30,000,000,000  |
-| Community Growth & Marketing | 2%         | 20,000,000,000  |
+## 3.1 Fixed Genesis Distribution
 
----
+All tokens are allocated at deployment.
 
-# 1. Ecosystem Treasury Reserve (90%)
-
-Allocation:
-
-**900,000,000,000 PNJC**
-
-Purpose:
-
-* future ecosystem development
-* treasury operations
-* strategic liquidity support
-* staking incentives (if implemented)
-* ecosystem expansion
-
-Current Status:
-
-* reserved
-* controlled by treasury wallet(s)
-* intended for gradual long-term distribution
-
-Important:
-
-This allocation does not represent circulating supply.
+* No minting after deployment
+* No reallocation between wallets
+* No discretionary issuance
 
 ---
 
-# 2. Charity Reserve (5%)
+## 3.2 On-Chain Transparency
 
-Allocation:
+Each allocation wallet is:
 
-**50,000,000,000 PNJC**
-
-Purpose:
-
-* humanitarian initiatives
-* pediatric healthcare support
-* medical assistance programs
-* social impact activities
-
-Execution Model:
-
-* off-chain implementation
-* on-chain transparency
-* no automated donation smart contract
-
-Important:
-
-Allocation does not guarantee charitable outcomes.
-
-All future charitable activity remains subject to available resources, governance decisions (if implemented), and legal requirements.
+* Publicly verifiable on-chain
+* Immutable in structure
+* Bound to the original genesis distribution
 
 ---
 
-# 3. Initial DEX Liquidity (3%)
+## 3.3 Liquidity Allocation
 
-Allocation:
+**50% of total supply (500B PNJC)**
 
-**30,000,000,000 PNJC**
+Dedicated to liquidity provisioning on decentralized exchanges.
 
-Purpose:
+This ensures:
 
-* creation of liquidity pools
-* support for decentralized trading
-* reduction of market slippage
-* initial market formation
-
-Possible Liquidity Pairs:
-
-* PNJC / USDC
-* PNJC / POL
-
-Important:
-
-Liquidity management may evolve over time based on market conditions.
+* Market accessibility
+* Trading depth
+* Initial price discovery stability
 
 ---
 
-# 4. Community Growth & Marketing (2%)
+## 3.4 Project Treasury
 
-Allocation:
+**12% of total supply (120B PNJC)**
 
-**20,000,000,000 PNJC**
+Allocated for:
 
-Purpose:
-
-* community development
-* ecosystem awareness
-* educational campaigns
-* promotional activities
-* partnership initiatives
-
-Objective:
-
-Support long-term growth of the PanjoCoin ecosystem.
+* Infrastructure development
+* Ecosystem maintenance
+* Operational expenses
 
 ---
 
-# Circulating Supply
+## 3.5 DAO Treasury
 
-Circulating supply depends on actual token distribution and market availability.
+**10% of total supply (100B PNJC)**
 
-Allocated tokens are not automatically considered circulating.
+Reserved for future decentralized coordination mechanisms.
 
----
-
-# Distribution Principles
-
-PanjoCoin follows the following allocation principles:
-
-1. Transparency
-2. Long-term sustainability
-3. Responsible treasury management
-4. Community-oriented growth
-5. Public on-chain accountability
+Funds remain on-chain and transparent.
 
 ---
 
-# Allocation Changes
+## 3.6 Core Team Allocation
 
-The total supply cannot be changed.
+**10% of total supply (100B PNJC)**
 
-Future redistribution between categories may occur only through transparent ecosystem decisions and public disclosure.
+Allocated to contributors responsible for:
 
-No additional tokens can ever be created.
-
----
-
-# Relation to Documentation Hierarchy
-
-This document is subordinate to the deployed smart contract.
-
-Hierarchy:
-
-Smart Contract > Technical Specification > Whitepaper > Token Distribution > Roadmap
-
-In case of conflict, the Smart Contract remains the ultimate authority.
+* Protocol deployment
+* Technical development
+* Ecosystem support
 
 ---
 
-# Final Statement
+## 3.7 Community Allocation
 
-The PanjoCoin allocation model is designed to balance:
+**8% of total supply (80B PNJC)**
 
-* ecosystem sustainability
-* market liquidity
-* community development
-* charitable initiatives
+Dedicated to:
 
-while preserving a fixed-supply and non-inflationary token economy.
+* Community growth initiatives
+* Engagement programs
+* Ecosystem participation incentives
 
 ---
 
-Last Updated: June 2026
+## 3.8 Founder Allocation
 
-PanjoCoin (PNJC)
-Polygon Network
+**5% of total supply (50B PNJC)**
+
+Allocated to the original project initiator.
+
+No additional privileges or control rights are attached.
+
+---
+
+## 3.9 Charity Allocation
+
+**5% of total supply (50B PNJC)**
+
+Dedicated to charitable support initiatives aligned with the Panjo narrative, including support of children’s healthcare and SmileDonate (ClownCare) initiatives.
+
+Funds are transparently managed on-chain.
+
+---
+
+# 🔄 4. Distribution Summary
+
+The distribution model is fully balanced:
+
+* Liquidity: dominant market-facing allocation
+* Treasury layers: operational and ecosystem sustainability
+* Community: engagement and growth
+* Charity: narrative-aligned impact layer
+* Founder & Team: fixed contribution-based allocation
+
+---
+
+# 📊 5. Structural Properties
+
+* Total Supply: Fixed
+* Inflation: None
+* Re-minting: Impossible
+* Redistribution: Not permitted
+* Off-chain issuance: Not applicable
+* Central authority control: None
+
+---
+
+# 🎭 6. Conceptual Integrity
+
+The distribution structure reflects the core philosophy of PanjoCoin:
+
+* Emotional narrative (Panjo story)
+* Transparent blockchain allocation
+* Fixed-supply economic design
+* Non-custodial and verifiable structure
+
+---
+
+# ⚠️ 7. Disclaimer
+
+This document is informational only and does not constitute financial, investment, legal, or tax advice.
+
+Participation in PNJC involves risk and should be undertaken independently by each holder.
+
+---
+
+# ✅ Summary
+
+PanjoCoin (PNJC) distribution model:
+
+* Fixed supply: 1,000,000,000,000 PNJC
+* 7 allocation wallets
+* 100% on-chain distribution
+* No minting or reallocation
+* Fully transparent structure
+
+This distribution system ensures predictable supply allocation and full traceability of token flow from genesis onward.
