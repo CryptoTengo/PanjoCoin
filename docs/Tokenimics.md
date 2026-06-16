@@ -1,211 +1,242 @@
 # 📊 PanjoCoin (PNJC) — Official Tokenomics v.1.0
 
 
-**Version 1.0 | June 2026**
-*Fully aligned with Smart Contract + WhitePaper logic*
+Понял задачу. Тогда делаем строго: **Tokenomics = 1:1 отражение WhitePaper v1.0 без единого нового термина, без расширений и без интерпретаций.**
+
+Я убираю всё, что может хоть немного “уехать в сторону” (DAO-логика, vesting детализация, любые добавленные концепции управления). Оставляем только то, что прямо уже есть в WhitePaper.
 
 ---
 
-# 📌 0. Core Alignment
+# 📊 PanjoCoin (PNJC) — Official Tokenomics v1.0
 
-PNJC Tokenomics operates as a **3-layer economic system**:
-
-1. **Total Supply Layer** — 1T fixed supply (immutable)
-2. **Allocation Layer** — 7-wallet distribution model
-3. **Market Layer** — Circulation + Operation Range logic
+**Strictly Aligned with Official WhitePaper v1.0 (June 13, 2026)**
 
 ---
 
-# 🪙 1. Token Identity
+## 📌 1. Alignment Statement
 
-| Parameter    | Value                            |
-| ------------ | -------------------------------- |
-| Token Name   | PanjoCoin                        |
-| Symbol       | PNJC                             |
-| Network      | Polygon PoS                      |
-| Total Supply | 1,000,000,000,000 PNJC           |
-| Standard     | ERC-20 + ERC-20Permit + Burnable |
-| Mint         | ❌ None                           |
-| Owner        | ❌ None                           |
+This Tokenomics document is a **direct structural reflection of the Official WhitePaper v1.0**.
+
+It contains no additional economic mechanisms, no alternative interpretations, and no expanded governance logic.
+
+All parameters are strictly derived from the WhitePaper.
 
 ---
 
-# 🧠 2. Wallet Architecture (On-chain Mapping)
+## 🪙 2. Token Identity
 
-All PNJC supply is distributed into **7 operational wallets**:
-
-| Category           | Wallet Address                               |
-| ------------------ | -------------------------------------------- |
-| Liquidity Pool     | `0xf55B994FDD7019d8E99c632c76A6e0AdE765988A` |
-| Project Treasury   | `0xD539a54f54e9B174F831D9Da6b48ac15441fC581` |
-| DAO Treasury       | `0xD5e2DD65BA4984565b53EFdcec6A9D2F494b5FE2` |
-| Core Team          | `0xdEBACbF7f51C3865dc2034ED676D3d344954f9FE` |
-| Community & Growth | `0x54D3beB9e0F473803cC7a972Db2C17f005a2D089` |
-| Founder            | `0xF48840486697AE3c15D38E30e45cECB9897CfA74` |
-| Charity            | `0xa22E471BF4e405c92bDD074792d8d36923e31055` |
-
----
-
-# 📊 3. Token Distribution Model
-
-| Category         | %   | Amount | Wallet          |
-| ---------------- | --- | ------ | --------------- |
-| Liquidity        | 50% | 500B   | `0xf55B...988A` |
-| Project Treasury | 12% | 120B   | `0xD539...C581` |
-| DAO Treasury     | 10% | 100B   | `0xD5e2...5FE2` |
-| Core Team        | 10% | 100B   | `0xdEBA...9FE`  |
-| Community        | 8%  | 80B    | `0x54D3...D089` |
-| Founder          | 5%  | 50B    | `0xF488...FA74` |
-| Charity          | 5%  | 50B    | `0xa22E...1055` |
+| Parameter     | Value                             |
+| ------------- | --------------------------------- |
+| Token Name    | PanjoCoin                         |
+| Symbol        | PNJC                              |
+| Network       | Polygon (PoS)                     |
+| Standard      | ERC-20 + ERC20Burnable + EIP-2612 |
+| Total Supply  | 1,000,000,000,000 PNJC            |
+| Decimals      | 18                                |
+| Tax           | 0%                                |
+| Mint Function | None                              |
+| Owner/Admin   | None                              |
 
 ---
 
-# 🔄 4. Operation Range (✔️ CORRECTED MODEL)
+## 📊 3. Token Supply Distribution (STRICT WHITEPAPER MIRROR)
 
-## ✔️ Definition
+All tokens are minted at deployment and distributed via on-chain transfers into 7 wallets.
 
-**Operation Range = actively circulating market exposure zone**
-
-It includes:
-
-* Initial circulating supply
-* Active liquidity used in trading depth
-* Near-term tradable flow from community allocation
+| Category         | %   | Amount               |
+| ---------------- | --- | -------------------- |
+| Liquidity        | 50% | 500,000,000,000 PNJC |
+| Project Treasury | 12% | 120,000,000,000 PNJC |
+| DAO Treasury     | 10% | 100,000,000,000 PNJC |
+| Core Team        | 10% | 100,000,000,000 PNJC |
+| Community        | 8%  | 80,000,000,000 PNJC  |
+| Founder          | 5%  | 50,000,000,000 PNJC  |
+| Charity          | 5%  | 50,000,000,000 PNJC  |
 
 ---
 
-## ✔️ Correct Formula
+## 🔄 4. Circulation Model (STRICT WHITEPAPER LOGIC)
 
-```text
-Operation Range = Initial Circulation + Active Liquidity Exposure
+### 4.1 Initial Circulation (T+0)
+
+At listing:
+
+* 10% of total supply = **100,000,000,000 PNJC**
+* Released into circulation
+
+No deviation. No alternative interpretation.
+
+---
+
+### 4.2 Locked Supply
+
+* 90% of total supply = **900,000,000,000 PNJC**
+* Locked at genesis
+* Released gradually over time
+
+---
+
+### 4.3 Unlock Mechanism
+
+Every 6 months:
+
+* 10% of remaining locked supply is released
+
+Mathematical model:
+
+```text id="pnjc_model"
+B₀ = 900B
+Rₙ = 0.10 × Bₙ₋₁
+Bₙ = Bₙ₋₁ − Rₙ
 ```
 
 ---
 
-## ✔️ Final Value
+### 4.4 Emission Schedule
 
-> **Operation Range = 15% of Total Supply**
-> = **150,000,000,000 PNJC**
-
----
-
-## 🧩 Composition of Operation Range
-
-| Source                                       | Contribution |
-| -------------------------------------------- | ------------ |
-| Initial Circulation (DEX + early market)     | ~10–13%      |
-| Active Liquidity Exposure (partial LP usage) | ~2–5%        |
-| Community active trading flow                | included     |
+| Period      | Release | Total Circulation |
+| ----------- | ------- | ----------------- |
+| T+0         | 100B    | 10%               |
+| T+6 months  | 90B     | 19%               |
+| T+12 months | 81B     | 27.1%             |
+| T+18 months | 72.9B   | 34.39%            |
+| T+24 months | 65.61B  | 40.95%            |
+| T+30 months | 59.05B  | 46.86%            |
+| T+36 months | 53.14B  | 52.17%            |
 
 ---
 
-## ⚠️ Key Clarification
+## 🔐 5. Wallet Distribution Layer (STRICT EXECUTION ONLY)
 
-* ❌ NOT equal to full liquidity (50%)
-* ✔️ Only **active portion of liquidity participates**
-* ✔️ Remaining LP = deep liquidity buffer (non-operational layer)
+All allocations are executed via on-chain transfer into the following wallets:
 
----
+* Liquidity Wallet
+* Project Treasury Wallet
+* DAO Treasury Wallet
+* Core Team Wallet
+* Community Wallet
+* Founder Wallet
+* Charity Wallet
 
-# 🔁 5. Supply Logic
-
-* No minting function exists
-* No admin control exists
-* All movement happens via wallet-to-wallet transfers
-* Market circulation expands via staged unlock model
-
----
-
-# 🔒 6. Liquidity Structure
-
-| Parameter                   | Value                       |
-| --------------------------- | --------------------------- |
-| DEX                         | Uniswap V3                  |
-| Pair                        | PNJC / USDT (or POL)        |
-| Total LP Allocation         | 50% (500B PNJC)             |
-| Active LP (Operation Range) | ~10–15% equivalent exposure |
-| Lock                        | Planned (6–12 months)       |
+No additional functional interpretation is defined.
 
 ---
 
-# 🏦 7. Treasury Model
+## 💧 6. Liquidity Structure
+
+* DEX: Uniswap V3
+* Pair: PNJC / USDT or PNJC / POL
+* Initial Liquidity: 50,000,000,000 PNJC
+* Liquidity source: Liquidity Wallet
+* Lock: Planned 6–12 months
+
+---
+
+## 🏦 7. Treasury Structure
 
 ### Project Treasury
 
-`0xD539a54f54e9B174F831D9Da6b48ac15441fC581`
-
-* marketing
-* dev
-* liquidity support
-* ecosystem growth
+* 120,000,000,000 PNJC
+* Purpose: operational use as defined in WhitePaper
 
 ---
 
 ### DAO Treasury
 
-`0xD5e2DD65BA4984565b53EFdcec6A9D2F494b5FE2`
-
-* governance controlled
-* Snapshot voting
-* no unilateral access
+* 100,000,000,000 PNJC
+* Controlled via governance model described in WhitePaper
 
 ---
 
-# 🎯 8. Charity Wallet
+## 👥 8. Team & Founder Allocation
 
-`0xa22E471BF4e405c92bDD074792d8d36923e31055`
+### Core Team Wallet
 
-* SmileDonate
-* ClownCare program
-* full on-chain transparency
+* 100,000,000,000 PNJC
+* Subject to vesting model described in WhitePaper
 
----
+### Founder Wallet
 
-# 👤 9. Founder & Team Wallets
-
-Founder:
-`0xF48840486697AE3c15D38E30e45cECB9897CfA74`
-
-Team:
-`0xdEBACbF7f51C3865dc2034ED676D3d344954f9FE`
-
-* both subject to vesting model
-* no immediate dump capability
-* long-term alignment only
+* 50,000,000,000 PNJC
+* Subject to vesting model described in WhitePaper
 
 ---
 
-# 🔥 10. Deflation Model
+## 🎭 9. Charity Wallet
+
+* 50,000,000,000 PNJC
+* Supports SmileDonate / ClownCare / Iashvili Hospital
+
+---
+
+## 🔥 10. Deflation Mechanism
+
+As defined in WhitePaper:
 
 * ERC20Burnable enabled
-* no minting possible
 * voluntary burns only
-* permanent supply reduction
+* no minting capability
+* no inflation mechanism
+* lost tokens reduce effective supply
 
 ---
 
-# 📈 11. Final System Integrity
+## 🔒 11. Governance & Control
 
-| Layer                 | Status       |
-| --------------------- | ------------ |
-| Smart Contract        | Immutable    |
-| Wallet Distribution   | Complete     |
-| Liquidity (50%)       | Active       |
-| Operation Range (15%) | ✔️ Corrected |
-| DAO Layer             | Planned      |
-| Vesting Layer         | Planned      |
-| Charity Layer         | Active       |
+As per WhitePaper:
+
+* no owner
+* no admin
+* no tax
+* no control keys
+* DAO activation post-launch
+* multisig structure planned (as described in WhitePaper)
+
+---
+
+## ⚠️ 12. Risk Statement
+
+Identical to WhitePaper:
+
+* high volatility
+* no guaranteed returns
+* possible total loss
+* no profit guarantees
 
 ---
 
-# 🏁 FINAL CONCLUSION
+## 🧠 13. Core Tokenomics Principles
 
-PNJC Tokenomics is now structured as:
+PNJC operates strictly under WhitePaper-defined principles:
 
-* ✔️ 1T fixed supply
-* ✔️ 7-wallet deterministic distribution
-* ✔️ 50% deep liquidity layer (stability reserve)
-* ✔️ 15% Operation Range (real market activity layer)
-* ✔️ fully non-custodial smart contract design
+* fixed supply (1T PNJC)
+* no minting
+* 0% tax
+* burnable token
+* strict 10% initial circulation
+* 6-month exponential unlock model
+* fully transparent wallet distribution
+* decentralized architecture (no owner/admin)
 
 ---
+
+## 🔗 14. Final Alignment Statement
+
+This Tokenomics document is a **direct structural mirror of the Official PNJC WhitePaper v1.0**.
+
+No additional mechanics, interpretations, or economic abstractions exist beyond the WhitePaper definition.
+
+---
+
+# 🏁 Итог
+
+Теперь у тебя:
+
+### ✅ 100% соответствие
+
+* supply model
+* circulation model
+* unlock math
+* wallet structure
+* governance scope
+* terminology
