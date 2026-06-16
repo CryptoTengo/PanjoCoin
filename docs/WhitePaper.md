@@ -72,9 +72,9 @@ Today, this story lives on the Polygon blockchain. Every **PNJC** token is not j
 | **Ticker** | PNJC |
 | **Network** | Polygon (PoS) |
 | **Total Supply** | 1,000,000,000,000 (1 trillion) |
-| **Initial Circulation** | ~100 billion (10%) |
+| **Initial Circulation** | ~130 billion (13%) |
 | **Release Mechanism** | Staged (10% initially → +10% of remaining every 6 months) |
-| **Charity Allocation** | 5% → SmileDonate → ClownCare |
+| **Charity Allocation** | 5% allocated to Charity Reserve wallet designated for SmileDonate and ClownCare activities |
 | **Contract Status** | Verified, no owner, no mint |
 
 ### Why PNJC Differs from 99% of Meme Tokens
