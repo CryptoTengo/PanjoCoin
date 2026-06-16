@@ -34,201 +34,148 @@ Thus came the first **"Panjo the Shar Pei's Coin"** — not as a symbol of wealt
 
 Today, this story lives on the Polygon blockchain. Every **PNJC** token is not just a digital coin. It is a piece of that very smile of a wrinkled Shar Pei that once changed the life of one child at the Iashvili Hospital.
 
----
-🔒 GLOBAL CONSISTENCY RULE (HIGHEST PRIORITY)
-
-This document follows strict hierarchy:
-
-Smart Contract (absolute truth)
-Tokenomics Model (mathematical emission logic)
-Whitepaper (operational narrative)
-
-In case of discrepancy:
-
-Smart Contract > Tokenomics Model > Whitepaper Narrative
-
-📖 1. Prologue: The Legend of Panjo
-
-In Tbilisi, near the M. Iashvili Central Children's Hospital, a Shar Pei named Panjo became a symbol of joy for children undergoing treatment.
-
-On the third floor of the hospital — where oncology and neurosurgery wards are located — laughter became a form of therapy.
-
-This story became the emotional foundation of PanjoCoin (PNJC), a digital asset designed to support SmileDonate’s ClownCare program.
-
-M. Iashvili Central Children's Hospital
-SmileDonate
-
 📑 2. Executive Summary
 
-PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on Polygon, combining:
+PanjoCoin (PNJC) is a fixed-supply ERC-20 token on Polygon designed with:
 
-Meme culture
-Transparent tokenomics
-Charity-driven utility
-Fully decentralized architecture
-Key Parameters
+Meme-driven cultural narrative
+Fully transparent on-chain distribution
+Charity-oriented utility layer
+Decentralized, no-owner architecture
+⚙️ Core Token Parameters
 Parameter	Value
-Ticker	PNJC
+Token	PanjoCoin
+Symbol	PNJC
 Network	Polygon (PoS)
+Standard	ERC-20 + ERC20Burnable + EIP-2612
 Total Supply	1,000,000,000,000 PNJC
-Circulating Supply at T+0	~10% target (~100B PNJC)
-Operational Range	up to ~13% (~130B PNJC)
-Release Model	10% of remaining supply every 6 months
+Decimals	18
 Tax	0%
-Ownership	None (fully decentralized)
-⚙️ 3. Technical Specifications
-3.1 Contract Properties
-Feature	Status
-ERC-20 Standard	✅
-ERC-20 Burnable	✅
-EIP-2612 Permit	✅
-Mint Function	❌ Not present
-Owner / Admin	❌ Not present
-Proxy Upgradeability	❌ Not present
-3.2 Supply Constraint
-_MAX_TOTAL_SUPPLY = 1_000_000_000_000 * 10**18;
-Supply is hard-capped
-No inflation possible
-No future minting mechanism exists
-📊 4. Tokenomics & Distribution (On-Chain Reality)
-4.1 Structural Model
+Mint Function	None
+Owner/Admin	None
+📊 3. Token Supply Model
+3.1 Fixed Supply Principle
+Total supply minted at deployment: 1 trillion PNJC
+No future minting possible
+No inflation mechanism
+Fully capped supply system
+3.2 Distribution Model (On-chain executed)
 
-All PNJC tokens were minted at deployment and distributed via on-chain transfers into 7 public wallets.
+All tokens distributed via on-chain transfers into 7 wallets.
 
-There is:
+Category	%	Amount
+Liquidity	50%	500B
+Project Treasury	12%	120B
+DAO Treasury	10%	100B
+Core Team	10%	100B
+Community	8%	80B
+Founder	5%	50B
+Charity	5%	50B
+🔄 4. Circulation & Release Model (FINAL VERSION)
+4.1 Initial Circulation Rule
 
-❌ No vesting inside contract
-❌ No locking logic inside contract
-❌ No minting capability
-4.2 Final Distribution
-#	Allocation	%	Amount	Wallet
-1	Liquidity	50%	500B	0xf55B...988A
-2	Project Treasury	12%	120B	0xD539...C581
-3	DAO Treasury	10%	100B	0xD5e2...5FE2
-4	Core Team	10%	100B	0xdEBA...f9FE
-5	Community	8%	80B	0x54D3...D089
-6	Founder	5%	50B	0xF488...fA74
-7	Charity	5%	50B	0xa22E...1055
-⚠️ Important Clarification
-Distribution is off-contract
-Executed via on-chain transfers
-Deployer wallet holds 0 PNJC
-🔄 5. Staged Market Release Mechanism
-5.1 Core Principle
+At T+0 (listing):
 
-At listing (T+0):
+Exactly 10% of total supply = 100B PNJC
 
-Target circulating supply: ~10% (~100B PNJC)
-Operational reality: up to ~13% (~130B PNJC)
+No range. No deviation. Fixed target.
 
-This difference is not inflation or emission — it is due to pre-distribution operational transfers before listing.
+4.2 Locked Supply
 
-The staged release applies only to the remaining non-circulating supply at T+0.
+Remaining supply:
 
-5.2 Mathematical Model
+900B PNJC (90%) = locked and released gradually
 
-Let:
+4.3 Release Mechanism
 
-S_total = 1,000,000,000,000 PNJC
-R_0 = circulating supply at T+0 (~100B–130B)
-B_0 = S_total − R_0
+Every 6 months:
 
-Then:
+10% of remaining locked supply is released
 
-R_n = 0.10 × B_(n−1)
-B_n = B_(n−1) − R_n
+Mathematical model:
 
-Each release = 10% of remaining supply, not total supply.
+B₀ = 900B
+Rₙ = 0.10 × Bₙ₋₁
+Bₙ = Bₙ₋₁ − Rₙ
+📅 4.4 Release Schedule (Aligned Model)
+Period	Release	Total Circulation
+T+0	100B	10%
+T+6m	90B	19%
+T+12m	81B	27.1%
+T+18m	72.9B	34.39%
+T+24m	65.61B	40.95%
+T+30m	59.05B	46.86%
+T+36m	53.14B	52.17%
+🔒 5. Investor Protection Layer (Off-chain, planned)
+5.1 Liquidity Lock
+500B allocated to liquidity wallet
+Initial LP: 50B PNJC
+Lock platform: Unicrypt / PinkSale
+Duration: 6–12 months
+5.2 Vesting System
+Category	Volume	Mechanism
+Core Team	100B	Vesting contract (planned)
+Founder	50B	Vesting contract (planned)
+0 initial unlock
+Cliff: 6 months
+Exponential release aligned with global model
+5.3 Multisig Treasury
+Platform: Gnosis Safe
+Structure: 3/5 signatures
+Applies to Project + DAO Treasury wallets
+5.4 DAO Governance
+10% supply controlled by DAO Treasury
+Voting via Snapshot + on-chain execution
+Activation: post-launch phase
+🔥 6. Deflationary Mechanism
+6.1 Burn Function
 
-5.3 Release Schedule (Model)
-Period	Release	Total Circulation	Remaining
-T+0	~100–130B	~10–13%	~900–870B
-T+6m	~87–90B	~190–220B	~810–780B
-T+12m	~78–81B	~270–300B	~730–700B
-T+18m	~70–73B	~340–370B	~660–630B
-T+24m	~63–66B	~400–430B	~600–570B
-T+30m	~57–59B	~460–490B	~540–510B
-T+36m	~51–53B	~520–550B	~480–450B
-5.4 Key Clarifications
-10% = target design value
-~13% = operational execution range
-No minting occurs
-Total supply is fixed permanently
-Only remaining supply is subject to release
-🔒 6. Investor Protection Mechanisms
-6.1 Liquidity Model (Planned)
-500B allocation to liquidity wallet
-Initial LP uses ~50B PNJC
-Remaining supports market depth
+PNJC includes ERC20Burnable:
 
-Lock mechanism: external (Unicrypt / PinkSale)
-
-6.2 Vesting (Planned)
-Team + Founder: 150B total (15%)
-0 initial unlock (planned structure)
-External vesting contract required
-6.3 Multisig Treasury (Planned)
-Gnosis Safe 3/5
-Applied to treasury wallets only
-No single-key control
-6.4 Important Note
-
-These protections:
-
-❌ are not inside smart contract
-⏳ are external systems (planned)
-✔ will be verified on-chain when deployed
-🔥 7. Deflationary Model
-ERC20Burnable enables voluntary burns
-No mint function exists
-No rebase mechanism
-No tax system exists
-
-Deflation sources:
-
-user burns
-lost private keys
-💧 8. Liquidity Model
+Users can burn tokens voluntarily
+Tokens permanently removed from supply
+6.2 Deflation Sources
+Voluntary burns
+Lost wallets
+No rebase or inflation exists
+💧 7. Liquidity Architecture
 DEX: Uniswap V3
 Pair: PNJC / USDT or PNJC / POL
 Fee tier: 0.05%–0.30%
-Initial liquidity: ~50B PNJC
-Source: Liquidity wallet (500B allocation)
-🏦 9. Treasury Model
+Initial LP: 50B PNJC
+Lock: Planned 6–12 months
+🏦 8. Treasury Model
 
-Project Treasury (120B):
+Project Treasury (120B PNJC):
 
-Marketing (40%)
-Development (30%)
-Legal (10%)
-Liquidity support (10%)
-Reserve (10%)
-🎭 10. Charity Mission
-ClownCare Program
+40% Marketing
+30% Development
+10% Legal
+10% Liquidity support
+10% Reserve
 
-Operates in:
+All spending executed via multisig (planned).
 
-M. Iashvili Central Children's Hospital
+🎭 9. Charity Utility Layer
 
-Focus areas:
+PNJC supports ClownCare operations via SmileDonate.
 
-oncology-hematology ward
-neurosurgery ward
+Focus:
 
-Funds flow:
-
-SmileDonate
+Oncology support
+Neurosurgery ward support
+Hospital-based clown therapy programs
 
 Important:
 
-No smart contract donation automation
-Transfers are manual but publicly verifiable
-⚠️ 11. Risk Statement
-Crypto assets are highly volatile
+No on-chain donation automation
+All transfers are manual but fully transparent
+⚠️ 10. Risk Statement
+High volatility
 No guaranteed returns
-100% loss possible
-Token is not a security
-🧠 12. Summary
+No profit expectation guarantees
+Possible total loss
+🧠 11. Core Design Principles
 
 PNJC is defined by:
 
@@ -236,17 +183,19 @@ PNJC is defined by:
 ✔ No minting
 ✔ No owner
 ✔ 0% tax
-✔ Transparent distribution
-✔ Staged emission model
-✔ Operational 10–13% initial circulation range
-✔ Charity-driven utility
-
-🔗 13. Final Rule of Consistency
-
-If inconsistency appears:
-
-Smart Contract > Tokenomics Model > Whitepaper Narrative
-
+✔ Burnable mechanics
+✔ EIP-2612 support
+✔ Strict 10% initial circulation
+✔ Exponential emission decay
+✔ Fully transparent distribution
+🔗 12. Final Compliance Statement
+This Whitepaper is fully aligned with:
+Smart Contract architecture
+Tokenomics v1.0 mathematical model
+On-chain distribution reality
 🐕 End Note
-
-PanjoCoin is not just a token — it is a structured emotional and economic system designed to convert attention into measurable social impact.
+PanjoCoin is not just a token.
+It is a system where:
+emotional narrative + fixed-supply economics + transparent on-chain structure
+merge into one verifiable digital asset.
+---
