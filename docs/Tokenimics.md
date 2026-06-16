@@ -117,7 +117,7 @@ No additional functional interpretation is defined.
 
 * DEX: Uniswap V3
 * Pair: PNJC / USDT or PNJC / POL
-* Initial Liquidity: 50,000,000,000 PNJC
+* Initial Liquidity: 500,000,000,000 PNJC
 * Liquidity source: Liquidity Wallet
 * Lock: Planned 6–12 months
 
