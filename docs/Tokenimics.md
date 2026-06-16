@@ -1,12 +1,3 @@
-# 📊 PanjoCoin (PNJC) — Official Tokenomics v.1.0
-
-
-Понял задачу. Тогда делаем строго: **Tokenomics = 1:1 отражение WhitePaper v1.0 без единого нового термина, без расширений и без интерпретаций.**
-
-Я убираю всё, что может хоть немного “уехать в сторону” (DAO-логика, vesting детализация, любые добавленные концепции управления). Оставляем только то, что прямо уже есть в WhitePaper.
-
----
-
 # 📊 PanjoCoin (PNJC) — Official Tokenomics v1.0
 
 **Strictly Aligned with Official WhitePaper v1.0 (June 13, 2026)**
