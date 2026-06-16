@@ -175,6 +175,7 @@ High volatility
 No guaranteed returns
 No profit expectation guarantees
 Possible total loss
+
 🧠 11. Core Design Principles
 
 PNJC is defined by:
@@ -188,12 +189,15 @@ PNJC is defined by:
 ✔ Strict 10% initial circulation
 ✔ Exponential emission decay
 ✔ Fully transparent distribution
+
 🔗 12. Final Compliance Statement
 This Whitepaper is fully aligned with:
 Smart Contract architecture
 Tokenomics v1.0 mathematical model
 On-chain distribution reality
+
 🐕 End Note
+
 PanjoCoin is not just a token.
 It is a system where:
 emotional narrative + fixed-supply economics + transparent on-chain structure
