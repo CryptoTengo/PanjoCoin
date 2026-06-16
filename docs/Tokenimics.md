@@ -1,20 +1,22 @@
 # 📊 PanjoCoin (PNJC) — Official Tokenomics v1.0
 
-**Strictly Aligned with Official WhitePaper v1.0 (June 13, 2026)**
+**June 13, 2026**
+
+Strictly aligned with Official WhitePaper v1.0
 
 ---
 
-## 📌 1. Alignment Statement
+# 📌 1. Purpose
 
-This Tokenomics document is a **direct structural reflection of the Official WhitePaper v1.0**.
+This Tokenomics document defines the economic structure, supply model, distribution model, and circulation mechanics of PanjoCoin (PNJC).
 
-It contains no additional economic mechanisms, no alternative interpretations, and no expanded governance logic.
+All parameters are derived directly from the Official WhitePaper v1.0 and the deployed smart contract architecture.
 
-All parameters are strictly derived from the WhitePaper.
+No additional economic mechanisms, governance rights, or financial guarantees are introduced in this document.
 
 ---
 
-## 🪙 2. Token Identity
+# 🪙 2. Token Overview
 
 | Parameter     | Value                             |
 | ------------- | --------------------------------- |
@@ -24,210 +26,185 @@ All parameters are strictly derived from the WhitePaper.
 | Standard      | ERC-20 + ERC20Burnable + EIP-2612 |
 | Total Supply  | 1,000,000,000,000 PNJC            |
 | Decimals      | 18                                |
-| Tax           | 0%                                |
+| Transfer Tax  | 0%                                |
 | Mint Function | None                              |
 | Owner/Admin   | None                              |
 
 ---
 
-## 📊 3. Token Supply Distribution (STRICT WHITEPAPER MIRROR)
+# 📊 3. Supply Architecture
 
-All tokens are minted at deployment and distributed via on-chain transfers into 7 wallets.
+## 3.1 Fixed Supply Model
 
-| Category         | %   | Amount               |
-| ---------------- | --- | -------------------- |
-| Liquidity        | 50% | 500,000,000,000 PNJC |
-| Project Treasury | 12% | 120,000,000,000 PNJC |
-| DAO Treasury     | 10% | 100,000,000,000 PNJC |
-| Core Team        | 10% | 100,000,000,000 PNJC |
-| Community        | 8%  | 80,000,000,000 PNJC  |
-| Founder          | 5%  | 50,000,000,000 PNJC  |
-| Charity          | 5%  | 50,000,000,000 PNJC  |
+PanjoCoin operates under a permanently capped supply model.
 
----
+At deployment:
 
-## 🔄 4. Circulation Model (STRICT WHITEPAPER LOGIC)
+**1,000,000,000,000 PNJC**
 
-### 4.1 Initial Circulation (T+0)
+were minted.
 
-At listing:
+The protocol contains:
 
-* 10% of total supply = **100,000,000,000 PNJC**
-* Released into circulation
+* No mint functionality
+* No inflation mechanism
+* No supply expansion mechanism
+* No owner-controlled issuance
 
-No deviation. No alternative interpretation.
+The maximum supply is permanently fixed.
 
 ---
 
-### 4.2 Locked Supply
+## 3.2 Burn Capability
 
-* 90% of total supply = **900,000,000,000 PNJC**
-* Locked at genesis
-* Released gradually over time
+The smart contract includes ERC20Burnable functionality.
+
+Any holder may voluntarily burn tokens from their own balance.
+
+Token burns permanently reduce circulating supply.
+
+No burn mechanism is mandatory or automatic.
 
 ---
 
-### 4.3 Unlock Mechanism
+# 🏦 4. On-Chain Distribution Model
 
-Every 6 months:
+The entire token supply is allocated across seven wallets.
 
-* 10% of remaining locked supply is released
+| Category         | Allocation | Amount               |
+| ---------------- | ---------- | -------------------- |
+| Liquidity        | 50%        | 500,000,000,000 PNJC |
+| Project Treasury | 12%        | 120,000,000,000 PNJC |
+| DAO Treasury     | 10%        | 100,000,000,000 PNJC |
+| Core Team        | 10%        | 100,000,000,000 PNJC |
+| Community        | 8%         | 80,000,000,000 PNJC  |
+| Founder          | 5%         | 50,000,000,000 PNJC  |
+| Charity          | 5%         | 50,000,000,000 PNJC  |
 
-Mathematical model:
+---
 
-```text id="pnjc_model"
+## Total Allocation Verification
+
+500B + 120B + 100B + 100B + 80B + 50B + 50B
+
+= 1,000,000,000,000 PNJC
+
+= 100% of total supply
+
+---
+
+# 🔄 5. Circulation Model
+
+## 5.1 Initial Circulating Supply
+
+At listing (T+0):
+
+**100,000,000,000 PNJC**
+
+enter circulation.
+
+This represents:
+
+**10% of total supply**
+
+---
+
+## 5.2 Locked Supply
+
+At genesis:
+
+**900,000,000,000 PNJC**
+
+remain locked.
+
+This represents:
+
+**90% of total supply**
+
+---
+
+## 5.3 Unlock Schedule
+
+Every six months:
+
+**10% of the remaining locked balance**
+
+is released.
+
+The release amount decreases over time because it is calculated from the remaining locked supply.
+
+---
+
+## Unlock Formula
+
 B₀ = 900B
+
 Rₙ = 0.10 × Bₙ₋₁
+
 Bₙ = Bₙ₋₁ − Rₙ
-```
+
+Where:
+
+* B₀ = initial locked supply
+* Rₙ = released amount during period n
+* Bₙ = remaining locked supply after release
 
 ---
 
-### 4.4 Emission Schedule
+# 📈 6. Economic Characteristics
 
-| Period      | Release | Total Circulation |
-| ----------- | ------- | ----------------- |
-| T+0         | 100B    | 10%               |
-| T+6 months  | 90B     | 19%               |
-| T+12 months | 81B     | 27.1%             |
-| T+18 months | 72.9B   | 34.39%            |
-| T+24 months | 65.61B  | 40.95%            |
-| T+30 months | 59.05B  | 46.86%            |
-| T+36 months | 53.14B  | 52.17%            |
+PanjoCoin is designed around three fundamental principles:
 
----
+### Fixed Supply
 
-## 🔐 5. Wallet Distribution Layer (STRICT EXECUTION ONLY)
+A permanently capped token supply with no future minting.
 
-All allocations are executed via on-chain transfer into the following wallets:
+### Transparent Distribution
 
-* Liquidity Wallet
-* Project Treasury Wallet
-* DAO Treasury Wallet
-* Core Team Wallet
-* Community Wallet
-* Founder Wallet
-* Charity Wallet
+All allocations exist on-chain and are publicly verifiable.
 
-No additional functional interpretation is defined.
+### Decentralized Architecture
+
+No owner account, no administrative privileges, and no transfer taxation.
 
 ---
 
-## 💧 6. Liquidity Structure
+# 🎭 7. Narrative Foundation
 
-* DEX: Uniswap V3
-* Pair: PNJC / USDT or PNJC / POL
-* Initial Liquidity: 500,000,000,000 PNJC
-* Liquidity source: Liquidity Wallet
-* Lock: Planned 6–12 months
+PanjoCoin originates from the story of Panjo, a Shar Pei whose visits brought smiles to children undergoing treatment at M. Iashvili Central Children's Hospital in Tbilisi.
 
----
+The token combines:
 
-## 🏦 7. Treasury Structure
+* Meme-driven cultural narrative
+* Transparent blockchain distribution
+* Charity-oriented utility layer
+* Fixed-supply token economics
 
-### Project Treasury
-
-* 120,000,000,000 PNJC
-* Purpose: operational use as defined in WhitePaper
+into a single digital asset ecosystem.
 
 ---
 
-### DAO Treasury
+# ⚠️ 8. Disclaimer
 
-* 100,000,000,000 PNJC
-* Controlled via governance model described in WhitePaper
+PanjoCoin (PNJC) is a blockchain-based digital asset.
 
----
+Nothing in this document constitutes investment advice, financial advice, legal advice, or a guarantee of future performance.
 
-## 👥 8. Team & Founder Allocation
-
-### Core Team Wallet
-
-* 100,000,000,000 PNJC
-* Subject to vesting model described in WhitePaper
-
-### Founder Wallet
-
-* 50,000,000,000 PNJC
-* Subject to vesting model described in WhitePaper
+All blockchain assets involve risk, and participation is undertaken solely at the discretion of the holder.
 
 ---
 
-## 🎭 9. Charity Wallet
+# ✅ Tokenomics Summary
 
-* 50,000,000,000 PNJC
-* Supports SmileDonate / ClownCare / Iashvili Hospital
+* Fixed Supply: 1,000,000,000,000 PNJC
+* Maximum Supply: 1,000,000,000,000 PNJC
+* Minting: Disabled
+* Transfer Tax: 0%
+* Owner/Admin: None
+* Initial Circulation: 100B PNJC
+* Initially Locked: 900B PNJC
+* Unlock Frequency: Every 6 Months
+* Unlock Rate: 10% of Remaining Locked Supply
+* Network: Polygon (PoS)
 
----
-
-## 🔥 10. Deflation Mechanism
-
-As defined in WhitePaper:
-
-* ERC20Burnable enabled
-* voluntary burns only
-* no minting capability
-* no inflation mechanism
-* lost tokens reduce effective supply
-
----
-
-## 🔒 11. Governance & Control
-
-As per WhitePaper:
-
-* no owner
-* no admin
-* no tax
-* no control keys
-* DAO activation post-launch
-* multisig structure planned (as described in WhitePaper)
-
----
-
-## ⚠️ 12. Risk Statement
-
-Identical to WhitePaper:
-
-* high volatility
-* no guaranteed returns
-* possible total loss
-* no profit guarantees
-
----
-
-## 🧠 13. Core Tokenomics Principles
-
-PNJC operates strictly under WhitePaper-defined principles:
-
-* fixed supply (1T PNJC)
-* no minting
-* 0% tax
-* burnable token
-* strict 10% initial circulation
-* 6-month exponential unlock model
-* fully transparent wallet distribution
-* decentralized architecture (no owner/admin)
-
----
-
-## 🔗 14. Final Alignment Statement
-
-This Tokenomics document is a **direct structural mirror of the Official PNJC WhitePaper v1.0**.
-
-No additional mechanics, interpretations, or economic abstractions exist beyond the WhitePaper definition.
-
----
-
-# 🏁 Итог
-
-Теперь у тебя:
-
-### ✅ 100% соответствие
-
-* supply model
-* circulation model
-* unlock math
-* wallet structure
-* governance scope
-* terminology
+PanjoCoin is a system where emotional narrative, fixed-supply economics, and transparent on-chain structure merge into one verifiable digital asset.
