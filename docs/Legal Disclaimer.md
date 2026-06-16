@@ -1,235 +1,215 @@
-# PanjoCoin (PNJC) — Legal Disclaimer
+# 📜 Legal Disclaimer & Risk Disclosure
 
-Version 1.0
-
-## Important Notice
-
-Please read this document carefully before interacting with PanjoCoin (PNJC), its smart contracts, documentation, websites, social media channels, decentralized applications, or any related ecosystem components.
-
-By acquiring, holding, transferring, exchanging, using, or otherwise interacting with PNJC or any current or future ecosystem features, including potential staking modules, governance mechanisms, treasury systems, charitable initiatives, or decentralized applications, you acknowledge that you have read, understood, and accepted this Legal Disclaimer.
-
-If you do not agree with any provision of this document, you should not interact with the PanjoCoin ecosystem.
+**Version 1.0 — 2026**
 
 ---
 
-# 1. Nature of the Project
+## ⚠️ 1. Important Notice
 
-PanjoCoin (PNJC) is a decentralized ERC-20 token deployed on the Polygon blockchain.
+This Legal Disclaimer applies to all interactions with blockchain-based digital assets, including tokens, smart contracts, decentralized applications (dApps), and related ecosystem components.
 
-PNJC is designed as a fixed-supply digital asset intended for participation in decentralized ecosystems, community engagement, governance experimentation, charitable initiatives, and other utility-based activities that may be introduced in the future.
+By accessing, using, holding, transferring, or otherwise interacting with any cryptocurrency or digital asset, you acknowledge that you have read, understood, and agreed to this Disclaimer in full.
 
-The project operates within a decentralized blockchain environment and should not be interpreted as a traditional investment vehicle.
-
----
-
-# 2. No Securities Offering
-
-PNJC is not intended to constitute:
-
-* a security;
-* a share or ownership interest;
-* a stock or equity instrument;
-* a debt instrument;
-* a collective investment scheme;
-* a derivative contract;
-* a deposit product;
-* legal tender;
-* a regulated financial instrument.
-
-Nothing contained in the Whitepaper, Roadmap, Tokenomics, Technical Specification, website, social channels, GitHub repositories, or other materials constitutes:
-
-* investment advice;
-* financial advice;
-* legal advice;
-* tax advice;
-* solicitation of investment;
-* public offering of securities;
-* promise of future returns.
+If you do not agree with these terms, you must immediately cease all interaction with the relevant digital asset or ecosystem.
 
 ---
 
-# 3. No Guarantees
+# 🪙 2. Nature of Digital Assets
 
-No guarantee is made regarding:
+Cryptocurrencies and blockchain-based tokens are decentralized digital assets operating on distributed ledger technology.
 
-* token price;
-* market value;
-* liquidity availability;
-* exchange listings;
-* adoption levels;
-* ecosystem growth;
-* governance participation;
-* future utility development;
-* roadmap completion.
+They may include, but are not limited to:
 
-All forward-looking statements represent current intentions only and may change without notice.
+* Utility tokens
+* Governance tokens
+* Community tokens
+* Meme or cultural tokens
+* Experimental blockchain assets
+
+Digital assets do not represent ownership in any company, equity, or legal claim unless explicitly defined by applicable law or contractual documentation.
 
 ---
 
-# 4. Forward-Looking Statements
+# ❌ 3. No Financial Advice
 
-Project documentation may contain statements relating to future plans, including but not limited to:
+Nothing contained in any documentation, communication, website, or interface related to digital assets constitutes:
 
-* staking systems;
-* governance mechanisms;
-* treasury frameworks;
-* charitable initiatives;
-* decentralized applications;
-* partnerships;
-* ecosystem expansion.
+* Financial advice
+* Investment advice
+* Legal advice
+* Tax advice
+* Trading recommendations
 
-Such statements are aspirational and informational in nature.
-
-They do not constitute guarantees, commitments, contractual obligations, or legally enforceable promises.
-
-Implementation may be delayed, modified, replaced, suspended, or cancelled at any time.
+Users should conduct their own independent research and consult qualified professionals where necessary.
 
 ---
 
-# 5. Risk Disclosure
+# 📉 4. No Guarantees
 
-Cryptocurrency and blockchain-based assets involve substantial risks.
+No guarantees are made regarding:
 
-Risks include, but are not limited to:
+* Market value or price performance
+* Liquidity or trading availability
+* Exchange listings (centralized or decentralized)
+* Future utility or adoption
+* Project continuity or development outcomes
 
-* total loss of value;
-* extreme market volatility;
-* smart contract vulnerabilities;
-* software defects;
-* protocol failures;
-* blockchain congestion;
-* network attacks;
-* governance failures;
-* regulatory changes;
-* loss of wallet access;
-* theft of private keys;
-* user operational errors.
-
-Users assume full responsibility for evaluating and accepting all associated risks.
+All digital asset markets are speculative and highly volatile.
 
 ---
 
-# 6. Technical Disclaimer
+# ⚠️ 5. Risk Disclosure
 
-Although reasonable efforts may be made to maintain secure and reliable infrastructure, no software system can be guaranteed to be free from vulnerabilities or defects.
+Interaction with blockchain-based assets involves significant risks, including but not limited to:
 
-The PanjoCoin ecosystem is provided on an:
+## 5.1 Market Risk
 
-"AS IS" and "AS AVAILABLE" basis.
+* Extreme price volatility
+* Partial or total loss of funds
+* Lack of liquidity in secondary markets
 
-No warranties, express or implied, are provided regarding:
+## 5.2 Technical Risk
 
-* functionality;
-* security;
-* availability;
-* performance;
-* uninterrupted operation;
-* compatibility with third-party services.
+* Smart contract vulnerabilities or bugs
+* Blockchain network congestion or failures
+* Wallet malfunctions or user errors
+* Irreversible transaction execution
 
----
+## 5.3 Regulatory Risk
 
-# 7. Third-Party Services
+* The legal status of digital assets varies by jurisdiction
+* Future regulations may restrict or prohibit access, trading, or custody
+* Compliance requirements may change without prior notice
 
-The project may interact with or reference third-party services including:
+## 5.4 Custodial Risk
 
-* wallets;
-* decentralized exchanges;
-* centralized exchanges;
-* blockchain explorers;
-* analytics platforms;
-* social platforms;
-* infrastructure providers.
-
-The PanjoCoin project does not control such services and accepts no responsibility for their actions, failures, downtime, security incidents, or policies.
+* Loss of private keys results in permanent loss of access to assets
+* Users are solely responsible for securing their wallets and credentials
 
 ---
 
-# 8. Charity Initiatives
+# ⛓️ 6. Blockchain Characteristics
 
-PanjoCoin may maintain a Charity Reserve as part of its token allocation model.
+Blockchain transactions are:
 
-The existence of charitable initiatives does not create any legal obligation to conduct specific donations, fund specific organizations, or guarantee any charitable outcomes.
+* Irreversible once confirmed
+* Publicly recorded on distributed ledgers
+* Independent of any central authority
 
-Any charitable activities remain subject to legal, operational, governance, compliance, treasury, and community considerations.
-
-The PNJC token itself is not a charitable organization, foundation, or regulated nonprofit entity.
-
----
-
-# 9. Regulatory Compliance
-
-Users are solely responsible for ensuring compliance with all laws, regulations, tax requirements, sanctions programs, and digital asset restrictions applicable within their jurisdiction.
-
-The project does not represent that PNJC is lawful in every jurisdiction.
-
-Access to the ecosystem may be restricted where prohibited by applicable law.
+No intermediary has the ability to reverse, cancel, or modify completed transactions.
 
 ---
 
-# 10. User Responsibility
+# 🤝 7. Third-Party Services Disclaimer
 
-By interacting with PNJC, users represent and warrant that:
+Digital assets may interact with third-party services, including:
 
-* they possess legal capacity under applicable law;
-* they understand the risks of blockchain technology;
-* they are responsible for protecting private keys and wallet credentials;
-* they have conducted their own research (DYOR);
-* they accept full responsibility for their actions and decisions.
+* Wallet providers
+* Cryptocurrency exchanges
+* Decentralized applications
+* Analytics platforms
+* Blockchain explorers
 
----
+These services operate independently.
 
-# 11. Limitation of Liability
+The issuer or developers of any digital asset are not responsible for:
 
-To the maximum extent permitted by applicable law, the founders, contributors, developers, maintainers, community participants, and affiliated contributors of the PanjoCoin ecosystem shall not be liable for any direct, indirect, incidental, consequential, special, punitive, or other losses arising from:
-
-* use of PNJC;
-* inability to use PNJC;
-* market losses;
-* smart contract failures;
-* software defects;
-* third-party service failures;
-* regulatory actions;
-* governance decisions;
-* security incidents;
-* blockchain disruptions.
-
-Users interact with the ecosystem entirely at their own risk.
+* Service interruptions or downtime
+* Security breaches or data loss
+* Listing decisions or delistings
+* Changes in terms of service or policies
 
 ---
 
-# 12. Documentation Hierarchy
+# 🌍 8. Regulatory & Jurisdictional Responsibility
 
-In the event of inconsistencies between project documents, the following hierarchy applies:
+Cryptocurrency regulations vary across jurisdictions and may change over time.
 
-1. Verified Smart Contract
-2. Technical Specification
-3. Whitepaper
-4. Tokenomics
-5. Roadmap
-6. Informational Materials
+Users are solely responsible for ensuring compliance with applicable local laws, including but not limited to:
 
-The verified smart contract represents the ultimate source of truth regarding on-chain behavior.
+* Restrictions on ownership or trading
+* Tax reporting obligations
+* Licensing or registration requirements
+* Sanctions and embargo compliance
 
----
-
-# 13. Changes to Documentation
-
-This disclaimer may be updated, revised, expanded, or modified as the ecosystem evolves.
-
-Users are responsible for reviewing the latest available version.
-
-Continued interaction with the ecosystem constitutes acceptance of any revisions.
+Access to digital assets may be restricted or prohibited in certain jurisdictions.
 
 ---
 
-# 14. Acceptance
+# 📵 9. Responsibility for Legal Compliance
 
-By acquiring, holding, transferring, exchanging, or otherwise interacting with PNJC, users acknowledge that they:
+Users must ensure that their interaction with digital assets does not violate the laws of their jurisdiction.
 
-* have read this disclaimer;
-* understand its contents;
-* accept all associated risks;
-* assume full responsibility for their actions;
-* waive claims to the fullest extent permitted by applicable law.
+Digital assets must not be used where prohibited by law or regulatory authority.
 
-© PanjoCoin (PNJC). All rights reserved.
+---
+
+# 🧠 10. User Responsibility
+
+Each user is solely responsible for:
+
+* Understanding blockchain technology and associated risks
+* Securing private keys, wallets, and access credentials
+* Assessing the suitability of digital assets for their circumstances
+* Ensuring compliance with applicable laws and regulations
+
+---
+
+# 🧾 11. Limitation of Liability
+
+To the maximum extent permitted by applicable law:
+
+Developers, creators, contributors, and affiliated parties shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from:
+
+* Use or inability to use digital assets
+* Loss of funds, data, or access
+* Market volatility or fluctuations
+* Technical failures or smart contract behavior
+
+---
+
+# 🔐 12. No Ongoing Obligations
+
+Unless explicitly stated in legally binding agreements:
+
+* There is no obligation to maintain or develop any protocol
+* There is no obligation to provide updates or support
+* There is no obligation to maintain liquidity or market presence
+
+---
+
+# 📑 13. Documentation Hierarchy (If Applicable)
+
+Where multiple documents exist, the order of precedence may be:
+
+1. On-chain smart contract logic
+2. Executed blockchain transactions
+3. Formal technical specifications (if any)
+4. Public documentation (if any)
+
+On-chain data is generally considered the most authoritative source of system behavior.
+
+---
+
+# 🔄 14. Amendments
+
+This Disclaimer may be modified or updated at any time without prior notice.
+
+Continued interaction with digital assets after updates constitutes acceptance of the revised version.
+
+---
+
+# ✅ 15. Acceptance
+
+By interacting with any blockchain-based digital asset, you confirm that:
+
+* You understand the associated risks
+* You act voluntarily and at your own risk
+* You are legally permitted to do so in your jurisdiction
+* You waive claims against developers and affiliates to the maximum extent permitted by law
+
+---
+
+# © 2026 Legal Disclaimer Framework
+
+All rights reserved.
