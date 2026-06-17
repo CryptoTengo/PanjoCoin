@@ -105,6 +105,14 @@ All tokens are distributed into 7 wallets:
 | Founder | 5% | 50B |
 | Charity | 5% | 50B |
 
+# 4.3 Charity Allocation 
+
+The 5% Charity allocation is reserved for ClownCare-related charitable purposes.
+
+This allocation is intended for periodic support of approved charitable initiatives and is not a permanent operating subsidy.
+
+Any use of these tokens should be transparent, traceable where applicable, and documented through public reporting or on-chain records.
+
 ---
 
 # 🔄 5. Circulation & Release Model
