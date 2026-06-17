@@ -83,7 +83,7 @@ The entire token supply is allocated across seven wallets.
 
 ---
 
-## Total Allocation Verification
+## 4.1 Total Allocation Verification
 
 500B + 120B + 100B + 100B + 80B + 50B + 50B
 
@@ -91,6 +91,13 @@ The entire token supply is allocated across seven wallets.
 
 = 100% of total supply
 
+
+## 4.2 Charity Allocation
+The 5% Charity allocation is reserved for ClownCare-related charitable purposes.
+
+This allocation is intended for periodic support of approved charitable initiatives and is not a permanent operating subsidy.
+
+The use of this allocation must remain transparent and publicly verifiable whenever possible.
 ---
 
 # 🔄 5. Circulation Model
