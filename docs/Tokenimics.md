@@ -1,215 +1,234 @@
-# 📊 PanjoCoin (PNJC) — Official Tokenomics v1.0
+# 📊 PanjoCoin (PNJC) — Tokenomics v1.0 (Audit-Grade Clean)
 
-**June 13, 2026**
+## 📌 1. Scope
 
-Strictly aligned with Official WhitePaper v1.0
+This document defines the **mathematical supply model and distribution logic** of PanjoCoin (PNJC).
 
----
+No governance, no utility promises, no roadmap assumptions.
 
-# 📌 1. Purpose
-
-This Tokenomics document defines the economic structure, supply model, distribution model, and circulation mechanics of PanjoCoin (PNJC).
-
-All parameters are derived directly from the Official WhitePaper v1.0 and the deployed smart contract architecture.
-
-No governance systems, voting mechanisms, or financial guarantees are introduced in this document.
+Only deterministic token economics.
 
 ---
 
-# 🪙 2. Token Overview
+# 🪙 2. Core Constants
 
-| Parameter     | Value                             |
-| ------------- | --------------------------------- |
-| Token Name    | PanjoCoin                         |
-| Symbol        | PNJC                              |
-| Network       | Polygon (PoS)                     |
-| Standard      | ERC-20 + ERC20Burnable + EIP-2612 |
-| Total Supply  | 1,000,000,000,000 PNJC            |
-| Decimals      | 18                                |
-| Transfer Tax  | 0%                                |
-| Mint Function | None                              |
-| Owner/Admin   | None                              |
+| Parameter        | Value                     |
+| ---------------- | ------------------------- |
+| Total Supply (S) | 1,000,000,000,000 PNJC    |
+| Decimals         | 18                        |
+| Minting          | 0                         |
+| Inflation Rate   | 0                         |
+| Burn Mechanism   | Optional (user-initiated) |
 
 ---
 
-# 📊 3. Supply Architecture
+# 📊 3. Supply Equation
 
-## 3.1 Fixed Supply Model
+### Fixed Supply Constraint
 
-PanjoCoin operates under a permanently capped supply model.
+[
+S = 1,000,000,000,000
+]
 
-At deployment:
+[
+\frac{dS}{dt} = 0
+]
 
-**1,000,000,000,000 PNJC**
+No mint function exists:
 
-were minted.
-
-The protocol contains:
-
-* No mint functionality
-* No inflation mechanism
-* No supply expansion mechanism
-* No owner-controlled issuance
-
-The maximum supply is permanently fixed.
+[
+S_{max} = S_{initial}
+]
 
 ---
 
-## 3.2 Burn Capability
+# 🧮 4. Allocation Model
 
-The smart contract includes ERC20Burnable functionality.
+## 4.1 Deterministic Distribution
 
-Any holder may voluntarily burn tokens from their own balance.
+Let:
 
-Token burns permanently reduce circulating supply.
+[
+S = 1,000,000,000,000
+]
 
-No burn mechanism is mandatory or automatic.
-
----
-
-# 🏦 4. On-Chain Distribution Model
-
-The entire token supply is allocated across six wallets.
-
-| Category         | Allocation | Amount               |
-| ---------------- | ---------- | -------------------- |
-| Liquidity        | 50%        | 500,000,000,000 PNJC |
-| Project Treasury | 12%        | 120,000,000,000 PNJC |
-| Core Team        | 10%        | 100,000,000,000 PNJC |
-| Community        | 8%         | 80,000,000,000 PNJC  |
-| Founder          | 5%         | 50,000,000,000 PNJC  |
-| Charity          | 5%         | 50,000,000,000 PNJC  |
+| Category  | Ratio | Formula  | Amount          |
+| --------- | ----- | -------- | --------------- |
+| Liquidity | 0.50  | 0.50 × S | 500,000,000,000 |
+| Treasury  | 0.12  | 0.12 × S | 120,000,000,000 |
+| Team      | 0.10  | 0.10 × S | 100,000,000,000 |
+| Community | 0.08  | 0.08 × S | 80,000,000,000  |
+| Founder   | 0.05  | 0.05 × S | 50,000,000,000  |
+| Charity   | 0.05  | 0.05 × S | 50,000,000,000  |
 
 ---
 
-## 4.1 Total Allocation Verification
+## 4.2 Verification Constraint
 
-500B + 120B + 100B + 80B + 50B + 50B
-= 1,000,000,000,000 PNJC
-= 100% of total supply
+[
+\sum allocation = S
+]
 
----
+[
+500B + 120B + 100B + 80B + 50B + 50B = 1,000B
+]
 
-## 4.2 Charity Allocation
-
-The 5% Charity Allocation is reserved for ClownCare-related charitable purposes.
-
-This allocation is intended for periodic support of approved charitable initiatives and is not a permanent operating subsidy.
-
-The use of this allocation should remain transparent and traceable where applicable.
+[
+\sum ratio = 1.00
+]
 
 ---
 
 # 🔄 5. Circulation Model
 
-## 5.1 Initial Circulating Supply
+## 5.1 Initial Circulation
 
-At listing (T+0):
-
-**100,000,000,000 PNJC**
-
-enter circulation.
-
-This represents:
-
-**10% of total supply**
-
----
+[
+C_0 = 0.10 \times S = 100,000,000,000
+]
 
 ## 5.2 Locked Supply
 
-At genesis:
+[
+L_0 = 0.90 \times S = 900,000,000,000
+]
 
-**900,000,000,000 PNJC**
+Constraint:
 
-remain locked.
-
-This represents:
-
-**90% of total supply**
-
----
-
-## 5.3 Unlock Schedule
-
-Every six months:
-
-**10% of the remaining locked balance**
-
-is released.
-
-The release amount decreases over time because it is calculated from the remaining locked supply.
+[
+C_0 + L_0 = S
+]
 
 ---
 
-## Unlock Formula
+# ⏳ 6. Unlock Function
 
-```text
-B₀ = 900B  
-Rₙ = 0.10 × Bₙ₋₁  
-Bₙ = Bₙ₋₁ − Rₙ
-```
+Let:
+
+* ( L_n ) = locked supply at period n
+* ( R_n ) = release at period n
+
+### Release rule:
+
+[
+R_n = 0.10 \times L_{n-1}
+]
+
+### State transition:
+
+[
+L_n = L_{n-1} - R_n
+]
+
+---
+
+## 6.1 Closed-form decay
+
+[
+L_n = L_0 \cdot (0.9)^n
+]
+
+[
+C_n = S - L_n
+]
+
+---
+
+# 📉 7. Burn Model
+
+If burn is enabled:
+
+[
+S_{effective} = S - B
+]
 
 Where:
 
-* B₀ = initial locked supply
-* Rₙ = released amount during period n
-* Bₙ = remaining locked supply after release
+* ( B ) = cumulative burned tokens
+* ( B \geq 0 )
+* ( B \leq S )
+
+No re-minting:
+
+[
+\frac{dB}{dt} \geq 0
+]
 
 ---
 
-# 📈 6. Economic Characteristics
+# 📊 8. Liquidity Constraint Model
 
-PanjoCoin is designed around three fundamental principles:
+Liquidity pool requirement:
 
-### Fixed Supply
+[
+LP_{min} > 0
+]
 
-A permanently capped token supply with no future minting.
+Initial market formation condition:
 
-### Transparent Distribution
+[
+Liquidity_{USD} \geq L_{threshold}
+]
 
-All allocations exist on-chain and are publicly verifiable.
-
-### Decentralized Architecture
-
-No governance layer, no voting system, no administrative control.
-
----
-
-# 🎭 7. Narrative Foundation
-
-PanjoCoin originates from the story of Panjo, a Shar Pei whose visits brought comfort to children undergoing treatment at M. Iashvili Central Children's Hospital in Tbilisi.
-
-The token combines:
-
-* Meme-driven cultural narrative
-* Transparent blockchain distribution
-* Charity-associated identity layer
-* Fixed-supply token economics
-
-into a single digital asset ecosystem.
+(No protocol-defined value; market dependent)
 
 ---
 
-# ⚠️ 8. Disclaimer
+# 🔐 9. System Constraints
 
-PanjoCoin (PNJC) is a blockchain-based digital asset.
+* No mint function:
+  [
+  \text{mint} = \emptyset
+  ]
 
-Nothing in this document constitutes investment advice, financial advice, legal advice, or a guarantee of future performance.
+* No admin supply control:
+  [
+  control_{centralized} = 0
+  ]
 
-All blockchain assets involve risk, and participation is undertaken solely at the discretion of the holder.
+* No inflation:
+  [
+  \pi = 0
+  ]
 
 ---
 
-# ✅ Tokenomics Summary
+# 📌 10. Final Model Summary
 
-* Fixed Supply: 1,000,000,000,000 PNJC
-* Maximum Supply: 1,000,000,000,000 PNJC
-* Minting: Disabled
-* Transfer Tax: 0%
-* Owner/Admin: None
-* Initial Circulation: 100B PNJC
-* Initially Locked: 900B PNJC
-* Unlock Frequency: Every 6 Months
-* Unlock Rate: 10% of Remaining Locked Supply
-* Network: Polygon (PoS)
+### Supply System:
+
+[
+S_{fixed} = 10^{12}
+]
+
+### State Vector:
+
+[
+(S, C_n, L_n, B)
+]
+
+Where:
+
+* S = total fixed supply
+* C = circulating supply
+* L = locked supply
+* B = burned supply
+
+Constraint:
+
+[
+S = C_n + L_n + B
+]
+
+---
+
+# ✅ Result
+
+This Tokenomics model is:
+
+* mathematically deterministic
+* supply-invariant
+* governance-free
+* audit-ready
+* fully on-chain verifiable
+
