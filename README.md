@@ -1,216 +1,212 @@
-# PanjoCoin (PNJC)
+# 🐕 PanjoCoin (PNJC)
 
-## 📌 Institutional Overview
+## Institutional Grade Documentation
 
-PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on Polygon Mainnet, designed as a transparent, non-upgradeable digital asset with liquidity-backed market functionality and a structured roadmap toward decentralized ecosystem expansion.
-
-The project is fully structured around a strict separation model:
-
-- 🟢 LIVE (On-chain implemented functionality)
-- 🟡 PLANNED (Roadmap-based future development)
+**Version 1.0 — 2026**
 
 ---
 
-# 🧾 BASIC INFORMATION
+# 📌 Overview
 
-| Parameter | Value |
-|------------|--------|
-| Token Name | PanjoCoin |
-| Symbol | PNJC |
-| Blockchain | Polygon Mainnet |
-| Token Standard | ERC-20 + EIP-2612 + ERC20Burnable |
-| Compiler | Solidity v0.8.34 |
-| Total Supply | 1,000,000,000,000 PNJC |
-| Supply Type | Fixed (No Mint Function) |
-| Ownership Model | Non-upgradeable / No admin privileges |
+PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on the Polygon Mainnet.
+
+It is designed as a transparent, non-upgradeable digital asset with deterministic on-chain behavior and liquidity-driven market pricing.
+
+PNJC does not represent equity, ownership, partnership rights, or any claim on future revenue.
 
 ---
 
-# 📍 SMART CONTRACT
+# ⚙️ Core Properties
+
+| Parameter        | Value                                |
+| ---------------- | ------------------------------------ |
+| Token Name       | PanjoCoin                            |
+| Symbol           | PNJC                                 |
+| Network          | Polygon (PoS)                        |
+| Standard         | ERC-20 + ERC20Permit + ERC20Burnable |
+| Solidity Version | 0.8.34                               |
+| Total Supply     | 1,000,000,000,000 PNJC               |
+| Supply Model     | Fixed, non-inflationary              |
+| Mint Function    | None                                 |
+| Admin Keys       | None                                 |
+| Upgradeability   | None                                 |
+| Transfer Tax     | 0%                                   |
+
+---
+
+# 📍 Smart Contract Reference
 
 **Contract Address:**
-
 0x781C0d15347Cb0B94C42C65c7a67E70371205De5
 
 **Verified on PolygonScan:**
-
-https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5
-
----
-
-# 🧠 CORE PROJECT MODEL
-
-PanjoCoin is designed as a decentralized economic asset operating across three functional layers:
-
-## 1. MARKET LAYER (LIVE)
-- DEX trading asset
-- liquidity-backed price discovery
-- peer-to-peer transfer utility
-
-## 2. SUPPLY LAYER (LIVE)
-- fixed supply architecture
-- burn-based deflation mechanism
-- transparent allocation model
-
-## 3. ECOSYSTEM LAYER (PLANNED)
-- DAO governance system
-- staking infrastructure
-- ecosystem dApp (CryptoTengo Hub)
-- treasury decentralization
+[https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5](https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5)
 
 ---
 
-# 🟢 LIVE ON-CHAIN FEATURES
+# 🧬 System Architecture
 
-## 🧠 Token Core
-- ERC-20 standard implementation
-- Fixed supply (1 trillion PNJC)
-- Burn functionality enabled
-- EIP-2612 gasless approvals
+PNJC operates under a strictly deterministic smart contract model with no external administrative control.
 
-## 💧 Market Infrastructure
-- DEX tradable asset
-- liquidity pool integration
-- decentralized price discovery
-
-## 🔥 Supply Mechanics
-- irreversible token burning
-- no mint capability
-- no inflation mechanism
+The system consists of three functional layers:
 
 ---
 
-# 🟡 PLANNED ECOSYSTEM FEATURES
+## 1. Asset Layer (LIVE)
 
-The following features are roadmap-based and not yet implemented:
-
-## 🏛 Governance Layer
-- DAO voting system
-- proposal mechanism
-- treasury governance
-
-## 💰 Treasury System
-- multisig-controlled funds
-- gradual decentralization
-- community-driven allocation
-
-## 🧩 Staking System
-- token locking contracts
-- reward distribution model
-- long-term incentive structure
-
-## 🌐 Ecosystem dApp
-- CryptoTengo Hub platform
-- governance dashboard
-- ecosystem interaction interface
-
-## 🔒 Vesting System
-- team/founder vesting contracts
-- linear unlock schedules
-- controlled distribution model
+* ERC-20 token standard compliance
+* Fixed supply distribution model
+* Transferable on-chain asset
+* DEX tradable on Polygon liquidity pools
 
 ---
 
-# 🔥 CURRENT ECONOMIC FUNCTION (LIVE)
+## 2. Liquidity Layer (LIVE)
 
-PNJC currently serves as:
-
-- a decentralized trading asset
-- a liquidity-backed ERC-20 token
-- a transferable value unit on Polygon
-- a deflation-enabled supply asset
-
-### 📊 Demand Drivers:
-- DEX trading activity
-- liquidity participation
-- market-based speculation
-- ecosystem visibility
+* Market-driven price discovery via AMMs
+* Liquidity pool-based trading (e.g., Uniswap V3)
+* LP-based execution model
+* No centralized price control
 
 ---
 
-# 📊 TOKEN ECONOMICS SUMMARY
+## 3. Supply Mechanism (LIVE)
 
-## Total Supply:
-1,000,000,000,000 PNJC
-
-## Model:
-Fixed Supply (Non-inflationary)
-
-## Mechanisms:
-- no mint function
-- burn-enabled deflation
-- fully transparent distribution
+* Fixed initial mint at deployment
+* No minting capability
+* ERC20Burnable enabled (optional user-driven burn)
+* No inflation or rebasing mechanisms
 
 ---
 
-# 📚 DOCUMENTATION STRUCTURE
+# 📊 Token Distribution Model
 
-This repository follows an institutional documentation hierarchy:
-
-1. Smart Contract (Highest Authority)
-2. Technical Specification
-3. Whitepaper
-4. Tokenomics
-5. Use Cases
-6. Roadmap
-7. Security Policy
-8. Supporting Documentation
+| Category         | Allocation | Amount    |
+| ---------------- | ---------- | --------- |
+| Liquidity        | 50%        | 500B PNJC |
+| Project Treasury | 12%        | 120B PNJC |
+| Core Team        | 10%        | 100B PNJC |
+| Community        | 8%         | 80B PNJC  |
+| Founder          | 5%         | 50B PNJC  |
+| Charity Reserve  | 5%         | 50B PNJC  |
 
 ---
 
-# ❤️ CHARITY MODEL (OVERVIEW)
+## Verification
 
-A dedicated 5% allocation of total supply is reserved for charitable initiatives.
-
-- allocation-based treasury model
-- off-chain execution
-- on-chain transparency
-- no automated protocol logic
+500B + 120B + 100B + 80B + 50B + 50B =
+**1,000,000,000,000 PNJC (100%)**
 
 ---
 
-# 🔐 SECURITY MODEL
+# 🔥 Circulation Model
 
-- no upgradeable proxy contracts
-- no admin control functions
-- no blacklist or freeze mechanisms
-- no hidden mint capabilities
-- deterministic smart contract execution
+## Initial Circulation (T+0)
+
+* 100,000,000,000 PNJC (10%) enters circulation at launch
 
 ---
 
-# ⚠️ RISK DISCLOSURE
+## Locked Supply
 
-Cryptocurrency markets involve inherent risks.
-
-Users acknowledge potential:
-
-- market volatility
-- liquidity fluctuations
-- smart contract risks
-- regulatory uncertainty
-- blockchain infrastructure dependencies
-
-No guarantees are provided regarding price, adoption, or future utility.
+* 900,000,000,000 PNJC remains locked at genesis
+* Released gradually over time
 
 ---
 
-# 📄 RELATED DOCUMENTATION
+## Unlock Schedule
 
-- Whitepaper → strategic overview  
-- Tokenomics → economic structure  
-- Use Cases → functional utility definition  
-- Roadmap → future development phases  
-- Security Policy → risk & architecture model  
-- Technical Specification → low-level contract behavior  
+Every 6 months:
+
+* 10% of remaining locked supply is released
+
+### Mathematical Model
+
+```text
+B₀ = 900B  
+Rₙ = 0.10 × Bₙ₋₁  
+Bₙ = Bₙ₋₁ − Rₙ
+```
 
 ---
 
-# 📌 FINAL CLASSIFICATION
+# 🧠 Economic Design Principles
 
-PanjoCoin (PNJC) is a fixed-supply ERC-20 token on Polygon Mainnet with:
+PNJC is structured around the following principles:
 
-- transparent on-chain mechanics
-- deterministic smart contract logic
-- structured LIVE vs PLANNED ecosystem model
-- roadmap-based decentralized expansion strategy
+### 1. Fixed Supply Certainty
+
+No inflation, no reissuance, no hidden minting mechanisms.
+
+### 2. Market-Based Pricing
+
+Token value is determined solely by open-market liquidity dynamics.
+
+### 3. Non-Custodial Design
+
+No administrative control, no blacklist functions, no freeze capability.
+
+---
+
+# 🧩 Ecosystem Status Classification
+
+| Component         | Status                    |
+| ----------------- | ------------------------- |
+| ERC-20 Token      | LIVE                      |
+| Liquidity Trading | LIVE                      |
+| Burn Mechanism    | LIVE                      |
+| Vesting System    | DEPLOYABLE (optional)     |
+| Staking System    | NOT DEPLOYED              |
+| Governance Layer  | NOT ACTIVE / NOT REQUIRED |
+
+---
+
+# 🐕 Narrative Context
+
+PanjoCoin is inspired by the story of “Panjo”, a Shar Pei dog associated with emotional comfort and presence in a hospital environment in Tbilisi.
+
+This narrative serves as a cultural identity layer and does not imply financial or utility guarantees.
+
+---
+
+# ⚠️ Risk Disclosure
+
+PNJC is a blockchain-based digital asset subject to inherent risks, including but not limited to:
+
+* Market volatility and price fluctuations
+* Liquidity constraints
+* Smart contract and infrastructure risks
+* Regulatory uncertainty
+
+No guarantees are made regarding value, adoption, or future utility.
+
+---
+
+# 📄 Legal Classification
+
+PNJC:
+
+* is not an equity instrument
+* does not represent ownership in any entity
+* does not confer governance rights
+* does not guarantee financial return
+
+---
+
+# 📌 Source of Truth
+
+In case of any inconsistency between documentation and smart contract execution:
+
+> The on-chain smart contract state is the sole source of truth.
+
+---
+
+# 🧾 Final Classification
+
+PanjoCoin (PNJC) is:
+
+* A fixed-supply ERC-20 token
+* A non-upgradeable smart contract system
+* A liquidity-driven decentralized asset on Polygon
+* A culturally narrative-based digital token
+---
