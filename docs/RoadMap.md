@@ -1,115 +1,275 @@
-# 🗺️ PanjoCoin (PNJC) — Roadmap
+# 🐕 PanjoCoin (PNJC)
 
-**Version 1.0 — 2026**
+## Roadmap v1.0 — Milestone Execution Grade
 
 ---
 
-# 🚀 Phase 0 — Foundation (Completed)
+# 📌 Execution Philosophy
+
+PanjoCoin roadmap is **not timeline-driven**, but **milestone-driven execution system**.
+
+Each phase is considered complete only when **on-chain + market conditions are met**.
+
+No guaranteed deadlines.
+
+No centralized enforcement.
+
+---
+
+# 🧱 Phase 0 — Protocol Deployment (COMPLETED)
+
+## Status: ✅ DONE
+
+### Deliverables:
 
 * ERC-20 smart contract deployed on Polygon
-* Fixed supply model (1T PNJC) implemented
-* ERC20Permit (EIP-2612) integration enabled
+* Fixed supply minted (1,000,000,000,000 PNJC)
+* ERC20Permit (EIP-2612) enabled
 * ERC20Burnable enabled
-* WhitePaper v1.0 finalized
+* Contract verified on Polygonscan
 * Tokenomics v1.0 finalized
+* WhitePaper v1.0 finalized
+
+### Exit Condition:
+
+✔ Contract immutable
+✔ Supply locked at genesis
+✔ No admin privileges
 
 ---
 
-# 🔒 Phase 1 — Security & Infrastructure
+# 🔒 Phase 1 — Security & Liquidity Readiness
 
-**Status: In Progress / Immediate**
+## Status: IN PROGRESS / NEXT EXECUTION
 
-* Liquidity Locker deployment (Uniswap LP protection)
-* Vesting contracts for team & treasury allocation
-* Staking contract deployment (optional yield utility layer)
-* Contract verification on Polygonscan
-* Public GitHub repository cleanup and documentation alignment
+### Objectives:
+
+Prepare protocol for decentralized market activation.
+
+### Milestones:
+
+#### 1. Liquidity Infrastructure
+
+* [ ] Create Uniswap V3 PNJC/USDT pool
+* [ ] Define initial price range
+* [ ] Provide initial liquidity (market-dependent capital)
+
+#### 2. LP Protection
+
+* [ ] Deploy Liquidity Locker
+* [ ] Lock LP tokens
+* [ ] Publish lock proof
+
+#### 3. Contract Finalization
+
+* [ ] Full verification audit pass (manual + scanner)
+* [ ] GitHub documentation alignment
+
+### Exit Conditions:
+
+* Liquidity pool active
+* LP tokens locked
+* Contract publicly verified
 
 ---
 
-# 🌊 Phase 2 — DEX Launch (Liquidity Event)
+# 🌊 Phase 2 — DEX Launch Event
 
-**Goal: First Market Presence**
+## Status: READY AFTER PHASE 1
 
-* Launch PNJC / USDT pool on Uniswap (Polygon)
-* Initial liquidity injection (target: minimum viable liquidity)
-* LP tokens locked in Liquidity Locker
-* First price discovery phase begins
-* DexTools / DexScreener indexing
-* Basic trading functionality stabilized
+### Objectives:
+
+Enable free-market trading of PNJC.
+
+### Milestones:
+
+#### Market Activation
+
+* [ ] PNJC / USDT trading pair live
+* [ ] DexScreener indexing
+* [ ] DexTools indexing
+* [ ] Trading volume stabilization
+
+#### Liquidity Stability
+
+* [ ] Minimum liquidity threshold reached (market-defined)
+* [ ] Slippage optimized
+* [ ] Price discovery phase completed
+
+### Exit Conditions:
+
+* Stable trading activity
+* Organic market formation
+* No liquidity withdrawal risk (LP locked)
 
 ---
 
-# 📣 Phase 3 — Community Activation
+# 📣 Phase 3 — Community Formation
 
-**Goal: Organic Holder Growth**
+## Status: POST-LAUNCH
 
-* Launch official social channels (X / Telegram / Discord)
-* Meme & narrative content distribution ("Panjo story" branding)
-* First community campaigns
-* Holder growth target: 100–500 wallets
-* Early organic marketing push
+### Objectives:
+
+Establish organic holder base.
+
+### Milestones:
+
+#### Distribution Growth
+
+* Target: 100–1,000 holders
+* Organic wallet expansion
+* No paid artificial volume
+
+#### Communication Layer
+
+* X (Twitter) launch
+* Telegram community
+* Meme/narrative distribution system
+
+#### Engagement Mechanics
+
+* Meme campaigns
+* Narrative propagation (“Panjo story”)
+* Holder participation loops
+
+### Exit Conditions:
+
+* Active community base
+* Organic engagement
+* Multi-platform presence
 
 ---
 
 # 📈 Phase 4 — Market Expansion
 
-**Goal: Liquidity & Holder Growth**
+## Status: GROWTH PHASE
 
-* Increase liquidity depth (as capital allows)
+### Objectives:
+
+Increase liquidity depth and market visibility.
+
+### Milestones:
+
+#### Liquidity Scaling
+
+* Additional liquidity injections (if capital allows)
+* Spread reduction optimization
+
+#### Exchange Expansion
+
 * CEX listing applications (mid-tier exchanges)
-* Partnerships with crypto communities
-* Holder target: 500–2,000 wallets
-* Community-driven marketing expansion
+* Aggregator visibility (CoinGecko / CMC)
+
+#### Holder Growth Target
+
+* 1,000 – 5,000 wallets
+
+### Exit Conditions:
+
+* Stable trading volume
+* External exchange visibility
+* Multi-market presence
 
 ---
 
-# 🔐 Phase 5 — Advanced Utility Layer (Optional)
+# 🔐 Phase 5 — Utility Layer (OPTIONAL / CONDITIONAL)
 
-**Only after traction is achieved**
+## Status: CONDITIONAL
 
-* Staking expansion or reward mechanisms
-* Charity transparency dashboard (on-chain reporting)
-* Treasury reporting system
-* Enhanced analytics dashboard for holders
+Activated only if market demand exists.
+
+### Modules:
+
+#### Staking System
+
+* ERC-20 staking contracts
+* Lock-based rewards (non-inflationary or controlled emission)
+
+#### Treasury Reporting
+
+* On-chain transparency dashboard
+* Public allocation tracking
+
+#### Charity Layer
+
+* Transparent donation flow tracking
+* On-chain verifiable transfers
+
+### Exit Condition:
+
+* Sustainable ecosystem demand
 
 ---
 
 # 🌍 Phase 6 — Ecosystem Maturity
 
-**Long-term vision phase**
+## Status: LONG-TERM
 
-* Multi-chain expansion (if demand exists)
-* DAO-like coordination layer (ONLY if community matures naturally)
-* Real-world charity integrations (ClownCare reporting structure)
-* Brand expansion of Panjo narrative
+### Objectives:
+
+Transition from token to ecosystem asset.
+
+### Milestones:
+
+#### Decentralization Evolution
+
+* Possible DAO-like coordination (NOT mandatory)
+* Community-led initiatives (not protocol enforced)
+
+#### Multi-chain Expansion
+
+* Cross-chain deployment (if demand exists)
+
+#### Brand Layer Expansion
+
+* Panjo narrative scaling
+* Cultural + meme ecosystem growth
 
 ---
 
-# ⚠️ Important Principle
+# ⚠️ Execution Principles
 
-PanjoCoin development is **market-driven, not governance-driven**.
+## Core Rules:
 
-There is:
-
-* No forced roadmap execution
-* No guaranteed delivery timelines
-* No centralized control over adoption
-
-Progress depends entirely on:
-
-> liquidity, community growth, and market demand.
+* No forced execution timelines
+* No guaranteed outcomes
+* No centralized control mechanisms
+* No dependency on governance systems
 
 ---
 
-# 📊 Summary
+## Market Dependency Rule:
 
-| Phase   | Focus                      |
-| ------- | -------------------------- |
-| Phase 0 | Contract + token readiness |
-| Phase 1 | Security + infrastructure  |
-| Phase 2 | DEX launch + liquidity     |
-| Phase 3 | Community growth           |
-| Phase 4 | Market expansion           |
-| Phase 5 | Optional utility           |
-| Phase 6 | Long-term ecosystem        |
+Every phase beyond Phase 2 depends on:
+
+[
+Execution = f(liquidity, demand, community growth)
+]
+
+If conditions are not met → phase is paused.
+
+---
+
+# 📊 Summary Matrix
+
+| Phase | Name                 | Status    |
+| ----- | -------------------- | --------- |
+| 0     | Deployment           | COMPLETE  |
+| 1     | Security & Liquidity | ACTIVE    |
+| 2     | DEX Launch           | READY     |
+| 3     | Community Growth     | PENDING   |
+| 4     | Market Expansion     | FUTURE    |
+| 5     | Utility Layer        | OPTIONAL  |
+| 6     | Ecosystem Maturity   | LONG-TERM |
+
+---
+
+# 🧠 Final Statement
+
+PanjoCoin evolves through **market-executed milestones**, not centralized roadmap promises.
+
+The system is designed to transition:
+
+> from token → market asset → ecosystem layer
+
+---
