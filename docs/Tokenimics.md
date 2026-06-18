@@ -12,7 +12,7 @@ This Tokenomics document defines the economic structure, supply model, distribut
 
 All parameters are derived directly from the Official WhitePaper v1.0 and the deployed smart contract architecture.
 
-No additional economic mechanisms, governance rights, or financial guarantees are introduced in this document.
+No governance systems, voting mechanisms, or financial guarantees are introduced in this document.
 
 ---
 
@@ -69,13 +69,12 @@ No burn mechanism is mandatory or automatic.
 
 # 🏦 4. On-Chain Distribution Model
 
-The entire token supply is allocated across seven wallets.
+The entire token supply is allocated across six wallets.
 
 | Category         | Allocation | Amount               |
 | ---------------- | ---------- | -------------------- |
 | Liquidity        | 50%        | 500,000,000,000 PNJC |
 | Project Treasury | 12%        | 120,000,000,000 PNJC |
-| DAO Treasury     | 10%        | 100,000,000,000 PNJC |
 | Core Team        | 10%        | 100,000,000,000 PNJC |
 | Community        | 8%         | 80,000,000,000 PNJC  |
 | Founder          | 5%         | 50,000,000,000 PNJC  |
@@ -85,19 +84,20 @@ The entire token supply is allocated across seven wallets.
 
 ## 4.1 Total Allocation Verification
 
-500B + 120B + 100B + 100B + 80B + 50B + 50B
-
+500B + 120B + 100B + 80B + 50B + 50B
 = 1,000,000,000,000 PNJC
-
 = 100% of total supply
 
+---
 
 ## 4.2 Charity Allocation
-The 5% Charity allocation is reserved for ClownCare-related charitable purposes.
+
+The 5% Charity Allocation is reserved for ClownCare-related charitable purposes.
 
 This allocation is intended for periodic support of approved charitable initiatives and is not a permanent operating subsidy.
 
-The use of this allocation must remain transparent and publicly verifiable whenever possible.
+The use of this allocation should remain transparent and traceable where applicable.
+
 ---
 
 # 🔄 5. Circulation Model
@@ -144,11 +144,11 @@ The release amount decreases over time because it is calculated from the remaini
 
 ## Unlock Formula
 
-B₀ = 900B
-
-Rₙ = 0.10 × Bₙ₋₁
-
+```text
+B₀ = 900B  
+Rₙ = 0.10 × Bₙ₋₁  
 Bₙ = Bₙ₋₁ − Rₙ
+```
 
 Where:
 
@@ -172,19 +172,19 @@ All allocations exist on-chain and are publicly verifiable.
 
 ### Decentralized Architecture
 
-No owner account, no administrative privileges, and no transfer taxation.
+No governance layer, no voting system, no administrative control.
 
 ---
 
 # 🎭 7. Narrative Foundation
 
-PanjoCoin originates from the story of Panjo, a Shar Pei whose visits brought smiles to children undergoing treatment at M. Iashvili Central Children's Hospital in Tbilisi.
+PanjoCoin originates from the story of Panjo, a Shar Pei whose visits brought comfort to children undergoing treatment at M. Iashvili Central Children's Hospital in Tbilisi.
 
 The token combines:
 
 * Meme-driven cultural narrative
 * Transparent blockchain distribution
-* Charity-oriented utility layer
+* Charity-associated identity layer
 * Fixed-supply token economics
 
 into a single digital asset ecosystem.
@@ -213,5 +213,3 @@ All blockchain assets involve risk, and participation is undertaken solely at th
 * Unlock Frequency: Every 6 Months
 * Unlock Rate: 10% of Remaining Locked Supply
 * Network: Polygon (PoS)
-
-PanjoCoin is a system where emotional narrative, fixed-supply economics, and transparent on-chain structure merge into one verifiable digital asset.
