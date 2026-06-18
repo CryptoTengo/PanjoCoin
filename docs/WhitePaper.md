@@ -2,18 +2,18 @@
 
 **June 13, 2026**
 
-Full compliance with smart contract, on-chain distribution, and Technical Specification v1.0
-
 🐕 Official token of Panjo the Shar Pei in support of SmileDonate (ClownCare)
 
 ---
 
-## ✅ Status
+# ✅ Status
 
-- DEX READY  
-- Fixed supply architecture  
-- Fully on-chain distribution model  
-- No owner / no mint / no tax  
+* DEX READY
+* Fixed supply architecture
+* Fully transparent on-chain distribution
+* No mint function
+* No admin / no owner control
+* 0% tax model
 
 ---
 
@@ -21,33 +21,27 @@ Full compliance with smart contract, on-chain distribution, and Technical Specif
 
 In a quiet district of Tbilisi, where old chestnut trees lean over the avenue, stands the **M. Iashvili Central Children's Hospital**.
 
-A place where children fight serious illnesses such as oncological hematology and neurosurgical conditions.
+A place where children face serious medical conditions and long recovery journeys.
 
-One day, a Shar Pei named **Panjo** passed by the hospital.
+One day, a Shar Pei named **Panjo** appeared near the hospital.
 
-He had no money or power — only a wrinkled face and a loving heart.
+He had no power or status — only a calm presence and a gentle nature.
 
-From the third floor of the hospital, a child was crying.
+From a hospital window, a child noticed him and smiled for the first time that day.
 
-Panjo stopped, looked up, and saw the tear-streaked face in the window.
+Panjo responded simply by staying, playing, and bringing quiet comfort.
 
-He smiled — not for food or reward, but simply because he could not do otherwise.
+That moment became a repeated ritual.
 
-He began to play, wagging his tail and moving clumsily in a joyful way.
+The children began to wait for him.
 
-And the child smiled back.
+Over time, Panjo became a symbol of emotional relief and presence.
 
-That moment became the beginning of something greater.
+PanjoCoin was created as a digital representation of that idea:
 
-From that day, Panjo returned again and again.
+> a simple, shareable symbol of comfort and positivity.
 
-The children waited for him. They laughed. The pain became lighter.
-
-This is how the idea of PanjoCoin was born — not as a financial instrument, but as a symbol of a smile that cannot be bought, only shared.
-
-Today, this story lives on the blockchain.
-
-Every PNJC token represents that smile.
+Every PNJC token represents that narrative.
 
 ---
 
@@ -55,28 +49,30 @@ Every PNJC token represents that smile.
 
 PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on the Polygon network.
 
-It is designed with:
+It is designed as:
 
-- Meme-driven cultural narrative  
-- Fully transparent on-chain distribution  
-- Charity-oriented utility layer  
-- Decentralized, no-owner architecture  
+* A meme-driven cultural asset
+* A transparent on-chain token model
+* A charity-associated narrative project
+* A fully decentralized token with no administrative control
+
+PNJC does not represent equity, ownership, or financial rights.
 
 ---
 
 # ⚙️ 3. Core Token Parameters
 
-| Parameter | Value |
-|----------|------|
-| Token | PanjoCoin |
-| Symbol | PNJC |
-| Network | Polygon (PoS) |
-| Standard | ERC-20 + ERC20Burnable + EIP-2612 |
-| Total Supply | 1,000,000,000,000 PNJC |
-| Decimals | 18 |
-| Tax | 0% |
-| Mint Function | None |
-| Owner/Admin | None |
+| Parameter     | Value                             |
+| ------------- | --------------------------------- |
+| Token         | PanjoCoin                         |
+| Symbol        | PNJC                              |
+| Network       | Polygon (PoS)                     |
+| Standard      | ERC-20 + ERC20Burnable + ERC-2612 |
+| Total Supply  | 1,000,000,000,000 PNJC            |
+| Decimals      | 18                                |
+| Transfer Tax  | 0%                                |
+| Mint Function | None                              |
+| Owner/Admin   | None                              |
 
 ---
 
@@ -84,53 +80,50 @@ It is designed with:
 
 ## 4.1 Fixed Supply Principle
 
-- Total supply minted at deployment: **1,000,000,000,000 PNJC**
-- No future minting possible
-- No inflation mechanism
-- Fully capped supply
+* Total supply is minted at deployment: **1,000,000,000,000 PNJC**
+* No additional minting is possible
+* No inflation mechanism exists
+* Supply is permanently capped on-chain
 
 ---
 
 ## 4.2 Distribution Model (On-chain)
 
-All tokens are distributed into 7 wallets:
-
-| Category | % | Amount |
-|----------|---|--------|
-| Liquidity | 50% | 500B |
-| Project Treasury | 12% | 120B |
-| DAO Treasury | 10% | 100B |
-| Core Team | 10% | 100B |
-| Community | 8% | 80B |
-| Founder | 5% | 50B |
-| Charity | 5% | 50B |
-
-# 4.3 Charity Allocation 
-
-The 5% Charity allocation is reserved for ClownCare-related charitable purposes.
-
-This allocation is intended for periodic support of approved charitable initiatives and is not a permanent operating subsidy.
-
-Any use of these tokens should be transparent, traceable where applicable, and documented through public reporting or on-chain records.
+| Category             | %   | Amount |
+| -------------------- | --- | ------ |
+| Liquidity            | 50% | 500B   |
+| Project Treasury     | 12% | 120B   |
+| Core Team            | 10% | 100B   |
+| Community Incentives | 8%  | 80B    |
+| Founder              | 5%  | 50B    |
+| Charity Allocation   | 5%  | 50B    |
 
 ---
 
-# 🔄 5. Circulation & Release Model
+## 4.3 Charity Allocation
 
-## 5.1 Initial Circulation (T+0)
+The 5% Charity Allocation is reserved for supporting selected charitable initiatives aligned with the Panjo narrative.
 
-At listing:
+Usage is discretionary and may be executed through transparent on-chain transfers or publicly documented allocations.
 
-- 10% of total supply = **100B PNJC**
-- No deviation or variation
+This allocation does not represent a fixed yield or financial obligation.
+
+---
+
+# 🔄 5. Circulation Model
+
+## 5.1 Initial Circulating Supply
+
+At launch:
+
+* **10% of total supply (100B PNJC)** enters circulation
 
 ---
 
 ## 5.2 Locked Supply
 
-- 90% of total supply = **900B PNJC**
-- Locked at genesis
-- Released gradually
+* **90% of total supply (900B PNJC)** remains locked at genesis
+* Released gradually over time
 
 ---
 
@@ -138,17 +131,63 @@ At listing:
 
 Every 6 months:
 
-- 10% of remaining locked supply is released
+* 10% of remaining locked supply is released
 
 ### Formula
 
 ```text
-B₀ = 900B
-Rₙ = 0.10 × Bₙ₋₁
+B₀ = 900B  
+Rₙ = 0.10 × Bₙ₋₁  
 Bₙ = Bₙ₋₁ − Rₙ
+```
 
-PanjoCoin is not just a token.
-It is a system where:
-emotional narrative + fixed-supply economics + transparent on-chain structure
-merge into one verifiable digital asset.
 ---
+
+# 📈 6. Economic Characteristics
+
+PanjoCoin is designed around three core principles:
+
+* Fixed supply with no inflation risk
+* Transparent on-chain distribution
+* Fully decentralized token contract with no administrative controls
+
+Market price is determined exclusively by supply and demand dynamics on decentralized exchanges.
+
+---
+
+# 🎭 7. Narrative Foundation
+
+PanjoCoin is inspired by the story of Panjo, a Shar Pei whose presence brought emotional comfort to children at a hospital in Tbilisi.
+
+The token translates this narrative into a digital form:
+
+* Meme culture expression
+* Community-driven storytelling
+* Charity-associated identity layer
+
+---
+
+# ⚠️ 8. Risk Disclosure
+
+PNJC is a blockchain-based digital asset.
+
+It carries risks including:
+
+* Market volatility
+* Loss of capital
+* Liquidity fluctuations
+* Smart contract risk inherent to blockchain systems
+
+Nothing in this document constitutes financial, legal, or investment advice.
+
+---
+
+# 📌 9. Final Summary
+
+* Fixed Supply: 1,000,000,000,000 PNJC
+* Minting: Disabled
+* Admin control: None
+* Tax: 0%
+* Network: Polygon
+* Circulation model: linear unlock of locked supply
+* Purpose: meme + narrative + charitable association
