@@ -1,212 +1,219 @@
 # 🐕 PanjoCoin (PNJC)
 
-## Institutional Grade Documentation
-
-**Version 1.0 — 2026**
+## DEX-Ready README v1.0
 
 ---
 
 # 📌 Overview
 
-PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on the Polygon Mainnet.
+PanjoCoin (PNJC) is a fixed-supply ERC-20 token deployed on **Polygon PoS**, designed for decentralized exchange trading with a fully transparent, non-upgradeable smart contract architecture.
 
-It is designed as a transparent, non-upgradeable digital asset with deterministic on-chain behavior and liquidity-driven market pricing.
+PNJC is a **pure asset token**:
 
-PNJC does not represent equity, ownership, partnership rights, or any claim on future revenue.
-
----
-
-# ⚙️ Core Properties
-
-| Parameter        | Value                                |
-| ---------------- | ------------------------------------ |
-| Token Name       | PanjoCoin                            |
-| Symbol           | PNJC                                 |
-| Network          | Polygon (PoS)                        |
-| Standard         | ERC-20 + ERC20Permit + ERC20Burnable |
-| Solidity Version | 0.8.34                               |
-| Total Supply     | 1,000,000,000,000 PNJC               |
-| Supply Model     | Fixed, non-inflationary              |
-| Mint Function    | None                                 |
-| Admin Keys       | None                                 |
-| Upgradeability   | None                                 |
-| Transfer Tax     | 0%                                   |
+* no governance
+* no admin keys
+* no minting
+* no protocol control layer
 
 ---
 
-# 📍 Smart Contract Reference
+# ⚙️ Token Details
+
+| Parameter    | Value                                |
+| ------------ | ------------------------------------ |
+| Name         | PanjoCoin                            |
+| Symbol       | PNJC                                 |
+| Network      | Polygon (PoS)                        |
+| Standard     | ERC-20 + ERC20Permit + ERC20Burnable |
+| Total Supply | 1,000,000,000,000                    |
+| Decimals     | 18                                   |
+| Minting      | Disabled                             |
+| Ownership    | None                                 |
+| Transfer Tax | 0%                                   |
+
+---
+
+# 📍 Contract Information
 
 **Contract Address:**
-0x781C0d15347Cb0B94C42C65c7a67E70371205De5
+`0x781C0d15347Cb0B94C42C65c7a67E70371205De5`
 
-**Verified on PolygonScan:**
+**Explorer:**
 [https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5](https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5)
 
 ---
 
-# 🧬 System Architecture
+# 🔄 DEX Deployment Status
 
-PNJC operates under a strictly deterministic smart contract model with no external administrative control.
+## 🟢 Ready for Trading
 
-The system consists of three functional layers:
+PNJC is fully compatible with:
 
----
-
-## 1. Asset Layer (LIVE)
-
-* ERC-20 token standard compliance
-* Fixed supply distribution model
-* Transferable on-chain asset
-* DEX tradable on Polygon liquidity pools
+* Uniswap V3 (Polygon)
+* QuickSwap
+* SushiSwap (Polygon forks)
 
 ---
 
-## 2. Liquidity Layer (LIVE)
+## 📊 Trading Pair Setup
 
-* Market-driven price discovery via AMMs
-* Liquidity pool-based trading (e.g., Uniswap V3)
-* LP-based execution model
-* No centralized price control
+Recommended initial pair:
 
----
+* PNJC / USDT
 
-## 3. Supply Mechanism (LIVE)
+Alternative pairs:
 
-* Fixed initial mint at deployment
-* No minting capability
-* ERC20Burnable enabled (optional user-driven burn)
-* No inflation or rebasing mechanisms
+* PNJC / WETH
+* PNJC / MATIC
 
 ---
 
-# 📊 Token Distribution Model
+# 💧 Liquidity Model
 
-| Category         | Allocation | Amount    |
-| ---------------- | ---------- | --------- |
-| Liquidity        | 50%        | 500B PNJC |
-| Project Treasury | 12%        | 120B PNJC |
-| Core Team        | 10%        | 100B PNJC |
-| Community        | 8%         | 80B PNJC  |
-| Founder          | 5%         | 50B PNJC  |
-| Charity Reserve  | 5%         | 50B PNJC  |
+## Initial Liquidity Requirement
 
----
+Liquidity is externally provided and not protocol-controlled.
 
-## Verification
+Minimum viable liquidity (market-driven):
 
-500B + 120B + 100B + 80B + 50B + 50B =
-**1,000,000,000,000 PNJC (100%)**
+* Determined by DEX pool creation
+* No enforced threshold in smart contract
 
 ---
 
-# 🔥 Circulation Model
+## LP Mechanics
 
-## Initial Circulation (T+0)
-
-* 100,000,000,000 PNJC (10%) enters circulation at launch
-
----
-
-## Locked Supply
-
-* 900,000,000,000 PNJC remains locked at genesis
-* Released gradually over time
+* LP tokens represent ownership of liquidity position
+* LP tokens should be locked via external locker contract
+* No internal liquidity management logic exists
 
 ---
 
-## Unlock Schedule
+# 🔥 Supply Model
 
-Every 6 months:
+## Fixed Supply
 
-* 10% of remaining locked supply is released
+[
+S = 1,000,000,000,000
+]
 
-### Mathematical Model
+No additional minting is possible:
 
-```text
-B₀ = 900B  
-Rₙ = 0.10 × Bₙ₋₁  
-Bₙ = Bₙ₋₁ − Rₙ
-```
-
----
-
-# 🧠 Economic Design Principles
-
-PNJC is structured around the following principles:
-
-### 1. Fixed Supply Certainty
-
-No inflation, no reissuance, no hidden minting mechanisms.
-
-### 2. Market-Based Pricing
-
-Token value is determined solely by open-market liquidity dynamics.
-
-### 3. Non-Custodial Design
-
-No administrative control, no blacklist functions, no freeze capability.
+[
+S_{max} = S_{initial}
+]
 
 ---
 
-# 🧩 Ecosystem Status Classification
+## Burn Mechanism
 
-| Component         | Status                    |
-| ----------------- | ------------------------- |
-| ERC-20 Token      | LIVE                      |
-| Liquidity Trading | LIVE                      |
-| Burn Mechanism    | LIVE                      |
-| Vesting System    | DEPLOYABLE (optional)     |
-| Staking System    | NOT DEPLOYED              |
-| Governance Layer  | NOT ACTIVE / NOT REQUIRED |
+* Holders may burn tokens voluntarily
+* Burn reduces circulating supply permanently
+
+[
+S_{effective} = S - B
+]
 
 ---
 
-# 🐕 Narrative Context
+# 🧱 System Architecture
 
-PanjoCoin is inspired by the story of “Panjo”, a Shar Pei dog associated with emotional comfort and presence in a hospital environment in Tbilisi.
+## 1. Token Layer
 
-This narrative serves as a cultural identity layer and does not imply financial or utility guarantees.
+* ERC-20 base logic
+* deterministic balances
+* non-upgradeable contract
+
+## 2. Market Layer
+
+* DEX-based price discovery
+* AMM liquidity pools
+* permissionless trading
+
+## 3. Ownership Model
+
+* no admin role
+* no privileged functions
+* no blacklist / pause
+
+---
+
+# 🔐 Security Model
+
+PNJC is designed with the following constraints:
+
+* no upgradeability
+* no proxy contracts
+* no centralized control
+* no hidden mint functions
+* deterministic execution
+
+---
+
+# 📈 Market Behavior
+
+Token value is determined exclusively by:
+
+* liquidity depth
+* trading volume
+* market demand
+* holder distribution
+
+No algorithmic pricing exists.
+
+---
+
+# 🧾 Deployment Checklist (DEX Launch)
+
+## Before liquidity add:
+
+* [x] ERC-20 deployed
+* [x] contract verified on Polygonscan
+* [ ] liquidity pool created
+* [ ] initial LP provided
+* [ ] LP tokens locked (recommended)
+* [ ] trading enabled on DEX UI
+
+---
+
+## After launch:
+
+* index on DexScreener
+* index on DexTools
+* enable analytics tracking
+* monitor LP stability
 
 ---
 
 # ⚠️ Risk Disclosure
 
-PNJC is a blockchain-based digital asset subject to inherent risks, including but not limited to:
+PNJC involves standard crypto asset risks:
 
-* Market volatility and price fluctuations
-* Liquidity constraints
-* Smart contract and infrastructure risks
-* Regulatory uncertainty
+* price volatility
+* liquidity fluctuations
+* smart contract risk
+* market uncertainty
 
-No guarantees are made regarding value, adoption, or future utility.
-
----
-
-# 📄 Legal Classification
-
-PNJC:
-
-* is not an equity instrument
-* does not represent ownership in any entity
-* does not confer governance rights
-* does not guarantee financial return
+No guarantees of value or returns.
 
 ---
 
-# 📌 Source of Truth
+# 📌 Classification
 
-In case of any inconsistency between documentation and smart contract execution:
+PNJC is:
 
-> The on-chain smart contract state is the sole source of truth.
+* ERC-20 utility-free asset
+* decentralized market token
+* fixed-supply Polygon-based digital asset
+* fully non-custodial contract system
 
 ---
 
-# 🧾 Final Classification
+# 🧠 Final Statement
 
-PanjoCoin (PNJC) is:
+PNJC operates as a **pure decentralized market instrument** with:
 
-* A fixed-supply ERC-20 token
-* A non-upgradeable smart contract system
-* A liquidity-driven decentralized asset on Polygon
-* A culturally narrative-based digital token
----
+* deterministic supply
+* no administrative control
+* full DEX compatibility
+* transparent on-chain behavior
