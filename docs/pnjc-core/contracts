@@ -1,1 +1,159 @@
+# 🧱 PNJC Core Contracts Specification
 
+## Overview
+
+This document describes the functional behavior of all smart contracts within the PNJC ecosystem. It serves as a reference for auditors, integrators, and external reviewers.
+
+All contracts are designed to be:
+- Non-upgradeable
+- Deterministic
+- Minimal in attack surface
+- Fully compatible with EVM standards
+
+---
+
+# 1. PNJC Token Contract
+
+## Type
+ERC-20 standard token with extensions.
+
+## Interfaces
+- ERC20
+- ERC20Permit (EIP-2612)
+- ERC20Burnable
+
+## Behavior
+
+### Supply
+- Fixed total supply minted at deployment
+- No minting function exists
+
+### Transfers
+- Standard ERC20 transfer logic
+- No transfer fees
+- No blacklist/whitelist logic
+
+### Permissions
+- No owner
+- No admin role
+- No privileged functions
+
+### Extensions
+- Permit: allows gasless approvals via signatures
+- Burn: token holders may irreversibly burn tokens
+
+---
+
+# 2. Liquidity Locker Contract
+
+## Purpose
+Locks LP tokens until a predefined unlock timestamp.
+
+## Behavior
+
+### Locking
+- LP tokens are locked at deployment or via initialization
+- Locked amount is immutable after creation
+
+### Withdrawal
+- Only beneficiary can withdraw
+- Withdrawal is allowed only after unlock timestamp
+- Partial withdrawals are NOT allowed
+
+### Security
+- No admin override
+- No emergency withdrawal
+- No upgradeability
+
+---
+
+# 3. Vesting Vault Contract
+
+## Purpose
+Linear time-based token distribution.
+
+## Behavior
+
+### Vesting Logic
+- Linear vesting over fixed duration
+- Starts at predefined timestamp
+- Ends at full allocation release
+
+### Claims
+- Only beneficiary can claim
+- Claimable amount = vested - already claimed
+- Claims are incremental and irreversible
+
+### Security
+- No external modification of schedule
+- No admin intervention
+- No early unlock mechanism
+
+---
+
+# 4. Airdrop Contract
+
+## Purpose
+Merkle proof-based token distribution system.
+
+## Behavior
+
+### Claim Process
+- Each user must provide valid Merkle proof
+- Each address can claim only once
+- Claims are final and irreversible
+
+### Validation
+- Leaf = hash(account, amount)
+- Proof must match stored Merkle root
+
+### Security
+- No admin override
+- No manual claim insertion
+- No post-deployment changes to root
+
+---
+
+# 5. Treasury (Multisig Wallet)
+
+## Type
+External multisig wallet (off-chain governed)
+
+## Behavior
+
+### Funds
+- Receives ecosystem funds
+- Used for operational expenses
+
+### Control
+- Controlled by multisig signers
+- No on-chain governance enforcement
+- No smart contract logic beyond basic transfer
+
+---
+
+# 6. Global Security Properties
+
+Across all contracts:
+
+- No upgradeability
+- No proxy patterns
+- No admin backdoors
+- No hidden minting
+- Deterministic execution only
+- Fully EVM-compatible behavior
+
+---
+
+# 7. Integration Notes
+
+External protocols interacting with PNJC should assume:
+
+- Standard ERC20 compliance
+- No dynamic fees or taxes
+- No blacklisting behavior
+- Immutable supply constraints
+
+---
+
+# End of Specification
