@@ -2,37 +2,131 @@
 
 PNJC Liquidity Locker V2 is an immutable smart contract for locking Uniswap V2 LP tokens.
 
-## Important
-This contract is NOT an ERC-20 PNJC token contract.
-It does NOT mint, burn, or manage PNJC supply.
+## Scope
 
-The contract only accepts, holds, and releases Uniswap V2 LP tokens after a predefined unlock time.
+This contract is designed to custody-lock a single Uniswap V2-style ERC-20 LP token for a fixed period of time.
 
-## Security model
-- No owner
-- No admin
-- No upgradeability
-- No emergency withdrawal
-- No rescue functions
-- Reentrancy protection
-- Deterministic unlock logic
+It is **not** an ERC-20 PNJC token contract.
 
-## Supported asset type
+It does **not** mint, burn, rebase, tax, or otherwise manage PNJC supply.
+
+It does **not** support Uniswap V3 NFT positions.
+
+Its only purpose is to hold LP tokens in a transparent and time-locked manner until the unlock timestamp is reached.
+
+## Security Model
+
+- No owner.
+- No admin role.
+- No upgradeability.
+- No emergency withdrawal.
+- No rescue functions.
+- Reentrancy protection on all state-changing functions.
+- Deterministic unlock logic based on block timestamp.
+- Immutable LP token address configured at deployment.
+
+## Supported Asset Type
+
 - Uniswap V2 LP token (ERC-20)
 
-## Public interface
-- lock(amount, beneficiary, unlockTime)
-- withdraw(lockId)
-- version()
-- contractVersion()
-- positionManager()
-- lockStatus(lockId)
-- timeRemaining(lockId)
-- isLocked(lockId)
-- isUnlocked(lockId)
-- isWithdrawn(lockId)
-- getLock(lockId)
+## Key Design Principles
 
-## Audit notes
-The contract follows a simple custody model:
-LP tokens are transferred into the contract, held until unlock, and then released only to the beneficiary.
+- Simple custody model.
+- Explicit on-chain lock records.
+- Withdrawals allowed only after the unlock time.
+- Minimal trusted surface area.
+- Clear and indexer-friendly event emissions.
+
+## Public Interface
+
+- `lock(amount, beneficiary, unlockTime)`
+- `withdraw(lockId)`
+- `version()`
+- `contractVersion()`
+- `positionManager()`
+- `lockStatus(lockId)`
+- `timeRemaining(lockId)`
+- `isLocked(lockId)`
+- `isUnlocked(lockId)`
+- `isWithdrawn(lockId)`
+- `getLock(lockId)`
+
+## Contract Behavior
+
+When a user calls `lock`, the contract transfers the specified LP token amount from the caller into custody and creates an immutable lock record.
+
+When the unlock time is reached, only the designated beneficiary can call `withdraw` to receive the locked LP tokens.
+
+If the lock has already been withdrawn, further withdrawal attempts will fail.
+
+## Lock Status
+
+The contract exposes a status model for off-chain monitoring and analytics.
+
+- `Empty`: the lock ID has never been created.
+- `Locked`: the LP tokens are still time-locked.
+- `Unlocked`: the unlock time has passed and withdrawal is available.
+- `Withdrawn`: the LP tokens have already been released.
+
+## Assumptions
+
+- The LP token is a standard ERC-20 token.
+- The LP token supports standard `transferFrom` and `transfer` behavior.
+- The beneficiary is able to receive ERC-20 tokens.
+- Unlock timing is based on `block.timestamp`.
+- The deployment parameters are correct.
+
+## Limitations
+
+- The contract locks only one LP token address.
+- It does not support arbitrary ERC-20 assets.
+- It does not support Uniswap V3 LP NFTs.
+- It does not include emergency recovery functions.
+- It does not include an administrative override.
+
+## Events
+
+### LiquidityLocked
+Emitted when LP tokens are successfully locked.
+
+### LiquidityWithdrawn
+Emitted when LP tokens are released after the unlock time.
+
+These events are intended for explorers, indexers, dashboards, and public verification.
+
+## Audit Notes
+
+The contract follows a simple Checks-Effects-Interactions pattern.
+
+The withdrawn flag is set before the external transfer during withdrawal to reduce reentrancy risk.
+
+The contract is intentionally minimal to reduce attack surface and simplify verification.
+
+## Deployment & Verification
+
+- Network: [fill in]
+- Contract address: [fill in]
+- Compiler version: `0.8.34`
+- Optimization settings: [fill in]
+- Constructor arguments: [fill in]
+- Verification link: [fill in]
+- Source tag / commit hash: [fill in]
+
+## Versioning
+
+- `version()` returns the semantic contract version.
+- `contractVersion()` returns the same semantic contract version.
+
+## Non-Goals
+
+This contract is not meant to:
+- manage PNJC token economics,
+- act as a treasury,
+- support governance,
+- support NFT liquidity locks,
+- provide yield,
+- provide fee collection logic.
+
+## Summary
+
+PNJC Liquidity Locker V2 is a minimal and immutable ERC-20 LP token locker built for transparent time-locked custody and public verifiability.
