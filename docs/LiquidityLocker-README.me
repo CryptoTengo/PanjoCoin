@@ -1,0 +1,38 @@
+# PNJC Liquidity Locker V2
+
+PNJC Liquidity Locker V2 is an immutable smart contract for locking Uniswap V2 LP tokens.
+
+## Important
+This contract is NOT an ERC-20 PNJC token contract.
+It does NOT mint, burn, or manage PNJC supply.
+
+The contract only accepts, holds, and releases Uniswap V2 LP tokens after a predefined unlock time.
+
+## Security model
+- No owner
+- No admin
+- No upgradeability
+- No emergency withdrawal
+- No rescue functions
+- Reentrancy protection
+- Deterministic unlock logic
+
+## Supported asset type
+- Uniswap V2 LP token (ERC-20)
+
+## Public interface
+- lock(amount, beneficiary, unlockTime)
+- withdraw(lockId)
+- version()
+- contractVersion()
+- positionManager()
+- lockStatus(lockId)
+- timeRemaining(lockId)
+- isLocked(lockId)
+- isUnlocked(lockId)
+- isWithdrawn(lockId)
+- getLock(lockId)
+
+## Audit notes
+The contract follows a simple custody model:
+LP tokens are transferred into the contract, held until unlock, and then released only to the beneficiary.
