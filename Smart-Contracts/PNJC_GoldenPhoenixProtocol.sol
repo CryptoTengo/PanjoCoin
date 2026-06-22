@@ -1,14 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.34;
 
-/// @title PanjoCoin Golden Phoenix Protocol
-/// @notice Buyback, burn, and reward execution layer for PNJC funded by USDT.
-/// @dev Remix-ready single-file version with OpenZeppelin-style security primitives.
-contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
+/// @title PNJC Golden Phoenix Protocol
+/// @notice Treasury automation for USDT -> PNJC buyback, burn, and rewards.
+/// @dev Polygon deployment. Uses Uniswap V2 router on Polygon and defensive ERC20 handling.
+contract PNJC_GoldenPhoenixProtocol is Ownable2Step, Pausable, ReentrancyGuard {
     using SafeERC20 for IERC20;
 
     uint256 public constant BPS = 10_000;
-    address public constant BURN_ADDRESS = 0x000000000000000000000000000000000000dEaD;
+    uint256 public constant USDT_DECIMALS_BASE = 1e6;
+
+    address public constant DEAD_ADDRESS = 0x000000000000000000000000000000000000dEaD;
     address public constant WMATIC_POLYGON = 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270;
     address public constant POLYGON_UNISWAP_V2_ROUTER = 0xedf6066a2b290C185783862C7F4776A2C8077AD1;
     address public constant USDT_POLYGON = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
@@ -24,7 +26,7 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
     uint256 public burnPercent = 50;
     uint256 public rewardPercent = 50;
 
-    uint256 public minExecutionAmount = 100 * 1e6;
+    uint256 public minExecutionAmount = 100 * USDT_DECIMALS_BASE;
     uint256 public maxSlippageBps = 300;
     uint256 public priceFloor = 1e12;
 
@@ -66,6 +68,8 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         _;
     }
 
+    /// @notice Main automation entrypoint.
+    /// @dev Uses the current USDT balance held by the contract. Part of the funds are reserved as insurance.
     function executeGoldenBurn() external nonReentrant whenProtocolActive {
         uint256 usdtBalance = usdtToken.balanceOf(address(this));
         require(usdtBalance >= minExecutionAmount, "INSUFFICIENT_USDT");
@@ -107,6 +111,7 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         );
     }
 
+    /// @notice Uses insurance funds to support price when the floor is breached.
     function protectPrice() external onlyOwner nonReentrant whenNotPaused {
         require(insuranceFund > 0, "NO_INSURANCE");
 
@@ -126,18 +131,21 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         emit InsuranceUsed(usdtToUse, "PRICE_PROTECTION");
     }
 
+    /// @notice Deposits USDT into the contract.
     function depositUSDT(uint256 amount) external nonReentrant {
         require(amount > 0, "AMOUNT_ZERO");
         usdtToken.safeTransferFrom(msg.sender, address(this), amount);
         emit FundsDeposited(msg.sender, amount, "USDT");
     }
 
+    /// @notice Deposits USDT and records a source label.
     function depositUSDTWithSource(uint256 amount, string calldata source) external nonReentrant {
         require(amount > 0, "AMOUNT_ZERO");
         usdtToken.safeTransferFrom(msg.sender, address(this), amount);
         emit FundsDeposited(msg.sender, amount, source);
     }
 
+    /// @notice Updates the execution split.
     function updateParameters(
         uint256 _insurancePercent,
         uint256 _buybackPercent,
@@ -159,6 +167,14 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         emit ParametersUpdated(_insurancePercent, _buybackPercent, _burnPercent, _rewardPercent);
     }
 
+    /// @notice Updates the minimum USDT balance for an execution.
+    function setMinExecutionAmount(uint256 _minAmount) external onlyOwner {
+        require(_minAmount >= 50 * USDT_DECIMALS_BASE, "MIN_50");
+        require(_minAmount <= 10000 * USDT_DECIMALS_BASE, "MAX_10K");
+        minExecutionAmount = _minAmount;
+    }
+
+    /// @notice Updates the floor price.
     function updatePriceFloor(uint256 _priceFloor) external onlyOwner {
         require(_priceFloor > 0, "FLOOR_ZERO");
         uint256 oldFloor = priceFloor;
@@ -166,6 +182,7 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         emit PriceFloorUpdated(oldFloor, _priceFloor);
     }
 
+    /// @notice Updates the reward distribution address.
     function updateRewardPool(address _newPool) external onlyOwner {
         require(_newPool != address(0), "POOL_ZERO");
         address oldPool = rewardPool;
@@ -173,6 +190,7 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         emit RewardPoolUpdated(oldPool, _newPool);
     }
 
+    /// @notice Sets the maximum tolerated slippage in basis points.
     function setMaxSlippageBps(uint256 _newSlippageBps) external onlyOwner {
         require(_newSlippageBps >= 50 && _newSlippageBps <= 1000, "SLIPPAGE_RANGE");
         uint256 oldBps = maxSlippageBps;
@@ -180,12 +198,17 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         emit MaxSlippageUpdated(oldBps, _newSlippageBps);
     }
 
-    function setMinExecutionAmount(uint256 _minAmount) external onlyOwner {
-        require(_minAmount >= 50 * 1e6, "MIN_50");
-        require(_minAmount <= 10000 * 1e6, "MAX_10K");
-        minExecutionAmount = _minAmount;
+    /// @notice Pauses protocol execution.
+    function pauseProtocol() external onlyOwner {
+        _pause();
     }
 
+    /// @notice Unpauses protocol execution.
+    function unpauseProtocol() external onlyOwner {
+        _unpause();
+    }
+
+    /// @notice Emergency token withdrawal by owner.
     function emergencyWithdraw(address token, uint256 amount) external onlyOwner nonReentrant {
         require(amount > 0, "AMOUNT_ZERO");
         if (token == address(0)) {
@@ -196,16 +219,14 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         }
     }
 
+    /// @notice Emergency native token withdrawal.
     function rescueETH(uint256 amount) external onlyOwner nonReentrant {
         require(amount > 0, "AMOUNT_ZERO");
         (bool ok, ) = payable(owner()).call{value: amount}("");
         require(ok, "ETH_SEND_FAIL");
     }
 
-    function transferOwnership(address newOwner) public override onlyOwner {
-        super.transferOwnership(newOwner);
-    }
-
+    /// @notice Returns protocol statistics.
     function getStats()
         external
         view
@@ -228,6 +249,7 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         );
     }
 
+    /// @notice Estimates the next execution outcome using router quotes.
     function calculateNextBurn()
         external
         view
@@ -258,14 +280,17 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         estimatedPnjcRewarded = estimatedPnjcBought - estimatedPnjcBurned;
     }
 
+    /// @notice Returns whether the protocol is ready to run.
     function isReadyToExecute() external view returns (bool) {
         return !paused() && usdtToken.balanceOf(address(this)) >= minExecutionAmount;
     }
 
+    /// @notice Returns the current router quote for 1 USDT.
     function getCurrentPrice() external view returns (uint256) {
         return _getCurrentPrice();
     }
 
+    /// @dev Swaps USDT into PNJC through WMATIC on Polygon.
     function _swapUSDTToPNJC(uint256 amountIn) internal returns (uint256) {
         address[] memory path = new address[](3);
         path[0] = address(usdtToken);
@@ -288,14 +313,16 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
         return amounts[2];
     }
 
+    /// @dev Burns PNJC or sends it to the dead address if burn(uint256) is unavailable.
     function _burnPNJC(uint256 amount) internal {
         require(amount > 0, "BURN_ZERO");
         try IBurnable(address(pnjcToken)).burn(amount) {
         } catch {
-            pnjcToken.safeTransfer(BURN_ADDRESS, amount);
+            pnjcToken.safeTransfer(DEAD_ADDRESS, amount);
         }
     }
 
+    /// @dev Returns the current router quote for 1 USDT.
     function _getCurrentPrice() internal view returns (uint256) {
         address[] memory path = new address[](3);
         path[0] = address(usdtToken);
@@ -307,133 +334,4 @@ contract PanjoGoldenPhoenix is Ownable2Step, Pausable, ReentrancyGuard {
     }
 
     receive() external payable {}
-}
-
-interface IERC20 {
-    function totalSupply() external view returns (uint256);
-    function balanceOf(address account) external view returns (uint256);
-    function transfer(address recipient, uint256 amount) external returns (bool);
-    function allowance(address owner, address spender) external view returns (uint256);
-    function approve(address spender, uint256 amount) external returns (bool);
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-}
-
-interface IUniswapV2Router02 {
-    function swapExactTokensForTokens(
-        uint256 amountIn,
-        uint256 amountOutMin,
-        address[] calldata path,
-        address to,
-        uint256 deadline
-    ) external returns (uint256[] memory amounts);
-
-    function getAmountsOut(uint256 amountIn, address[] calldata path) external view returns (uint256[] memory amounts);
-}
-
-interface IBurnable {
-    function burn(uint256 amount) external;
-}
-
-library SafeERC20 {
-    function safeTransfer(IERC20 token, address to, uint256 amount) internal {
-        require(token.transfer(to, amount), "TRANSFER_FAILED");
-    }
-
-    function safeTransferFrom(IERC20 token, address from, address to, uint256 amount) internal {
-        require(token.transferFrom(from, to, amount), "TRANSFER_FROM_FAILED");
-    }
-
-    function forceApprove(IERC20 token, address spender, uint256 amount) internal {
-        require(token.approve(spender, 0), "APPROVE_RESET_FAILED");
-        require(token.approve(spender, amount), "APPROVE_FAILED");
-    }
-}
-
-abstract contract Ownable2Step {
-    address private _owner;
-    address private _pendingOwner;
-
-    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
-    event OwnershipTransferStarted(address indexed previousOwner, address indexed newOwner);
-
-    constructor(address initialOwner) {
-        require(initialOwner != address(0), "OWNER_ZERO");
-        _owner = initialOwner;
-        emit OwnershipTransferred(address(0), initialOwner);
-    }
-
-    modifier onlyOwner() {
-        require(msg.sender == _owner, "NOT_OWNER");
-        _;
-    }
-
-    function owner() public view returns (address) {
-        return _owner;
-    }
-
-    function pendingOwner() public view returns (address) {
-        return _pendingOwner;
-    }
-
-    function transferOwnership(address newOwner) public onlyOwner {
-        require(newOwner != address(0), "NEW_OWNER_ZERO");
-        _pendingOwner = newOwner;
-        emit OwnershipTransferStarted(_owner, newOwner);
-    }
-
-    function acceptOwnership() public {
-        require(msg.sender == _pendingOwner, "NOT_PENDING_OWNER");
-        address oldOwner = _owner;
-        _owner = _pendingOwner;
-        _pendingOwner = address(0);
-        emit OwnershipTransferred(oldOwner, _owner);
-    }
-}
-
-abstract contract ReentrancyGuard {
-    uint256 private constant _NOT_ENTERED = 1;
-    uint256 private constant _ENTERED = 2;
-    uint256 private _status = _NOT_ENTERED;
-
-    modifier nonReentrant() {
-        require(_status != _ENTERED, "REENTRANCY");
-        _status = _ENTERED;
-        _;
-        _status = _NOT_ENTERED;
-    }
-}
-
-abstract contract Pausable {
-    bool private _paused;
-
-    event Paused(address account);
-    event Unpaused(address account);
-
-    constructor() {
-        _paused = false;
-    }
-
-    modifier whenNotPaused() {
-        require(!_paused, "PAUSED");
-        _;
-    }
-
-    modifier whenPaused() {
-        require(_paused, "NOT_PAUSED");
-        _;
-    }
-
-    function paused() public view returns (bool) {
-        return _paused;
-    }
-
-    function _pause() internal whenNotPaused {
-        _paused = true;
-        emit Paused(msg.sender);
-    }
-
-    function _unpause() internal whenPaused {
-        _paused = false;
-        emit Unpaused(msg.sender);
-    }
 }
