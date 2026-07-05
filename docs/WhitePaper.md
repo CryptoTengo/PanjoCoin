@@ -1,378 +1,264 @@
-# WHITEPAPER PANJOCOIN
-## 📄 PANJOCOIN (PNJC) — WHITEPAPER v1.0
-### Social-Gaming Ecosystem on Polygon | Bridging Meme Culture and Pediatric Oncology
+# 📘 PanjoCoin (PNJC) — WHITEPAPER v1 (SYNCHRONIZED VERSION WITH CODE)
+**Document Version:** 1.0  
+**Date:** July 4, 2026  
+**Status:** Official Agreed Document, Synchronized with Smart Contracts
 
----
+________________________________________
+
+## 1. INTRODUCTION
+
+### 1.1 General Project Description
+PanjoCoin (PNJC) is a next‑generation utility memecoin built on the Polygon PoS blockchain. The project combines meme culture, social gamification, decentralised governance, and real‑world charity with on‑chain transparency.
+
+Unlike classic memecoins, the value of PNJC is created through real user participation in the ecosystem: performing good deeds, creating content, and engaging in governance. The core innovation — **Proof of Kindness** — allows social activity to be monetised.
+
+### 1.2 Vision and Mission
+**Vision:** To become a global movement that unites people around the ideals of kindness and mutual support, using blockchain as a tool for positive change.
+
+**Mission:** To build a decentralised ecosystem where every user can monetise social activity, participate in charity, and receive digital recognition for their contribution to the community, while ensuring full transparency and security.
+
+________________________________________
+
+## 2. CORE PROJECT PARAMETERS
 
 | Parameter | Value |
 |-----------|-------|
-| Name | PanjoCoin |
-| Ticker | PNJC |
-| Network | Polygon PoS |
-| Standard | ERC-20 + ERC20Permit (EIP-2612) + ERC20Burnable |
-| Total Supply | 1,000,000,000,000 PNJC |
-| Decimals | 18 |
-| Supply Model | Fixed, Non-Inflationary |
-| Mint Function | Absent (permanently removed) |
-| Administrative Keys | Renounced (Renounced Ownership) |
-| Upgradeability | None |
-| Transfer Tax | 0% (Buy / Sell / Transfer) |
-| Blacklists / Freezing | None |
-| Contract Address | 0x781C0d15347Cb0B94C42C65c7a67E70371205De5 |
-| DEX | Uniswap |
-| Compiler | Solidity 0.8.34 (Verified on PolygonScan) |
+| **Name** | PanjoCoin |
+| **Ticker** | PNJC |
+| **Blockchain** | Polygon PoS |
+| **Standard** | ERC‑20 + EIP‑2612 (Permit) + ERC‑20 Burnable |
+| **Total Supply** | 1,000,000,000,000 PNJC (fixed, no additional minting) |
+| **Decimals** | 18 |
+| **Model** | Deflationary (automatic burning via Golden Phoenix) |
+| **Mint** | None (permanently removed) |
+| **Ownership** | Renounced (administrative rights revoked) |
+| **Upgradeability** | None (immutable code) |
+| **Tax** | 0% on all transactions |
+| **Blacklist / Freeze** | None |
+| **Primary DEX** | QuickSwap V2 (70% liquidity) + Uniswap V3 (30%) |
+| **Contract Address** | `0x781C0d15347Cb0B94C42C65c7a67E70371205De5` |
 
----
+________________________________________
 
-## 🐾 1. The Legend of Panjo: Wrinkles That Bring Hope
+## 3. DEFLATIONARY MECHANISM — GOLDEN PHOENIX PROTOCOL
 
-In the heart of Tbilisi, amidst ancient streets and warm winds, lives an extraordinary Shar Pei named Panjo. His wrinkled face and kind eyes conceal a remarkable gift. It is said that Panjo can hear the quiet sadness echoing through hospital corridors.
+The Golden Phoenix Protocol is an automated algorithm that creates sustained deflationary pressure through external USDT inflows (revenues from partners, NFT marketplace, voluntary contributions). The protocol is governed by the DAO and multisig, ensuring transparency and decentralised control.
 
-His most important steps are taken across the tiled floors of the M. Iashvili Central Children's Clinical Hospital. There, in the oncology ward, Panjo's presence becomes a small miracle. Local doctors call it the "Panjo Effect": each fold on his body represents a child's tear that he has taken upon himself, transforming it into a smile.
+### 3.1 Full Operational Algorithm
+The protocol executes the following steps each cycle:
 
-PanjoCoin was created to turn this legend into an endless engine of goodwill.
+1. **USDT Inflow**  
+   USDT is received at the protocol address from external sources (partner fees, ecosystem revenues, voluntary contributions).
 
----
+2. **Insurance Fund Reservation (`insurancePercent`)**  
+   5% of the received amount is directed to the Insurance Fund. This fund is used to protect the PNJC price when it falls below the established level (price floor).  
+   The parameter is DAO‑adjustable within the range of 3–10%.
 
-## 📌 2. Executive Summary
+3. **Buyback Amount Calculation (`buybackPercent`)**  
+   After reserving the Insurance Fund, the remaining 95% of USDT is distributed as follows:
+   - `buybackPercent` (default 25%) of the remaining amount is allocated to buy back tokens via DEX.
+   - The remaining funds are accumulated on the contract balance for future cycles, allowing capital to be built up for larger buybacks.  
+   The `buybackPercent` parameter is DAO‑adjustable within the range of 15–35%.
 
-PanjoCoin (PNJC) is a next-generation, high-technology digital asset deployed on the Polygon network. The project represents a unique synthesis of viral Web3 meme culture and institutionally significant social responsibility.
+4. **Conversion to PNJC**  
+   The amount determined in step 3 is converted to PNJC via the QuickSwap V2 Router through the path USDT → WMATIC → PNJC, respecting the maximum slippage (`maxSlippageBps`).
 
-While the majority of contemporary meme coins lack fundamental value, PNJC serves as a decentralized financial bridge between the crypto community and the real-world charitable sector.
+5. **Burning (`burnPercent`)**  
+   50% of the purchased tokens are permanently burned (sent to the dead address or via the `burn` function).  
+   The parameter is DAO‑adjustable within the range of 30–70%.
 
-PNJC is a fixed-supply ERC-20 token engineered as a non-upgradeable, non-codable digital system with deterministic blockchain behavior. It does not represent equity, ownership rights, partnership interests, or any claims to income or dividends.
+6. **Community Rewards (`rewardPercent`)**  
+   The remaining 50% of purchased tokens are sent to the community rewards pool for distribution through Proof of Kindness, Social Mining, and Kindness Challenges.  
+   The parameter is DAO‑adjustable within the range of 30–70%.
 
----
+7. **Price Protection (optional)**  
+   If the PNJC price falls below the established price floor, the multisig (3/5) may initiate the use of Insurance Fund assets for buybacks and burning to stabilise the price.
 
-## 🎯 3. Problem Statement
-
-The contemporary meme coin landscape faces a systemic crisis of trust.
-
-### 3.1. The Utility Void Crisis
-
-Over 99% of meme coins are created as instruments of short-term speculation. Following the dissipation of hype, they depreciate, leaving communities with illiquid assets.
-
-### 3.2. Systemic Security Risks and "Dark Code"
-
-- **Hidden Minting**: Secret token minting by developers.
-- **Predatory Taxation**: Concealed sell taxes reaching 50-90%.
-- **Centralization**: The presence of "super-admins" capable of altering protocol rules.
-
-### 3.3. Philanthropic Opaqueness
-
-Investors encounter bold slogans but lack tools for fund verification. Traditional donations lose up to 30% to administrative fees, while crypto-philanthropy often remains episodic rather than sustained.
-
----
-
-## 💡 4. Solution
-
-### 4.1. Immutable Trust: Decentralization as the Highest Form of Trust
-
-We have formally renounced ownership rights to the smart contract (Renounced Ownership). No one—neither founders nor malicious actors—can alter token issuance, freeze wallets, or halt network operations.
-
-### 4.2. 0% Tax Policy: Frictionless Economics
-
-PNJC's code implements zero fees on all transactions. 100% of purchased tokens transfer directly to your wallet. This positions PNJC as an ideal instrument for arbitrage, DeFi participation, and liquidity provision.
-
-### 4.3. Social Utility: Technology in Service of Compassion
-
-A portion of ecosystem reserves is allocated to fund the work of ClownCare clowns in Tbilisi. All charitable transactions are executed through public SmileDonate foundation wallets on the Polygon network. Every PNJC transaction contributes to a child's smile.
-
----
-
-## 🧬 5. Core Architecture
-
-PNJC functions as a deterministic smart contract system without external administrative control. The protocol consists of three functional layers:
-
-### 5.1. Asset Layer
-- ERC-20 compliant token
-- Fully transferable digital asset
-- Compatible with all standard EVM wallets
-- Supports EIP-2612 (Permit) — gasless approvals
-
-### 5.2. Liquidity Layer
-- Market pricing via AMM pools (Uniswap V3)
-- Absence of centralized price control
-- User-provided liquidity
-- LP-based trade execution
-
-### 5.3. Supply Layer
-- Fixed supply minted at deployment
-- No minting capability
-- No inflation or rebasing mechanism
-- Optional user-initiated burning (ERC20Burnable)
-
----
-
-## 🪙 6. Tokenomics
-
-### 6.1. Fixed Supply Principle
-- **Total Supply**: 1,000,000,000,000 PNJC
-- Fully minted at deployment
-- Permanently capped on the blockchain
-- No further issuance possible (mint() method absent)
-
-### 6.2. Distribution Model
-
-| Category | Allocation | Amount | Protection Mechanism |
-|----------|------------|--------|----------------------|
-| Liquidity (Uniswap) | 50% | 500B | 6-12 month lock (Unicrypt) |
-| Treasury | 12% | 120B | Multisig wallet (3/5) |
-| Team | 10% | 100B | 12-month linear vesting |
-| DAO Treasury | 10% | 100B | Governance-controlled |
-| Creator | 5% | 50B | 12-month linear vesting |
-| Airdrop | 5% | 50B | Merkle Tree Claim |
-| Charity Reserve | 5% | 50B | Public transparent wallet |
-| Community | 3% | 30B | Reward pool |
-
-### 6.3. Allocation Verification
+### 3.2 Visual Diagram of the Protocol
 
 ```
-500B + 120B + 100B + 100B + 50B + 50B + 50B + 30B
-= 1,000,000,000,000 PNJC (100%)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        GOLDEN PHOENIX PROTOCOL                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  1️⃣ USDT Inflow (partners, revenues, contributions)                        │
+│                  │                                                          │
+│                  ▼                                                          │
+│  2️⃣ Reserve 5% → Insurance Fund (insurancePercent)                        │
+│                  │                                                          │
+│                  ▼                                                          │
+│  3️⃣ Remaining 95% USDT                                                     │
+│                  │                                                          │
+│     ┌────────────┴────────────┐                                            │
+│     │                         │                                            │
+│     ▼                         ▼                                            │
+│  25% for buyback         75% accumulated                                   │
+│  (buybackPercent)        (on contract balance)                             │
+│     │                                                                       │
+│     ▼                                                                       │
+│  4️⃣ Convert USDT → PNJC via QuickSwap                                     │
+│     │                                                                       │
+│     ▼                                                                       │
+│  5️⃣ 50% BURNED (burnPercent)                                               │
+│     │                                                                       │
+│     ▼                                                                       │
+│  6️⃣ 50% → Community Rewards Pool (rewardPercent)                           │
+│                                                                             │
+│  🔄 Cycle repeats upon new USDT inflows                                    │
+│                                                                             │
+│  🛡️ If price drops below price floor → Insurance Fund activation           │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 6.4. Protection Mechanisms
+### 3.3 Protocol Parameters (DAO‑Adjustable)
 
-| Mechanism | Description |
-|-----------|-------------|
-| 🔒 Anti-Rug | 50% of LP tokens locked on Uniswap via Unicrypt/PinkSale. Lock certificates are publicly verifiable. |
-| 📉 Vesting | Team and founder tokens (15%) unlock linearly over 12 months. |
-| ❤️ Transparency | Charity Reserve wallet is public for on-chain verification of transfers to SmileDonate. |
-| 🏛️ Multisig | Treasury managed via 3/5 Multisig (Gnosis Safe), eliminating single-key compromise risk. |
+| Parameter | Description | Default Value | Adjustment Range |
+|-----------|-------------|---------------|------------------|
+| `insurancePercent` | Share of USDT reserved in the Insurance Fund | 5% | 3–10% |
+| `buybackPercent` | Share of remaining USDT allocated to token buybacks | 25% | 15–35% |
+| `burnPercent` | Share of purchased tokens permanently burned | 50% | 30–70% |
+| `rewardPercent` | Share of purchased tokens sent to the rewards pool | 50% | 30–70% |
+| `priceFloor` | Minimum price triggering the protection mechanism | 0.000000001 PNJC | Subject to DAO review |
+| `minExecutionAmount` | Minimum USDT amount to activate the protocol | 100 USDT | 50–10,000 USDT |
+| `maxSlippageBps` | Maximum acceptable slippage during swaps | 300 bps (3%) | 50–1000 bps |
 
----
+**Important smart‑contract constraints:**
+- `insurancePercent + buybackPercent == 30` (the sum of these two parameters always equals 30%)
+- `burnPercent + rewardPercent == 100` (the sum always equals 100%)
 
-## 🔄 7. Circulation Model
+### 3.4 Why is `buybackPercent` not 100%?
 
-### 7.1. Initial Circulation
+**Technical rationale:**
+The protocol does not convert all 95% of USDT into PNJC in a single cycle for several reasons:
 
-At launch: 100,000,000,000 PNJC (10%) enters circulation.
+1. **Slippage Reduction**  
+   Large one‑time buybacks can significantly increase the PNJC price, amplifying slippage and making burning less efficient. Gradual buybacks minimise market impact.
 
-### 7.2. Locked Supply
+2. **Capital Accumulation**  
+   Accumulated funds allow for larger buybacks during periods of low liquidity or significant inflows, maximising the deflationary effect.
 
-900,000,000,000 PNJC remains locked at creation and is released gradually.
+3. **Management Flexibility**  
+   The DAO can adjust `buybackPercent` based on market conditions, increasing buybacks when liquidity is high and reducing them when it is low.
 
-### 7.3. Unlock Mechanism
+4. **Strategic Reserving**  
+   A portion of funds remains on the protocol balance for emergency situations (e.g., to activate price protection via the Insurance Fund without external funds).
 
-Every 6 months, 10% of the remaining locked supply is released.
+### 3.5 Economic Impact
 
-**Mathematical Model**
+- **Continuous reduction of circulating supply:** Each cycle burns a portion of tokens.
+- **Incentivising activity:** 50% of tokens are returned to the community as rewards.
+- **Protection against sharp declines:** The Insurance Fund (5% of inflows) provides price protection.
+- **Governance flexibility:** The DAO can adapt protocol parameters to market conditions.
 
-```
-B₀ = 900B
-Rₙ = 0.10 × Bₙ₋₁
-Bₙ = Bₙ₋₁ − Rₙ
-```
+________________________________________
 
-Where:
-- B₀ = initial locked supply
-- Rₙ = release amount per period
-- Bₙ = remaining locked supply
+## 4. TOKENOMICS (UNIFIED VERSION 3.1)
 
----
+### 4.1 Total Supply
+Fixed — 1,000,000,000,000 PNJC.
 
-## 📈 8. Economic Design Principles
+### 4.2 Distribution
 
-PNJC is built on three core principles:
+| Category | % | Amount | Purpose |
+|----------|---|--------|---------|
+| **Liquidity (DEX)** | 50% | 500B | Providing trading on QuickSwap and Uniswap. LP tokens locked for 12 months. |
+| **Project Treasury** | 12% | 120B | Development, marketing, legal support, future audits, listings. Managed by 3/5 multisig. |
+| **Team** | 10% | 100B | Team compensation. Vesting: 6‑month cliff, 12‑month linear unlock (1/12 monthly). |
+| **DAO Treasury** | 10% | 100B | Managed by PNJC holders through votes (quorum 5%). |
+| **Founder** | 5% | 50B | Vesting: 6‑month cliff, 12‑month linear unlock. |
+| **Airdrop** | 5% | 50B | Merkle drop for early users. Unclaimed tokens burned after 3 months. |
+| **Charity Reserve** | 5% | 50B | Donations to verified funds (selected via DAO). All transactions public. |
+| **Community Rewards** | 3% | 30B | Incentives for PoK, Social Mining, Challenges. Monthly budget; unused amounts burned. |
 
-| Principle | Description |
-|-----------|-------------|
-| Fixed Supply Integrity | No inflation, minting, or reissuance. |
-| Market-Based Valuation | Token price determined exclusively by open market liquidity. |
-| Non-Codable Design | No administrative privileges, blacklists, or freeze functions. |
+**Sum Check:** 50+12+10+10+5+5+5+3 = 100%.
 
----
+### 4.3 Vesting Model
 
-## 🧠 9. Product / Ecosystem
+- **Cliff:** 6 months (tokens are not unlocked).
+- **Vesting:** 12 months linearly, with equal monthly instalments (1/12) of the total vesting allocation.
+- All vesting contracts are public and verified.
 
-### 9.1. PNJC: Utility & Ecosystem Token
+________________________________________
 
-PNJC serves as the primary digital asset of the PanjoCoin ecosystem.
+## 5. SOURCES OF DEMAND (UTILITIES)
 
-**Core Functions:**
-- Medium of exchange within the ONE+ ecosystem
-- Participation in socially-oriented project initiatives
-- Fixed-supply store of value (1,000,000,000,000 PNJC)
-- Interaction instrument for future ecosystem products
+| Scenario | Action | Impact on Demand |
+|----------|--------|------------------|
+| **Proof of Kindness** | Payment for verification of good deeds | Constant small expenditure |
+| **Impact Score** | Burning tokens to accelerate rank growth | Deflationary effect |
+| **Social Mining** | Collateral of PNJC for participation | Temporary lock‑up |
+| **DAO Voting** | Minimum balance for participation | Token retention |
+| **Kindness Challenges** | Entry fee in PNJC | Consumption |
+| **ONE+ Platform** | Payment for premium services | Regular spending |
+| **NFT / Status Levels** | Purchase with PNJC | Burning or lock‑up |
+| **Charity** | Voluntary donations | Removal from circulation |
 
-PNJC does not confer rights to income, dividends, or equity in the project.
+________________________________________
 
----
+## 6. DAO GOVERNANCE
 
-### 9.2. ONE+ Meta-Platform (In Development)
+- **Platform:** Snapshot (off‑chain) with possible transition to on‑chain.
+- **Voting Weight:** 1 PNJC = 1 vote.
+- **Quorum:** 5% of circulating supply for standard proposals; 10% for amendments to the Agreement; 3% for emergency proposals.
+- **Voting Period:** 5 days (48 hours for emergency proposals).
+- **Proposal Types:** changes to Golden Phoenix parameters (`insurancePercent`, `buybackPercent`, `burnPercent`, `rewardPercent`, `priceFloor`, `minExecutionAmount`, `maxSlippageBps`), allocation of treasury funds, selection of charitable organisations, addition of new utilities, amendments to the Agreement.
 
-ONE+ is a social-gaming platform built around the digital Panjo character.
+The multisig wallet (3/5) executes DAO‑approved transactions and has veto power only in emergency cases (hack, error) with mandatory public justification.
 
-**Core Concept:**
-- Users participate in mini-games and platform activities
-- Receive PNJC as digital rewards for participation
-- Support content creators through direct on-chain and off-chain mechanisms
-- Formation of a gaming and social economy around the Panjo character
+________________________________________
 
----
+## 7. CHARITABLE MODEL
 
-### 9.3. ClownCare Bridge (In Development)
+- **Transparency:** all charity wallet transactions are public on PolygonScan.
+- **Selection of organisations:** determined by the DAO based on community proposals.
+- **Primary partner:** ClownCare (supporting children in Tbilisi hospitals).
+- **Incentives:** users who donate through the project receive additional Impact Score points (not financial benefit).
 
-ClownCare Bridge is a transparent social reporting system interfacing with charitable initiatives.
+________________________________________
 
-**System Functions:**
-- Public display of charitable fund utilization
-- On-chain verification of transfers to the SmileDonate foundation
-- Enhanced transparency of PNJC ecosystem social initiatives
+## 8. RISK MANAGEMENT
 
-**Additional Feature:**
-- Major donors may receive "Panjo Guardians" NFTs as digital Proof of Impact for participation in social initiatives
-- ⚠️ NFTs do not confer governance or financial rights
+The principal risks are detailed in the separate **Risk Disclosure Statement**. Key measures:
 
----
+- **Market risks:** the project does not guarantee price stability; users act at their own risk.
+- **Technical risks:** the contract is immutable, but an external security audit has not yet been conducted (planned in the coming months). Users assume heightened technical risk.
+- **Regulatory risks:** the project is decentralised; users must comply with local legislation.
+- **Liquidity risks:** LP tokens are locked for 12 months; a reserve is in place.
+- **Concentration risks:** token distribution prevents the dominance of a single address.
 
-## ⚙️ 10. Technology / Smart Contract
+________________________________________
 
-### 10.1. Infrastructure
+## 9. ROADMAP
 
-| Component | Details |
-|-----------|---------|
-| Network | Polygon PoS (65k TPS, fees < $0.01) |
-| DEX | Uniswap V3 (constant liquidity) |
-| Libraries | OpenZeppelin 5.0.2 (Reentrancy & Overflow protection) |
-| Protocol | ERC-20 + EIP-2612 (Permit) — gasless approvals |
+| Phase | Period | Key Events |
+|-------|--------|------------|
+| **Pre‑Launch** | Q3 2026 | Contract development and verification; document publication; social media launch; airdrop; community building. |
+| **Launch** | Q4 2026 | Liquidity deployment on DEX; LP lock; trading start; publication on aggregators; marketing campaign. |
+| **Growth** | Q1–Q2 2027 | Launch of PoK, Impact Score, Social Mining, challenges; Global Kindness Map integration; partnership with ClownCare. |
+| **Expansion** | Q3–Q4 2027 | CEX listings; ONE+ launch; multi‑chain expansion; institutional partnerships; NFT collection; full DAO. |
+| **Maturity** | 2028+ | Full decentralisation; international recognition; real‑sector integration; Proof of Kindness Foundation; 1M+ users. |
 
-### 10.2. Core Logic
+________________________________________
 
-| Function | Status |
-|----------|--------|
-| 🚫 No Mint | mint() method physically absent from code |
-| ⚖️ Renounced Ownership | Contract has no owner (owner = address(0)). No one can add blacklists or modify taxes (0% permanently) |
-| ⚡ Gasless Approve | EIP-2612 support enables users to sign transactions without MATIC |
+## 10. LEGAL STATUS
 
-### 10.3. Public Verification
+PanjoCoin (PNJC) is a digital utility asset and is not a security, investment contract, or financial instrument. The project does not guarantee income or return of funds. All interactions are at the user’s own risk. The full list of restrictions and risks is set out in the **Disclaimer** and **Risk Disclosure Statement**. The project documentation complies with DEX listing standards and the requirements of Swiss legislation.
 
-- **Contract Address**: 0x781C0d15347Cb0B94C42C65c7a67E70371205De5
-- **Compiler**: Solidity 0.8.34 (Verified on PolygonScan)
+________________________________________
 
----
+## 11. CONCLUSION
 
-## 🔐 11. Security & Audit
+PanjoCoin (PNJC) is a new‑generation memecoin that addresses fundamental industry issues: lack of utility, centralisation, opacity, and absence of social capital. Through its unique concept of Proof of Kindness, the automatic deflationary Golden Phoenix mechanism with flexible parameters (`buybackPercent`, `insurancePercent`, `burnPercent`), decentralised governance, and transparent charity, the project builds a sustainable ecosystem where kindness becomes a valuable asset.
 
-### 11.1. Code Transparency
-The code is fully verified on PolygonScan. No hidden functions (Blacklisting, Hidden Mint).
+Join the movement. Be kind. Be Panjo. 🐾
 
-### 11.2. OpenZeppelin Protection
-Implementation of industry-standard secure libraries eliminates reentrancy vulnerabilities.
+________________________________________
 
-### 11.3. Anti-Rug: Liquidity Lock
-500,000,000,000 PNJC in Uniswap liquidity pools is locked via Unicrypt/PinkSale. Lock certificates are publicly available.
+**Document Version:** 1.0  
+**Date:** July 4, 2026  
+**Status:** Official Agreed Document, Synchronized with Smart Contracts
 
-### 11.4. Multisig & Timelock (Planned)
-Treasury is managed through a 3/5 Multisig (Gnosis Safe), preventing fund theft from a single key compromise.
+________________________________________
 
----
-
-## 📈 12. Roadmap
-
-| Phase | Status | Description |
-|-------|--------|-------------|
-| 🟣 Phase 1 — Genesis | ✅ Complete | Contract deployment, verification, social media launch, Merkle Airdrop |
-| 🛡 Phase 2 — Trust | 🔄 Ongoing | DEX Listing (Uniswap), Liquidity Lock, Charity Dashboard launch, CoinGecko/CMC listing |
-| 🧩 Phase 3 — Expansion | 📅 Q4 2026 | ONE+ Beta, "Panjo Pass" NFT, ClownCare expansion to 3 clinics in Georgia |
-| 🌍 Phase 4 — Global Impact | 📅 2027 | Multi-chain Bridge (Arbitrum/Base), World ClownCare Network |
-
----
-
-## 👥 13. Team
-
-**Tengo Kalandia** — Solo Founder & Visionary
-- **Experience**: Over 11 years as Director of the SmileDonate charitable foundation.
-- **Role**: Tengo personally developed the smart contract (Solidity 0.8.34), authored the WhitePaper, designed the tokenomics, and manages marketing. This represents a deliberate "solo founder" path ensuring maximum agility and complete commitment to the vision.
-
-**Social Block (ClownCare)**:
-Foundation coordinators and psychologists ensuring the connection between blockchain transactions and real-world assistance at the M. Iashvili Hospital (Tbilisi, Georgia).
-
-**Why We Are Not Anonymous**: In an industry plagued by rug pulls, the PNJC team has chosen the path of a Doxxed Team. We stake our reputation in the charitable sector.
-
----
-
-## ⚠️ 14. Risk Disclosure
-
-PNJC is a blockchain-based digital asset.
-
-Users acknowledge risks including:
-- Market volatility
-- Liquidity fluctuations
-- Smart contract vulnerabilities
-- Regulatory uncertainty
-- Irreversibility of blockchain transactions
-
-No guarantees regarding price, liquidity, or future utility are provided.
-
----
-
-## ⚖️ 15. Legal & Disclaimer
-
-### 15.1. Token Status (Not a Security)
-
-PNJC is exclusively a Utility Token. It does not confer rights to foundation profits or dividends. PNJC does not represent equity, ownership rights, partnership interests, or any claims to income.
-
-### 15.2. No Guarantee of Profit
-
-Cryptocurrency markets are volatile. The price of PNJC may increase or decrease to zero. Participate only with funds you can afford to lose.
-
-### 15.3. Regulatory Risks
-
-Users bear personal responsibility for compliance with their country's tax legislation.
-
----
-
-## 📌 16. Source of Truth Hierarchy
-
-In case of conflict between documents:
-1. Smart contract state on the blockchain (highest authority)
-2. Blockchain transaction history
-3. Verified smart contract source code
-4. Official documentation (this WhitePaper)
-
----
-
-## 🌍 17. Community & Marketing
-
-Our strategy is "Organic Joy":
-- **Viral Content**: Memes and videos featuring the real Shar Pei Panjo.
-- **Storytelling**: Video reports from the M. Iashvili Hospital demonstrating how your tokens transform into children's smiles.
-- **Influencers**: Crypto-bloggers (to attract liquidity to Uniswap) + Social Impact bloggers (for mass audience reach).
-
----
-
-## 🏁 18. Conclusion
-
-PanjoCoin (PNJC) is a manifesto for what a modern crypto asset should be. By combining the security of Polygon, the transparency of SmileDonate, and the genuine joy of Panjo the Shar Pei, we are creating not just a token, but an ecosystem of compassion, tradeable on Uniswap.
-
-Join us. Every transaction is another smile for a child who desperately needs it.
-
----
-
-## 🔗 Official Links
-
-| Resource | Link |
-|----------|------|
-| Website | cryptotengo.com |
-| Smart Contract (PNJC) | 0x781C0d15347Cb0B94C42C65c7a67E70371205De5 |
-| Network | Polygon (PoS) |
-| DEX | Uniswap |
-| Socials | X (Twitter) | Telegram | YouTube — @CryptoTengo |
-
----
-
-## 📋 Final Classification
-
-PanjoCoin (PNJC) represents:
-- ✅ ERC-20 token with fixed supply
-- ✅ Non-upgradeable smart contract system
-- ✅ Decentralized Polygon-native asset governed by liquidity
-- ✅ Digital token with cultural narrative context
-- ✅ Social impact instrument through the SmileDonate charitable foundation
-- ✅ Bridge between meme culture and real-world assistance for children with oncology
-
----
-
-© 2026 PanjoCoin. All rights reserved.
+*This document is an integral part of the PanjoCoin legal package and should be read in conjunction with the Terms of Use (v2.0), Privacy Policy (v2.0), Disclaimer (v2.0), Risk Disclosure Statement (v2.0), DAO Operating Agreement (v2.0), and Tokenomics (v3.1).*
