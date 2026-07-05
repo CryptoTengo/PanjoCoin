@@ -257,7 +257,7 @@ ________________________________________
 
 ## 9. DATA RESPONSIBILITY
 
-This version of the Tokenomics (v3.2) is the single official version for all project documents (Whitepaper v5.1, FAQ, Token Information Sheet, DAO Operating Agreement, etc.). All figures and mechanisms described herein take precedence over any previous versions.
+This version of the Tokenomics (v3.2) is the single official version for all project documents (Whitepaper v 1.0, FAQ, Token Information Sheet, DAO Operating Agreement, etc.). All figures and mechanisms described herein take precedence over any previous versions.
 
 **Key changes in version 3.2:**
 - ✅ Added full description of the `buybackPercent` parameter.
