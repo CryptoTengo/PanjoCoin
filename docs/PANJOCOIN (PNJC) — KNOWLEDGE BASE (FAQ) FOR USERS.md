@@ -1,4 +1,5 @@
 PANJOCOIN (PNJC) — KNOWLEDGE BASE (FAQ) FOR USERS
+
 Version: 1.0 (Synchronized with Code and Documentation)
 Date: July 4, 2026
 Updated: Quarterly
