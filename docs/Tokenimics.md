@@ -167,7 +167,7 @@ The Golden Phoenix Protocol (`PNJC_GoldenPhoenixProtocol`) automatically creates
 | `buybackPercent` | Share of remaining USDT allocated to token buybacks | 25% | 15–35% |
 | `burnPercent` | Share of purchased tokens permanently burned | 50% | 30–70% |
 | `rewardPercent` | Share of purchased tokens sent to the rewards pool | 50% | 30–70% |
-| `priceFloor` | Minimum price triggering the protection mechanism | 0.000000001 PNJC | Subject to DAO review |
+| `priceFloor` | Minimum price triggering the protection mechanism | 0.000001 PNJC | Subject to DAO review |
 | `minExecutionAmount` | Minimum USDT amount to activate the protocol | 100 USDT | 50–10,000 USDT |
 | `maxSlippageBps` | Maximum acceptable slippage during swaps | 300 bps (3%) | 50–1000 bps |
 
