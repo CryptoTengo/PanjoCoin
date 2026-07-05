@@ -248,7 +248,7 @@ ________________________________________
 |----------|---------|---------|
 | **PNJC Token** | `0x781C0d15347Cb0B94C42C65c7a67E70371205De5` | Main ERC‑20 token |
 | **PNJC_GoldenPhoenixProtocol** | To be published | Deflationary protocol |
-| **PNJCLiquidityLocker** | To be published | LP token locking |
+| **PNJCLiquidityLocker** |`0x301CA915ca73550b3E6b578279e6a65511858C0c | LP token locking |
 | **PNJCAirdrop** | To be published | Merkle distribution |
 | **PNJCTreasuryVault** | To be published | Treasury (multisig) |
 | **PNJCVestingVault** | To be published | Linear vesting |
