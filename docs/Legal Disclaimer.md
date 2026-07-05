@@ -1,4 +1,4 @@
-📜 Legal Disclaimer & Risk Disclosure
+📜 Legal Disclaimer 
 
 Version 1.1 — 2026
 (Updated to reflect PanjoCoin (PNJC) specific mechanics)
