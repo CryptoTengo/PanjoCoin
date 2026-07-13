@@ -1,4 +1,5 @@
 PanjoCoin (PNJC) — Decentralized Utility Token on Polygon
+
 https://img.shields.io/badge/License-MIT%2520%252B%2520Proprietary-blue.svg
 https://img.shields.io/badge/Solidity-0.8.34-blueviolet
 https://img.shields.io/badge/Network-Polygon_PoS-8247e5
