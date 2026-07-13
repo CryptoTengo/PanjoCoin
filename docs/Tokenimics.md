@@ -1,24 +1,17 @@
 PANJOCOIN (PNJC) — TOKENOMICS
 Synchronized with WhitePaper | Comprehensive Economic Model of the Utility Token on Polygon
-
 Effective Date: July 9, 2026
 Updated: July 9, 2026 (Roadmap Update)
-
+________________________________________
 Executive Summary (Tokenomics Overview)
 PanjoCoin (PNJC) is a utility digital asset with a fixed supply, deployed on the Polygon PoS network. The tokenomics are designed with a focus on security, transparency, and long-term sustainability.
-
 Core Tokenomics Principles:
-
-Fixed Supply — 1,000,000,000,000 PNJC, minting occurred once at deployment.
-
-Zero Tax — 0% on all operations (buying, selling, transfers).
-
-Full Transparency — All distribution wallets are public and verifiable.
-
-Liquidity Lock — 50% of total supply will be locked through an immutable contract for 12 months (deployment scheduled for July 2026; exact date and address to be announced).
-
-Gradual Decentralization — Governance to be progressively transferred to the community via DAO (code ready; deployment scheduled for December 2026).
-
+•	Fixed Supply — 1,000,000,000,000 PNJC, minting occurred once at deployment.
+•	Zero Tax — 0% on all operations (buying, selling, transfers).
+•	Full Transparency — All distribution wallets are public and verifiable.
+•	Liquidity Lock — 50% of total supply will be locked through an immutable contract for 12 months (deployment scheduled for July 2026; exact date and address to be announced).
+•	Gradual Decentralization — Governance to be progressively transferred to the community via DAO (code ready; deployment scheduled for December 2026).
+________________________________________
 1. TOKEN SPECIFICATIONS
 Parameter	Value
 Name	PanjoCoin
@@ -35,6 +28,7 @@ Transfer Tax	0%
 Blacklists / Freezes	None
 Token Contract Address	0x781C0d15347Cb0B94C42C65c7a67E70371205De5
 Compiler	Solidity 0.8.34 (verified)
+________________________________________
 2. TOKEN DISTRIBUTION
 2.1. Overall Distribution Structure
 #	Allocation	Share	Amount (PNJC)	Wallet Address	Control Mechanism
@@ -45,32 +39,18 @@ Compiler	Solidity 0.8.34 (verified)
 5	Community	8%	80,000,000,000	0x54D3beB9e0F473803cC7a972Db2C17f005a2D089	Airdrop, referral programs (MerkleAirdrop; deployment July 2026)
 6	Founder	5%	50,000,000,000	0xF48840486697AE3c15D38E30e45cECB9897CfA74	Vesting to be implemented (VestingVault, 12 months; deployment August 2026)
 7	Charity Reserve	5%	50,000,000,000	0xa22E471BF4e405c92bDD074792d8d36923e31055	Public wallet (on-chain verification)
-TOTAL		100%	1,000,000,000,000	—	—
+	TOTAL	100%	1,000,000,000,000	—	—
 2.2. Distribution Verification
 500,000,000,000 (50%)
-
-120,000,000,000 (12%)
-
-100,000,000,000 (10%)
-
-100,000,000,000 (10%)
-
-80,000,000,000 (8%)
-
-50,000,000,000 (5%)
-
-50,000,000,000 (5%)
+•	120,000,000,000 (12%)
+•	100,000,000,000 (10%)
+•	100,000,000,000 (10%)
+•	80,000,000,000 (8%)
+•	50,000,000,000 (5%)
+•	50,000,000,000 (5%)
 = 1,000,000,000,000 PNJC (100%)
-
+________________________________________
 3. SECURITY AND CONTROL MECHANISMS
-Important Note on Additional Smart Contracts
-
-All supplementary smart contracts described in this document – namely the GoldenPhoenixProtocol, LiquidityLocker, VestingVault, TreasuryVault, Airdrop, and DAO Governor – have completed source code, which is publicly available in the open GitHub repository for community review.
-
-As of the publication date of this Tokenomics document, these contracts are NOT deployed on the mainnet, have NOT undergone an independent security audit, and are NOT active. Their staged deployment is planned for the 2026–2027 period in strict accordance with the Roadmap (Section 9). Exact deployment dates and contract addresses will be announced through official project channels after the successful completion of independent audits and final verification.
-
-Until the official deployment announcement, none of the functionalities described for these modules (e.g., deflationary burning, DAO voting, vesting claims, or airdrop claims) are available to users. The only active on-chain components are the base PNJC token and the multisig treasury wallet.
-
 3.1. Liquidity Lock — Code Ready; Deployment Scheduled for July 2026
 Parameter	Value
 Locked Amount	500,000,000,000 PNJC (50% of total supply)
@@ -91,7 +71,6 @@ Release Model	Linear (monthly ~8.33% of locked volume)
 Vesting Contract	VestingVault (code ready)
 Status	🧩 Code ready; deployment scheduled for August 2026
 Vesting Release Schedule (Team + Founder):
-
 Month	Released (Billion)	Cumulative in Circulation (Billion)
 0	0	0
 1	12.50	12.50
@@ -115,17 +94,11 @@ Transaction Quorum	3
 Purpose	Operational expenses, listings, marketing
 Transparency	All transactions public on PolygonScan
 Key Holders (Pre-DAO):
-
-Tengo Kalandia (Founder)
-
-Technical Advisor (to be appointed)
-
-Strategic Advisor (to be appointed)
-
-Backup Key 1 (Auditor)
-
-Backup Key 2 (Community)
-
+1.	Tengo Kalandia (Founder)
+2.	Technical Advisor (to be appointed)
+3.	Strategic Advisor (to be appointed)
+4.	Backup Key 1 (Auditor)
+5.	Backup Key 2 (Community)
 3.4. DAO Treasury — Code Ready; Deployment Scheduled for December 2026
 Parameter	Value
 Wallet Address	0xD5e2DD65BA4984565b53EFdcec6A9D2F494b5FE2
@@ -133,38 +106,25 @@ Status	Code ready; deployment scheduled for December 2026
 Governance	Through DAO Governor contract (code ready)
 Volume	100,000,000,000 PNJC (10% of total supply)
 Purpose	Ecosystem development, grants, partnerships
+________________________________________
 4. CIRCULATION MODEL
 4.1. Initial Circulation
 At launch, 1% of total supply enters circulation = 10,000,000,000 PNJC.
-
 Composition of Initial Circulation:
-
-Portion of liquidity pool
-
-Portion of charity reserve
-
-Portion of community allocation
-
+•	Portion of liquidity pool
+•	Portion of charity reserve
+•	Portion of community allocation
 4.2. Locked Supply
 The remaining 99% = 990,000,000,000 PNJC remains locked and is distributed according to schedule (to be implemented in VestingVault).
-
 Locked Categories:
-
-Liquidity Pool (500 billion) — locked for 12 months (July 2026 – July 2027)
-
-Team + Founder (150 billion) — vesting for 12 months (deployment August 2026)
-
-Treasury (120 billion) — managed by multisig (implemented)
-
-DAO Treasury (100 billion) — awaiting DAO launch (December 2026)
-
-Community (80 billion) — used for airdrops (deployment July 2026)
-
-Charity Reserve (40 of 50 billion) — gradual utilization
-
+•	Liquidity Pool (500 billion) — locked for 12 months (July 2026 – July 2027)
+•	Team + Founder (150 billion) — vesting for 12 months (deployment August 2026)
+•	Treasury (120 billion) — managed by multisig (implemented)
+•	DAO Treasury (100 billion) — awaiting DAO launch (December 2026)
+•	Community (80 billion) — used for airdrops (deployment July 2026)
+•	Charity Reserve (40 of 50 billion) — gradual utilization
 4.3. Token Release Schedule
 Annually, 5% of the remaining locked volume enters circulation.
-
 Year	Locked (Billion)	In Circulation (Billion)	% in Circulation
 0 (Launch)	990.00	10.00	1.00%
 1	940.50	59.50	5.95%
@@ -179,19 +139,12 @@ Year	Locked (Billion)	In Circulation (Billion)	% in Circulation
 10	592.75	407.25	40.72%
 4.4. Mathematical Model
 Notation:
-
-S₀ = 990 billion — initial locked supply
-
-Sₙ — locked supply after n years
-
-Rₙ — release volume in year n
-
-Cₙ — cumulative tokens in circulation after n years
-
-Pₙ — percentage of tokens in circulation relative to total supply
-
+•	S₀ = 990 billion — initial locked supply
+•	Sₙ — locked supply after n years
+•	Rₙ — release volume in year n
+•	Cₙ — cumulative tokens in circulation after n years
+•	Pₙ — percentage of tokens in circulation relative to total supply
 Formulas:
-
 text
 S₀ = 990,000,000,000 PNJC
 Rₙ = 0.05 × Sₙ₋₁
@@ -199,13 +152,10 @@ Sₙ = Sₙ₋₁ − Rₙ
 Cₙ = 1,000,000,000,000 − Sₙ
 Pₙ = (Cₙ / 1,000,000,000,000) × 100%
 Where:
-
-n — number of years since launch (n ≥ 1)
-
-Each year, 5% of the current locked supply is released
-
-Released tokens enter circulation
-
+•	n — number of years since launch (n ≥ 1)
+•	Each year, 5% of the current locked supply is released
+•	Released tokens enter circulation
+________________________________________
 5. TOKEN UTILITY
 5.1. Current Utility (Available Now; Implemented in Code)
 Feature	Description
@@ -219,7 +169,7 @@ ClownCare Bridge	Transparent fund distribution system with on-chain reporting (d
 DAO Voting	Participation in ecosystem development votes (1 PNJC = 1 vote)	December 2026
 Deflationary Engine	Optional automatic burning by DAO decision (GoldenPhoenixProtocol)	September 2026
 Note: Smart contracts (DAO, deflationary engine, vesting, airdrop, treasury) have code ready, published in the open repository. ONE+ Platform and ClownCare Bridge are backend services in the design phase.
-
+________________________________________
 6. SMART CONTRACT TECHNICAL SPECIFICATIONS
 6.1. Implemented Token Functions (from code)
 Function	Description	Status
@@ -250,6 +200,7 @@ No delegatecall	✅
 No upgradeable	✅
 No owner (owner = address(0))	✅
 Code verified on PolygonScan	✅
+________________________________________
 7. ECONOMIC PRINCIPLES
 Principle	Description
 Fixed Supply Integrity	No inflation, minting, or re-issuance
@@ -257,6 +208,7 @@ Market Valuation	Token price determined exclusively by open market liquidity
 Non-Codifiable Design	No administrative privileges, blacklists, or freeze functions
 Transparency	All wallets and transactions public and verifiable
 Long-Term Sustainability	Gradual token release into circulation; team motivation extending years ahead
+________________________________________
 8. RISK DISCLOSURE
 Risk	Description
 Market Risks	Token price is market-determined and may fluctuate; complete loss of value is possible
@@ -267,10 +219,9 @@ Development Risks	Planned features may be partially implemented, delayed, or not
 Centralization Risks	Currently, key wallet management is through multisig; full decentralization will only be achieved after DAO launch
 Important to Understand:
 The token provides access to ecosystem services. Its acquisition is not an investment and does not guarantee income. The token price may fall to zero.
-
+________________________________________
 9. ROADMAP (24 MONTHS) — Synchronized with WhitePaper v1.2
 Below is a detailed implementation plan for all modules, synchronized with the updated WhitePaper roadmap.
-
 Month	Period	Module / Stage	Details
 1	July 2026	Token & Locker Audit Completion; Liquidity Lock; MerkleAirdrop	Conduct independent audit (if not done). Deploy PNJCLiquidityLockerV3; lock 50% LP for 12 months. Launch Merkle-tree airdrop.
 2	August 2026	VestingVault; TreasuryVault	Deploy vesting contracts for team and founder (12-month linear schedule). Activate multisig treasury with transparent reporting.
@@ -297,7 +248,7 @@ Month	Period	Module / Stage	Details
 23	May 2028	"2 Years of PNJC" Marketing Campaign	Summary of results; public reporting; team interviews; active participant awards.
 24	June 2028	Next Cycle Planning	Determine 2028–2029 priorities based on DAO votes and metrics.
 Note: All timelines depend on independent audit results and may be subject to adjustment.
-
+________________________________________
 10. PROJECTION MODEL
 10.1. Supply and Circulation (First 10 Years)
 Year	Total Supply	In Circulation	Locked	% in Circulation
@@ -318,7 +269,7 @@ Locked Supply	~358.85 billion PNJC
 In Circulation	~641.15 billion PNJC
 Percentage in Circulation	~64.12%
 The remaining ~358.85 billion PNJC will continue unlocking using the same formula until all tokens enter circulation. Full unlocking is mathematically achieved asymptotically (infinite horizon), ensuring a perpetual economic model without sharp supply spikes.
-
+________________________________________
 11. TOKENOMICS COMPLIANCE CHECKLIST — WHITEPAPER v1.2
 #	Criterion	Status	Confirmation
 1	Fixed Supply	✅	1 trillion PNJC, no mint()
@@ -335,6 +286,7 @@ The remaining ~358.85 billion PNJC will continue unlocking using the same formul
 12	Risk Disclosure	✅	Full risk section
 13	Audit Plan	🧩	Scheduled (token and locker — July 2026; others — before deployment)
 14	24-Month Roadmap	✅	Detailed and synchronized with WhitePaper v1.2
+________________________________________
 12. VERIFICATION LINKS
 Resource	Link
 Token Contract (PolygonScan)	0x781C0d15347Cb0B94C42C65c7a67E70371205De5
@@ -346,7 +298,10 @@ Community	0x54D3beB9e0F473803cC7a972Db2C17f005a2D089
 Founder	0xF48840486697AE3c15D38E30e45cECB9897CfA74
 Charity Reserve	0xa22E471BF4e405c92bDD074792d8d36923e31055
 GitHub (Contract Code)	github.com/CryptoTengo/PanjoCoin
+
 WhitePaper v1.2	github.com/CryptoTengo/PanjoCoin/blob/main/docs/WhitePaper.md
+
+________________________________________
 13. APPENDIX: DISTRIBUTION DIAGRAM
 text
 Total Supply: 1,000,000,000,000 PNJC
@@ -371,6 +326,7 @@ Total Supply: 1,000,000,000,000 PNJC
 │
 └── 5% (50B) — Charity Reserve
     └── Public wallet (on-chain verification)
+________________________________________
 14. FINAL COMPLIANCE WITH WHITEPAPER v1.2
 #	Whitepaper Section	Tokenomics Compliance
 1	Core Parameters	✅ Full compliance
@@ -389,7 +345,11 @@ Total Supply: 1,000,000,000,000 PNJC
 14	Doxxed Team	✅ Founder publicly known
 15	No Investment Formulations	✅ Clearly stated token does not confer income rights
 16	Roadmap (24 Months)	✅ Fully synchronized with WhitePaper v1.2
+________________________________________
 © 2026 PanjoCoin. All rights reserved.
-
 Document Version: v1.2 (Synchronized with WhitePaper v1.2)
 Last Updated: July 9, 2026
+________________________________________
+This document is a translation of the original Russian-language PanjoCoin Tokenomics document. In case of any discrepancies, the original Russian version shall prevail. For the most up-to-date information, please refer to the official website and GitHub repository.
+This response is AI-generated, for reference only.
+
