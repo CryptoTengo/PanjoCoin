@@ -1,329 +1,364 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.34;
+pragma solidity ^0.8.34;
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+// ================================================================
+// OpenZeppelin imports (v5.0+)
+// ================================================================
+import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
+import "@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 /**
- * @title PNJC Liquidity Locker V2
- * @notice Immutable lock contract for Uniswap V2-style ERC-20 LP tokens.
+ * @title PNJCLiquidityLockerV2
+ * @notice Immutable, ownerless contract for locking LP NFTs (ERC721) – fully compliant with
+ *         PanjoCoin Whitepaper v1.0 and Tokenomics v1.0.
+ * @dev This contract is designed to lock Uniswap V3 (or other) LP positions represented as ERC721 NFTs.
+ *      It features:
+ *        - No owner / admin (rug‑proof)
+ *        - No upgradeability
+ *        - No emergency withdrawal
+ *        - No rescue functions
+ *        - ReentrancyGuard for safety
+ *        - Full on‑chain transparency
  *
- * @dev AUDIT / INVESTOR SUMMARY
- * This contract is designed to custody-lock a single ERC-20 LP token type
- * for a fixed time period. It does not mint, burn, rebase, tax, or otherwise
- * manage the PNJC token itself. Its sole purpose is to provide transparent,
- * deterministic, and time-bound liquidity locking.
+ *      **Investor & Audit Highlights:**
+ *        - The NFT cannot be withdrawn before `unlockTime`.
+ *        - No privileged role can bypass the lock.
+ *        - All locks are publicly verifiable via `getLock()`.
+ *        - The contract is immutable after deployment – no hidden backdoors.
  *
- * @dev SECURITY MODEL
- * - No owner.
- * - No admin role.
- * - No upgradeability.
- * - No emergency withdrawal.
- * - No rescue functions.
- * - No hidden token logic.
- * - Reentrancy protection on all external state-changing functions.
+ *      **Alignment with Documentation:**
+ *        - Whitepaper §5.1: “Immutable contract for locking LP NFT (ERC721). Ownerless, no emergencyWithdraw.”
+ *        - Whitepaper §6.3: “Lock period — 12 months … Contract has no owner and no emergencyWithdraw function,
+ *          protected against reentrancy.”
+ *        - Tokenomics §2.3: “Liquidity Lock: 50% of supply is locked in an immutable, ownerless contract.”
  *
- * @dev DESIGN PRINCIPLES
- * - Checks-Effects-Interactions pattern.
- * - Immutable configuration.
- * - Explicit on-chain lock records.
- * - Withdrawals allowed only after the unlock timestamp.
+ *      **Audit Readiness:**
+ *        - Designed for independent verification by Hacken, CertiK, Coinsult, and SolidProof.
+ *        - Code is minimal, focused, and follows best practices (OpenZeppelin, no external calls except safeTransfer).
  *
- * @dev BUSINESS RATIONALE
- * Liquidity locks increase public transparency by preventing immediate
- * withdrawal of LP tokens before a predefined unlock time.
- * This helps reduce rug-pull concerns and improves investor confidence.
- *
- * @dev IMPORTANT
- * This is an LP token locker, not an ERC-20 project token contract.
- * The asset held by this contract is the Uniswap V2 LP token itself.
+ * @author PanjoCoin Engineering Team
  */
-contract PNJCLiquidityLockerV2 is ReentrancyGuard {
-    using SafeERC20 for IERC20;
+contract PNJCLiquidityLockerV2 is ERC721Holder, ReentrancyGuard {
+
+    // ================================================================
+    // Custom Errors – gas efficient and descriptive
+    // ================================================================
+
+    error InvalidAddress();
+    error InvalidUnlockTime();
+    error InvalidLockId();
+    error NotNFTOwner();
+    error NotBeneficiary();
+    error LockStillActive();
+    error AlreadyWithdrawn();
+    error NotLocked();
+
+    // ================================================================
+    // Data Structures
+    // ================================================================
 
     /**
-     * @notice Lock lifecycle status.
-     * @dev Used for off-chain indexing, dashboards, and audit review.
-     */
-    enum LockStatus {
-        Empty,
-        Locked,
-        Unlocked,
-        Withdrawn
-    }
-
-    /**
-     * @notice Stored lock position data.
-     * @param lpToken The locked Uniswap V2 LP token contract.
-     * @param beneficiary The address that can withdraw after unlock.
-     * @param amount The amount of LP tokens locked.
-     * @param unlockTime The timestamp when the lock becomes withdrawable.
-     * @param withdrawn True once the lock has been released.
+     * @dev LockPosition stores the details of a locked LP NFT.
      */
     struct LockPosition {
-        address lpToken;
-        address beneficiary;
-        uint256 amount;
-        uint256 unlockTime;
-        bool withdrawn;
+        address nftContract;   // ERC721 contract address (e.g., Uniswap V3 Position Manager)
+        address beneficiary;   // Address that can withdraw after unlockTime
+        uint256 tokenId;       // NFT identifier
+        uint256 unlockTime;    // Timestamp (seconds) when withdrawal becomes allowed
+        bool withdrawn;        // Whether the NFT has already been withdrawn
     }
 
-    /// @notice Project reference address used for attribution and deployment context.
-    address public immutable creator;
+    // ================================================================
+    // State Variables
+    // ================================================================
 
-    /// @notice The LP token accepted by this locker.
-    address public immutable lpToken;
-
-    /// @notice Semantic version for off-chain tooling and human review.
-    string public constant VERSION = "PNJCLiquidityLockerV2-1.0.0";
-
-    /// @notice Total number of lock positions created.
+    /// @notice Total number of locks created (also used as lockId counter).
     uint256 public lockCount;
 
-    /// @dev lockId => lock data.
-    mapping(uint256 => LockPosition) private _locks;
+    /// @notice Mapping from lockId to LockPosition.
+    mapping(uint256 => LockPosition) private locks;
+
+    // ================================================================
+    // Metadata – on‑chain transparency for auditors and investors
+    // ================================================================
+
+    string public constant NAME = "PNJC Liquidity Locker";
+    string public constant VERSION = "2.0"; // Matches Whitepaper v1.0
+    string public constant LOCKER_TYPE = "Immutable ERC721 LP Locker";
+    string public constant STANDARD = "ERC721";
+    bool public constant HAS_ADMIN = false;
+    bool public constant UPGRADABLE = false;
+    bool public constant EMERGENCY_WITHDRAW = false;
+
+    // ================================================================
+    // Events
+    // ================================================================
 
     /**
-     * @notice Emitted when LP tokens are locked.
-     * @param lockId Unique lock identifier.
-     * @param lpToken The locked LP token address.
-     * @param beneficiary The recipient after unlock.
-     * @param amount The locked LP token amount.
-     * @param unlockTime The timestamp when withdrawal becomes possible.
+     * @dev Emitted when an NFT is successfully locked.
      */
     event LiquidityLocked(
         uint256 indexed lockId,
-        address indexed lpToken,
+        address indexed nftContract,
         address indexed beneficiary,
-        uint256 amount,
+        uint256 tokenId,
         uint256 unlockTime
     );
 
     /**
-     * @notice Emitted when LP tokens are withdrawn after unlock.
-     * @param lockId Unique lock identifier.
-     * @param beneficiary The address receiving the unlocked LP tokens.
-     * @param amount The withdrawn LP token amount.
+     * @dev Emitted when an NFT is successfully withdrawn after unlock.
      */
     event LiquidityWithdrawn(
         uint256 indexed lockId,
         address indexed beneficiary,
-        uint256 amount
+        uint256 tokenId
     );
 
-    /**
-     * @notice Deploys the liquidity locker.
-     * @param _creator Human-readable project reference address.
-     * @param _lpToken The Uniswap V2 LP token address to be locked.
-     *
-     * @dev AUDITOR NOTE
-     * This contract is intentionally restricted to one LP token address in order
-     * to reduce configuration risk and make verification straightforward.
-     */
-    constructor(address _creator, address _lpToken) {
-        if (_creator == address(0)) revert ZeroAddress();
-        if (_lpToken == address(0)) revert ZeroAddress();
+    // ================================================================
+    // Modifiers
+    // ================================================================
 
-        creator = _creator;
-        lpToken = _lpToken;
+    /**
+     * @dev Validates that a lockId exists.
+     */
+    modifier validLock(uint256 lockId) {
+        if (lockId == 0 || lockId > lockCount) revert InvalidLockId();
+        _;
     }
 
-    /**
-     * @notice Returns the contract version.
-     * @return A human-readable semantic version string.
-     */
-    function version() external pure returns (string memory) {
-        return VERSION;
-    }
+    // ================================================================
+    // Core Functions
+    // ================================================================
 
     /**
-     * @notice Returns the contract version.
-     * @return A human-readable semantic version string.
-     */
-    function contractVersion() external pure returns (string memory) {
-        return VERSION;
-    }
-
-    /**
-     * @notice Returns the accepted LP token address.
-     * @return The LP token address.
-     *
-     * @dev This is named positionManager for project-wide interface consistency,
-     * even though Uniswap V2 does not use a nonfungible position manager.
-     */
-    function positionManager() external view returns (address) {
-        return lpToken;
-    }
-
-    /**
-     * @notice Locks Uniswap V2 LP tokens in the contract.
-     * @param amount The amount of LP tokens to lock.
-     * @param beneficiary The address that can withdraw after unlock.
-     * @param unlockTime The Unix timestamp when withdrawal becomes available.
-     *
-     * @dev REQUIREMENTS
-     * - Caller must own the LP tokens.
-     * - Caller must approve this contract to spend the LP tokens.
-     * - unlockTime must be strictly greater than the current block timestamp.
-     *
-     * @dev AUDITOR NOTE
-     * The function follows Checks-Effects-Interactions:
-     * 1. Validate inputs.
-     * 2. Transfer LP tokens into custody.
-     * 3. Persist the lock record.
-     * 4. Emit a traceable event.
+     * @notice Locks an ERC721 LP NFT until the specified unlock time.
+     * @dev The caller must own the NFT and approve this contract to transfer it.
+     *      The NFT is transferred to this contract using `safeTransferFrom`.
+     * @param nftContract Address of the ERC721 contract.
+     * @param tokenId ID of the NFT to lock.
+     * @param beneficiary Address that will be able to withdraw the NFT after unlock.
+     * @param unlockTime Timestamp (in seconds) when the lock expires.
+     * @return lockId Unique identifier for the created lock.
      */
     function lock(
-        uint256 amount,
+        address nftContract,
+        uint256 tokenId,
         address beneficiary,
         uint256 unlockTime
     ) external nonReentrant returns (uint256 lockId) {
-        if (beneficiary == address(0)) revert ZeroAddress();
-        if (amount == 0) revert InvalidAmount();
-        if (unlockTime <= block.timestamp) revert InvalidUnlockTime();
+        // Input validation
+        if (nftContract == address(0) || beneficiary == address(0)) {
+            revert InvalidAddress();
+        }
+        if (unlockTime <= block.timestamp) {
+            revert InvalidUnlockTime();
+        }
 
-        IERC20 token = IERC20(lpToken);
-        if (token.balanceOf(msg.sender) < amount) revert NotLPTokenOwner();
+        // Ensure the contract supports ERC721 interface (via ERC165)
+        if (
+            !IERC165(nftContract).supportsInterface(type(IERC721).interfaceId)
+        ) {
+            revert InvalidAddress();
+        }
 
-        token.safeTransferFrom(msg.sender, address(this), amount);
+        IERC721 nft = IERC721(nftContract);
 
+        // Verify that the caller owns the token
+        if (nft.ownerOf(tokenId) != msg.sender) {
+            revert NotNFTOwner();
+        }
+
+        // Transfer the NFT to this contract (safe transfer)
+        nft.safeTransferFrom(msg.sender, address(this), tokenId);
+
+        // Increment lock counter and store position
         lockId = ++lockCount;
-        _locks[lockId] = LockPosition({
-            lpToken: lpToken,
+
+        locks[lockId] = LockPosition({
+            nftContract: nftContract,
             beneficiary: beneficiary,
-            amount: amount,
+            tokenId: tokenId,
             unlockTime: unlockTime,
             withdrawn: false
         });
 
-        emit LiquidityLocked(lockId, lpToken, beneficiary, amount, unlockTime);
+        emit LiquidityLocked(
+            lockId,
+            nftContract,
+            beneficiary,
+            tokenId,
+            unlockTime
+        );
     }
 
     /**
-     * @notice Withdraws LP tokens after the unlock time is reached.
-     * @param lockId The lock identifier.
-     *
-     * @dev REQUIREMENTS
-     * - Only the beneficiary can withdraw.
-     * - The lock must not already be withdrawn.
-     * - The unlock time must have passed.
-     *
-     * @dev AUDITOR NOTE
-     * The withdrawn flag is set before the external transfer to prevent
-     * reentrancy-based double withdrawal.
+     * @notice Withdraws the locked NFT after the unlock time has passed.
+     * @dev Only the beneficiary can call this function.
+     *      The NFT is sent back to the beneficiary via `safeTransferFrom`.
+     * @param lockId The identifier of the lock to withdraw.
      */
-    function withdraw(uint256 lockId) external nonReentrant {
-        LockPosition storage position = _locks[lockId];
-        if (position.lpToken == address(0)) revert InvalidLockId();
-        if (msg.sender != position.beneficiary) revert NotBeneficiary();
-        if (position.withdrawn) revert AlreadyWithdrawn();
-        if (block.timestamp < position.unlockTime) revert StillLocked();
+    function withdraw(
+        uint256 lockId
+    )
+        external
+        nonReentrant
+        validLock(lockId)
+    {
+        LockPosition storage p = locks[lockId];
 
-        position.withdrawn = true;
+        // Only beneficiary can withdraw
+        if (msg.sender != p.beneficiary) {
+            revert NotBeneficiary();
+        }
 
-        IERC20(position.lpToken).safeTransfer(
-            position.beneficiary,
-            position.amount
+        // Check if already withdrawn
+        if (p.withdrawn) {
+            revert AlreadyWithdrawn();
+        }
+
+        // Check if lock is still active
+        if (block.timestamp < p.unlockTime) {
+            revert LockStillActive();
+        }
+
+        // Verify that the contract still holds the NFT (safety check)
+        if (IERC721(p.nftContract).ownerOf(p.tokenId) != address(this)) {
+            revert NotLocked();
+        }
+
+        // Mark as withdrawn to prevent re‑withdrawal
+        p.withdrawn = true;
+
+        // Transfer NFT back to beneficiary
+        IERC721(p.nftContract).safeTransferFrom(
+            address(this),
+            p.beneficiary,
+            p.tokenId
         );
 
-        emit LiquidityWithdrawn(lockId, position.beneficiary, position.amount);
+        emit LiquidityWithdrawn(
+            lockId,
+            p.beneficiary,
+            p.tokenId
+        );
+    }
+
+    // ================================================================
+    // View Functions – for transparency and monitoring
+    // ================================================================
+
+    /**
+     * @notice Returns the full LockPosition struct for a given lockId.
+     * @param lockId The lock identifier.
+     * @return The LockPosition struct.
+     */
+    function getLock(uint256 lockId)
+        external
+        view
+        validLock(lockId)
+        returns (LockPosition memory)
+    {
+        return locks[lockId];
     }
 
     /**
-     * @notice Returns the current lifecycle state of a lock.
+     * @notice Returns whether a lock is currently unlocked (i.e., time passed).
      * @param lockId The lock identifier.
-     * @return A LockStatus enum value.
-     *
-     * @dev STATUS DEFINITIONS
-     * - Empty: The lockId has never been created.
-     * - Locked: Tokens are held and still time-locked.
-     * - Unlocked: The unlock time has passed and withdrawal is available.
-     * - Withdrawn: The LP tokens have already been released.
+     * @return true if unlockTime <= block.timestamp.
      */
-    function lockStatus(uint256 lockId) external view returns (LockStatus) {
-        LockPosition memory p = _locks[lockId];
-        if (p.lpToken == address(0)) return LockStatus.Empty;
-        if (p.withdrawn) return LockStatus.Withdrawn;
-        if (block.timestamp >= p.unlockTime) return LockStatus.Unlocked;
-        return LockStatus.Locked;
+    function isUnlocked(uint256 lockId)
+        external
+        view
+        validLock(lockId)
+        returns (bool)
+    {
+        return block.timestamp >= locks[lockId].unlockTime;
     }
 
     /**
-     * @notice Returns the remaining time until unlock.
+     * @notice Returns the remaining time (in seconds) until the lock becomes withdrawable.
      * @param lockId The lock identifier.
-     * @return Remaining seconds until withdrawal becomes available.
+     * @return Remaining seconds, or 0 if already unlocked.
      */
-    function timeRemaining(uint256 lockId) external view returns (uint256) {
-        LockPosition memory p = _locks[lockId];
-        if (p.lpToken == address(0) || p.withdrawn || block.timestamp >= p.unlockTime) {
+    function timeRemaining(uint256 lockId)
+        external
+        view
+        validLock(lockId)
+        returns (uint256)
+    {
+        LockPosition memory p = locks[lockId];
+        if (block.timestamp >= p.unlockTime) {
             return 0;
         }
         return p.unlockTime - block.timestamp;
     }
 
     /**
-     * @notice Returns whether the lock is still active.
+     * @notice Checks whether a lockId exists (active or withdrawn).
      * @param lockId The lock identifier.
-     * @return True if the position is currently locked.
+     * @return true if the lock exists.
      */
-    function isLocked(uint256 lockId) external view returns (bool) {
-        return this.lockStatus(lockId) == LockStatus.Locked;
-    }
-
-    /**
-     * @notice Returns whether the unlock time has passed.
-     * @param lockId The lock identifier.
-     * @return True if the position is unlocked.
-     */
-    function isUnlocked(uint256 lockId) external view returns (bool) {
-        return this.lockStatus(lockId) == LockStatus.Unlocked;
-    }
-
-    /**
-     * @notice Returns whether the LP tokens have already been withdrawn.
-     * @param lockId The lock identifier.
-     * @return True if the lock has been withdrawn.
-     */
-    function isWithdrawn(uint256 lockId) external view returns (bool) {
-        return this.lockStatus(lockId) == LockStatus.Withdrawn;
-    }
-
-    /**
-     * @notice Returns the full lock record.
-     * @param lockId The lock identifier.
-     * @return lpToken_ The LP token address.
-     * @return beneficiary The withdrawal beneficiary.
-     * @return amount The locked LP token amount.
-     * @return unlockTime The withdrawal timestamp.
-     * @return withdrawn The withdrawal flag.
-     */
-    function getLock(
-        uint256 lockId
-    )
+    function exists(uint256 lockId)
         external
         view
-        returns (
-            address lpToken_,
-            address beneficiary,
-            uint256 amount,
-            uint256 unlockTime,
-            bool withdrawn
-        )
+        returns (bool)
     {
-        LockPosition memory p = _locks[lockId];
-        return (p.lpToken, p.beneficiary, p.amount, p.unlockTime, p.withdrawn);
+        return lockId > 0 && lockId <= lockCount;
     }
 
     /**
-     * @dev Custom errors keep the bytecode compact and make failures explicit.
+     * @notice Checks whether a lock is currently active (not withdrawn and still locked).
+     * @param lockId The lock identifier.
+     * @return true if the NFT is still locked and not yet withdrawable.
      */
-    error ZeroAddress();
-    error InvalidAmount();
-    error InvalidUnlockTime();
-    error NotLPTokenOwner();
-    error NotBeneficiary();
-    error AlreadyWithdrawn();
-    error StillLocked();
-    error InvalidLockId();
+    function isActive(uint256 lockId)
+        external
+        view
+        validLock(lockId)
+        returns (bool)
+    {
+        LockPosition memory p = locks[lockId];
+        return !p.withdrawn && block.timestamp < p.unlockTime;
+    }
+
+    // ================================================================
+    // Security & Audit Notes (not part of bytecode)
+    // ================================================================
+    /*
+        DESIGN PRINCIPLES:
+
+        1. Single Responsibility: This contract ONLY locks/unlocks ERC721 LP NFTs.
+           No other functionality is included.
+
+        2. Immutable & Trustless:
+           - No owner, admin, or governance.
+           - No upgrade mechanism (no UUPS, no proxy).
+           - No emergency withdraw or rescue functions.
+
+        3. Reentrancy Protection:
+           - All external functions that change state use `nonReentrant`.
+           - SafeERC721 transfers are used (safeTransferFrom).
+
+        4. Transparent:
+           - All locks are stored on‑chain and can be queried.
+           - Events emitted for every lock and withdrawal.
+           - Metadata constants publicly declare the contract's properties.
+
+        THREAT MODEL:
+
+        Protected against:
+        - Admin abuse / rug pulls (no admin).
+        - Proxy upgrades (not upgradeable).
+        - Unauthorized withdrawals (only beneficiary after time).
+        - Double withdrawal (withdrawn flag).
+        - Reentrancy attacks (ReentrancyGuard).
+        - Invalid NFT transfers (ERC165 check, safeTransferFrom).
+
+        Not protected against:
+        - Loss of beneficiary's private key.
+        - Vulnerabilities in the underlying NFT contract.
+        - Blockchain reorganizations or network failures.
+    */
 }
