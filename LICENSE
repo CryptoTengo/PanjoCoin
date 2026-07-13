@@ -1,114 +1,157 @@
-# LICENSE — PanjoCoin (PNJC)
+License
+PanjoCoin (PNJC) Project License
+Copyright © 2026 PanjoCoin. All rights reserved.
 
-Version 1.0 — Institutional Open-Source License
+1. Dual Licensing Structure
+The PanjoCoin repository is licensed under a dual-licensing model:
 
----
+Smart Contracts — MIT License (see Section 2)
 
-## 📌 COPYRIGHT NOTICE
+Documentation, Media, and Website Content — Proprietary License (see Section 3)
 
-Copyright (c) 2026 PanjoCoin (PNJC) / CryptoTengo Ecosystem
+Third-Party Code — Subject to its own license terms (see Section 4)
 
-All rights reserved.
+2. MIT License (Smart Contracts)
+SPDX-License-Identifier: MIT
 
----
+Permission is hereby granted, free of charge, to any person obtaining a copy of the smart contract software (Solidity files located in /Smart-Contracts/ directory) and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## ⚖️ LICENSE GRANT
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this repository and associated documentation files (the “Software”), to use, copy, modify, and distribute the Software, subject to the following conditions:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-- The Software is provided for informational, educational, and transparency purposes only.
-- The Software may be used for analysis, auditing, and non-commercial evaluation.
-- The Software may be referenced in decentralized applications, research, and blockchain analysis tools.
+Applicable to:
 
----
+PNJC_Token.sol
 
-## 🚫 RESTRICTIONS
+PNJC_LiquidityLocker.sol
 
-You are NOT permitted to:
+PNJC_GoldenPhoenixProtocol.sol
 
-- Misrepresent this project as an investment product, security, or regulated financial instrument
-- Use the branding, identity, or documentation for fraudulent or misleading token launches
-- Claim affiliation with PanjoCoin or CryptoTengo without explicit permission
-- Deploy identical or derivative tokens intended to impersonate PNJC
-- Use the documentation in any jurisdiction where such use violates applicable laws
+PNJCAirdrop.sol
 
----
+PNJCVestingVault.sol
 
-## ⚠️ NO FINANCIAL WARRANTY
+PNJCTreasuryVault.sol
 
-This Software and all associated documentation are provided “AS IS”.
+PNJC_DAO_Governor.sol
 
-No guarantees are made regarding:
+All other .sol files in the repository
 
-- Token price performance
-- Liquidity availability
-- Market adoption
-- Smart contract security beyond disclosed verification
-- Future development outcomes
+3. Proprietary License (Documentation and Media)
+The following materials are proprietary and may not be copied, distributed, modified, or used without explicit written permission from PanjoCoin:
 
----
+3.1. Documentation
+WhitePaper.md and its translations
 
-## 🔐 SMART CONTRACT DISCLAIMER
+Tokenomics.md and its translations
 
-The deployed smart contract referenced in this repository is:
+Legal Disclaimer.md and its translations
 
-- immutable (non-upgradeable)
-- non-custodial
-- publicly verifiable on-chain
-- independent of repository code execution
+AML Policy.md and its translations
 
-The on-chain contract is the **sole authoritative execution layer** of the PNJC system.
+Privacy Policy.md and its translations
 
----
+Restricted Countries List.md and its translations
 
-## 🧠 INTELLECTUAL PROPERTY
+Risk Disclosure.md and its translations
 
-The following elements are protected under this license:
+Terms of Use.md and its translations
 
-- Project name: PanjoCoin (PNJC)
-- Ecosystem branding and documentation structure
-- Whitepaper, tokenomics, and technical specifications
-- Charity model architecture and ecosystem design
+3.2. Branding and Media
+Logos, icons, and graphical assets
 
----
+Website design and interface elements
 
-## 🌍 OPEN-SOURCE TRANSPARENCY
+Marketing materials, presentations, and videos
 
-This repository is published to ensure:
+The "Panjo" character and associated imagery
 
-- ecosystem transparency
-- auditability
-- public verification of token structure
-- community review of architecture
+Any other creative content not explicitly licensed under MIT
 
----
+3.3. Usage Permissions
+Permitted Uses (without prior written consent):
 
-## ⚖️ LIABILITY LIMITATION
+Personal, non-commercial reference
 
-In no event shall the authors, contributors, or affiliated entities be liable for:
+Fair use for commentary, criticism, or educational purposes
 
-- financial losses
-- trading losses
-- smart contract exploitation by third parties
-- blockchain network failures
-- misuse of the Software
+Linking to the original documentation from your own website
 
----
+Prohibited Uses (require prior written consent):
 
-## 📌 GOVERNING PRINCIPLE
+Commercial redistribution of documentation
 
-In case of conflict between:
+Creation of derivative works based on documentation
 
-- on-chain smart contract behavior
-- repository documentation
-- external interpretations
+Use of branding or logos in commercial products
 
-👉 The on-chain smart contract deployed on Polygon Mainnet is the **ultimate source of truth**.
+Use of the "Panjo" character for commercial purposes
 
----
+To request permission, contact: support@cryptotengo.com
 
-## 🏁 FINAL STATEMENT
+4. Third-Party Licenses
+This repository includes or references code and libraries under various open-source licenses:
 
-PanjoCoin (PNJC) is an open, transparent, decentralized token documentation system designed for blockchain interoperability, audit verification, and ecosystem development transparency.
+4.1. OpenZeppelin Contracts
+text
+SPDX-License-Identifier: MIT
+Copyright (c) 2016-2023 OpenZeppelin
+Used under the MIT License. See OpenZeppelin License for details.
 
-This license ensures legal clarity, prevents misuse, and protects ecosystem integrity.
+4.2. Other Dependencies
+All third-party dependencies are used in accordance with their respective licenses. The repository does not modify or relicense third-party code.
+
+5. Additional Notices
+5.1. Not a Security Offering
+The documentation, smart contracts, and associated materials do not constitute a solicitation or offering of securities. PNJC is a utility token. See the Legal Disclaimer for a complete analysis under the Howey Test.
+
+5.2. No Financial Advice
+Nothing in this repository constitutes financial, investment, legal, or tax advice. Users should consult qualified professionals.
+
+5.3. No Warranties
+All materials are provided "as is" without warranties of any kind. See the Risk Disclosure and Terms of Use for complete details.
+
+5.4. Translations
+In case of discrepancies between the English version and translations of any documentation, the English version shall prevail unless otherwise stated.
+
+5.5. Original Russian Versions
+Some documents were originally created in Russian. While translations are provided, the original Russian versions may contain legally binding terms.
+
+6. Disclaimer of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PANJOCOIN PROJECT, ITS FOUNDERS, TEAM MEMBERS, AND AFFILIATES SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OF OR INABILITY TO USE THIS REPOSITORY OR ANY CODE, DOCUMENTATION, OR OTHER MATERIALS CONTAINED HEREIN.
+
+This includes, but is not limited to:
+
+Loss of cryptocurrency or other digital assets
+
+Smart contract vulnerabilities or exploits
+
+Regulatory actions against users
+
+Loss of revenue, profit, or data
+
+Actions of third parties
+
+7. Governing Law
+This license and any disputes arising under it shall be governed by the laws of Switzerland, without regard to conflict of law principles.
+
+8. License Enforcement
+PanjoCoin reserves the right to enforce the terms of this license to the fullest extent permitted by law. Unauthorized use of proprietary materials may result in legal action.
+
+9. Contact
+For license inquiries or permission requests:
+
+Email: support@cryptotengo.com
+
+Telegram: t.me/CryptoTengo
+
+X (Twitter): @CryptoTengo
+
+Website: www.cryptotengo.com
+
+© 2026 PanjoCoin. All rights reserved.
+
+Last Updated: July 9, 2026
+
+This response is AI-generated, for reference only.
