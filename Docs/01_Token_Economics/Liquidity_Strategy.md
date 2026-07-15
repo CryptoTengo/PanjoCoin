@@ -543,22 +543,6 @@ Liquidity is treated as core infrastructure supporting the PNJC ecosystem.
 
 © 2026 CryptoTengo  
 PanjoCoin (PNJC)
-
-Теперь финансово-рыночный пакет PNJC:
-
-Tokenomics
-
-✅ Supply_Model.md
-✅ Token_Model.md
-✅ Economics_Model.md
-✅ Vesting.md
-✅ Unlock_Schedule.md
-
-Treasury
-
-✅ Treasury_Policy.md
-✅ Treasury_Management.md
-
 Market Infrastructure
 
 ✅ Liquidity_Strategy.md
