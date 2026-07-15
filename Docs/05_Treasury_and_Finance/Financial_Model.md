@@ -1,0 +1,667 @@
+# Financial Model
+
+## PanjoCoin (PNJC)
+
+**Version:** 1.0
+**Date:** July 2026
+**Project:** PanjoCoin SocialFi / GameFi Ecosystem
+**Organization:** CryptoTengo
+**Blockchain:** Polygon PoS
+
+---
+
+# 1. Overview
+
+This document defines the financial model of PanjoCoin (PNJC).
+
+The purpose of this model is to describe:
+
+* Revenue generation mechanisms
+* Cost structure
+* Treasury sustainability
+* Investment requirements
+* Growth scenarios
+* Financial planning principles
+
+The PNJC financial model is designed around a long-term ecosystem approach:
+
+```
+Community Growth
+
+↓
+
+Product Development
+
+↓
+
+Utility Expansion
+
+↓
+
+Revenue Generation
+
+↓
+
+Ecosystem Sustainability
+```
+
+---
+
+# 2. Financial Philosophy
+
+PNJC follows several principles:
+
+## Long-Term Sustainability
+
+The ecosystem should gradually reduce dependency on external funding.
+
+---
+
+## Multiple Revenue Streams
+
+The project should not rely on a single income source.
+
+Potential sources:
+
+* Platform services
+* Partnerships
+* GameFi economy
+* SocialFi applications
+* Educational products
+
+---
+
+## Responsible Treasury Management
+
+Treasury resources are used for:
+
+* Development
+* Security
+* Marketing
+* Partnerships
+* Ecosystem growth
+
+---
+
+# 3. Financial Ecosystem Model
+
+```
+                    PNJC Ecosystem
+
+
+                         |
+
+ -------------------------------------------------
+
+ |              |              |              |
+
+Token        SocialFi       GameFi       Impact
+
+
+                         |
+
+                Business Services
+
+
+                         |
+
+                    Revenue
+
+
+                         |
+
+                   Treasury
+
+
+                         |
+
+              Ecosystem Expansion
+
+```
+
+---
+
+# 4. Revenue Model
+
+## 4.1 Ecosystem Platform Revenue
+
+Potential sources:
+
+* Premium ecosystem features
+* Subscription services
+* Access programs
+* Digital services
+
+Example:
+
+```
+Users
+
+↓
+
+Premium Service
+
+↓
+
+Revenue
+
+↓
+
+Treasury
+
+```
+
+---
+
+# 4.2 SocialFi Revenue
+
+Potential revenue:
+
+* Creator tools
+* Community campaigns
+* Sponsored social activities
+* Brand partnerships
+
+---
+
+# 4.3 GameFi Revenue
+
+Potential sources:
+
+* In-game purchases
+* NFT utilities
+* Marketplace fees
+* Premium features
+
+---
+
+# 4.4 Partnership Revenue
+
+Potential partners:
+
+* Web3 companies
+* Brands
+* NGOs
+* Educational organizations
+
+Revenue sources:
+
+* Sponsored campaigns
+* Ecosystem integrations
+* Strategic partnerships
+
+---
+
+# 4.5 Educational Revenue
+
+Potential products:
+
+* Blockchain education
+* Web3 courses
+* Community training
+* Developer programs
+
+---
+
+# 5. Cost Structure
+
+## Technology Costs
+
+Includes:
+
+* Smart contract development
+* Platform development
+* Infrastructure
+* Security testing
+* Audits
+
+---
+
+## Marketing Costs
+
+Includes:
+
+* Community growth
+* Content production
+* Social media
+* Partnerships
+* Events
+
+---
+
+## Operations Costs
+
+Includes:
+
+* Legal support
+* Compliance
+* Administration
+* Business development
+
+---
+
+## Ecosystem Costs
+
+Includes:
+
+* Community rewards
+* Grants
+* Impact programs
+* Developer incentives
+
+---
+
+# 6. Treasury Model
+
+## Treasury Purpose
+
+The Treasury supports:
+
+* Long-term development
+* Liquidity management
+* Security
+* Partnerships
+* Ecosystem incentives
+
+---
+
+## Treasury Allocation
+
+Current token allocation:
+
+| Category        | Allocation |
+| --------------- | ---------- |
+| Treasury        | 12%        |
+| DAO Treasury    | 10%        |
+| Charity Reserve | 5%         |
+
+---
+
+# 7. Financial Planning Periods
+
+## Phase 1 — Foundation (0–12 Months)
+
+Objectives:
+
+* Build community
+* Develop products
+* Establish partnerships
+* Create initial revenue channels
+
+Main expenses:
+
+* Development
+* Security
+* Marketing
+
+---
+
+## Phase 2 — Growth (12–36 Months)
+
+Objectives:
+
+* Increase users
+* Launch SocialFi features
+* Expand GameFi
+
+Potential revenue:
+
+* Services
+* Partnerships
+* Platform activity
+
+---
+
+## Phase 3 — Expansion (36+ Months)
+
+Objectives:
+
+* Global ecosystem
+* DAO transition
+* Multi-chain expansion
+
+Potential:
+
+* Sustainable ecosystem economy
+
+---
+
+# 8. Financial Scenarios
+
+## Conservative Scenario
+
+Assumptions:
+
+* Slow user growth
+* Limited partnerships
+* Gradual product adoption
+
+Focus:
+
+* Cost efficiency
+* Community retention
+
+---
+
+## Growth Scenario
+
+Assumptions:
+
+* Strong community growth
+* Successful partnerships
+* Product adoption
+
+Results:
+
+* Increased ecosystem activity
+* More revenue opportunities
+
+---
+
+## Expansion Scenario
+
+Assumptions:
+
+* Global adoption
+* Major partnerships
+* Multi-chain development
+
+Results:
+
+* Large ecosystem scale
+
+---
+
+# 9. Key Financial Metrics
+
+## User Metrics
+
+* Active users
+* Community members
+* Retention rate
+
+---
+
+## Product Metrics
+
+* Platform usage
+* Transactions
+* Service adoption
+
+---
+
+## Financial Metrics
+
+* Revenue growth
+* Treasury balance
+* Operating costs
+* Runway
+
+---
+
+# 10. Unit Economics
+
+Important indicators:
+
+## Customer Acquisition Cost (CAC)
+
+Cost required to acquire a new user.
+
+---
+
+## Lifetime Value (LTV)
+
+Estimated value generated by a user.
+
+---
+
+## LTV/CAC Ratio
+
+Target:
+
+```
+LTV > CAC
+
+```
+
+Meaning:
+
+Users generate more value than acquisition cost.
+
+---
+
+# 11. Investment Requirements
+
+Potential investment areas:
+
+## Product Development
+
+Purpose:
+
+* Build ecosystem applications
+* Improve technology
+
+---
+
+## Security
+
+Purpose:
+
+* Audits
+* Testing
+* Infrastructure protection
+
+---
+
+## Marketing
+
+Purpose:
+
+* Community growth
+* Brand awareness
+
+---
+
+## Partnerships
+
+Purpose:
+
+* Ecosystem expansion
+
+---
+
+# 12. Use of Investment Funds
+
+Example allocation:
+
+| Category     | Purpose               |
+| ------------ | --------------------- |
+| Development  | Technology            |
+| Security     | Audits and protection |
+| Marketing    | Growth                |
+| Operations   | Execution             |
+| Partnerships | Expansion             |
+
+---
+
+# 13. Financial Risk Management
+
+## Market Risk
+
+Risk:
+
+Crypto market volatility.
+
+Mitigation:
+
+* Multiple revenue streams
+* Long-term development
+
+---
+
+## Revenue Risk
+
+Risk:
+
+Slow monetization.
+
+Mitigation:
+
+* Diverse business model
+
+---
+
+## Treasury Risk
+
+Risk:
+
+Poor resource management.
+
+Mitigation:
+
+* Treasury policy
+* Multisig controls
+
+---
+
+# 14. Sustainability Model
+
+Long-term sustainability depends on:
+
+```
+Utility
+
++
+
+Users
+
++
+
+Revenue
+
++
+
+Responsible Treasury
+
++
+
+Community Growth
+
+```
+
+---
+
+# 15. Financial Governance
+
+Future governance:
+
+```
+Proposal
+
+↓
+
+Review
+
+↓
+
+Community / DAO Decision
+
+↓
+
+Implementation
+
+```
+
+---
+
+# 16. Key Performance Indicators (KPIs)
+
+## Growth KPIs
+
+* Community size
+* Active users
+* Partnerships
+
+## Product KPIs
+
+* Platform usage
+* Transactions
+* Engagement
+
+## Financial KPIs
+
+* Revenue
+* Costs
+* Treasury health
+
+---
+
+# 17. Long-Term Financial Vision
+
+PNJC aims to evolve from:
+
+```
+Token Project
+
+↓
+
+Utility Ecosystem
+
+↓
+
+SocialFi Platform
+
+↓
+
+Sustainable Web3 Economy
+
+```
+
+---
+
+# 18. Summary
+
+The PNJC Financial Model is based on:
+
+```
+Real Utility
+
++
+
+Multiple Revenue Streams
+
++
+
+Responsible Treasury
+
++
+
+Community Growth
+
++
+
+Long-Term Sustainability
+
+```
+
+The objective is to build a financially sustainable Web3 ecosystem combining technology, community participation, and measurable social impact.
+
+---
+
+# Disclaimer
+
+This document describes a conceptual financial model.
+
+Actual results depend on:
+
+* Market conditions
+* User adoption
+* Product development
+* Regulatory environment
+
+No financial returns are guaranteed.
+
+---
+
+© 2026 CryptoTengo
+PanjoCoin (PNJC)
