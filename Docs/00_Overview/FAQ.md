@@ -1,4 +1,4 @@
-# 00_Overview/
+# FAQ.md
 
 # PNJC Frequently Asked Questions (FAQ)
 
