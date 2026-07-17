@@ -1,4 +1,4 @@
-PanjoCoin (PNJC)
+# PanjoCoin (PNJC)
 Regulatory Compliance Framework
 
 Version: 1.0
@@ -8,7 +8,7 @@ Project: PanjoCoin (PNJC)
 Blockchain: Polygon Network
 Token Standard: ERC-20
 
-1. Introduction
+# 1. Introduction
 
 This Regulatory Compliance Framework ("Framework") defines the compliance principles, governance standards, and regulatory considerations applied to the PanjoCoin (PNJC) ecosystem.
 
@@ -21,7 +21,7 @@ Future utility applications.
 
 This Framework establishes a foundation for responsible development and international regulatory readiness.
 
-2. Compliance Objectives
+# 2. Compliance Objectives
 
 The objectives of the PNJC Regulatory Compliance Framework are:
 
@@ -31,8 +31,8 @@ Support responsible blockchain innovation;
 Protect users and ecosystem participants;
 Maintain institutional readiness;
 Establish compliance procedures for future expansion.
-3. Regulatory Jurisdiction Approach
-3.1 Primary Jurisdiction — Georgia
+# 3. Regulatory Jurisdiction Approach
+# 3.1 Primary Jurisdiction — Georgia
 
 PanjoCoin is developed with consideration of the legal framework of Georgia.
 
@@ -47,11 +47,11 @@ Corporate governance.
 
 Where regulated activities become applicable, PNJC will evaluate appropriate registrations, licenses, or compliance obligations.
 
-4. International Regulatory Alignment
+# 4. International Regulatory Alignment
 
 PNJC considers internationally recognized regulatory principles, including:
 
-4.1 FATF AML/CFT Standards
+# 4.1 FATF AML/CFT Standards
 
 PNJC applies a risk-based approach aligned with:
 
@@ -66,7 +66,7 @@ Wallet transparency;
 Treasury monitoring;
 Suspicious activity awareness;
 Partner due diligence.
-4.2 European Union MiCA Considerations
+# 4.2 European Union MiCA Considerations
 
 PNJC monitors the regulatory framework established by the European Union Markets in Crypto-Assets Regulation (MiCA).
 
@@ -80,7 +80,7 @@ Service provider obligations.
 
 Future activities involving EU regulated services will be evaluated separately.
 
-4.3 United States Regulatory Considerations
+# 4.3 United States Regulatory Considerations
 
 PNJC considers regulatory approaches used in the United States, including analysis based on:
 
@@ -101,7 +101,7 @@ Equity ownership;
 Company shares;
 Debt instruments;
 Profit guarantees.
-5. Token Classification Framework
+# 5. Token Classification Framework
 Current Intended Classification
 
 PNJC is designed as:
@@ -116,7 +116,7 @@ Ownership rights;
 Dividend rights;
 Profit distribution;
 Guaranteed returns.
-6. Regulatory Activity Assessment
+# 6. Regulatory Activity Assessment
 Current PNJC Activities
 
 Current ecosystem activities include:
@@ -139,7 +139,7 @@ PNJC does not currently operate:
 ❌ Lending services
 ❌ Financial advisory services
 
-7. Virtual Asset Service Provider (VASP) Assessment
+# 7. Virtual Asset Service Provider (VASP) Assessment
 
 PNJC continuously evaluates whether future ecosystem activities may fall under VASP-related requirements.
 
@@ -156,7 +156,7 @@ Registration requirements;
 Licensing obligations;
 AML/KYC procedures;
 Reporting obligations.
-8. AML/CFT Compliance Framework
+# 8. AML/CFT Compliance Framework
 
 PNJC maintains AML-related principles through:
 
@@ -176,7 +176,7 @@ Suspicious transactions;
 Sanctions-related exposure;
 Fraud indicators;
 Malicious wallet activity.
-9. Governance Compliance
+# 9. Governance Compliance
 
 PNJC aims to establish transparent governance through:
 
@@ -195,7 +195,7 @@ Community proposals;
 Voting procedures;
 Treasury decisions;
 Ecosystem development decisions.
-10. Smart Contract Compliance
+# 10. Smart Contract Compliance
 
 PNJC smart contracts follow security-focused development principles.
 
@@ -212,7 +212,7 @@ Security documentation includes:
 Contract architecture;
 Risk assessment;
 Security procedures.
-11. Consumer Protection Principles
+# 11. Consumer Protection Principles
 
 PNJC promotes:
 
@@ -226,7 +226,7 @@ The project avoids:
 Guaranteed profit statements;
 Misleading investment claims;
 Artificial market expectations.
-12. Marketing Compliance
+# 12. Marketing Compliance
 
 PNJC communications should follow:
 
@@ -244,7 +244,7 @@ Guaranteed returns;
 "Risk-free investment" statements;
 False exchange listing claims;
 Misleading financial promises.
-13. Data Protection Framework
+# 13. Data Protection Framework
 
 PNJC follows privacy principles regarding:
 
@@ -256,7 +256,7 @@ Data handling should consider:
 
 Georgian privacy requirements;
 International data protection principles.
-14. Risk Management Framework
+# 14. Risk Management Framework
 
 PNJC maintains awareness of:
 
@@ -272,7 +272,7 @@ Market Risks
 Liquidity changes;
 Price volatility;
 Market sentiment.
-15. Compliance Documentation Structure
+# 15. Compliance Documentation Structure
 
 Recommended documentation:
 
@@ -288,7 +288,7 @@ Docs/
 ├── Privacy_Policy.md
 ├── Terms_of_Use.md
 └── VASP_Readiness_Plan.md
-16. Compliance Governance Roles
+# 16. Compliance Governance Roles
 
 Future compliance structure:
 
@@ -317,7 +317,7 @@ Responsibilities:
 
 Regulatory interpretation;
 Legal reviews.
-17. Regulatory Monitoring
+# 17. Regulatory Monitoring
 
 PNJC monitors developments related to:
 
@@ -325,7 +325,7 @@ Georgian virtual asset regulation;
 EU MiCA implementation;
 FATF guidance;
 International digital asset legislation.
-18. Future Compliance Roadmap
+# 18. Future Compliance Roadmap
 Phase 1 — Foundation
 
 Completed:
@@ -350,7 +350,7 @@ Potential:
 Additional jurisdictions review;
 Institutional partnerships;
 Regulated service assessment.
-19. Disclaimer
+# 19. Disclaimer
 
 This document represents the compliance framework and development approach of PanjoCoin.
 
