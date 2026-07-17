@@ -1,11 +1,11 @@
-PanjoCoin (PNJC) — Risk Disclosure Document
+# PanjoCoin (PNJC) — Risk Disclosure Document
 
 Version: 1.0
 Date: July 15, 2026
 Network: Polygon PoS
 Token Standard: ERC-20
 
-1. Introduction
+# 1. Introduction
 
 This Risk Disclosure Document provides a comprehensive overview of potential risks associated with acquiring, holding, using, or interacting with PanjoCoin (PNJC).
 
@@ -17,8 +17,8 @@ Users, holders, investors, and ecosystem participants should carefully evaluate 
 
 This document does not constitute financial, investment, legal, or tax advice.
 
-2. General Cryptocurrency Risks
-2.1 Market Volatility Risk
+# 2. General Cryptocurrency Risks
+# 2.1 Market Volatility Risk
 
 Cryptocurrency markets are highly volatile.
 
@@ -36,7 +36,7 @@ The value of PNJC may increase or decrease rapidly.
 
 There is no guarantee of price appreciation or preservation of value.
 
-2.2 Liquidity Risk
+# 2.2 Liquidity Risk
 
 PNJC will initially trade through decentralized exchanges (DEXs).
 
@@ -49,7 +49,7 @@ reduced liquidity during market downturns.
 
 The existence of liquidity pools does not guarantee continuous market depth.
 
-2.3 Loss of Capital Risk
+# 2.3 Loss of Capital Risk
 
 Users should only acquire PNJC with funds they can afford to lose.
 
@@ -62,8 +62,8 @@ limited adoption.
 
 Participation in the ecosystem carries financial risk.
 
-3. Smart Contract Risks
-3.1 Smart Contract Vulnerabilities
+# 3. Smart Contract Risks
+# 3.1 Smart Contract Vulnerabilities
 
 Although PNJC smart contracts are designed according to industry standards, blockchain contracts may contain unknown vulnerabilities.
 
@@ -77,7 +77,7 @@ incorrect contract configuration.
 
 Independent audits reduce risk but cannot guarantee complete security.
 
-3.2 Blockchain Network Risk
+# 3.2 Blockchain Network Risk
 
 PNJC operates on Polygon PoS.
 
@@ -92,7 +92,7 @@ blockchain-level attacks.
 
 The performance of PNJC depends partly on Polygon network availability.
 
-3.3 Immutable Contract Risk
+# 3.3 Immutable Contract Risk
 
 PNJC uses immutable smart contracts to increase transparency.
 
@@ -104,8 +104,8 @@ future improvements may require new ecosystem contracts.
 
 Immutability provides security but reduces flexibility.
 
-4. Tokenomics Risks
-4.1 Supply Release Risk
+# 4. Tokenomics Risks
+# 4.1 Supply Release Risk
 
 PNJC uses a controlled release model where locked tokens gradually enter circulation.
 
@@ -118,7 +118,7 @@ lower demand compared with released supply.
 
 The release schedule does not guarantee price stability.
 
-4.2 Deflationary Mechanism Risk
+# 4.2 Deflationary Mechanism Risk
 
 The GoldenPhoenix Protocol is designed to perform buybacks and burns using ecosystem revenue.
 
@@ -132,7 +132,7 @@ technical issues.
 
 Burn mechanisms do not guarantee token price increases.
 
-4.3 Treasury Management Risk
+# 4.3 Treasury Management Risk
 
 Treasury funds are intended for:
 
@@ -150,8 +150,8 @@ poor investment decisions.
 
 Treasury management is subject to operational and governance risks.
 
-5. Regulatory Risks
-5.1 Regulatory Uncertainty
+# 5. Regulatory Risks
+# 5.1 Regulatory Uncertainty
 
 Cryptocurrency regulation continues to evolve globally.
 
@@ -165,7 +165,7 @@ classification changes by regulators.
 
 Regulatory requirements may affect the availability, use, or trading of PNJC.
 
-5.2 Jurisdictional Compliance Risk
+# 5.2 Jurisdictional Compliance Risk
 
 PNJC development follows:
 
@@ -177,7 +177,7 @@ However, regulations differ between jurisdictions.
 
 Users are responsible for determining whether participation is legally permitted in their country.
 
-5.3 Securities Classification Risk
+# 5.3 Securities Classification Risk
 
 Digital assets may receive different legal classifications depending on jurisdiction.
 
@@ -190,8 +190,8 @@ ecosystem development.
 
 No guarantee exists that all jurisdictions will classify PNJC identically.
 
-6. Operational Risks
-6.1 Development Risk
+# 6. Operational Risks
+# 6.1 Development Risk
 
 The PanjoCoin roadmap includes future features such as:
 
@@ -210,7 +210,7 @@ changes in priorities.
 
 Future features are planned objectives and are not guaranteed.
 
-6.2 Team and Resource Risk
+# 6.2 Team and Resource Risk
 
 The success of PNJC depends on:
 
@@ -221,7 +221,7 @@ operational execution.
 
 Changes in team availability or resources may affect progress.
 
-6.3 Partnership Risk
+# 6.3 Partnership Risk
 
 Future partnerships may support ecosystem growth.
 
@@ -230,8 +230,8 @@ However:
 partnerships may not occur;
 agreements may change;
 expected benefits may not materialize.
-7. Security Risks
-7.1 Cybersecurity Risk
+# 7. Security Risks
+# 7.1 Cybersecurity Risk
 
 Possible threats include:
 
@@ -243,7 +243,7 @@ social engineering attacks.
 
 Users must verify official PNJC channels before interacting with the ecosystem.
 
-7.2 Wallet Security Risk
+# 7.2 Wallet Security Risk
 
 Users are responsible for protecting their wallets.
 
@@ -256,8 +256,8 @@ unauthorized access.
 
 Blockchain transactions are generally irreversible.
 
-8. Community and Market Adoption Risks
-8.1 Adoption Risk
+# 8. Community and Market Adoption Risks
+# 8.1 Adoption Risk
 
 The long-term success of PNJC depends on:
 
@@ -268,7 +268,7 @@ utility demand.
 
 There is no guarantee that adoption targets will be achieved.
 
-8.2 Competition Risk
+# 8.2 Competition Risk
 
 PNJC operates in a competitive blockchain environment.
 
@@ -278,7 +278,7 @@ similar utilities;
 stronger technology;
 larger communities;
 greater funding.
-9. GameFi and Application Risks
+# 9. GameFi and Application Risks
 
 Future PNJC applications may include gaming and digital services.
 
@@ -292,8 +292,8 @@ changes in gaming regulations.
 
 Utility demand depends on successful ecosystem development.
 
-10. Governance Risks
-10.1 DAO Governance Risk
+# 10. Governance Risks
+# 10.1 DAO Governance Risk
 
 Future DAO governance introduces community decision-making.
 
@@ -303,13 +303,13 @@ low voter participation;
 concentrated voting power;
 governance conflicts;
 inefficient decisions.
-10.2 Voting Power Concentration
+# 10.2 Voting Power Concentration
 
 Large token holders may influence governance outcomes.
 
 Measures such as transparency and community participation are intended to reduce this risk.
 
-11. Scam and Impersonation Warning
+# 11. Scam and Impersonation Warning
 
 Users should be aware of fraudulent activities.
 
@@ -326,7 +326,7 @@ Users should verify:
 official contract address;
 official communication channels;
 verified documentation.
-12. No Guarantee Statement
+# 12. No Guarantee Statement
 
 PanjoCoin does not guarantee:
 
@@ -339,7 +339,7 @@ successful completion of all roadmap milestones.
 
 The PNJC ecosystem is developed with the goal of creating long-term utility, but outcomes remain uncertain.
 
-13. User Responsibility
+# 13. User Responsibility
 
 Before interacting with PNJC, users should:
 
@@ -348,7 +348,7 @@ evaluate personal risk tolerance;
 research applicable regulations;
 secure private keys;
 verify all transaction details.
-14. Risk Mitigation Framework
+# 14. Risk Mitigation Framework
 
 PanjoCoin implements several measures designed to reduce risks:
 
@@ -370,7 +370,7 @@ Transparency
 public documentation;
 open-source repository;
 on-chain monitoring.
-15. Final Statement
+# 15. Final Statement
 
 PanjoCoin represents an experimental blockchain ecosystem combining decentralized technology, gaming, community participation, and social impact initiatives.
 
