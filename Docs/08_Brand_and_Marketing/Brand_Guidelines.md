@@ -1,11 +1,11 @@
-Brand Guidelines
-PanjoCoin (PNJC)
+# Brand Guidelines
+# PanjoCoin (PNJC)
 
 Version: 1.0
 Date: July 2026
 Organization: CryptoTengo
 
-1. Purpose
+# 1. Purpose
 
 This document establishes the official brand guidelines for the PanjoCoin (PNJC) ecosystem.
 
@@ -20,7 +20,7 @@ Community moderators
 Designers
 Developers
 AI-assisted content generation
-2. Brand Identity
+# 2. Brand Identity
 Brand Name
 
 PanjoCoin
@@ -33,7 +33,7 @@ Organization:
 
 CryptoTengo
 
-3. Brand Vision
+# 3. Brand Vision
 
 PanjoCoin represents a Web3 ecosystem focused on:
 
@@ -46,7 +46,7 @@ Positive social impact
 
 The brand should communicate professionalism, accessibility, and long-term sustainability.
 
-4. Brand Mission
+# 4. Brand Mission
 
 The brand exists to support the development of an ecosystem that combines:
 
@@ -58,7 +58,7 @@ Social impact
 
 Every public communication should reinforce this mission.
 
-5. Brand Values
+# 5. Brand Values
 
 Core values include:
 
@@ -73,7 +73,7 @@ Community
 
 These values should be reflected consistently in messaging and visual design.
 
-6. Brand Personality
+# 6. Brand Personality
 
 The PNJC brand should be perceived as:
 
@@ -88,7 +88,7 @@ Community-driven
 
 Avoid messaging that appears aggressive, misleading, or overly promotional.
 
-7. Brand Voice
+# 7. Brand Voice
 
 Communications should be:
 
@@ -101,7 +101,7 @@ Accessible
 
 Technical subjects should be explained in language appropriate to the intended audience.
 
-8. Tone of Voice
+# 8. Tone of Voice
 
 Recommended tone:
 
@@ -118,7 +118,7 @@ Fear of missing out (FOMO)
 Unrealistic promises
 Sensationalism
 Financial guarantees
-9. Messaging Principles
+# 9. Messaging Principles
 
 Official communications should emphasize:
 
@@ -131,7 +131,7 @@ Social impact
 
 Future plans should be clearly identified as forward-looking statements where appropriate.
 
-10. Visual Identity
+# 10. Visual Identity
 
 The visual identity should convey:
 
@@ -143,7 +143,7 @@ Consistency
 
 Visual elements should remain recognizable across digital and printed materials.
 
-11. Logo Usage
+# 11. Logo Usage
 
 The official logo should:
 
@@ -158,7 +158,7 @@ Stretch or distort the logo
 Rotate the logo
 Modify colors without approval
 Add visual effects that reduce clarity
-12. Typography
+# 12. Typography
 
 Typography should prioritize readability.
 
@@ -171,7 +171,7 @@ Consistent
 
 Headings should clearly distinguish document structure.
 
-13. Color Principles
+# 13. Color Principles
 
 The color palette should communicate:
 
@@ -190,7 +190,7 @@ Marketing materials
 
 Accessibility should be considered when selecting color combinations.
 
-14. Imagery
+# 14. Imagery
 
 Images should reflect:
 
@@ -203,7 +203,7 @@ Positive social impact
 
 Avoid imagery that could reasonably be interpreted as misleading or implying guaranteed financial success.
 
-15. Iconography
+# 15. Iconography
 
 Icons should be:
 
@@ -214,7 +214,7 @@ Accessible
 
 Icon styles should remain uniform across products and documentation.
 
-16. Documentation Branding
+# 16. Documentation Branding
 
 Official documents should include:
 
@@ -226,7 +226,7 @@ Consistent formatting
 
 Documentation should use standardized headings and terminology.
 
-17. Website Branding
+# 17. Website Branding
 
 The website should maintain consistency with:
 
@@ -237,7 +237,7 @@ Community communications
 
 Navigation should prioritize clarity and accessibility.
 
-18. Social Media Branding
+# 18. Social Media Branding
 
 Official social media accounts should:
 
@@ -248,7 +248,7 @@ Maintain a respectful tone
 
 Only authorized representatives should publish official announcements.
 
-19. AI-Generated Content
+# 19. AI-Generated Content
 
 AI systems producing content for PNJC should:
 
@@ -260,7 +260,7 @@ Maintain consistent tone
 
 Human review is recommended for significant public-facing content.
 
-20. Community Branding
+# 20. Community Branding
 
 Community-created materials are encouraged, provided they:
 
@@ -268,7 +268,7 @@ Respect project branding
 Do not misrepresent official positions
 Clearly distinguish unofficial content
 Avoid unauthorized logo modifications
-21. Accessibility
+# 21. Accessibility
 
 Brand materials should be designed to support accessibility by:
 
@@ -279,7 +279,7 @@ Supporting multilingual communication where appropriate
 
 Accessibility should be considered throughout the design process.
 
-22. Legal Considerations
+# 22. Legal Considerations
 
 Brand assets should be used in accordance with:
 
@@ -290,7 +290,7 @@ Licensing terms
 
 Unauthorized commercial use of official branding may require prior permission.
 
-23. Brand Governance
+# 23. Brand Governance
 
 The CryptoTengo team is responsible for:
 
@@ -301,7 +301,7 @@ Reviewing official communication standards
 
 Brand updates should be documented and version-controlled.
 
-24. Continuous Improvement
+# 24. Continuous Improvement
 
 Brand Guidelines should be reviewed periodically to reflect:
 
@@ -313,7 +313,7 @@ Industry best practices
 
 Updates should preserve brand recognition while supporting long-term development.
 
-25. Related Documentation
+# 25. Related Documentation
 
 These guidelines complement:
 
@@ -324,7 +324,7 @@ Vision and Mission
 Company Profile
 Whitepaper
 Project Factsheet
-26. Summary
+# 26. Summary
 
 The PanjoCoin brand is intended to represent:
 
