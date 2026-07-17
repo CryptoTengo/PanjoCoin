@@ -4,7 +4,7 @@ Version: 1.0 Effective Date: July 2026
 
 # Project: PanjoCoin (PNJC) Blockchain: Polygon Network Token Standard: ERC-20
 
-Introduction
+# Introduction
 This Legal Disclaimer ("Disclaimer") applies to PanjoCoin (PNJC), an ERC-20 token deployed on the Polygon blockchain.
 
 PanjoCoin is a community-driven digital asset designed to support a decentralized ecosystem combining:
@@ -13,7 +13,7 @@ Community participation; Social impact initiatives; Digital utility applications
 
 This Disclaimer explains the legal nature, limitations, risks, and responsibilities related to PNJC participation.
 
-No Investment Advice
+# No Investment Advice
 PNJC is not:
 
 Investment advice; Financial advice; Trading advice; A recommendation to buy, sell, or hold digital assets.
@@ -22,21 +22,21 @@ Nothing published by PanjoCoin, CryptoTengo, contributors, community members, or
 
 Users should conduct their own independent research and consult professional advisors before interacting with digital assets.
 
-Nature of PNJC Token
+# Nature of PNJC Token
 PNJC is designed as a:
 
-Utility token; Community ecosystem token; Digital asset operating on Polygon.
+# Utility token; Community ecosystem token; Digital asset operating on Polygon.
 
 PNJC does not represent:
 
-Ownership in any company; Shares; Equity rights; Voting rights in a legal entity; Debt obligations; Guaranteed future income; Profit-sharing rights.
+# Ownership in any company; Shares; Equity rights; Voting rights in a legal entity; Debt obligations; Guaranteed future income; Profit-sharing rights.
 
-Holding PNJC does not provide ownership or control over CryptoTengo or any associated organization.
+# Holding PNJC does not provide ownership or control over CryptoTengo or any associated organization.
 
-No Guarantee of Value
+# No Guarantee of Value
 The market value of PNJC may change significantly due to:
 
-Market conditions; Cryptocurrency volatility; Liquidity conditions; Regulatory developments; Technology risks; Community adoption.
+# Market conditions; Cryptocurrency volatility; Liquidity conditions; Regulatory developments; Technology risks; Community adoption.
 
 There is no guarantee that:
 
@@ -44,12 +44,12 @@ PNJC will increase in value; PNJC will maintain liquidity; PNJC will be listed o
 
 Users participate at their own risk.
 
-Regulatory Considerations
+# Regulatory Considerations
 Digital asset regulation differs between jurisdictions.
 
 PNJC is developed with consideration of:
 
-Republic of Georgia
+# Republic of Georgia
 
 As the primary jurisdiction of project development.
 
@@ -57,13 +57,13 @@ Applicable considerations include:
 
 Virtual asset regulations; Financial crime prevention requirements; Consumer protection principles; Data protection requirements. International Regulatory Frameworks
 
-PNJC considers global regulatory approaches, including:
+# PNJC considers global regulatory approaches, including:
 
 FATF AML/CFT recommendations; European Union MiCA principles; United States digital asset classification approaches; International consumer protection standards.
 
 Regulatory treatment of PNJC may vary depending on jurisdiction.
 
-No Securities Offering Statement
+# No Securities Offering Statement
 PNJC is not intended to represent:
 
 A security offering; A share issuance; A fundraising instrument providing ownership rights.
