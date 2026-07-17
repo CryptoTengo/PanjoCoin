@@ -1,4 +1,5 @@
-PANJOCOIN (PNJC) — WHITEPAPER
+# PANJOCOIN (PNJC) — WHITEPAPER
+
 Utility Token on Polygon | Secure Digital Asset for DEX Trading and Ecosystem
 Effective Date: July 9, 2026
 Updated: July 9, 2026 (roadmap updated)
@@ -22,7 +23,7 @@ LP Lock Contract	PNJCLiquidityLockerV2 (code ready, deployment planned)
 DEX	Uniswap V2
 Compiler	Solidity 0.8.34 (verified)
 ________________________________________
-1. THE LEGEND OF PANJO
+# 1. THE LEGEND OF PANJO
 In the heart of Tbilisi, in the courtyard of the Iashvili Central Children's Clinical Hospital, a Shar Pei named Panjo appeared one day.
 He belonged to no one and seemed to have wandered in by chance, to a place where chance usually does not bring visitors. He stopped in the courtyard, raised his head, and gazed for a long time at the sky where clouds drifted slowly—as if searching for something familiar among them.
 And it was at that very moment he noticed a window on the second floor.
@@ -39,23 +40,23 @@ Thus, Panjo became something more than just a dog. He became a reminder that som
 And this very story became the foundation of PNJC—a token that exists as a symbol of a simple principle:
 Even a small act of kindness can change someone's reality.
 ________________________________________
-2. UTILITY ECOSYSTEM: FROM ALGORITHM TO SOCIAL IMPACT
+# 2. UTILITY ECOSYSTEM: FROM ALGORITHM TO SOCIAL IMPACT
 Important Note: The mechanisms described in this section (Proof of Kindness, Impact Score, SocialMining Engine, Global Kindness Map) are at the conceptual development stage. They do not affect the base tokenomics or the current smart contracts deployed on the mainnet. Detailed specifications, architecture, and implementation timelines will be presented in subsequent versions of this Whitepaper as the ecosystem evolves.
 The PanjoCoin architecture is built on six key utilities that integrate decentralized finance methods with real social impact, ensuring sustainable ecosystem growth and charitable transparency.
-2.1. Proof of Kindness (PoK) Mechanism: Blockchain Validation of Good Deeds
+# 2.1. Proof of Kindness (PoK) Mechanism: Blockchain Validation of Good Deeds
 Describes the process of transforming social action into a digital asset.
-2.2. Impact Score: On-Chain Social Reputation System
+# 2.2. Impact Score: On-Chain Social Reputation System
 Describes the dynamic user rating and its influence on DAO status.
-2.3. SocialMining Engine: Decentralized Marketing Protocol
+# 2.3. SocialMining Engine: Decentralized Marketing Protocol
 Describes the reward model for participants promoting the project and creating content.
-2.4. Global Kindness Map: Interactive Registry of Kindness Transactions
+# 2.4. Global Kindness Map: Interactive Registry of Kindness Transactions
 Describes real-time visualization of the project's impact with geographic tagging.
-2.5. GoldenPhoenix Protocol: Deflationary Sustainability Protocol
+# 2.5. GoldenPhoenix Protocol: Deflationary Sustainability Protocol
 Describes the mathematical model for automatic buyback and token burning to stabilize price.
-2.6. DAO Governance & Trust Bridge: Management and Asset Transparency
+# 2.6. DAO Governance & Trust Bridge: Management and Asset Transparency
 Describes decentralized voting mechanisms and direct charitable gateway (ClownCare Bridge).
 ________________________________________
-EXECUTIVE SUMMARY
+# EXECUTIVE SUMMARY
 PanjoCoin (PNJC) is a utility digital asset deployed on the Polygon PoS network. The token provides holders with access to services and features of the PanjoCoin ecosystem (including the planned ONE+ gaming platform and transparent charity system).
 Key characteristics implemented in smart contracts:
 •	Security: The contract has no owner (owner = address(0)), is not upgradeable, and contains no hidden functions (mint, blacklist, pause).
@@ -64,7 +65,7 @@ Key characteristics implemented in smart contracts:
 •	Accessibility: The token can be freely transferred and optionally burned (ERC20Burnable).
 Important: All additional modules (DAO, deflationary engine, vesting, airdrop, treasury) have code ready, but their deployment and activation will be carried out in stages according to the roadmap. At the time of this Whitepaper publication, they are not yet deployed on the mainnet (except for the base token). This ensures flexibility and the ability to independently audit each module before launch.
 ________________________________________
-3. PROBLEM STATEMENT
+# 3. PROBLEM STATEMENT
 The modern memecoin market is characterized by systemic problems:
 Problem	Description
 Lack of Utility	Over 99% of memecoins provide no real functions or services
@@ -77,17 +78,17 @@ PNJC addresses these issues through:
 •	Public wallets (full distribution transparency)
 •	Planned utility (gaming platform, charity, DAO)
 ________________________________________
-4. SOLUTION
-4.1. Technical Security (implemented in code)
+# 4. SOLUTION
+# 4.1. Technical Security (implemented in code)
 •	The contract has no owner (owner = address(0)) — no one can change functions, emission, or taxes.
 •	Code verified on PolygonScan.
 •	No mint(), blacklist, pause(), or freeze() functions.
 •	0% tax on all transactions.
-4.2. Economic Model (implemented)
+# 4.2. Economic Model (implemented)
 •	Fixed supply (1 trillion PNJC) — emission occurred once at deployment.
 •	Zero fees on all operations (buying, selling, transferring).
 •	Transparent distribution with public addresses.
-4.3. Future Utility and Additional Modules (code ready / design phase)
+# 4.3. Future Utility and Additional Modules (code ready / design phase)
 All modules listed below are not part of the currently deployed token contract. Smart contracts (DAO, deflation, vesting, airdrop, treasury) have ready code uploaded to the open repository. ONE+ and ClownCare Bridge services are backend services currently in the design phase.
 Module	Purpose	Planned Timeline
 GoldenPhoenixProtocol	Optional deflationary engine (automatic buyback/burn) + insurance fund	Q3 2026
@@ -99,8 +100,8 @@ ONE+ Gaming Platform	Access to games, in-game items, and rewards (design phase)	
 ClownCare Bridge	Transparent charitable payment system with on-chain reporting (design phase)	Q2 2027
 All smart contracts will undergo independent audits (CertiK / Hacken) before deployment. Results will be published.
 ________________________________________
-5. CORE ARCHITECTURE
-5.1. Deployed and Active Components (✅ Active, code on GitHub)
+# 5. CORE ARCHITECTURE
+# 5.1. Deployed and Active Components (✅ Active, code on GitHub)
 Component	Description	Status
 PNJC Token	ERC-20 with Permit (EIP 2612) and Burnable. Ownerless, no mint. Code verified on PolygonScan.	✅ Active
 Liquidity Locker	Immutable contract for locking LP NFT (ERC721). Ownerless, no emergencyWithdraw, with ReentrancyGuard. Code published on GitHub.	🧩 Code ready, deployment planned (12 month lock period, exact date to be announced at deployment)
@@ -115,7 +116,7 @@ Confirmed locker functions (from code):
 •	withdraw() — returns NFT after expiration (beneficiary only)
 •	getLock(), isUnlocked(), timeRemaining(), exists(), isActive() — view functions for status checking
 •	Constants: HAS_ADMIN = false, UPGRADABLE = false, EMERGENCY_WITHDRAW = false
-5.2. Components with Ready Code Awaiting Deployment (🧩 Code ready / design phase)
+# 5.2. Components with Ready Code Awaiting Deployment (🧩 Code ready / design phase)
 All smart contracts listed below are already written and available in the GitHub repository. They will be deployed according to the roadmap after successful completion of independent audits. ONE+ and ClownCare Bridge services are in the design phase.
 Module	Purpose	Planned Deployment
 GoldenPhoenixProtocol	Automatic buyback/burn and insurance fund	Q3 2026
@@ -128,10 +129,10 @@ ClownCare Bridge	(design phase, not a smart contract)	Q2 2027
 Contract Management with Ownable:
 GoldenPhoenixProtocol and MerkleAirdrop contracts use Ownable2Step, with the owner being a multisig wallet (Gnosis Safe) or, after DAO launch, the DAO contract itself. This ensures no single individual has sole control.
 ________________________________________
-6. TOKENOMICS
-6.1. Fixed Supply
+# 6. TOKENOMICS
+# 6.1. Fixed Supply
 Total supply — 1,000,000,000,000 PNJC. Emission occurred at deployment; the mint() function is physically absent.
-6.2. Distribution
+# 6.2. Distribution
 Allocation	Share	Amount (PNJC)	Wallet Address	Control Mechanism
 Liquidity Pool (Uniswap V2)	50%	500,000,000,000	0xf55B994FDD7019d8E99c632c76A6e0AdE765988A	Will be locked via PNJCLiquidityLockerV2. Lock period — 12 months. Exact end date and contract address to be announced at deployment.
 Treasury	12%	120,000,000,000	0xD539a54f54e9B174F831D9Da6b48ac15441fC581	Multisig 3/5 (organizational control)
@@ -141,7 +142,7 @@ Community	8%	80,000,000,000	0x54D3beB9e0F473803cC7a972Db2C17f005a2D089	Airdrop, 
 Founder	5%	50,000,000,000	0xF48840486697AE3c15D38E30e45cECB9897CfA74	Distribution schedule (to be implemented in VestingVault)
 Charity Reserve	5%	50,000,000,000	0xa22E471BF4e405c92bDD074792d8d36923e31055	Public wallet (on-chain verifiable)
 Verification: 500 + 120 + 100 + 100 + 80 + 50 + 50 = 1,000 billion PNJC (100%).
-6.3. Control Mechanisms (implemented and planned)
+# 6.3. Control Mechanisms (implemented and planned)
 Mechanism	Status	Description
 LP Lock	🧩 Code ready, deployment planned	500 billion PNJC (50% of total supply) will be locked via immutable PNJCLiquidityLockerV2 contract. Lock period — 12 months. Exact end date and contract address to be announced at deployment. Contract has no owner and no emergencyWithdraw function, protected against reentrancy.
 Distribution Schedule	🧩 Code ready, deployment planned	Will be implemented in separate VestingVault contract (12 month linear schedule for team and founder).
@@ -149,12 +150,12 @@ Transparency	✅ Active	All wallets are public, transactions verifiable on Polyg
 DAO Governance	🧩 Code ready, deployment planned	Will be implemented in separate DAO Governor contract after development and audit completion.
 Deflationary Engine	🧩 Code ready, deployment planned	GoldenPhoenixProtocol contract provides automatic buyback/burn and insurance fund. Parameters managed via multisig (subsequently — DAO).
 ________________________________________
-7. CIRCULATION MODEL
-7.1. Initial Circulation
+# 7. CIRCULATION MODEL
+# 7.1. Initial Circulation
 At launch, 1% of total supply enters circulation = 10,000,000,000 PNJC.
-7.2. Locked Supply
+# 7.2. Locked Supply
 The remaining 99% = 990,000,000,000 PNJC remains locked and is distributed according to schedule (to be implemented in VestingVault).
-7.3. Distribution Schedule
+# 7.3. Distribution Schedule
 Annually, 5% of the remaining locked volume enters circulation.
 Year	Locked (billion)	In Circulation (billion)	% in Circulation
 0 (Launch)	990.00	10.00	1.00%
@@ -173,21 +174,21 @@ Model Advantages:
 •	Predictability for holders
 •	Long-term team motivation
 ________________________________________
-8. UTILITY & ECOSYSTEM
-8.1. Current Utility (available now, implemented in code)
+# 8. UTILITY & ECOSYSTEM
+# 8.1. Current Utility (available now, implemented in code)
 Function	Description
 DEX Trading	Free transfer between wallets (0% tax)
 Transparent Charity	Public Charity Reserve wallet (0xa22E...) — all transfers on chain verifiable
 Optional Burning	Users can burn their tokens via burn() function (inherited from ERC20Burnable)
-8.2. Future Utility (code ready / design phase)
+# 8.2. Future Utility (code ready / design phase)
 Function	Description	Planned Timeline
 GoldenPhoenixProtocol	Automatic buyback/burn using USDT revenues, insurance fund for price protection. Parameters: insurancePercent (3–10%), buybackPercent (15–35%), burnPercent and rewardPercent (30–70%, sum 100%). Invariant: insurance + buyback = 30.	Q3 2026
 DAO Voting	Participation in ecosystem development votes (contract in development, code ready)	Q4 2026
 ONE+ Platform	Access to gaming features, mini games, and in game items (design phase)	Q3 2027
 ClownCare Bridge	Transparent fund distribution system with on chain reporting and monthly reports (design phase)	Q2 2027
 ________________________________________
-9. TECHNOLOGY & SECURITY
-9.1. Deployed Contracts (code published and verified)
+# 9. TECHNOLOGY & SECURITY
+# 9.1. Deployed Contracts (code published and verified)
 Contract	Status	Link
 PanjoCoin (token)	✅ Verified	PolygonScan
 PNJCLiquidityLockerV2	✅ Code published	GitHub: /Smart Contracts/PNJC_LiquidityLocker.sol
@@ -196,7 +197,7 @@ PNJCAirdrop	✅ Code published	GitHub: /Smart Contracts/PNJCAirdrop.sol
 PNJCVestingVault	✅ Code published	GitHub: /Smart Contracts/PNJCVestingVault.sol
 PNJCTreasuryVault	✅ Code published	GitHub: /Smart Contracts/PNJCTreasuryVault.sol
 DAO Governor	✅ Code published	GitHub: /Smart Contracts/PNJC_DAO_Governor.sol
-9.2. Confirmed Security Measures (from code)
+# 9.2. Confirmed Security Measures (from code)
 Measure	Status	Evidence
 OpenZeppelin 5.0.2	✅	Imported in token and other contracts
 ReentrancyGuard	✅	Used in locker and GoldenPhoenix
@@ -206,11 +207,11 @@ No upgradeable	✅	Contracts do not inherit UUPS or TransparentUpgradeableProxy
 No owner (token)	✅	Contract does not inherit Ownable
 Owner — multisig (for Ownable contracts)	✅	Constructors provide ownership transfer to multisig
 Code verified	✅	PolygonScan
-9.3. Gas Optimization
+# 9.3. Gas Optimization
 •	Average transfer cost: ~50,000 gas
 •	Token bytecode size: ~12 KB
 •	Contract optimized for Polygon network (compiler 0.8.34 with optimizations)
-9.4. On-Chain Confirmations
+# 9.4. On-Chain Confirmations
 Token Contract Verification:
 PolygonScan — 0x781C0d15347Cb0B94C42C65c7a67E70371205De5
 Planned Liquidity Lock:
@@ -223,13 +224,13 @@ Planned Liquidity Lock:
 Distribution Wallets (all public):
 Each address is listed in Section 6.2 and is viewable on PolygonScan.
 ________________________________________
-10. AUDIT & VERIFICATION
-10.1. Completed Checks
+# 10. AUDIT & VERIFICATION
+# 10.1. Completed Checks
 Check	Status
 Verification on PolygonScan	✅ Completed
 Internal testing (unit tests using Hardhat)	✅ Completed
 Community code review (open GitHub)	🔄 Available to all
-10.2. Planned Independent Audits
+# 10.2. Planned Independent Audits
 All contracts (both deployed and ready for deployment) will be reviewed by independent audit firms. Audit results will be published on the website and GitHub repository.
 Contract	Planned Auditor	Timeline
 PanjoCoin (token)	CertiK	Q2 2026
@@ -241,14 +242,14 @@ TreasuryVault	CertiK / Hacken	Q3 2026
 DAO Governor	CertiK / Hacken	Q4 2026
 Note: At the time of this Whitepaper publication, independent audit has not yet been conducted. The project is in its early stages, and audits will be completed before listings on centralized exchanges and before activation of each module.
 ________________________________________
-11. LEGAL & COMPLIANCE
-11.1. Token Status (Not a Security)
+# 11. LEGAL & COMPLIANCE
+# 11.1. Token Status (Not a Security)
 PNJC is a utility token that provides access to ecosystem services. The token does not grant rights to:
 •	Income or dividends
 •	Share in the project
 •	Expectation of profit from project activities
 •	Property rights (DAO voting, when implemented, does not grant rights to project assets)
-11.2. Country Classification by Regulation
+# 11.2. Country Classification by Regulation
 Users bear personal responsibility for complying with their country's laws. As of 2026:
 🚫 Countries with Absolute Prohibition (ownership, trading, mining prohibited)
 Afghanistan, Algeria, Bangladesh, Bolivia, China, Egypt, Iraq, Morocco, Nepal, Qatar, Tunisia, North Macedonia.
@@ -264,7 +265,7 @@ Full list and conditions are provided in the "Restricted Countries List v1.0" do
 11.3. KYC/AML Policy
 The project complies with basic AML/CFT principles as described in AML Policy v1.0. For listings on centralized exchanges, KYC verification will be implemented in accordance with specific exchange requirements.
 ________________________________________
-12. RISK DISCLOSURE
+# 12. RISK DISCLOSURE
 Purchasing and using PNJC involves the following risks (full list provided in "Risk Disclosure v1.0"):
 Risk	Description
 Market Risks	Token price is determined by the market and may fluctuate both upward and downward; complete loss of value is possible
@@ -276,7 +277,7 @@ Centralization Risks	Currently, key wallet management is through multisig; full 
 Important to understand:
 The token provides access to ecosystem services. Its acquisition is not an investment and does not guarantee income. The token price may fall to zero. Only participate with funds you are prepared to lose completely.
 ________________________________________
-13. ROADMAP — 24 MONTHS
+# 13. ROADMAP — 24 MONTHS
 Updated as of July 9, 2026, reflecting actual progress.
 Distribution Principles:
 •	Priority — completion of delayed Q2 2026 stages (audit, LP lock, airdrop) in the first two months.
@@ -322,14 +323,14 @@ Risks and Assumptions:
 •	Backend service development (ONE+, ClownCare) may require additional resources, affecting the schedule.
 •	Regulatory changes may require legal and functional adjustments.
 ________________________________________
-14. TEAM
-14.1. Founder
+# 14. TEAM
+# 14.1. Founder
 Parameter	Details
 Name	Tengo Kalandia
 Experience	11+ years in charitable sector (Director of SmileDonate Foundation)
 Role in Project	Smart contract developer, Whitepaper author, strategic development
 Status	Fully doxxed (public reputation, not anonymous)
-14.2. Council (expansion planned)
+# 14.2. Council (expansion planned)
 Currently, the project is managed by the founder with support from a multisig wallet (3 of 5). In the future, management will be transferred to DAO.
 Multisig key holders (until DAO launch):
 1.	Tengo Kalandia (founder)
@@ -341,21 +342,21 @@ Key Transfer Plan (after DAO launch):
 •	Keys will be transferred to independent community members elected through DAO.
 •	Geographic distribution of keys (Europe, North America, Asia).
 ________________________________________
-15. SOURCE OF TRUTH
+# 15. SOURCE OF TRUTH
 Priority in case of conflicts between documents:
 1.	Smart contract state on blockchain (Polygon)
 2.	Blockchain transaction history
 3.	Verified smart contract source code
 4.	This Whitepaper (document)
 ________________________________________
-16. COMMUNITY & MARKETING
+# 16. COMMUNITY & MARKETING
 "Organic Joy" Strategy:
 •	Viral memes and videos featuring real Shar Pei Panjo
 •	Video reports from Iashvili Hospital (charity transparency)
 •	Partnerships with crypto influencers and social bloggers
 •	Active community engagement via X (Twitter), Telegram, and YouTube
 ________________________________________
-17. CONCLUSION
+# 17. CONCLUSION
 PanjoCoin (PNJC) is a utility digital asset that currently provides a secure and transparent token for DEX trading, with phased deployment of additional modules (DAO, deflation, vesting, airdrop, treasury) according to the roadmap. All additional contracts already have ready code published in the open repository and will undergo independent audit before activation.
 Key advantages right now:
 •	Maximum security (ownerless contract, 0% tax, no hidden functions)
@@ -364,7 +365,7 @@ Key advantages right now:
 The roadmap and ready modules ensure long term perspective and real token utility.
 Join us — every step brings us closer to a child's smile and a sustainable ecosystem.
 ________________________________________
-18. OFFICIAL LINKS
+# 18. OFFICIAL LINKS
 Resource	Link
 Website	www.cryptotengo.com
 
@@ -376,7 +377,7 @@ Network	Polygon PoS
 DEX	Uniswap V2
 Socials	X (Twitter)
 ________________________________________
-19. FINAL CLASSIFICATION
+# 19. FINAL CLASSIFICATION
 #	Criterion	Status	Explanation
 1	Fixed Supply	✅	1 trillion PNJC, emission occurred at deployment
 2	Ownerless Contract	✅	owner = address(0), no Ownable
