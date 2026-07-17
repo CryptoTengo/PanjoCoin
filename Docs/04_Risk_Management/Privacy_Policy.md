@@ -1,4 +1,4 @@
-PanjoCoin (PNJC) — Privacy Policy
+# PanjoCoin (PNJC) — Privacy Policy
 
 Version: 1.0
 Date: July 15, 2026
@@ -6,7 +6,7 @@ Network: Polygon PoS
 Project: PanjoCoin Ecosystem
 Organization: CryptoTengo / PanjoCoin
 
-1. Introduction
+# 1. Introduction
 
 This Privacy Policy explains how PanjoCoin (PNJC) and its ecosystem services collect, use, store, protect, and disclose information when users interact with:
 
@@ -27,7 +27,7 @@ General Data Protection Regulation (GDPR) principles where applicable.
 
 This Privacy Policy applies to users, visitors, contributors, community members, and ecosystem participants.
 
-2. Important Notice Regarding Blockchain Data
+# 2. Important Notice Regarding Blockchain Data
 
 PanjoCoin operates on public blockchain infrastructure.
 
@@ -51,8 +51,8 @@ PanjoCoin cannot delete or modify information stored directly on public blockcha
 
 Users should understand that blockchain technology provides transparency by design.
 
-3. Information We May Collect
-3.1 Information Provided Voluntarily
+# 3. Information We May Collect
+# 3.1 Information Provided Voluntarily
 
 Users may voluntarily provide information when they:
 
@@ -70,7 +70,7 @@ email address;
 communication preferences;
 messages and correspondence;
 public social media information.
-3.2 Blockchain Information
+# 3.2 Blockchain Information
 
 When interacting with PNJC services, publicly available blockchain data may include:
 
@@ -83,7 +83,7 @@ NFT or GameFi activity (if introduced).
 
 This information is not considered private because it exists on a public blockchain.
 
-3.3 Technical Information
+# 3.3 Technical Information
 
 When users access websites or applications, technical information may be collected, including:
 
@@ -94,7 +94,7 @@ operating system;
 approximate location data;
 website interaction data;
 cookies and analytics information.
-4. Cookies and Analytics
+# 4. Cookies and Analytics
 
 PanjoCoin websites may use cookies and similar technologies to improve user experience.
 
@@ -107,7 +107,7 @@ understanding user interaction.
 
 Users may manage cookie preferences through their browser settings.
 
-5. How We Use Information
+# 5. How We Use Information
 
 Information may be used for:
 
@@ -140,7 +140,7 @@ legal obligations;
 regulatory requirements;
 fraud prevention;
 enforcement of terms.
-6. Wallet Connection and Web3 Services
+# 6. Wallet Connection and Web3 Services
 
 PanjoCoin may provide wallet connection functionality through Web3 providers.
 
@@ -158,7 +158,7 @@ wallet passwords.
 
 Users should never share wallet credentials.
 
-7. Data Sharing
+# 7. Data Sharing
 
 PanjoCoin does not sell personal information.
 
@@ -191,7 +191,7 @@ partnerships;
 audits;
 compliance reviews;
 ecosystem development.
-8. Data Security
+# 8. Data Security
 
 PanjoCoin applies reasonable security measures including:
 
@@ -209,7 +209,7 @@ securing wallets;
 protecting passwords;
 avoiding phishing attempts;
 verifying official channels.
-9. Data Retention
+# 9. Data Retention
 
 Personal information is retained only for as long as necessary for:
 
@@ -221,7 +221,7 @@ improving ecosystem operations.
 
 Blockchain records cannot be removed because they are maintained by decentralized networks.
 
-10. User Rights
+# 10. User Rights
 
 Depending on applicable laws, users may have rights including:
 
@@ -236,7 +236,7 @@ Requests may be limited where:
 information exists on public blockchains;
 legal obligations require retention;
 technical limitations apply.
-11. International Users
+# 11. International Users
 
 PanjoCoin is a global blockchain ecosystem.
 
@@ -248,13 +248,13 @@ local cryptocurrency regulations;
 privacy requirements;
 tax obligations;
 restrictions applicable in their country.
-12. Children’s Privacy
+# 12. Children’s Privacy
 
 PanjoCoin services are not intended for individuals who cannot legally participate in blockchain activities under applicable laws.
 
 Users should comply with applicable age requirements in their jurisdiction.
 
-13. Third-Party Links
+# 13. Third-Party Links
 
 The PanjoCoin ecosystem may contain links to third-party websites or services.
 
@@ -267,7 +267,7 @@ data handling procedures.
 
 Users should review third-party privacy policies separately.
 
-14. Community Platforms
+# 14. Community Platforms
 
 PanjoCoin may operate or participate in community platforms such as:
 
@@ -286,7 +286,7 @@ private wallet information;
 personal identification documents;
 passwords;
 confidential data.
-15. Compliance Approach
+# 15. Compliance Approach
 
 PanjoCoin follows a privacy-by-design approach:
 
@@ -309,7 +309,7 @@ User Control
 
 Users maintain control over their personal information where legally possible.
 
-16. Changes to This Privacy Policy
+# 16. Changes to This Privacy Policy
 
 PanjoCoin may update this Privacy Policy when:
 
@@ -322,7 +322,7 @@ Updated versions will include:
 new version number;
 updated date;
 summary of significant changes.
-17. Contact Information
+# 17. Contact Information
 
 For privacy-related questions or requests:
 
@@ -331,7 +331,7 @@ Organization: CryptoTengo
 Website: Official PanjoCoin Website
 Contact: Official project communication channels
 
-18. Final Statement
+# 18. Final Statement
 
 PanjoCoin respects user privacy while operating within the transparent nature of blockchain technology.
 
