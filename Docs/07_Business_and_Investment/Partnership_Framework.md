@@ -1,11 +1,11 @@
-Partnership Framework
-PanjoCoin (PNJC)
+# Partnership Framework
+# PanjoCoin (PNJC)
 
 Version: 1.0
 Date: July 2026
 Organization: CryptoTengo
 
-1. Overview
+# 1. Overview
 
 This document defines the partnership framework for the PanjoCoin (PNJC) ecosystem.
 
@@ -13,7 +13,7 @@ Its purpose is to establish a structured approach for identifying, evaluating, d
 
 Partnerships are intended to strengthen technology, education, community engagement, and social impact while supporting responsible and sustainable development.
 
-2. Partnership Objectives
+# 2. Partnership Objectives
 
 The PNJC partnership strategy aims to:
 
@@ -24,7 +24,7 @@ Increase community engagement
 Support social impact initiatives
 Encourage innovation
 Build long-term strategic relationships
-3. Partnership Principles
+# 3. Partnership Principles
 
 All partnerships should be based on:
 
@@ -38,7 +38,7 @@ Respect for community interests
 
 Partnerships should align with the project's mission and values.
 
-4. Partnership Categories
+# 4. Partnership Categories
 Technology Partners
 
 Examples include:
@@ -120,7 +120,7 @@ Purpose:
 
 Support ecosystem growth and business development.
 
-5. Partnership Lifecycle
+# 5. Partnership Lifecycle
 Identification
 
 ↓
@@ -150,7 +150,7 @@ Performance Review
 ↓
 
 Renewal or Completion
-6. Partner Evaluation
+# 6. Partner Evaluation
 
 Potential partners may be evaluated based on:
 
@@ -164,7 +164,7 @@ Community value
 
 Evaluation criteria should be documented where appropriate.
 
-7. Due Diligence
+# 7. Due Diligence
 
 Before entering into significant partnerships, reasonable due diligence may include:
 
@@ -177,7 +177,7 @@ Conflict of interest evaluation
 
 The scope of due diligence should be proportionate to the nature of the partnership.
 
-8. Collaboration Models
+# 8. Collaboration Models
 
 Possible collaboration models include:
 
@@ -192,7 +192,7 @@ Knowledge sharing
 
 Each collaboration should have clearly defined objectives and responsibilities.
 
-9. Governance
+# 9. Governance
 
 Partnership governance should include:
 
@@ -204,7 +204,7 @@ Periodic evaluation
 
 Governance structures should support transparency and accountability.
 
-10. Roles and Responsibilities
+# 10. Roles and Responsibilities
 
 Typical responsibilities include:
 
@@ -217,7 +217,7 @@ Marketing & Community	Joint communications and community activities
 
 Responsibilities may evolve as the organization grows.
 
-11. Communication
+# 11. Communication
 
 Communication with partners should be:
 
@@ -229,7 +229,7 @@ Well documented
 
 Public announcements should be coordinated and approved by the participating organizations where appropriate.
 
-12. Joint Branding
+# 12. Joint Branding
 
 Joint branding activities should:
 
@@ -240,7 +240,7 @@ Clearly identify official partnerships
 
 Unauthorized use of partner branding should be avoided.
 
-13. Data Protection
+# 13. Data Protection
 
 Where collaboration involves data processing, partners should:
 
@@ -251,7 +251,7 @@ Use secure communication methods
 
 Data sharing should be governed by appropriate agreements where required.
 
-14. Intellectual Property
+# 14. Intellectual Property
 
 Ownership of intellectual property should be clearly defined before collaborative work begins.
 
@@ -260,7 +260,7 @@ Where applicable:
 Existing intellectual property remains with its original owner.
 Newly created intellectual property should be governed by written agreements.
 Open-source contributions should comply with applicable licenses.
-15. Compliance
+# 15. Compliance
 
 Partnerships should respect applicable:
 
@@ -273,7 +273,7 @@ Digital asset regulations
 
 Compliance responsibilities should be identified during partnership planning.
 
-16. Risk Management
+# 16. Risk Management
 
 Potential partnership risks include:
 
@@ -291,7 +291,7 @@ Clear agreements
 Regular reviews
 Defined governance
 Risk monitoring
-17. Performance Evaluation
+# 17. Performance Evaluation
 
 Partnership effectiveness may be evaluated using:
 
@@ -304,7 +304,7 @@ Long-term collaboration potential
 
 Performance reviews should support continuous improvement.
 
-18. Partnership Review
+# 18. Partnership Review
 
 Partnerships should be reviewed periodically to assess:
 
@@ -316,7 +316,7 @@ Opportunities for improvement
 
 Reviews may result in continuation, expansion, modification, or conclusion of the partnership.
 
-19. Termination
+# 19. Termination
 
 A partnership may conclude due to:
 
@@ -328,7 +328,7 @@ Material breach of agreement
 
 Termination should be managed professionally and in accordance with applicable agreements.
 
-20. Continuous Improvement
+# 20. Continuous Improvement
 
 The partnership framework should evolve based on:
 
@@ -340,7 +340,7 @@ Organizational growth
 
 Regular updates help maintain an effective partnership ecosystem.
 
-21. Related Documentation
+# 21. Related Documentation
 
 This framework complements:
 
@@ -352,7 +352,7 @@ Charity Program
 Compliance Program
 Company Profile
 Vision and Mission
-22. Summary
+# 22. Summary
 
 The PNJC Partnership Framework establishes a structured and transparent approach to building strategic relationships.
 
