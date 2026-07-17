@@ -1,8 +1,8 @@
-PanjoCoin (PNJC) Legal Disclaimer
+# PanjoCoin (PNJC) Legal Disclaimer
 
 Version: 1.0 Effective Date: July 2026
 
-Project: PanjoCoin (PNJC) Blockchain: Polygon Network Token Standard: ERC-20
+# Project: PanjoCoin (PNJC) Blockchain: Polygon Network Token Standard: ERC-20
 
 Introduction
 This Legal Disclaimer ("Disclaimer") applies to PanjoCoin (PNJC), an ERC-20 token deployed on the Polygon blockchain.
