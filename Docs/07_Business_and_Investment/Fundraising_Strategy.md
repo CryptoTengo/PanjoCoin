@@ -1,11 +1,11 @@
-Fundraising Strategy
-PanjoCoin (PNJC)
+# Fundraising Strategy
+# PanjoCoin (PNJC)
 
 Version: 1.0
 Date: July 2026
 Organization: CryptoTengo
 
-1. Overview
+# 1. Overview
 
 This document defines the fundraising strategy for the PanjoCoin (PNJC) ecosystem.
 
@@ -13,7 +13,7 @@ The purpose of this strategy is to establish a transparent framework for securin
 
 Fundraising activities should be conducted in accordance with applicable laws, regulatory requirements, and the project's governance principles.
 
-2. Strategic Objectives
+# 2. Strategic Objectives
 
 The fundraising strategy aims to:
 
@@ -27,7 +27,7 @@ Ensure long-term operational sustainability
 
 Funding decisions should prioritize the long-term interests of the ecosystem.
 
-3. Guiding Principles
+# 3. Guiding Principles
 
 Fundraising activities should be:
 
@@ -40,7 +40,7 @@ Consistent with the project's mission
 
 The project does not promote fundraising through misleading claims or guarantees of financial returns.
 
-4. Funding Priorities
+# 4. Funding Priorities
 
 Financial resources may be allocated to:
 
@@ -57,7 +57,7 @@ Research and innovation
 
 Allocation decisions should follow applicable governance and treasury policies.
 
-5. Funding Sources
+# 5. Funding Sources
 
 Potential funding sources include:
 
@@ -106,7 +106,7 @@ Where appropriate and legally structured, funding may be sought through investme
 
 Any such fundraising should be conducted under applicable corporate and securities laws.
 
-6. Fundraising Lifecycle
+# 6. Fundraising Lifecycle
 Opportunity Identification
 
 ↓
@@ -140,7 +140,7 @@ Reporting
 ↓
 
 Impact Review
-7. Evaluation Criteria
+# 7. Evaluation Criteria
 
 Potential funding opportunities should be assessed based on:
 
@@ -153,7 +153,7 @@ Operational feasibility
 
 Funding opportunities that conflict with the project's values should not be pursued.
 
-8. Due Diligence
+# 8. Due Diligence
 
 Before accepting significant funding, reasonable due diligence may include:
 
@@ -166,7 +166,7 @@ Source-of-funds review where appropriate
 
 The depth of due diligence should be proportionate to the funding arrangement.
 
-9. Financial Governance
+# 9. Financial Governance
 
 Funds should be managed in accordance with:
 
@@ -177,7 +177,7 @@ Enterprise Risk Management Framework
 
 Significant expenditures should follow established governance and approval processes.
 
-10. Use of Funds
+# 10. Use of Funds
 
 Examples of potential allocations include:
 
@@ -193,7 +193,7 @@ Research	Innovation and product exploration
 
 Actual allocations should be determined according to project priorities and available resources.
 
-11. Transparency
+# 11. Transparency
 
 The project aims to promote transparency by:
 
@@ -204,7 +204,7 @@ Following internal governance procedures
 
 The scope and frequency of public reporting may evolve as the project grows.
 
-12. Regulatory Compliance
+# 12. Regulatory Compliance
 
 Fundraising activities should comply with applicable:
 
@@ -217,7 +217,7 @@ Consumer protection laws
 
 Legal review is recommended before initiating fundraising activities in new jurisdictions.
 
-13. Risk Management
+# 13. Risk Management
 
 Potential risks include:
 
@@ -235,7 +235,7 @@ Financial planning
 Treasury controls
 Regular financial reviews
 Governance oversight
-14. Performance Measurement
+# 14. Performance Measurement
 
 Fundraising effectiveness may be evaluated using:
 
@@ -248,7 +248,7 @@ Partnership development
 
 These metrics support accountability and continuous improvement.
 
-15. Reporting
+# 15. Reporting
 
 Internal reporting may include:
 
@@ -260,7 +260,7 @@ Milestone tracking
 
 External reporting may be provided where appropriate and consistent with legal and contractual obligations.
 
-16. Ethical Standards
+# 16. Ethical Standards
 
 The project seeks to accept funding that is consistent with its values.
 
@@ -271,7 +271,7 @@ Require misleading communications
 Conflict with applicable law
 Undermine community trust
 Compromise project independence
-17. Continuous Improvement
+# 17. Continuous Improvement
 
 The fundraising strategy should be reviewed periodically based on:
 
@@ -283,7 +283,7 @@ Lessons learned
 
 Updates should support long-term sustainability.
 
-18. Related Documentation
+# 18. Related Documentation
 
 This strategy complements:
 
@@ -295,7 +295,7 @@ Investment Memo
 Partnership Framework
 Compliance Program
 Enterprise Risk Management Framework
-19. Summary
+# 19. Summary
 
 The PNJC Fundraising Strategy provides a structured framework for obtaining financial resources in a transparent, responsible, and sustainable manner.
 
