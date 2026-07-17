@@ -1,4 +1,4 @@
-PNJC RISK DISCLOSURE PANJOCOIN (PNJC) — RISK DISCLOSURE Effective Date: July 9, 2026
+# PNJC RISK DISCLOSURE PANJOCOIN (PNJC) — RISK DISCLOSURE Effective Date: July 9, 2026
 
 CRITICAL WARNING: • The Token may lose all of its value. • The Token price may fall to zero. • Acquisition of the Token is NOT an investment and DOES NOT guarantee income. • Participate only with funds you are prepared to lose completely.
 
@@ -15,7 +15,7 @@ TOKENOMICS-RELATED RISKS 10.1. Token Unlocks • In accordance with the circulat
 INFORMATION RISKS 11.1. Information Changes • Information presented in the Whitepaper, Tokenomics, Disclaimer, and other documents may be amended without prior notice. • Current information is always available on the official website and GitHub repository. • The User is obligated to independently track changes and updates. 11.2. Misinformation and Fakes • Fake news, fraudulent schemes, and misinformation are widespread in the cryptocurrency space. • The User should rely only on official sources of information: the official website, GitHub, and official social media channels (Telegram, X (Twitter)). • The Project bears no responsibility for losses incurred by users based on inaccurate information. 11.3. No Guarantees of Forecast Accuracy • Any forecasts, plans, goals, or expectations expressed in the Project's documents are hypothetical and do not constitute guarantees. • Actual results may differ materially from forecasted results.
 SECURITY RISKS 12.1. Hacker Attacks • Cryptocurrency projects are regularly subject to hacker attacks, including: o Smart contract exploits. o Website hacking and DNS spoofing. o Phishing attacks on users. o Wallet and private key attacks. • In the event of a successful attack, holders' funds may be irretrievably lost. 12.2. Fraud • There are risks of fraudulent activity, including creation of fake Token copies, counterfeit websites, and fraudulent social media groups. • The User is obligated to verify all addresses and links, using only official sources. 12.3. Social Engineering • Attackers may use social engineering methods to gain access to accounts, wallets, or confidential information. • The User is obligated to observe basic cybersecurity rules: not to share private keys, not to click on suspicious links, not to disclose personal information.
 MACROECONOMIC AND SYSTEMIC RISKS 13.1. General Market Factors • The cryptocurrency market is influenced by macroeconomic factors, including interest rates, inflation, geopolitical events, regulation, and overall investor sentiment. • A bear market in cryptocurrencies may lead to a decline in Token price regardless of the Project's fundamental characteristics. 13.2. Blockchain Systemic Risks • Issues at the level of the underlying Polygon blockchain or Ethereum (if Polygon uses Ethereum as a settlement layer) may negatively affect Token operation. • Such issues may include network congestion, fee increases, technical failures, or vulnerabilities. 13.3. Stablecoin Risks • Many DEX pairs use stablecoins (USDC, USDT), which are subject to depegging risks (loss of peg to the US dollar). • Stablecoin depegging may lead to significant price fluctuations and losses.
-KEY PROVISIONS FOR HOLDERS
+# KEY PROVISIONS FOR HOLDERS
 ✅ PNJC is a utility token, NOT a security.
 ✅ No promises of profit or price guarantees.
 ✅ Price may fall to zero — risk only what you are prepared to lose.
@@ -28,20 +28,20 @@ KEY PROVISIONS FOR HOLDERS
 ✅ All additional features (DAO, gaming, deflation) — code is ready; deployment is scheduled in stages (may be partially implemented, delayed, or not implemented at all).
 ✅ Liquidity lock (50% of total supply) will be executed through an immutable contract for 12 months (code ready; deployment scheduled).
 CONCLUSION This Risk Disclosure is an integral part of the PanjoCoin Project's entire documentation. By acquiring, holding, or using the PNJC Token, the User confirms that they: • Have read and fully understood this Risk Disclosure. • Accept all stated risks and act at their own risk. • Understand that the Token may lose all of its value. • Do not expect to generate profit or income from acquiring the Token. • Are acquiring the Token for use in the ecosystem, not as an investment. Remember: Participation in cryptocurrency projects carries high risks. Never invest funds that you cannot afford to lose completely.
-REFERENCES TO DOCUMENTS This Disclosure is inextricably linked to the following documents: Document Link Whitepaper v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/WhitePaper.md
-Tokenomics v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/Tokenomics.md
+# REFERENCES TO DOCUMENTS This Disclosure is inextricably linked to the following documents: Document Link Whitepaper v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/WhitePaper.md
+# Tokenomics v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/Tokenomics.md
 
-Legal Disclaimer v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/Disclaimer.md
+# Legal Disclaimer v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/Disclaimer.md
 
-Terms of Use v1.0 github.com/CryptoTengo/PanjoCoin/blob/main/docs/TermsOfUse.md
+# Terms of Use v1.0 github.com/CryptoTengo/PanjoCoin/blob/main/docs/TermsOfUse.md
 
-AML Policy v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/AML_Policy.md
+# AML Policy v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/AML_Policy.md
 
-Restricted Countries List v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/RestrictedCountries.md
+# Restricted Countries List v1.1 github.com/CryptoTengo/PanjoCoin/blob/main/docs/RestrictedCountries.md
 
-Smart Contract (PolygonScan) 0x781C0d15347Cb0B94C42C65c7a67E70371205De5 GitHub Repository github.com/CryptoTengo/PanjoCoin
+# Smart Contract (PolygonScan) 0x781C0d15347Cb0B94C42C65c7a67E70371205De5 GitHub Repository github.com/CryptoTengo/PanjoCoin
 
-Official Website www.cryptotengo.com
+# Official Website www.cryptotengo.com
 
 APPENDIX: RISK ACKNOWLEDGMENT TEMPLATE Upon acquiring the Token, the User confirms acknowledgment of the risks: text I, the undersigned, confirm that:
 
