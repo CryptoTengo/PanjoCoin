@@ -1,11 +1,11 @@
-Community Strategy
+# Community Strategy
 PanjoCoin (PNJC)
 
 Version: 1.0
 Date: July 2026
 Organization: CryptoTengo
 
-1. Overview
+# 1. Overview
 
 This document defines the community strategy for the PanjoCoin (PNJC) ecosystem.
 
@@ -13,7 +13,7 @@ The purpose of this strategy is to build a welcoming, informed, and engaged glob
 
 Community growth is intended to be organic, transparent, and sustainable.
 
-2. Strategic Objectives
+# 2. Strategic Objectives
 
 The PNJC community strategy aims to:
 
@@ -24,7 +24,7 @@ Support open collaboration
 Increase developer engagement
 Foster constructive discussions
 Strengthen long-term ecosystem sustainability
-3. Community Vision
+# 3. Community Vision
 
 PNJC seeks to create a community where people can:
 
@@ -37,7 +37,7 @@ Share knowledge with others
 
 The community is intended to be inclusive and accessible to participants with different levels of technical experience.
 
-4. Community Values
+# 4. Community Values
 
 The community is guided by the following values:
 
@@ -67,7 +67,7 @@ Participants should:
 Verify information before sharing
 Respect community rules
 Help maintain a positive environment
-5. Community Structure
+# 5. Community Structure
 Global Community
         │
  ┌──────┼────────┐
@@ -81,7 +81,7 @@ Community Contributors
 Moderators
         │
 Core Team
-6. Target Community Segments
+# 6. Target Community Segments
 General Users
 
 Interested in:
@@ -120,7 +120,7 @@ Blockchain innovation
 SocialFi
 Governance
 Sustainability
-7. Communication Channels
+# 7. Communication Channels
 
 Official communication may include:
 
@@ -137,7 +137,7 @@ TikTok
 
 Announcements should be published consistently across official channels whenever practical.
 
-8. Community Engagement
+# 8. Community Engagement
 
 Examples of engagement activities include:
 
@@ -151,7 +151,7 @@ Online events
 
 Engagement should focus on learning, collaboration, and constructive participation.
 
-9. Contributor Program
+# 9. Contributor Program
 
 Community members may contribute by:
 
@@ -164,7 +164,7 @@ Supporting community moderation
 
 Contributions should be recognized in a transparent and fair manner.
 
-10. Recognition
+# 10. Recognition
 
 Recognition may include:
 
@@ -176,7 +176,7 @@ Participation recognition
 
 Recognition programs should avoid creating misleading financial expectations.
 
-11. Education Strategy
+# 11. Education Strategy
 
 Educational initiatives may include:
 
@@ -189,7 +189,7 @@ Security awareness
 
 Education is considered a core function of the PNJC ecosystem.
 
-12. Community Events
+# 12. Community Events
 
 Possible events include:
 
@@ -202,7 +202,7 @@ Community meetings
 
 Participation is voluntary.
 
-13. AI Community Support
+# 13. AI Community Support
 
 AI systems may assist with:
 
@@ -214,7 +214,7 @@ Community onboarding
 
 AI-generated responses should be monitored and improved through human oversight.
 
-14. Moderation Principles
+# 14. Moderation Principles
 
 Moderation aims to:
 
@@ -226,7 +226,7 @@ Encourage constructive dialogue
 
 Moderation decisions should be applied consistently and transparently.
 
-15. Code of Conduct
+# 15. Code of Conduct
 
 Community participants are expected to:
 
@@ -239,7 +239,7 @@ Support an inclusive environment
 
 Repeated violations may result in moderation actions in accordance with community policies.
 
-16. Growth Strategy
+# 16. Growth Strategy
 
 Community growth should prioritize:
 
@@ -252,7 +252,7 @@ Meaningful engagement
 
 Growth should be measured by participation and contribution rather than community size alone.
 
-17. Performance Indicators
+# 17. Performance Indicators
 
 Community performance may be evaluated using:
 
@@ -266,7 +266,7 @@ Educational content engagement
 
 These metrics support continuous improvement.
 
-18. Risk Management
+# 18. Risk Management
 
 Potential risks include:
 
@@ -284,7 +284,7 @@ Community guidelines
 Official verification channels
 Educational resources
 Transparent communication
-19. Continuous Improvement
+# 19. Continuous Improvement
 
 The community strategy should evolve through:
 
@@ -297,7 +297,7 @@ Industry best practices
 
 Regular reviews help maintain an active and healthy community.
 
-20. Summary
+# 20. Summary
 
 The PNJC Community Strategy establishes a framework for building a collaborative, transparent, and globally accessible community.
 
