@@ -1,99 +1,155 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.36;
 
+
+// ================================================================
+// OpenZeppelin Contracts v5.x
+// ================================================================
+
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
+
+
 /**
- * @title PNJCLiquidityLockerV2
+ * @title PNJCLiquidityLocker
  * @author PanjoCoin Engineering Team
  *
- * @notice Immutable LP token locker for PanjoCoin liquidity.
+ * @notice
+ * Immutable liquidity locking vault for PNJC DEX liquidity.
  *
- * @dev Security properties:
+ *
+ * @dev
+ * The contract locks LP tokens received from:
+ *
+ * - QuickSwap
+ * - Uniswap V2 compatible DEXs
+ *
+ *
+ * Security model:
  *
  * - No owner
- * - No admin keys
+ * - No admin
  * - No upgradeability
+ * - No proxy
  * - No emergency withdrawal
  * - No hidden privileges
- * - Uses OpenZeppelin SafeERC20
- * - Protected against reentrancy attacks
  *
- * Designed for locking DEX liquidity provider tokens
- * from QuickSwap / Uniswap V2 compatible pools.
+ *
+ * Once LP tokens are locked:
+ *
+ * - They cannot be removed before unlock time.
+ * - Only the predefined beneficiary can withdraw.
+ *
+ *
+ * Compatible with:
+ *
+ * PanjoCoin ERC20 V2
+ * Polygon PoS
+ * OpenZeppelin Contracts v5
  */
-contract PNJCLiquidityLockerV2 is ReentrancyGuard {
+contract PNJCLiquidityLocker is ReentrancyGuard {
+
 
     using SafeERC20 for IERC20;
 
 
+
     // =============================================================
-    //                          ERRORS
+    // ERRORS
     // =============================================================
+
 
     error ZeroAddress();
+
+    error InvalidAmount();
+
     error InvalidUnlockTime();
+
     error InvalidLockId();
-    error ZeroAmount();
+
     error NotBeneficiary();
+
     error LockNotExpired();
+
     error AlreadyWithdrawn();
-    error CannotLockLockerToken();
+
+    error CannotLockLocker();
+
 
 
     // =============================================================
-    //                          STRUCT
+    // STRUCTURES
     // =============================================================
+
 
     /**
      * @notice Represents one liquidity lock position.
      */
     struct LockPosition {
 
-        /// @notice LP token contract address
+
+        /**
+         * @notice LP token contract address.
+         */
         address lpToken;
 
-        /// @notice Address allowed to withdraw after unlock
+
+        /**
+         * @notice Wallet allowed to withdraw after unlock.
+         */
         address beneficiary;
 
-        /// @notice Amount of LP tokens locked
+
+        /**
+         * @notice Amount of LP tokens locked.
+         */
         uint256 amount;
 
-        /// @notice Unix timestamp when withdrawal becomes possible
+
+        /**
+         * @notice Unlock timestamp.
+         */
         uint256 unlockTime;
 
-        /// @notice Withdrawal status
+
+        /**
+         * @notice Withdrawal status.
+         */
         bool withdrawn;
     }
 
 
+
+
+
     // =============================================================
-    //                         STORAGE
+    // STATE
     // =============================================================
 
+
     /**
-     * @notice Total number of liquidity locks created.
+     * @notice Total created locks.
      */
     uint256 public lockCount;
 
 
+
     /**
-     * @notice Mapping lock ID => lock data.
+     * @notice Lock storage.
      */
-    mapping(uint256 => LockPosition) private _locks;
+    mapping(uint256 => LockPosition) private locks;
+
+
 
 
 
     // =============================================================
-    //                          EVENTS
+    // EVENTS
     // =============================================================
 
 
-    /**
-     * @notice Emitted when liquidity is locked.
-     */
     event LiquidityLocked(
         uint256 indexed lockId,
         address indexed lpToken,
@@ -103,9 +159,7 @@ contract PNJCLiquidityLockerV2 is ReentrancyGuard {
     );
 
 
-    /**
-     * @notice Emitted when liquidity is withdrawn.
-     */
+
     event LiquidityWithdrawn(
         uint256 indexed lockId,
         address indexed beneficiary,
@@ -114,12 +168,17 @@ contract PNJCLiquidityLockerV2 is ReentrancyGuard {
 
 
 
+
+
     // =============================================================
-    //                         MODIFIERS
+    // MODIFIERS
     // =============================================================
 
 
-    modifier validLock(uint256 lockId) {
+    modifier validLock(
+        uint256 lockId
+    )
+    {
 
         if(lockId == 0 || lockId > lockCount)
             revert InvalidLockId();
@@ -129,18 +188,20 @@ contract PNJCLiquidityLockerV2 is ReentrancyGuard {
 
 
 
+
+
     // =============================================================
-    //                      CORE FUNCTIONS
+    // LOCK FUNCTION
     // =============================================================
 
 
     /**
-     * @notice Locks LP tokens permanently until unlock timestamp.
+     * @notice Locks LP tokens.
      *
-     * @param lpToken LP token address from DEX pool.
-     * @param amount Amount of LP tokens to lock.
-     * @param beneficiary Wallet allowed to withdraw after unlock.
-     * @param unlockTime Unix timestamp of unlock.
+     * @param lpToken LP token address.
+     * @param amount Amount of LP tokens.
+     * @param beneficiary Wallet receiving LP after unlock.
+     * @param unlockTime Timestamp when withdrawal is allowed.
      *
      * @return lockId Created lock identifier.
      */
@@ -155,37 +216,52 @@ contract PNJCLiquidityLockerV2 is ReentrancyGuard {
         returns(uint256 lockId)
     {
 
+
         if(lpToken == address(0))
             revert ZeroAddress();
+
+
 
         if(beneficiary == address(0))
             revert ZeroAddress();
 
+
+
         if(lpToken == address(this))
-            revert CannotLockLockerToken();
+            revert CannotLockLocker();
+
+
 
         if(amount == 0)
-            revert ZeroAmount();
+            revert InvalidAmount();
+
+
 
         if(unlockTime <= block.timestamp)
             revert InvalidUnlockTime();
 
 
+
+
         lockId = ++lockCount;
 
 
-        _locks[lockId] = LockPosition({
 
-            lpToken: lpToken,
+        locks[lockId] =
+            LockPosition({
 
-            beneficiary: beneficiary,
+                lpToken: lpToken,
 
-            amount: amount,
+                beneficiary: beneficiary,
 
-            unlockTime: unlockTime,
+                amount: amount,
 
-            withdrawn:false
-        });
+                unlockTime: unlockTime,
+
+                withdrawn:false
+            });
+
+
 
 
         IERC20(lpToken)
@@ -194,6 +270,7 @@ contract PNJCLiquidityLockerV2 is ReentrancyGuard {
                 address(this),
                 amount
             );
+
 
 
         emit LiquidityLocked(
@@ -208,30 +285,44 @@ contract PNJCLiquidityLockerV2 is ReentrancyGuard {
 
 
 
+
+    // =============================================================
+    // WITHDRAW FUNCTION
+    // =============================================================
+
+
     /**
-     * @notice Withdraw locked liquidity after expiration.
+     * @notice Withdraws LP tokens after unlock.
      *
      * @param lockId Lock identifier.
      */
-    function withdraw(uint256 lockId)
+    function withdraw(
+        uint256 lockId
+    )
         external
         nonReentrant
         validLock(lockId)
     {
 
-        LockPosition storage position = _locks[lockId];
+
+        LockPosition storage position =
+            locks[lockId];
+
 
 
         if(msg.sender != position.beneficiary)
             revert NotBeneficiary();
 
 
+
         if(position.withdrawn)
             revert AlreadyWithdrawn();
 
 
+
         if(block.timestamp < position.unlockTime)
             revert LockNotExpired();
+
 
 
 
@@ -246,6 +337,7 @@ contract PNJCLiquidityLockerV2 is ReentrancyGuard {
             );
 
 
+
         emit LiquidityWithdrawn(
             lockId,
             position.beneficiary,
@@ -255,22 +347,77 @@ contract PNJCLiquidityLockerV2 is ReentrancyGuard {
 
 
 
+
+
     // =============================================================
-    //                         VIEW FUNCTIONS
+    // VIEW FUNCTIONS
     // =============================================================
 
 
     /**
      * @notice Returns lock information.
      */
-    function getLock(uint256 lockId)
+    function getLock(
+        uint256 lockId
+    )
         external
         view
         validLock(lockId)
-        returns(LockPosition memory)
+        returns(
+            LockPosition memory
+        )
     {
-        return _locks[lockId];
+
+        return locks[lockId];
     }
 
+
+
+    /**
+     * @notice Checks if liquidity is still locked.
+     */
+    function isLocked(
+        uint256 lockId
+    )
+        external
+        view
+        validLock(lockId)
+        returns(bool)
+    {
+
+        LockPosition memory position =
+            locks[lockId];
+
+
+        return
+            !position.withdrawn &&
+            block.timestamp < position.unlockTime;
+    }
+
+
+
+    /**
+     * @notice Returns remaining lock time.
+     */
+    function remainingLockTime(
+        uint256 lockId
+    )
+        external
+        view
+        validLock(lockId)
+        returns(uint256)
+    {
+
+        LockPosition memory position =
+            locks[lockId];
+
+
+        if(block.timestamp >= position.unlockTime)
+            return 0;
+
+
+        return position.unlockTime -
+               block.timestamp;
+    }
 
 }
