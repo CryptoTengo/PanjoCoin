@@ -6,7 +6,7 @@
 "standard": "ERC-20",
 "contractAddress": "0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848",
 "contractVerified": true,
-"blockExplorer": "https://polygonscan.com/address/0x781C0d15347Cb0B94C42C65c7a67E70371205De5",
+"blockExplorer": "https://polygonscan.com/address/0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848 ",
 "repository": "https://github.com/CryptoTengo/PanjoCoin",
 "deploymentStatus": "Active"
 }
