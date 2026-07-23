@@ -5,7 +5,7 @@ This directory contains deployment metadata for the PanjoCoin (PNJC) smart contr
 ## Polygon Mainnet
 
 Contract Address:
-0x781C0d15347Cb0B94C42C65c7a67E70371205De5
+0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848 
 
 Network:
 Polygon Mainnet
