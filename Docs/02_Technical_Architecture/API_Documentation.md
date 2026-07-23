@@ -1,479 +1,213 @@
-# API Documentation
-
-## PanjoCoin (PNJC)
-
-**Version:** 1.0  
-**Date:** July 2026  
-**Network:** Polygon PoS  
-**Token Standard:** ERC-20  
-
----
-
-# 1. Overview
-
-This document describes the API architecture and integration interfaces available for the PanjoCoin (PNJC) ecosystem.
-
-The API layer provides developers, applications, exchanges, analytics platforms, and ecosystem partners with access to:
-
-- Token information
-- Blockchain data
-- Wallet balances
-- Transaction history
-- Smart contract events
-- Liquidity information
-- Future SocialFi and GameFi services
-
----
-
-# 2. API Architecture
-
-The PNJC ecosystem API architecture consists of several layers:
-
-             Applications
-
-                  |
-
-          PNJC API Gateway
-
-                  |
-
-| | |
-
-Blockchain API Analytics API Ecosystem API
-
-| | |
-
-Polygon RPC Market Data PoK / GameFi
-
-                  |
-
-          PNJC Smart Contract
-
-                  |
-
-          Polygon PoS Network
-
----
-
-# 3. API Principles
-
-The API system follows:
-
-- Security-first design
-- Public transparency
-- Rate limiting
-- Developer accessibility
-- Blockchain verification
-- Privacy protection
-
----
-
-# 4. Blockchain Network Information
-
-## Polygon PoS Mainnet
-
-Network:
-
-
-Polygon PoS
-
-
-Chain ID:
-
-
-137
-
-
-Native Gas Token:
-
-
-POL
-
-
-(previously MATIC)
-
----
-
-# 5. Token Information API
-
-## Token Metadata Endpoint
-
-### Request
-
-
-GET /api/v1/token/info
-
-
----
-
-### Response Example
-
-```json
-{
-  "name": "PanjoCoin",
-  "symbol": "PNJC",
-  "network": "Polygon",
-  "standard": "ERC-20",
-  "decimals": 18,
-  "totalSupply": "1000000000000",
-  "contract": "0x781C0d15347Cb0B94C42C65c7a67E70371205De5"
-}
-6. Wallet Balance API
-Get Wallet Balance
-Endpoint
-GET /api/v1/wallet/{address}/balance
-Parameters
-Parameter	Type	Description
-address	string	Polygon wallet address
-Response
-{
-  "wallet": "0x123...",
-  "token": "PNJC",
-  "balance": "5000000"
-}
-7. Transaction History API
-Wallet Transactions
-
-Endpoint:
-
-GET /api/v1/wallet/{address}/transactions
-
-Response:
-
-{
-  "wallet": "0x123...",
-  "transactions": [
-    {
-      "hash": "0xabcd...",
-      "type": "transfer",
-      "amount": "1000",
-      "timestamp": "2026-07-01"
-    }
-  ]
-}
-8. Smart Contract API
-Contract Information
-
-Endpoint:
-
-GET /api/v1/contract/info
-
-Response:
-
-{
-  "contract":
-  "0x781C0d15347Cb0B94C42C65c7a67E70371205De5",
-
-  "verified": true,
-
-  "minting": false,
-
-  "upgradeable": false
-}
-9. Smart Contract Events API
-
-The API provides access to:
-
-Transfer events
-Approval events
-Burn events
-Charity allocation events
-
-Endpoint:
-
-GET /api/v1/events
-
-Example:
-
-{
- "event":"Transfer",
- "from":"0x123",
- "to":"0x456",
- "value":"100000"
-}
-10. Market Data API
-
-Provides:
-
-Price information
-Trading volume
-Liquidity data
-DEX statistics
-
-Endpoint:
-
-GET /api/v1/market/data
-
-Response:
-
-{
- "symbol":"PNJC",
- "price":"0.000001",
- "volume24h":"50000",
- "liquidity":"100000"
-}
-11. Liquidity API
-Liquidity Information
-
-Endpoint:
-
-GET /api/v1/liquidity
-
-Response:
-
-{
- "dex":[
-   "QuickSwap",
-   "Uniswap V3"
- ],
-
- "locked":true,
-
- "lockPeriod":"12 months"
-}
-12. Holder Statistics API
-
-Endpoint:
-
-GET /api/v1/statistics/holders
-
-Response:
-
-{
- "holders":10000,
- "growth":"15%",
- "network":"Polygon"
-}
-13. SocialFi API (Future)
-
-The SocialFi API supports:
-
-Proof of Kindness
-Impact Score
-Community reputation
-Rewards
-Create Impact Record
-
-Endpoint:
-
-POST /api/v1/pok/impact
-
-Request:
-
-{
-"user":"0x123",
-"action":"charity_activity",
-"proof":"ipfs_hash"
-}
-
-Response:
-
-{
-"status":"pending",
-"id":"impact_001"
-}
-14. Impact Score API
-
-Endpoint:
-
-GET /api/v1/pok/{wallet}/score
-
-Response:
-
-{
-"wallet":"0x123",
-"impactScore":850,
-"rank":"Gold"
-}
-15. GameFi API (Future)
-
-Provides:
-
-Player profiles
-NFT assets
-Rewards
-Achievements
-Player Profile
-
-Endpoint:
-
-GET /api/v1/game/player/{wallet}
-
-Response:
-
-{
-"wallet":"0x123",
-"level":12,
-"rewards":"5000 PNJC"
-}
-16. Authentication
-
-Public endpoints:
-
-No authentication required
-
-Protected endpoints:
-
-Require:
-
-API Key
-OAuth2
-Wallet signature verification
-17. API Security
-
-Security mechanisms:
-
-Rate Limiting
-
-Example:
-
-100 requests/minute
-Wallet Verification
-
-Supported:
-
-EIP-191 signatures
-EIP-712 typed signatures
-Data Protection
-
-The API MUST NOT expose:
-
-Private keys
-Personal wallet ownership data
-Internal infrastructure information
-18. Developer Access
-
-Developers can use PNJC APIs for:
-
-Wallet applications
-Analytics dashboards
-Community tools
-Games
-Social platforms
-Research
-19. Error Handling
-
-Standard response format:
-
-{
-"error":{
- "code":"INVALID_ADDRESS",
- "message":"Wallet address is invalid"
-}
-}
-20. HTTP Status Codes
-Code	Meaning
-200	Success
-400	Bad Request
-401	Unauthorized
-403	Forbidden
-404	Not Found
-429	Rate Limit
-500	Server Error
-21. API Versioning
-
-Current version:
-
-v1
-
-Example:
-
-/api/v1/
-
-Future versions:
-
-/api/v2/
-22. Developer SDK (Future)
-
-Planned SDK support:
-
-JavaScript
-@panjocoin/sdk-js
-Python
-panjocoin-python
-Mobile
-Android SDK
-iOS SDK
-23. Documentation Standards
-
-API documentation follows:
-
-OpenAPI 3.0 specification
-REST principles
-JSON communication
-Blockchain verification standards
-24. Example Developer Workflow
-Developer
-
-   |
-
-Request Token Data
-
-   |
-
-PNJC API
-
-   |
-
-Polygon Blockchain
-
-   |
-
-Verified Response
-
-25. Roadmap Integration
-Phase 1
-
-Completed:
-
-Token information
-Blockchain verification
-Phase 2
-
-DEX integration:
-
-Liquidity APIs
-Market analytics
-Phase 3
-
-SocialFi:
-
-Proof of Kindness API
-Impact Score API
-Phase 4
-
-GameFi:
-
-NFT API
-Reward API
-26. Conclusion
-
-The PanjoCoin API architecture provides a scalable interface between blockchain infrastructure and real-world applications.
-
-The API system enables:
-
-Developer adoption
-Ecosystem expansion
-Transparent analytics
-Social impact verification
-Future GameFi integration
-
-© 2026 CryptoTengo
-PanjoCoin (PNJC)
-
-
-Этот документ закрывает **Developer Integration Layer** в составе Institutional Launch Pack.
-
-Сейчас набор технической документации PNJC выглядит так:
-
-✅ `Smart_Contract_Architecture.md` — архитектура контракта  
-✅ `Smart_Contract_Specification.md` — технические требования контракта  
-✅ `API_Documentation.md` — интерфейсы для разработчиков  
-
-Следующие наиболее важные документы для уровня **Web3 Enterprise Documentation**:
-
-1. `Developer_Guide.md`  
-2. `SDK_Documentation.md`  
-3. `Node_and_RPC_Integration.md`  
-4. `Security_API_Guidelines.md`  
-5. `OpenAPI_Specification.yaml` (реальный файл Swagger для GitHub)
+### PanjoCoin (PNJC) — Documentation
+Version: 1.0
+Date: July 23, 2026
+Network: Polygon PoS
+
+## 1. Overview
+Welcome to the official PanjoCoin (PNJC) documentation repository. This document serves as the central index for all project documentation, providing easy access to technical specifications, economic models, governance frameworks, and community guidelines.
+
+PanjoCoin is a utility token built on the Polygon PoS network, designed to power a transparent, community-driven ecosystem combining blockchain technology with social impact.
+
+## 2. Quick Reference
+2.1. Core Parameters
+Parameter	Value
+Token Name	PanjoCoin
+Ticker	PNJC
+Network	Polygon PoS
+Contract Address	0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848
+Total Supply	1,000,000,000,000 PNJC
+Decimals	18
+Transfer Tax	0%
+DEX	Uniswap V2
+2.2. Key Links
+Resource	Link
+Website	www.cryptotengo.com
+GitHub Repository	github.com/CryptoTengo/PanjoCoin
+Smart Contract	0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848
+PolygonScan	https://polygonscan.com/token/0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848
+Socials	X (Twitter), Telegram
+## 3. Documentation Index
+3.1. Core Documents
+Document	Description
+Whitepaper	Comprehensive project overview, vision, problem statement, solution, tokenomics, roadmap, and team information.
+Tokenomics	Detailed token distribution, supply model, deflationary mechanisms, and governance controls.
+Investor Overview	Key metrics, security features, use of funds, risk factors, and participation guide.
+3.2. Technical Documentation
+Document	Description
+Security	Security framework, smart contract security features, audit plans, vulnerability reporting, and incident response.
+Liquidity Strategy	Liquidity allocation, lock mechanism, deflationary integration, risk management, and market strategy.
+Smart Contracts	Detailed technical specifications of all deployed and planned smart contracts.
+Architecture	System architecture, component interactions, and technical design decisions.
+3.3. Community and Contribution
+Document	Description
+Contributing Guidelines	How to contribute to the project, coding standards, testing, and pull request process.
+Code of Conduct	Community standards, expected behaviour, reporting guidelines, and enforcement.
+Governance	DAO framework, voting mechanisms, proposal process, and community participation.
+Brand Guidelines	Logo usage, brand colors, typography, and visual identity.
+3.4. Legal and Compliance
+Document	Description
+Legal Disclaimer	Comprehensive legal notice, risk acknowledgment, regulatory compliance, and liability disclaimer.
+Privacy Policy	Data collection, usage, storage, and user rights.
+AML Policy	Anti-Money Laundering and Countering the Financing of Terrorism compliance framework.
+Risk Disclosure	Detailed risk factors associated with the token and ecosystem.
+3.5. Supplementary Documents
+Document	Description
+Roadmap	Detailed 24-month development roadmap with milestones and timelines.
+FAQ	Frequently asked questions and answers.
+Glossary	Definitions of technical terms and concepts used in the project.
+Changelog	Version history and updates to project documentation.
+## 4. Document Status Legend
+Status	Description
+✅ Active	Document is complete and officially published.
+🧩 Code Ready	Document is complete; associated contracts are code-ready.
+🔄 In Review	Document is under review and may be updated.
+📝 Draft	Document is in development and not yet finalized.
+🔄 Conceptual	Document is at the conceptual stage.
+## 5. Document Versioning
+All documents follow semantic versioning: MAJOR.MINOR.PATCH
+
+Version Change	Description
+MAJOR	Incompatible changes, significant restructuring, or updates to core parameters.
+MINOR	New features, sections, or significant clarifications.
+PATCH	Minor corrections, typo fixes, or small updates.
+## 6. Document Hierarchy
+The following hierarchy establishes the priority of documents in case of conflicts:
+
+Priority	Document
+1	Smart contract state on the blockchain (Polygon)
+2	Blockchain transaction history
+3	Verified smart contract source code
+4	Whitepaper
+5	Tokenomics
+6	Security Policy
+7	All other documentation
+## 7. How to Use These Documents
+7.1. For Developers
+Start with Whitepaper to understand the vision.
+
+Read Smart Contracts for technical specifications.
+
+Review Security for security best practices.
+
+Follow Contributing Guidelines to get involved.
+
+7.2. For Investors
+Start with Investor Overview for key metrics.
+
+Read Tokenomics for the economic model.
+
+Review Risk Disclosure for risk factors.
+
+Understand the Legal Disclaimer.
+
+7.3. For Community Members
+Read Whitepaper to understand the project.
+
+Review Code of Conduct for community standards.
+
+Follow Contributing Guidelines to participate.
+
+Check the Roadmap for upcoming developments.
+
+7.4. For Auditors and Security Researchers
+Review Security for the security framework.
+
+Examine Smart Contracts for technical specifications.
+
+Follow vulnerability reporting guidelines in SECURITY.md.
+
+Review Risk Disclosure for identified risks.
+
+## 8. Documentation Maintenance
+8.1. Review Schedule
+Document Type	Review Frequency
+Core Documents	Quarterly
+Technical Documents	After each deployment
+Legal Documents	Annually or after regulatory changes
+Community Documents	As needed
+8.2. Update Process
+Propose changes via GitHub issue or pull request.
+
+Review by maintainers.
+
+Approval by required parties.
+
+Publish updated document.
+
+Announce changes through official channels.
+
+## 9. Translation
+Currently, documents are available in:
+
+Language	Status
+English	✅ Available
+Russian	🚧 Planned
+Georgian	🚧 Planned
+Other Languages	🔄 Conceptual
+Translations will be made available in the repository as they are completed.
+
+## 10. Feedback and Questions
+We welcome feedback on our documentation:
+
+General Questions: GitHub Discussions or Telegram community.
+
+Documentation Issues: Open a GitHub issue with the label documentation.
+
+Technical Questions: GitHub Issues with the label question.
+
+Security Questions: security@cryptotengo.com.
+
+## 11. Official Channels
+Channel	Purpose
+GitHub	Code repository, documentation, issues, and contributions
+Website	Official project information and updates
+X (Twitter)	Announcements and community engagement
+Telegram	Real-time community chat and support
+Email	Direct contact for specific inquiries
+## 12. File Structure
+Recommended repository structure for documentation:
+
+text
+PanjoCoin/
+├── docs/
+│   ├── WHITEPAPER.md
+│   ├── TOKENOMICS.md
+│   ├── INVESTORS.md
+│   ├── SECURITY.md
+│   ├── LIQUIDITY.md
+│   ├── SMART_CONTRACTS.md
+│   ├── ARCHITECTURE.md
+│   ├── CONTRIBUTING.md
+│   ├── CODE_OF_CONDUCT.md
+│   ├── GOVERNANCE.md
+│   ├── LEGAL_DISCLAIMER.md
+│   ├── PRIVACY_POLICY.md
+│   ├── AML_POLICY.md
+│   ├── RISK_DISCLOSURE.md
+│   ├── ROADMAP.md
+│   ├── FAQ.md
+│   ├── GLOSSARY.md
+│   └── CHANGELOG.md
+├── README.md
+└── LICENSE
+## 13. Summary
+This documentation repository provides comprehensive information about the PanjoCoin (PNJC) project, including:
+
+Category	Documents
+Project Overview	Whitepaper, Investor Overview
+Technical Specifications	Tokenomics, Security, Liquidity Strategy, Smart Contracts
+Community	Contributing Guidelines, Code of Conduct, Governance
+Legal	Legal Disclaimer, Privacy Policy, AML Policy, Risk Disclosure
+Reference	Roadmap, FAQ, Glossary, Changelog
+## 14. Document Information
+Property	Value
+Document	Documentation Index
+Version	1.0
+Date	July 23, 2026
+Status	✅ Active
+Next Review	Quarterly
+© 2026 PanjoCoin. All rights reserved.
+Document Version: 1.0
+Last Updated: July 23, 2026
+
+This response is AI-generated, for reference only.
