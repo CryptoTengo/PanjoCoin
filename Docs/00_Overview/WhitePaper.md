@@ -373,7 +373,7 @@ ________________________________________
 Resource	Link
 Website	www.cryptotengo.com
 
-Smart Contract (token)	0x781C0d15347Cb0B94C42C65c7a67E70371205De5
+Smart Contract (token)	0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848
 GitHub (contract code)	github.com/CryptoTengo/PanjoCoin
 
 Liquidity Lock (transaction)	To be added after locker deployment
@@ -401,5 +401,5 @@ ________________________________________
 ________________________________________
 © 2026 PanjoCoin. All rights reserved.
 Document Version: v1.0 (roadmap updated)
-Last Updated: July 9, 2026
+Last Updated: July 23, 2026
 
