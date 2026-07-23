@@ -159,6 +159,7 @@ The remaining 99% = 990,000,000,000 PNJC remains locked and is distributed accor
 # 7.3. Distribution Schedule
 Annually, 5% of the remaining locked volume enters circulation.
 Year	Locked (billion)	In Circulation (billion)	% in Circulation
+
 0 (Launch)	990.00	10.00	1.00%
 1	940.50	59.50	5.95%
 2	893.48	106.52	10.65%
@@ -170,7 +171,9 @@ Year	Locked (billion)	In Circulation (billion)	% in Circulation
 8	656.79	343.21	34.32%
 9	623.95	376.05	37.61%
 10	592.75	407.25	40.72%
-Model Advantages:
+
+# Model Advantages:
+
 •	Gradual token release prevents sharp price crashes
 •	Predictability for holders
 •	Long-term team motivation
