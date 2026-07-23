@@ -4,6 +4,7 @@ Utility Token on Polygon | Secure Digital Asset for DEX Trading and Ecosystem
 Effective Date: July 9, 2026
 Updated: July 9, 2026 (roadmap updated)
 ________________________________________
+
 CORE PARAMETERS (implemented in smart contracts)
 Parameter	Value
 Name	PanjoCoin
@@ -18,7 +19,7 @@ Admin Keys	None (ownerless contract)
 Upgradeability	None
 Transfer Tax	0%
 Blacklists / Freezing	None
-Token Contract Address	0x781C0d15347Cb0B94C42C65c7a67E70371205De5
+Token Contract Address	0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848
 LP Lock Contract	PNJCLiquidityLockerV2 (code ready, deployment planned)
 DEX	Uniswap V2
 Compiler	Solidity 0.8.34 (verified)
