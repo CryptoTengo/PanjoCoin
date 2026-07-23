@@ -1,10 +1,10 @@
-PanjoCoin (PNJC) — Investor Overview
+### PanjoCoin (PNJC) — Investor Overview
 Version: 1.0
 Date: July 23, 2026
 Network: Polygon PoS
 Token Standard: ERC-20 + ERC20Permit (EIP-2612) + ERC20Burnable
 
-1. Executive Summary
+# 1. Executive Summary
 PanjoCoin (PNJC) is a utility token built on the Polygon PoS network, designed to power a transparent, community-driven ecosystem combining blockchain technology with social impact.
 
 Key Highlights:
@@ -20,7 +20,7 @@ Team Status	Fully doxxed founder (Tengo Kalandia, 11+ years charity sector)
 Audits	Planned with CertiK / Hacken
 Deflationary	GoldenPhoenixProtocol (revenue-based buyback and burn)
 Governance	DAO planned (Q4 2026)
-2. Token Metrics
+# 2. Token Metrics
 2.1. Core Parameters
 Parameter	Value
 Token Name	PanjoCoin
@@ -55,7 +55,7 @@ Year	In Circulation (Billion)	% in Circulation
 10	407.25	40.72%
 Release Formula: 5% of remaining locked supply enters circulation annually.
 
-3. Security and Transparency
+# 3. Security and Transparency
 3.1. Smart Contract Security
 Feature	Status
 OpenZeppelin 5.0.2	✅ Industry-standard audited libraries
@@ -81,7 +81,7 @@ VestingVault	CertiK / Hacken	Q3 2026
 DAO Governor	CertiK / Hacken	Q4 2026
 All audit results will be published on the website and GitHub.
 
-4. Use of Funds (Treasury Allocation)
+# 4. Use of Funds (Treasury Allocation)
 4.1. Operational Treasury (120B PNJC)
 Use Case	Description
 Development	Smart contract development, platform building, technical infrastructure
@@ -105,7 +105,7 @@ Public Wallet Addresses	✅ Listed in Tokenomics document
 On-Chain Monitoring	✅ All transactions visible on PolygonScan
 Regular Reporting	✅ Quarterly transparency reports
 DAO Oversight	🧩 Planned (Q4 2026)
-5. Deflationary Mechanism: GoldenPhoenixProtocol
+# 5. Deflationary Mechanism: GoldenPhoenixProtocol
 5.1. Overview
 The GoldenPhoenixProtocol provides deflationary pressure and price stability using external ecosystem revenue (NOT transaction taxes).
 
@@ -130,7 +130,7 @@ Reduced Supply	Regular burns decrease total supply over time
 Price Support	Buyback mechanism adds buying pressure
 Insurance Fund	Protection during market downturns
 Reward Distribution	Share of revenue distributed to ecosystem participants
-6. Liquidity and Market Strategy
+# 6. Liquidity and Market Strategy
 6.1. Initial Liquidity
 Parameter	Value
 Liquidity Allocation	500,000,000,000 PNJC (50% of total supply)
@@ -154,7 +154,7 @@ Mechanism	Description
 GoldenPhoenix Buyback	Revenue-based market purchases
 Gradual Unlocks	5% of locked supply per year
 Treasury Management	Strategic liquidity support when needed
-7. Team and Governance
+# 7. Team and Governance
 7.1. Founder
 Parameter	Detail
 Name	Tengo Kalandia
@@ -175,7 +175,7 @@ Voting Power	1 PNJC = 1 vote
 Quorum	4% of total supply
 Voting Period	7 days
 Timelock	48 hours for proposal execution
-8. Roadmap
+# 8. Roadmap
 8.1. Key Milestones
 Quarter	Milestone	Status
 Q2 2026	Token deployment, MerkleAirdrop, Audits	🧩 In Progress
@@ -193,7 +193,7 @@ Burn Mechanism	Revenue-based (USDT)	Transaction tax-based
 Doxxed Team	✅ Full transparency	Often anonymous
 Utility	Gaming, charity, governance	None or minimal
 Audits	Planned with CertiK	Rarely
-9. Risk Factors
+# 9. Risk Factors
 9.1. Key Risks
 Risk	Description
 Market Risk	Token price is volatile and may fall to zero.
@@ -208,7 +208,7 @@ Market Risk	Liquidity locking, deflationary mechanism, treasury support
 Technical Risk	OpenZeppelin libraries, independent audits, immutable contracts
 Regulatory Risk	Utility-focused design, legal review, compliance awareness
 Development Risk	Code already ready, audited before deployment, transparent roadmap
-10. How to Participate
+# 10. How to Participate
 10.1. Acquisition
 Method	Description
 DEX Trading	Purchase PNJC on Uniswap V2 (Polygon network)
@@ -226,7 +226,7 @@ GitHub	github.com/CryptoTengo/PanjoCoin
 Smart Contract	0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848
 PolygonScan	https://polygonscan.com/token/0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848
 Socials	X (Twitter), Telegram
-11. Frequently Asked Questions
+# 11. Frequently Asked Questions
 Q1: Is PanjoCoin a security?
 A: No. PNJC is a utility token designed to provide access to ecosystem services. It does not represent equity, ownership, or rights to income, dividends, or profits.
 
@@ -257,7 +257,7 @@ A: Visit PolygonScan, view the verified source code, or compile from GitHub and 
 Q10: What happens if I send tokens to the wrong address?
 A: Transactions on the blockchain are irreversible. Always verify addresses before sending.
 
-12. Important Disclaimer
+# 12. Important Disclaimer
 This document is for informational purposes only and does not constitute financial, investment, or legal advice.
 
 PNJC is a utility token, not a security.
@@ -272,12 +272,12 @@ The project may delay or modify roadmap items based on technical, regulatory, or
 
 By acquiring PNJC, you acknowledge that you have read and understood the risks described in this document and the full Legal Disclaimer.
 
-13. Contact Information
+# 13. Contact Information
 Purpose	Contact
 General Inquiries	info@cryptotengo.com
 Legal/Regulatory	legal@cryptotengo.com
 Security	security@cryptotengo.com (for vulnerability reports)
-14. Document Information
+# 14. Document Information
 Property	Value
 Document	Investor Overview
 Version	1.0
