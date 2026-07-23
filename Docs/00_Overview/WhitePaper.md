@@ -135,13 +135,13 @@ ________________________________________
 Total supply — 1,000,000,000,000 PNJC. Emission occurred at deployment; the mint() function is physically absent.
 # 6.2. Distribution
 Allocation	Share	Amount (PNJC)	Wallet Address	Control Mechanism
-Liquidity Pool (Uniswap V2)	50%	500,000,000,000	0xf55B994FDD7019d8E99c632c76A6e0AdE765988A	Will be locked via PNJCLiquidityLockerV2. Lock period — 12 months. Exact end date and contract address to be announced at deployment.
-Treasury	12%	120,000,000,000	0xD539a54f54e9B174F831D9Da6b48ac15441fC581	Multisig 3/5 (organizational control)
-DAO Treasury	10%	100,000,000,000	0xD5e2DD65BA4984565b53EFdcec6A9D2F494b5FE2	Will be governed by DAO after launch
-Team	10%	100,000,000,000	0xdEBACbF7f51C3865dc2034ED676D3d344954f9FE	Distribution schedule (to be implemented in VestingVault)
-Community	8%	80,000,000,000	0x54D3beB9e0F473803cC7a972Db2C17f005a2D089	Airdrop, referral programs
-Founder	5%	50,000,000,000	0xF48840486697AE3c15D38E30e45cECB9897CfA74	Distribution schedule (to be implemented in VestingVault)
-Charity Reserve	5%	50,000,000,000	0xa22E471BF4e405c92bDD074792d8d36923e31055	Public wallet (on-chain verifiable)
+Liquidity Pool (Uniswap V2)	50%	500,000,000,000	 	Will be locked via PNJCLiquidityLockerV2. Lock period — 12 months. Exact end date and contract address to be announced at deployment.
+Treasury	12%	120,000,000,000	 	Multisig 3/5 (organizational control)
+DAO Treasury	10%	100,000,000,000	 	Will be governed by DAO after launch
+Team	10%	100,000,000,000	 	Distribution schedule (to be implemented in VestingVault)
+Community	8%	80,000,000,000	 	Airdrop, referral programs
+Founder	5%	50,000,000,000	 	Distribution schedule (to be implemented in VestingVault)
+Charity Reserve	5%	50,000,000,000	 	Public wallet (on-chain verifiable)
 Verification: 500 + 120 + 100 + 100 + 80 + 50 + 50 = 1,000 billion PNJC (100%).
 # 6.3. Control Mechanisms (implemented and planned)
 Mechanism	Status	Description
