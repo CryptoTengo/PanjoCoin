@@ -40,7 +40,7 @@ Transfer Tax	0% (on all transactions)
 Blacklists / Freezing	None
 Token Contract Address	0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848
 DEX	Uniswap V2
-Compiler	Solidity 0.8.34 (verified)
+Compiler	Solidity 0.8.36 (verified)
 ## 3. PROBLEM STATEMENT
 The modern memecoin market is characterized by systemic problems:
 
