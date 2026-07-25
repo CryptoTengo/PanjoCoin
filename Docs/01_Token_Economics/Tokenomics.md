@@ -23,13 +23,13 @@ No mint() function exists in the contract code
 
 2.2. Allocation Breakdown
 Category	Share	Amount (PNJC)	Wallet Address	Control Mechanism
-Liquidity Pool (Uniswap V2)	50%	500,000,000,000	0xf55B...988A	Locked via PNJCLiquidityLockerV2 for 12 months. No emergency withdrawal.
-Operational Treasury	12%	120,000,000,000	0xD539...C581	3/5 Multisig. Used for operational expenses, listings, and partnerships.
-DAO Treasury	10%	100,000,000,000	0xD5e2...FE2	Controlled by DAO after launch (Q4 2026). Grants, community initiatives.
-Team	10%	100,000,000,000	0xdEBA...9FE	Locked in VestingVault. 6-month cliff + 12-month linear vesting.
-Community	8%	80,000,000,000	0x54D3...D089	Airdrops, referral bonuses, marketing campaigns, community rewards.
-Founder	5%	50,000,000,000	0xF488...A74	Locked in VestingVault. 12-month cliff + 24-month linear vesting.
-Charity Reserve	5%	50,000,000,000	0xa22E...555	Public wallet for transparent charitable donations. All transactions on-chain.
+Liquidity Pool (Uniswap V2)	50%	500,000,000,000	Locked via PNJCLiquidityLockerV2 for 12 months. No emergency withdrawal.
+Operational Treasury	12%	120,000,000,000	3/5 Multisig. Used for operational expenses, listings, and partnerships.
+DAO Treasury	10%	100,000,000,000	Controlled by DAO after launch (Q4 2026). Grants, community initiatives.
+Team	10%	100,000,000,000	Locked in VestingVault. 6-month cliff + 12-month linear vesting.
+Community	8%	80,000,000,000	Airdrops, referral bonuses, marketing campaigns, community rewards.
+Founder	5%	50,000,000,000	Locked in VestingVault. 12-month cliff + 24-month linear vesting.
+Charity Reserve	5%	50,000,000,000	Public wallet for transparent charitable donations. All transactions on-chain.
 Verification: 500 + 120 + 100 + 100 + 80 + 50 + 50 = 1,000 billion PNJC (100%).
 
 2.3. Control Mechanisms
