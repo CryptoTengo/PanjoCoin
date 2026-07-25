@@ -15,7 +15,7 @@ The total supply is 1,000,000,000,000 PNJC (1 trillion). The mint() function is 
 
 On-Chain Verification:
 
-Contract: 0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848
+Contract: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF
 
 Function: maxSupply() returns 1000000000000 (1 trillion)
 
