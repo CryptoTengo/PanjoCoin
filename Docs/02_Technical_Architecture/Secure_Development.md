@@ -1,506 +1,558 @@
-# PanjoCoin (PNJC)
+## Secure Development Policy
+PanjoCoin (PNJC)
+Version: 1.1 (Updated)
+Effective Date: July 25, 2026
+Project: PanjoCoin (PNJC)
+Blockchain: Polygon PoS
+Token Standard: ERC-20 (ERC20Burnable + ERC20Permit)
+Smart Contract Address: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF
 
-# Secure Development Policy
-
-**Version:** 1.0
-**Effective Date:** July 2026
-**Project:** PanjoCoin (PNJC)
-**Blockchain:** Polygon PoS
-**Token Standard:** ERC-20
-
----
-
-# 1. Introduction
-
+## 1. Introduction
 This Secure Development Policy defines the software development security practices followed by PanjoCoin (PNJC) to ensure that blockchain applications, smart contracts, and supporting infrastructure are developed with security as a core requirement.
 
 Secure development is essential because blockchain systems operate with:
 
-* immutable transactions;
-* publicly accessible smart contracts;
-* valuable digital assets;
-* decentralized infrastructure.
+Immutable transactions;
+
+Publicly accessible smart contracts;
+
+Valuable digital assets;
+
+Decentralised infrastructure.
 
 PanjoCoin applies security-focused development principles throughout the software lifecycle.
 
----
-
-# 2. Purpose
-
+## 2. Purpose
 The objectives of this policy are:
 
-* Establish secure software development practices.
-* Reduce vulnerabilities.
-* Improve code quality.
-* Protect ecosystem participants.
-* Support audit readiness.
-* Create a repeatable development process.
+Establish secure software development practices;
 
----
+Reduce vulnerabilities;
 
-# 3. Scope
+Improve code quality;
 
+Protect ecosystem participants;
+
+Support audit readiness;
+
+Create a repeatable development process.
+
+## 3. Scope
 This policy applies to:
 
-* Solidity smart contracts;
-* Web3 applications;
-* backend services;
-* websites;
-* APIs;
-* automation systems;
-* AI-based ecosystem tools;
-* future GameFi and NFT components.
+Solidity smart contracts (PanjoCoin token, liquidity locker, vesting, treasury, DAO);
 
----
+Web3 applications and front-end interfaces;
 
-# 4. Secure Development Principles
+Backend services and APIs;
 
-## 4.1 Security by Design
+Websites and documentation portals;
 
+Automation systems and deployment scripts;
+
+Future GameFi (ONE+) and NFT components;
+
+Community and social impact platforms.
+
+## 4. Secure Development Principles
+4.1. Security by Design
 Security requirements should be considered from the earliest design stage.
 
 Development decisions should evaluate:
 
-* possible attack vectors;
-* user impact;
-* technical dependencies;
-* operational risks.
+Possible attack vectors;
 
----
+User impact;
 
-## 4.2 Secure Coding Practices
+Technical dependencies;
 
+Operational risks.
+
+4.2. Secure Coding Practices
 Developers should follow:
 
-* language best practices;
-* blockchain security standards;
-* reviewed coding patterns;
-* documented development procedures.
+Language best practices (Solidity, JavaScript, TypeScript);
 
----
+Blockchain security standards (OpenZeppelin, ERC standards);
 
-## 4.3 Minimal Complexity
+Reviewed coding patterns;
 
+Documented development procedures.
+
+4.3. Minimal Complexity
 Systems should avoid unnecessary complexity.
 
 Benefits:
 
-* easier review;
-* reduced attack surface;
-* improved maintainability.
+Easier review;
 
----
+Reduced attack surface;
 
-## 4.4 Transparency
+Improved maintainability.
 
+4.4. Transparency
 PNJC supports:
 
-* open documentation;
-* verified contracts;
-* clear technical descriptions.
+Open documentation;
 
----
+Verified contracts on PolygonScan;
 
-## 4.5 Continuous Improvement
+Clear technical descriptions;
 
+Public GitHub repositories.
+
+4.5. Continuous Improvement
 Development processes should improve based on:
 
-* testing results;
-* security findings;
-* community feedback;
-* technology changes.
+Testing results;
 
----
+Security findings;
 
-# 5. Software Development Lifecycle (SDLC)
+Community feedback;
 
+Technology changes.
+
+## 5. Software Development Lifecycle (SDLC)
 PNJC follows a security-focused development lifecycle.
 
 Stages:
 
-1. Planning.
-2. Design.
-3. Development.
-4. Testing.
-5. Deployment.
-6. Monitoring.
-7. Improvement.
+Planning;
 
----
+Design;
 
-# 6. Planning Phase
+Development;
 
+Testing;
+
+Deployment;
+
+Monitoring;
+
+Improvement.
+
+## 6. Planning Phase
 Before development begins:
 
 Activities include:
 
-* defining requirements;
-* identifying risks;
-* evaluating dependencies;
-* considering security requirements.
+Defining requirements;
+
+Identifying risks;
+
+Evaluating dependencies;
+
+Considering security requirements.
 
 Questions:
 
-* What assets require protection?
-* What are possible attack scenarios?
-* What security controls are required?
+What assets require protection?
 
----
+What are possible attack scenarios?
 
-# 7. Design Security Review
+What security controls are required?
 
+## 7. Design Security Review
 The design phase should evaluate:
 
-## Architecture
-
+Architecture
 Review:
 
-* system components;
-* data flows;
-* external dependencies.
+System components;
 
----
+Data flows;
 
-## Threat Modeling
+External dependencies.
 
+Threat Modeling
 Identify:
 
-* possible attackers;
-* attack methods;
-* affected components.
+Possible attackers;
 
----
+Attack methods;
 
-## Risk Assessment
+Affected components.
 
+Risk Assessment
 Evaluate:
 
-* probability;
-* impact;
-* mitigation strategy.
+Probability;
 
----
+Impact;
 
-# 8. Smart Contract Development Security
+Mitigation strategy.
 
+## 8. Smart Contract Development Security
 PNJC smart contracts should follow:
 
-## Solidity Best Practices
-
+Solidity Best Practices
 Including:
 
-* safe coding patterns;
-* proper validation;
-* predictable behavior.
+Safe coding patterns;
 
----
+Proper validation;
 
-## OpenZeppelin Standards
+Predictable behaviour;
 
+Reentrancy protection.
+
+OpenZeppelin Standards
 Where applicable:
 
-* use established libraries;
-* avoid unnecessary custom implementations.
+Use established libraries (OpenZeppelin 5.x);
 
----
+Avoid unnecessary custom implementations;
 
-## Contract Transparency
+Leverage audited components.
 
+Contract Transparency
 Maintain:
 
-* documentation;
-* verification;
-* clear functionality description.
+Documentation (NatSpec comments);
 
----
+Public verification on PolygonScan;
 
-# 9. Code Review Process
+Clear functionality description;
 
+No hidden or admin-controlled functions.
+
+## 9. Code Review Process
 Code review objectives:
 
-* identify vulnerabilities;
-* improve quality;
-* maintain consistency.
+Identify vulnerabilities;
+
+Improve quality;
+
+Maintain consistency.
 
 Review should evaluate:
 
-* logic;
-* security;
-* maintainability;
-* compliance with standards.
+Logic correctness;
 
----
+Security implications;
 
-# 10. Version Control Security
+Maintainability;
 
+Compliance with standards.
+
+Review process:
+
+Developer submits pull request;
+
+At least one reviewer examines code;
+
+Feedback is addressed;
+
+Approval is granted;
+
+Code is merged.
+
+## 10. Version Control Security
 Source code management should include:
 
-* controlled repository access;
-* change tracking;
-* version history;
-* protected branches.
-
----
-
-# 11. Dependency Management
-
+Practice	Description
+Controlled Repository Access	Limited write access to core team.
+Change Tracking	All changes documented in commits.
+Version History	Complete audit trail of changes.
+Protected Branches	Main branch protected from direct pushes.
+Signed Commits	Where applicable, verify commit authenticity.
+## 11. Dependency Management
 External dependencies should be reviewed.
 
 Consider:
 
-* security reputation;
-* maintenance status;
-* known vulnerabilities.
+Security reputation;
+
+Maintenance status;
+
+Known vulnerabilities.
 
 Risks include:
 
-* compromised libraries;
-* outdated components;
-* supply-chain attacks.
+Compromised libraries;
 
----
+Outdated components;
 
-# 12. Testing Framework
+Supply-chain attacks.
 
+Mitigation:
+
+Regular dependency audits;
+
+Automated vulnerability scanning (e.g., Dependabot);
+
+Minimal dependency footprint.
+
+## 12. Testing Framework
 Testing should include:
 
-## Functional Testing
-
+Functional Testing
 Verify:
 
-* expected behavior;
-* correct execution.
+Expected behaviour;
 
----
+Correct execution;
 
-## Security Testing
+Edge cases.
 
+Security Testing
 Evaluate:
 
-* vulnerabilities;
-* abnormal scenarios;
-* edge cases.
+Vulnerabilities;
 
----
+Abnormal scenarios;
 
-## Integration Testing
+Failure modes.
 
+Integration Testing
 Verify:
 
-* interaction between components;
-* external dependencies.
+Interaction between components;
 
----
+External dependencies;
 
-# 13. Smart Contract Testing
+End-to-end workflows.
 
+## 13. Smart Contract Testing
 Testing areas may include:
 
-* token transfers;
-* balance calculations;
-* access permissions;
-* tax logic;
-* supply controls;
-* DEX interactions.
+Area	Description
+Token Transfers	Transfer, approval, and permit functions.
+Balance Calculations	Supply tracking and account balances.
+Access Permissions	Ownerless contract verification.
+Burn Functionality	Optional user-driven burning.
+Supply Controls	Fixed supply, no minting.
+DEX Interactions	Uniswap V2 pool compatibility.
+Tools:
 
----
+Hardhat for testing and deployment;
 
-# 14. Deployment Security
+Chai for assertions;
 
+Ethers.js for blockchain interaction.
+
+## 14. Deployment Security
 Before deployment:
 
 Requirements:
 
-* final code review;
-* deployment verification;
-* documentation update.
+Final code review;
+
+Deployment verification;
+
+Documentation update;
+
+Audit completion (CertiK / Hacken).
 
 Deployment activities should include:
 
-* secure environment;
-* controlled access;
-* verification procedures.
+Secure environment (private keys not exposed);
 
----
+Controlled access (multisig for treasury);
 
-# 15. Post-Deployment Security
+Verification procedures (PolygonScan verification).
 
+## 15. Post-Deployment Security
 After deployment:
 
 Monitoring should consider:
 
-* contract activity;
-* abnormal transactions;
-* user reports;
-* security alerts.
+Contract activity (transactions, events);
 
----
+Abnormal patterns (unusual transfers or burns);
 
-# 16. Secret Management
+User reports and feedback;
 
+Security alerts and notifications.
+
+Tools:
+
+PolygonScan for on-chain monitoring;
+
+Dune Analytics for community dashboards (planned);
+
+Custom monitoring systems.
+
+## 16. Secret Management
 Sensitive information must be protected.
 
 Examples:
 
-* private keys;
-* API credentials;
-* deployment credentials;
-* administrative access information.
+Private keys;
+
+API credentials;
+
+Deployment credentials;
+
+Administrative access information.
 
 Rules:
 
-* never store secrets publicly;
-* restrict access;
-* rotate credentials when required.
+Never store secrets in public repositories;
 
----
+Restrict access to secrets (least privilege);
 
-# 17. Infrastructure Security
+Rotate credentials when required;
 
+Use environment variables or secret management tools.
+
+## 17. Infrastructure Security
 Development infrastructure should consider:
 
-* secure hosting;
-* access control;
-* authentication;
-* backup procedures.
-
----
-
-# 18. AI Development Security
-
-For AI-powered systems, PNJC should consider:
-
-* output validation;
-* data protection;
-* prompt security;
-* human review.
-
-AI-generated content should be reviewed before public release when necessary.
-
----
-
-# 19. Vulnerability Management
-
+Area	Requirement
+Secure Hosting	Reputable cloud providers with security certifications.
+Access Control	Role-based access to systems and data.
+Authentication	Multi-factor authentication where applicable.
+Backup Procedures	Regular encrypted backups.
+## 18. Vulnerability Management
 Security findings should follow:
 
-## Discovery
+Discovery
+Identify the issue (via testing, audit, or community report).
 
-Identify the issue.
-
-## Classification
-
+Classification
 Determine:
 
-* severity;
-* affected systems;
-* potential impact.
+Severity (Critical / High / Medium / Low);
 
-## Resolution
+Affected systems;
 
+Potential impact.
+
+Resolution
 Apply:
 
-* fixes;
-* improvements;
-* additional controls.
+Fixes;
 
-## Verification
+Improvements;
 
-Confirm effectiveness.
+Additional controls.
 
----
+Verification
+Confirm effectiveness through re-testing.
 
-# 20. Secure Release Management
-
+## 19. Secure Release Management
 Releases should include:
 
-* change documentation;
-* testing results;
-* deployment notes;
-* rollback considerations.
-
----
-
-# 21. Documentation Requirements
-
+Element	Description
+Change Documentation	Clear description of changes.
+Testing Results	Confirmation of passing tests.
+Deployment Notes	Step-by-step deployment instructions.
+Rollback Considerations	Procedure to revert if needed.
+## 20. Documentation Requirements
 Technical documentation should include:
 
-* architecture;
-* functionality;
-* deployment information;
-* security considerations.
-
----
-
-# 22. Open Source Security
-
+Document	Description
+Architecture	System overview and component interactions.
+Functionality	Description of features and capabilities.
+Deployment Information	How to deploy and configure.
+Security Considerations	Security model, assumptions, and risks.
+API Documentation	Interfaces and usage examples.
+## 21. Open Source Security
 For public repositories:
 
 Recommended practices:
 
-* remove sensitive information;
-* review contributions;
-* monitor changes;
-* maintain clear documentation.
+Remove sensitive information before public release;
 
----
+Review contributions before merging;
 
-# 23. Third-Party Code Review
+Monitor changes for unauthorised modifications;
 
+Maintain clear and up-to-date documentation.
+
+Repository:
+
+GitHub: github.com/CryptoTengo/PanjoCoin
+
+##22. Third-Party Code Review
 External components should be evaluated before integration.
 
 Review factors:
 
-* security history;
-* maintenance;
-* compatibility;
-* reliability.
+Security history and track record;
 
----
+Maintenance status and community activity;
 
-# 24. Secure Development Risk Register
+Compatibility with existing systems;
 
-| ID      | Risk                     | Probability | Impact   | Mitigation               |
-| ------- | ------------------------ | ----------- | -------- | ------------------------ |
-| DEV-001 | Coding vulnerability     | Medium      | High     | Code review and testing  |
-| DEV-002 | Dependency vulnerability | Medium      | Medium   | Dependency monitoring    |
-| DEV-003 | Secret exposure          | Low         | Critical | Secure secret management |
-| DEV-004 | Poor release process     | Medium      | Medium   | Release procedures       |
-| DEV-005 | Insufficient testing     | Medium      | High     | Security testing         |
+Reliability and performance.
 
----
+## 23. Secure Development Risk Register
+ID	Risk	Probability	Impact	Mitigation
+DEV-001	Coding vulnerability	Medium	High	Code review and security testing
+DEV-002	Dependency vulnerability	Medium	Medium	Dependency monitoring and updates
+DEV-003	Secret exposure	Low	Critical	Secure secret management
+DEV-004	Poor release process	Medium	Medium	Release procedures and checklists
+DEV-005	Insufficient testing	Medium	High	Comprehensive test coverage
+DEV-006	Audit findings	Medium	High	Independent audits (CertiK / Hacken)
+DEV-007	Smart contract upgrade risk	Low	Critical	Non-upgradeable contracts
+## 24. Smart Contract Security Checklist
+All PNJC smart contracts undergo verification against this checklist:
 
-# 25. Future Improvements
-
+Check	Status
+OpenZeppelin libraries used	✅
+ReentrancyGuard applied	✅
+No selfdestruct	✅
+No delegatecall	✅
+No upgradeability	✅
+No owner (token)	✅
+No mint function	✅
+No blacklist	✅
+No freeze	✅
+Zero transfer tax	✅
+Code verified on PolygonScan	✅
+Independent audit scheduled	✅
+## 25. Future Improvements
 As PNJC develops, additional practices may include:
 
-* automated security scanning;
-* formal code audits;
-* penetration testing;
-* bug bounty programs;
-* continuous integration security checks.
-
----
-
-# 26. Conclusion
-
+Improvement	Description	Timeline
+Automated Security Scanning	Continuous vulnerability detection.	Q3 2026
+Formal Code Audits	Independent third-party audits.	Q2–Q4 2026
+Penetration Testing	Active security testing of systems.	Q3 2026
+Bug Bounty Program	Rewards for vulnerability disclosure.	Q4 2026
+CI/CD Security Checks	Automated security in deployment pipeline.	Q3 2026
+## 26. Conclusion
 Secure development is a fundamental requirement for building reliable blockchain infrastructure.
 
 PanjoCoin aims to maintain a security-first development culture through:
 
-* secure coding;
-* structured reviews;
-* testing;
-* transparency;
-* continuous improvement.
+Secure coding practices;
 
----
+Structured code reviews;
 
-# Disclaimer
+Comprehensive testing;
 
+Transparency and verification;
+
+Continuous improvement.
+
+Disclaimer
 This Secure Development Policy describes development practices and does not guarantee the absence of all software vulnerabilities.
 
----
+It does not constitute:
 
-**PanjoCoin (PNJC)**
-Open-Source Utility Ecosystem
-Polygon PoS
+Investment advice;
+
+Financial advice;
+
+Legal advice;
+
+Tax advice;
+
+An offer to sell securities;
+
+A solicitation to purchase financial instruments.
+
+Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
+
+Document Information
+Property	Value
+Document	Secure Development Policy
+Version	1.1 (Updated)
+Effective Date	July 25, 2026
+Status	Official
+Next Review	Quarterly
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.
+Document Version: 1.1 (Updated)
+Last Updated: July 25, 2026
