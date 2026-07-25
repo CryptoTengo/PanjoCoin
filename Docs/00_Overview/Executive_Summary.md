@@ -1,328 +1,271 @@
-# Executive Summary
+### Executive Summary
+PanjoCoin (PNJC)
+Version: 1.2 (Updated)
+Status: Official
+Blockchain: Polygon PoS
+Token Standard: ERC-20 (ERC20Burnable + ERC20Permit)
+Token Symbol: PNJC
+Total Supply: 1,000,000,000,000 PNJC (Fixed, no minting)
 
-**Project:** PanjoCoin (PNJC)
-**Version:** 1.0
-**Status:** Public Draft
-**Blockchain:** Polygon PoS
-**Token Standard:** ERC-20
-**Token Symbol:** PNJC
-**Total Supply:** 1,000,000,000,000 PNJC (Fixed Supply)
+## Executive Overview
+PanjoCoin (PNJC) is a utility token and ecosystem developed on the Polygon PoS blockchain to support a transparent, community-driven digital economy centred on social engagement, gaming, charitable initiatives, and decentralised governance.
 
----
+Unlike projects focused primarily on speculation, PNJC is engineered for long‑term ecosystem development. The project combines blockchain technology, transparent governance, open‑source development, practical utility, and socially beneficial applications into a unified ecosystem designed for sustainable expansion.
 
-# Executive Overview
+PanjoCoin emphasises transparency, security, responsible innovation, and regulatory awareness while maintaining the decentralised principles of blockchain technology.
 
-PanjoCoin (PNJC) is an open-source utility token and ecosystem developed on the Polygon blockchain to support a transparent, community-driven digital economy centered on social engagement, education, charitable initiatives, and future decentralized services.
+## Vision
+To build a trusted blockchain ecosystem where digital assets, community participation, decentralised governance, and real‑world social impact work together to create sustainable value for users worldwide.
 
-Unlike projects focused primarily on speculation, PNJC is designed around long-term ecosystem development. The project combines blockchain technology, transparent governance, open-source development, AI-powered community growth, and socially beneficial applications into a unified ecosystem intended for sustainable expansion.
-
-PanjoCoin emphasizes transparency, responsible innovation, and regulatory awareness while maintaining the decentralized principles of blockchain technology.
-
----
-
-# Vision
-
-To build a trusted blockchain ecosystem where digital assets, community participation, artificial intelligence, and real-world social impact work together to create sustainable value for users worldwide.
-
----
-
-# Mission
-
+## Mission
 PanjoCoin's mission is to:
 
-* Build an open and transparent blockchain ecosystem.
-* Encourage community participation.
-* Support educational initiatives.
-* Promote responsible blockchain adoption.
-* Develop practical utility for the PNJC token.
-* Integrate AI-driven technologies into ecosystem growth.
-* Encourage positive community engagement.
-* Expand globally while respecting applicable legal and regulatory frameworks.
+Build an open and transparent blockchain ecosystem;
 
----
+Encourage community participation through decentralised governance;
 
-# Problem Statement
+Develop practical utility for the PNJC token;
 
+Support charitable initiatives with on‑chain transparency;
+
+Expand globally while respecting applicable legal and regulatory frameworks;
+
+Foster a sustainable digital economy with real‑world impact.
+
+## Problem Statement
 The blockchain industry continues to face several major challenges:
 
-* excessive focus on speculative token trading;
-* limited real-world utility;
-* lack of transparency;
-* weak governance;
-* fragmented communities;
-* limited educational resources;
-* low public trust.
+## Challenge	Description
+Lack of Utility	Over 99% of tokens provide no real functions or services.
+Security Risks	Hidden emissions, predatory taxes, centralised control.
+Opacity	Lack of public code verification and fund distribution transparency.
+Short‑termism	Most projects survive a few weeks and disappear.
+Weak Governance	Limited community participation and centralised decision‑making.
+Low Public Trust	Scams, rug pulls, and opaque operations erode user confidence.
+## Proposed Solution
+PanjoCoin addresses these challenges through a utility‑focused ecosystem that combines:
 
-Many digital asset projects struggle to provide sustainable long-term value beyond token price appreciation.
+Blockchain technology (Polygon PoS);
 
----
+Community governance (DAO);
 
-# Proposed Solution
+Open‑source development (verified code);
 
-PanjoCoin addresses these challenges through a utility-focused ecosystem that combines:
+Gaming and SocialFi (ONE+ platform);
 
-* blockchain technology;
-* community governance;
-* open-source development;
-* AI-powered content automation;
-* educational initiatives;
-* social engagement mechanisms;
-* future ecosystem services;
-* transparent treasury management.
+Transparent charity (ClownCare Bridge);
 
-The project is designed to evolve into a long-term digital ecosystem rather than a short-lived token launch.
+Ownerless security (no admin keys, zero tax).
 
----
+The project is designed to evolve into a sustainable digital ecosystem rather than a short‑lived token launch.
 
-# Ecosystem Components
-
+## Ecosystem Components
 The PanjoCoin ecosystem is planned to include:
 
-## Core Token
+Core Token (PNJC)
+Fixed supply of 1 trillion PNJC, no minting;
 
-PNJC functions as the primary utility token of the ecosystem.
+Zero transfer tax (0% on all transactions);
 
-Potential utility includes:
+Built‑in burn (burn()) and gas‑free permit (permit()) functions;
 
-* ecosystem payments;
-* community incentives;
-* governance participation;
-* digital services;
-* ecosystem rewards;
-* future platform integrations.
+Ownerless contract — no administrative keys;
 
----
+Verified code on PolygonScan.
 
-## Community
+## Utility & Services
+DEX Trading – free transfers between wallets;
 
-The project prioritizes long-term community development through:
+Transparent Charity – public Charity Reserve wallet with on‑chain verification;
 
-* educational content;
-* transparent communication;
-* open governance;
-* contributor recognition;
-* multilingual support.
+Optional Burning – users can burn tokens via the burn() function at any time.
 
----
+Future Modules (Roadmap)
+Module	Purpose	Timeline
+DAO Governor	Decentralised token‑holder voting (quorum 4%, 7‑day period)	Q4 2026
+VestingVault	Linear token distribution for team and founder	Q3 2026
+MerkleAirdrop	Gas‑efficient token distribution	Q2 2026
+TreasuryVault	Multisig treasury management	Q3 2026
+ONE+ Gaming Platform	Access to games, in‑game items, and rewards	Q3 2027
+ClownCare Bridge	Transparent charitable payment system with on‑chain reporting	Q2 2027
+Token Economics
+Fixed Supply
+Total Supply: 1,000,000,000,000 PNJC (1 trillion)
 
-## AI Content Factory
+## Mint Function: Permanently disabled
 
-The ecosystem includes an AI-powered content infrastructure designed to:
+On‑Chain Verification: maxSupply() returns 1000000000000000000000000
 
-* generate educational materials;
-* produce multilingual content;
-* improve community engagement;
-* support marketing automation;
-* monitor industry developments;
-* assist ecosystem growth.
+## Distribution
+Category	Share	Control Mechanism
+Liquidity Pool (Uniswap V2)	50%	Locked for 12 months (no early withdrawal)
+Operational Treasury	12%	3/5 Multisig
+DAO Treasury	10%	Controlled by DAO after launch
+Team	10%	Vesting: 6‑month cliff + 12‑month linear
+Community	8%	Airdrops, referrals, campaigns
+Founder	5%	Vesting: 12‑month cliff + 24‑month linear
+Charity Reserve	5%	Public wallet, on‑chain transparent
+Circulation Model
+Initial circulating supply: 1% (10 billion PNJC)
 
----
+## Release formula: 5% of remaining locked balance enters circulation each year
 
-## Social Impact
+Full transparency: implemented via smart contracts
 
-Future ecosystem initiatives may include:
+Deflationary Mechanism (Optional Burning)
+PNJC holders can voluntarily burn their tokens using the built‑in burn() function.
 
-* Proof of Kindness concepts;
-* community impact recognition;
-* charitable initiatives;
-* educational campaigns;
-* volunteer engagement.
+No automatic or tax‑funded burning is applied.
 
-These initiatives are intended to encourage positive community participation rather than financial incentives alone.
+The fixed supply ensures that any reduction in circulating tokens increases scarcity over time, but this is entirely user‑driven.
 
----
+## Governance
+PanjoCoin implements progressive decentralisation through community‑driven governance.
 
-# Technology
+DAO Governor (Q4 2026)
+Quorum: 4% of total supply
 
+Voting Period: 7 days
+
+Proposal Execution: 48‑hour timelock
+
+Voting Power: 1 PNJC = 1 vote
+
+Governance Areas
+Treasury allocation (grants, partnerships);
+
+Charity programs;
+
+Ecosystem initiatives.
+
+Until DAO launch, key decisions are managed by a 3/5 multisig with a public transition plan to community‑elected representatives.
+
+## Security & Transparency
+Security Measures
+Measure	Status
+OpenZeppelin 5.x	✅
+ReentrancyGuard	✅
+No selfdestruct	✅
+No delegatecall	✅
+No upgradeability	✅
+No owner (token)	✅
+Code verified	✅
+Audits
+Independent audits by CertiK / Hacken are scheduled for each module before deployment:
+
+Token (Q2 2026)
+
+Liquidity Locker (Q2 2026)
+
+VestingVault (Q3 2026)
+
+Airdrop (Q2 2026)
+
+TreasuryVault (Q3 2026)
+
+DAO Governor (Q4 2026)
+
+Transparency
+All wallets, transactions, and code are public.
+
+Community dashboards (Dune Analytics) planned.
+
+Regular transparency reports from the team.
+
+Technology
 PanjoCoin is deployed on Polygon PoS to benefit from:
 
-* low transaction costs;
-* fast confirmations;
-* EVM compatibility;
-* mature infrastructure;
-* broad wallet support;
-* developer-friendly environment.
+Low transaction costs;
 
-The project follows open-source development practices with publicly accessible documentation and smart contract code.
+Fast confirmations;
 
----
+EVM compatibility;
 
-# Token Economics
+Mature infrastructure;
 
-## Fixed Supply
+Broad wallet support;
 
-Maximum Supply:
+Developer‑friendly environment.
 
-**1,000,000,000,000 PNJC**
+## Smart Contract Address: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF
 
-No additional token minting is planned after deployment.
+The project follows open‑source development practices with publicly accessible documentation and verified smart contract code.
 
----
+## Business Model
+The long‑term strategy focuses on building sustainable ecosystem value rather than short‑term token speculation.
 
-## Distribution Principles
+Potential future revenue sources:
 
-The token allocation is designed to support:
+ONE+ platform fees (gaming transactions, premium features);
 
-* ecosystem development;
-* liquidity;
-* treasury operations;
-* community incentives;
-* charitable initiatives;
-* governance;
-* long-term sustainability.
+Partnership integrations;
 
-Distribution follows predefined allocation rules documented separately in the project's Tokenomics documentation.
+Premium digital services;
 
----
+Enterprise and educational programmes.
 
-# Governance
+## All revenue is directed toward ecosystem development, operational expenses, and charitable activities, ensuring transparency and community benefit.
 
-PanjoCoin aims to progressively decentralize governance by encouraging community participation in future ecosystem decisions.
-
-Governance objectives include:
-
-* transparency;
-* accountability;
-* community proposals;
-* responsible treasury oversight;
-* ecosystem sustainability.
-
----
-
-# Security
-
-Project security is based on several principles:
-
-* verified smart contracts;
-* open-source code;
-* public documentation;
-* transparent token supply;
-* continuous improvement;
-* security best practices.
-
-Independent security reviews and audits may be conducted as the ecosystem evolves.
-
----
-
-# Transparency
-
-Transparency represents one of the project's core principles.
-
-The ecosystem maintains public documentation covering:
-
-* architecture;
-* tokenomics;
-* roadmap;
-* legal information;
-* smart contracts;
-* policies;
-* governance documentation.
-
-Development progress is intended to remain publicly visible through version-controlled repositories.
-
----
-
-# Regulatory Awareness
-
-PanjoCoin recognizes the evolving regulatory environment surrounding digital assets.
-
-The project seeks to operate with awareness of applicable legal frameworks, including where relevant:
-
-* Georgian legislation;
-* international AML principles;
-* FATF guidance;
-* sanctions compliance;
-* consumer protection considerations;
-* emerging digital asset regulations.
-
-Nothing in the ecosystem documentation constitutes legal, investment, or financial advice.
-
----
-
-# Business Model
-
-The long-term strategy focuses on building sustainable ecosystem value rather than short-term token speculation.
-
-Potential future revenue sources may include:
-
-* premium digital services;
-* ecosystem applications;
-* AI-powered tools;
-* platform services;
-* partnerships;
-* licensing opportunities;
-* enterprise integrations.
-
-Token value is not presented as a guaranteed investment outcome.
-
----
-
-# Competitive Advantages
-
+Competitive Advantages
 PanjoCoin differentiates itself through:
 
-* transparent documentation;
-* open-source development;
-* utility-oriented philosophy;
-* AI-assisted ecosystem growth;
-* educational focus;
-* community-first approach;
-* scalable Polygon infrastructure;
-* long-term roadmap.
+## Advantage	Description
+Fixed Supply	No inflation, no hidden emissions.
+Zero Tax	0% on all transactions — truly free transfers.
+Transparent	All wallets, transactions, and code are public.
+Community‑Driven	DAO governance ensures decentralised control.
+Utility‑Focused	Real use cases: gaming, charity, governance.
+Ownerless Security	No admin keys, no upgradeability.
+Audited	Independent audits by CertiK / Hacken.
+Roadmap Direction
+Period	Milestones
+Q2 2026	Audit, Liquidity Lock, Airdrop
+Q3 2026	Vesting, Treasury
+Q4 2026	DAO Governor Launch
+Q1–Q2 2027	ClownCare Bridge (Charity)
+Q3 2027	ONE+ Gaming Platform MVP
+Q1–Q2 2028	Scaling, New Games, Cross‑Chain Research
+Strategic development priorities include ecosystem expansion, community growth, decentralised governance, and partnership development. Priorities may evolve according to community needs, technological progress, and regulatory developments.
 
----
-
-# Roadmap Direction
-
-Strategic development priorities include:
-
-* ecosystem expansion;
-* community growth;
-* AI integration;
-* decentralized governance;
-* additional utilities;
-* partnership development;
-* international ecosystem adoption.
-
-Development priorities may evolve according to community needs, technological progress, and regulatory developments.
-
----
-
-# Risk Considerations
-
+## Risk Considerations
 As with all blockchain projects, PanjoCoin is subject to risks including:
 
-* market volatility;
-* regulatory changes;
-* technological evolution;
-* cybersecurity threats;
-* adoption uncertainty;
-* operational risks.
-
+Risk	Description	Mitigation
+Market Volatility	Price fluctuations.	Liquidity locking, treasury support.
+Regulatory Changes	Evolving laws.	Utility‑focused design, legal review, compliance.
+Technical Risks	Unknown vulnerabilities.	OpenZeppelin libraries, independent audits.
+Execution Risk	Delays in development.	Code ready, audits scheduled, transparent roadmap.
+Adoption Risk	Slower‑than‑expected growth.	Active development, partnerships, community incentives.
 Users should independently evaluate these risks before interacting with digital assets.
 
----
-
-# Long-Term Vision
-
+## Long‑Term Vision
 PanjoCoin aims to become more than a digital token by developing an ecosystem that combines:
 
-* blockchain technology;
-* responsible innovation;
-* community collaboration;
-* artificial intelligence;
-* education;
-* transparency;
-* sustainable ecosystem growth.
+Blockchain technology;
 
-The long-term objective is to establish a trusted, open, and globally accessible blockchain ecosystem capable of supporting future decentralized applications and community-driven initiatives.
+Responsible innovation;
 
----
+Community collaboration;
 
-# Conclusion
+Gaming and SocialFi;
 
-PanjoCoin represents a long-term ecosystem initiative built on transparency, open-source development, responsible governance, and practical utility.
+Transparent charity;
 
-Rather than focusing solely on speculative markets, the project seeks to create an environment where blockchain technology, artificial intelligence, community participation, and sustainable digital services work together to deliver lasting value.
+Sustainable ecosystem growth.
+
+The long‑term objective is to establish a trusted, open, and globally accessible blockchain ecosystem capable of supporting future decentralised applications and community‑driven initiatives.
+
+## Conclusion
+PanjoCoin represents a long‑term ecosystem initiative built on transparency, open‑source development, responsible governance, and practical utility.
+
+Rather than focusing solely on speculative markets, the project seeks to create an environment where blockchain technology, community participation, gaming, and sustainable digital services work together to deliver lasting value.
 
 The project remains committed to continuous improvement, open collaboration, and responsible ecosystem development while adapting to technological innovation and the evolving global regulatory landscape.
+
+Token Contract Address: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF
+Website: www.cryptotengo.com
+GitHub: github.com/CryptoTengo/PanjoCoin
+
+© 2026 PanjoCoin (PNJC). All rights reserved.
+Document Version: 1.2 (Updated – GoldenPhoenixProtocol removed)
+Last Updated: July 25, 2026
