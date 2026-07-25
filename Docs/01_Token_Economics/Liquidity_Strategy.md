@@ -1,548 +1,414 @@
-# Liquidity Strategy
+## Liquidity Strategy
+PanjoCoin (PNJC)
+Version: 1.1 (Updated)
+Date: July 25, 2026
+Network: Polygon PoS
+Trading Model: Decentralized Exchange (DEX) Liquidity
+Smart Contract Address: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF
 
-## PanjoCoin (PNJC)
-
-**Version:** 1.0  
-**Date:** July 2026  
-**Network:** Polygon PoS  
-**Trading Model:** Decentralized Exchange (DEX) Liquidity  
-
----
-
-# 1. Overview
-
+## 1. Overview
 This document defines the liquidity strategy of PanjoCoin (PNJC).
 
 The purpose of the liquidity strategy is to establish a secure, transparent, and sustainable market environment for PNJC trading.
 
 The strategy focuses on:
 
-- Initial liquidity formation
-- Market accessibility
-- Price discovery
-- Liquidity growth
-- Investor confidence
-- Long-term market sustainability
+Initial liquidity formation;
 
+Market accessibility;
+
+Price discovery;
+
+Liquidity growth;
+
+Investor confidence;
+
+Long-term market sustainability.
 
 PNJC liquidity management follows:
 
-
-Transparency
-
-Security
-
-Organic Growth
-
-Long-Term Stability
-
-
----
-
-# 2. Liquidity Objectives
-
+Principle	Description
+Transparency	All liquidity actions are publicly verifiable.
+Security	Liquidity is locked with no emergency withdrawal.
+Organic Growth	Liquidity expands through ecosystem adoption.
+Long-Term Stability	12-month lock ensures market confidence.
+## 2. Liquidity Objectives
 The main objectives are:
 
-## Market Accessibility
-
+Market Accessibility
 Ensure users can:
 
-- Buy PNJC
-- Sell PNJC
-- Provide liquidity
-- Participate in the ecosystem
+Buy PNJC;
 
+Sell PNJC;
 
----
+Provide liquidity;
 
-## Price Discovery
+Participate in the ecosystem.
 
+Price Discovery
 Create a transparent market where:
 
-- Supply
-- Demand
-- Trading activity
+Supply;
+
+Demand;
+
+Trading activity.
 
 determine market price.
 
----
-
-## Liquidity Stability
-
+Liquidity Stability
 Reduce:
 
-- Extreme volatility
-- Large price impacts
-- Trading friction
+Extreme volatility;
 
----
+Large price impacts;
 
-# 3. Liquidity Allocation
+Trading friction.
 
-## Total Liquidity Allocation
-
-
-500,000,000,000 PNJC
-
-50% of total supply
-
+## 3. Liquidity Allocation
+Total Liquidity Allocation: 500,000,000,000 PNJC (50% of total supply)
 
 Purpose:
 
-- DEX liquidity
-- Market creation
-- Trading availability
+DEX liquidity;
 
----
+Market creation;
 
-# 4. Initial Liquidity Distribution
+Trading availability.
 
-Recommended allocation:
+Category	Share	Amount (PNJC)	Lock Period
+Liquidity Pool (Uniswap V2)	50%	500,000,000,000	12 months
+## 4. Initial Liquidity Distribution
+PNJC liquidity is allocated to:
 
+Platform	Percentage	Allocation
+Uniswap V2	100%	500,000,000,000 PNJC
+Rationale:
 
-| Platform | Percentage | Allocation |
-|-|-|-|
-| QuickSwap | 70% | 350B PNJC |
-| Uniswap V3 | 30% | 150B PNJC |
+Uniswap V2 is the most widely adopted DEX on Polygon;
 
----
+Simple and transparent liquidity provision;
 
-# 5. DEX Strategy
+Broad wallet and aggregator support;
 
-## QuickSwap Strategy
+Mature infrastructure with proven security.
 
+## 5. DEX Strategy
+Uniswap V2 Strategy
 Purpose:
 
-- Polygon-native liquidity
-- Lower transaction costs
-- Community accessibility
+Primary liquidity infrastructure;
 
+Market accessibility for all users;
+
+Transparent and verifiable liquidity.
 
 Advantages:
 
-- Polygon ecosystem alignment
-- Retail-friendly trading
-- Lower barriers
+Industry-standard DEX protocol;
 
+Broad ecosystem support;
 
----
+Simple and secure liquidity provision;
 
-## Uniswap V3 Strategy
+Compatible with all major wallets and aggregators.
 
-Purpose:
+## 6. Trading Pair Strategy
+Initial Trading Pair:
 
-- Advanced liquidity infrastructure
-- Institutional accessibility
-- Concentrated liquidity management
+Pair	Description
+PNJC / USDT	Primary trading pair with stablecoin.
+Future Pairs (Potential):
 
+PNJC / MATIC;
 
-Advantages:
+PNJC / USDC;
 
-- Efficient capital usage
-- Professional liquidity tools
+PNJC / ETH;
 
----
+PNJC / Other ecosystem assets.
 
-# 6. Trading Pair Strategy
-
-Initial pairs:
-
-
-PNJC / USDT
-
-PNJC / MATIC
-
-
-Future pairs:
-
-
-PNJC / USDC
-
-PNJC / ETH
-
-PNJC / Other ecosystem assets
-
-
----
-
-# 7. Liquidity Lock Strategy
-
-Liquidity protection:
-
-
-PNJCLiquidityLockerV2
-
+## 7. Liquidity Lock Strategy
+Liquidity Protection: PNJCLiquidityLockerV2
 
 Purpose:
 
-- Prevent unauthorized liquidity removal
-- Increase investor confidence
-- Reduce rug-pull concerns
+Prevent unauthorized liquidity removal;
 
+Increase investor confidence;
 
-Initial lock:
+Reduce rug-pull concerns.
 
+Lock Details:
 
-01 July 2026
+Property	Value
+Contract	PNJCLiquidityLockerV2
+Lock Period	12 months
+Emergency Withdrawal	❌ None
+Contract Type	Immutable, ownerless
+Verification	Public on PolygonScan
+Lock Timeline:
 
-01 July 2027
+Start: Deployment (July 2026);
 
+End: 12 months from deployment.
 
----
-
-# 8. Liquidity Growth Model
-
+## 8. Liquidity Growth Model
 Liquidity growth follows:
 
-
-
+text
 Initial Liquidity
-
-↓
-
+        ↓
 Community Growth
-
-↓
-
+        ↓
 Trading Volume Growth
-
-↓
-
+        ↓
 Organic Liquidity Expansion
-
-↓
-
+        ↓
 Ecosystem Adoption
+Growth Drivers:
 
+Increasing holder base;
 
----
+Rising trading volume;
 
-# 9. Liquidity Provider Strategy
+Utility development (gaming, charity, governance);
 
+Ecosystem partnerships.
+
+## 9. Liquidity Provider Strategy
 Liquidity providers receive value through:
 
-- Trading fee generation
-- Ecosystem growth
-- Increased market activity
+Trading fee generation (0.3% on Uniswap V2);
 
+Ecosystem growth;
 
-Future possibilities:
+Increased market activity.
 
-- LP incentives
-- Farming programs
-- Community liquidity campaigns
+Future Possibilities:
 
----
+LP incentives (subject to DAO approval);
 
-# 10. Liquidity Mining Policy
+Farming programs;
 
+Community liquidity campaigns.
+
+## 10. Liquidity Mining Policy
 Liquidity mining may be introduced only when:
 
 Requirements:
 
-- Sustainable reward budget
-- Treasury approval
-- Economic analysis
+Sustainable reward budget;
 
+Treasury approval (multisig or DAO);
+
+Economic analysis and community consultation.
 
 Goals:
 
-- Increase liquidity depth
-- Attract long-term providers
-- Improve market stability
+Increase liquidity depth;
 
+Attract long-term providers;
 
----
+Improve market stability.
 
-# 11. Market Stability Framework
+Current Status: 🔄 Conceptual (not active)
 
+## 11. Market Stability Framework
 Liquidity management focuses on:
 
-
-## Reducing Slippage
-
+Reducing Slippage
 Achieved through:
 
-- Deeper liquidity pools
-- Increased trading activity
+Deeper liquidity pools;
 
+Increased trading activity;
 
----
+Growing ecosystem adoption.
 
-## Managing Volatility
-
+Managing Volatility
 Tools:
 
-- Gradual token releases
-- Treasury planning
-- Liquidity monitoring
+Gradual token releases (5% annual unlock);
 
+Treasury planning and oversight;
 
----
+Liquidity monitoring and analytics.
 
-# 12. Treasury Liquidity Support
+## 12. Treasury Liquidity Support
+The treasury may support liquidity through:
 
-Treasury may support liquidity through:
+Strategic liquidity programs;
 
-- Strategic liquidity programs
-- Market infrastructure
-- Partnership incentives
+Market infrastructure improvements;
 
+Partnership incentives.
 
 Treasury actions require:
 
-- Multisig approval
-- Transparency reporting
+Multisig approval (Operational Treasury);
 
----
+DAO approval after Q4 2026 (DAO Treasury);
 
-# 13. Liquidity Risk Management
+Transparency reporting.
 
+## 13. Liquidity Risk Management
+Risk	Impact	Mitigation
+Low Liquidity	High slippage, poor user experience.	Liquidity growth campaigns, LP incentives, treasury support.
+Liquidity Removal	Market instability.	Liquidity locking (12 months), public verification.
+Price Manipulation	Artificial volatility.	Monitoring, transparent token releases, increased liquidity depth.
+Insufficient Trading Volume	Limited price discovery.	Community growth, utility development, partnerships.
+## 14. Anti-Manipulation Strategy
+Monitoring Tools:
 
-## Risk: Low Liquidity
+Large transactions;
 
-Impact:
+Unusual volume patterns;
 
-- High slippage
-- Poor user experience
+Wallet concentration;
 
+Price anomalies.
 
-Mitigation:
+Protective Measures:
 
-- Liquidity growth campaigns
-- LP incentives
-- Treasury support
+Transparent token release schedule;
 
+Liquidity locking;
 
----
+Public on-chain data.
 
-## Risk: Liquidity Removal
+## 15. Liquidity Analytics
+Key Metrics:
 
-Impact:
+Metric	Purpose
+Pool Size	Liquidity depth.
+Trading Volume	Market activity.
+Slippage	Trading efficiency.
+LP Distribution	Decentralization.
+Liquidity Ratio	Market health.
+Monitoring Tools:
 
-- Market instability
+PolygonScan for on-chain data;
 
+Uniswap V2 analytics;
 
-Mitigation:
+Community dashboards (planned).
 
-- Liquidity locking
-- Public verification
+## 16. Liquidity Transparency
+Public information includes:
 
+Information	Source
+Pool Addresses	PolygonScan
+LP Token Status	PNJCLiquidityLockerV2
+Lock Information	PolygonScan
+Trading Pairs	Uniswap V2
+Treasury Liquidity Actions	Public reports
+All liquidity actions are on-chain and verifiable.
 
----
-
-## Risk: Price Manipulation
-
-Impact:
-
-- Artificial volatility
-
-
-Mitigation:
-
-- Monitoring
-- Transparent token releases
-- Increased liquidity depth
-
-
----
-
-# 14. Anti-Manipulation Strategy
-
-Monitoring:
-
-- Large transactions
-- Unusual volume
-- Wallet concentration
-- Price anomalies
-
-
----
-
-# 15. Liquidity Analytics
-
-Key metrics:
-
-
-| Metric | Purpose |
-|-|-|
-| Pool Size | Liquidity depth |
-| Trading Volume | Market activity |
-| Slippage | Trading efficiency |
-| LP Distribution | Decentralization |
-| Liquidity Ratio | Market health |
-
----
-
-# 16. Liquidity Transparency
-
-Public information:
-
-- Pool addresses
-- LP token status
-- Lock information
-- Trading pairs
-- Treasury liquidity actions
-
-
----
-
-# 17. Liquidity Expansion Roadmap
-
-
-## Phase 1 — Launch
-
-Objectives:
-
-- Create initial pools
-- Lock liquidity
-- Enable trading
-
-
----
-
-## Phase 2 — Growth
-
-Objectives:
-
-- Increase holders
-- Improve volume
-- Expand community
-
-
----
-
-## Phase 3 — Ecosystem
-
-Objectives:
-
-- Utility-driven demand
-- Partner integrations
-- GameFi/SocialFi adoption
-
-
----
-
-## Phase 4 — Multi-chain Expansion
-
-Objectives:
-
-- Additional networks
-- Cross-chain liquidity
-- Broader accessibility
-
-
----
-
-# 18. Liquidity and Tokenomics Relationship
-
-
-
+## 17. Liquidity Expansion Roadmap
+Phase	Period	Objectives
+Phase 1 — Launch	Q2 2026	Create initial Uniswap V2 pool, lock liquidity, enable trading.
+Phase 2 — Growth	Q3–Q4 2026	Increase holders, improve volume, expand community.
+Phase 3 — Ecosystem	Q1–Q2 2027	Utility-driven demand (ClownCare Bridge), partner integrations.
+Phase 4 — GameFi	Q3 2027	ONE+ platform adoption, increased trading activity.
+Phase 5 — Scaling	Q1–Q2 2028	Cross-chain expansion (potential), broader accessibility.
+## 18. Liquidity and Tokenomics Relationship
+text
 Fixed Supply
-
-Controlled Unlocks
-
-Growing Utility
-
-Healthy Liquidity
-
-=
-
+        +
+Controlled Unlocks (5% annually)
+        +
+Growing Utility (Gaming, Charity, Governance)
+        +
+Healthy Liquidity (50% locked for 12 months)
+        =
 Sustainable Market
-
-
----
-
-# 19. CEX Readiness Considerations
-
+## 19. CEX Readiness Considerations
 Future exchange evaluation may consider:
 
+Factor	Description
+Liquidity Depth	Sufficient trading volume and pool size.
+Trading Volume	Consistent market activity.
+Holder Distribution	Decentralized ownership.
+Security Audits	Independent audits by CertiK / Hacken.
+Transparency	Public wallets, verified code.
+Community Activity	Active participation and growth.
+Current Status: 🔄 Conceptual (not active)
 
-- Liquidity depth
-- Trading volume
-- Holder distribution
-- Security audits
-- Transparency
-- Community activity
+## 20. Liquidity KPIs
+Recommended Targets:
 
+Stage	KPI	Target
+Early Stage	Trading Availability	✅ Active
+Early Stage	Growing Holders	Increasing
+Early Stage	Liquidity Depth	Growing
+Growth Stage	Daily Volume	Increasing
+Growth Stage	Slippage	Decreasing
+Growth Stage	LP Participation	Increasing
+Mature Stage	Multi-Platform	Potential cross-chain
+## 21. Future Improvements
+Possible additions (subject to DAO approval):
 
----
+Automated liquidity management;
 
-# 20. Liquidity KPIs
+Professional market maker partnerships;
 
+On-chain analytics dashboard;
 
-Recommended targets:
+Cross-chain liquidity bridges.
 
-
-## Early Stage
-
-- Stable trading availability
-- Growing holders
-- Increasing liquidity depth
-
-
-## Growth Stage
-
-- Higher daily volume
-- Reduced slippage
-- More LP participation
-
-
-## Mature Stage
-
-- Multi-platform liquidity
-- Institutional accessibility
-
----
-
-# 21. Future Improvements
-
-Possible additions:
-
-- Automated liquidity management
-- Professional market makers
-- On-chain analytics dashboard
-- Cross-chain liquidity bridges
-
-
----
-
-# 22. Final Liquidity Principles
-
-
+## 22. Final Liquidity Principles
 PNJC liquidity strategy follows:
 
-
-
-Protect Liquidity
-
-Grow Organically
-
-Maintain Transparency
-
-Support Adoption
-
-
----
-
-# 23. Conclusion
-
+text
+Protect Liquidity (12-month lock)
+        +
+Grow Organically (Community-driven)
+        +
+Maintain Transparency (On-chain verification)
+        +
+Support Adoption (Utility development)
+## 23. Conclusion
 The PanjoCoin Liquidity Strategy establishes a framework for creating a reliable and sustainable trading environment.
 
 The strategy prioritizes:
 
-- User accessibility
-- Market stability
-- Transparent operations
-- Long-term ecosystem growth
+User accessibility;
 
+Market stability;
+
+Transparent operations;
+
+Long-term ecosystem growth.
 
 Liquidity is treated as core infrastructure supporting the PNJC ecosystem.
 
----
+Disclaimer
+This document is provided for informational purposes only.
 
-© 2026 CryptoTengo  
-PanjoCoin (PNJC)
-Market Infrastructure
+It does not constitute:
 
-✅ Liquidity_Strategy.md
+Investment advice;
+
+Financial advice;
+
+Legal advice;
+
+Tax advice;
+
+An offer to sell securities;
+
+A solicitation to purchase financial instruments.
+
+Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
+
+Document Information
+Property	Value
+Document	Liquidity Strategy
+Version	1.1 (Updated)
+Date	July 25, 2026
+Status	Official
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.
+Document Version: 1.1 (Updated)
+Last Updated: July 25, 2026
