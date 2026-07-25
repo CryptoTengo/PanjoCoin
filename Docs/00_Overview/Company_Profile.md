@@ -1,603 +1,283 @@
-# Company Profile
+### Company Profile
+CryptoTengo / PanjoCoin (PNJC)
+Version: 1.1 (Updated)
+Date: July 25, 2026
+Organization Type: Web3 Technology Project / Digital Ecosystem Initiative
+Project: PanjoCoin (PNJC)
+Blockchain: Polygon PoS
 
-## CryptoTengo / PanjoCoin (PNJC)
-
-**Version:** 1.0  
-**Date:** July 2026  
-**Organization Type:** Web3 Technology Project / Digital Ecosystem Initiative  
-**Project:** PanjoCoin (PNJC)  
-**Blockchain:** Polygon PoS
-
----
-
-# 1. Company Overview
-
-## Company / Brand Name
-
+## 1. Company Overview
+Company / Brand Name
 CryptoTengo
 
-## Main Project
-
+Flagship Project
 PanjoCoin (PNJC)
 
-## Industry
-
+Industry
 Web3 / Blockchain / SocialFi / GameFi / Digital Impact Economy
 
----
-
-# 2. Executive Summary
-
+## 2. Executive Summary
 CryptoTengo is a Web3 technology initiative focused on building the PanjoCoin (PNJC) ecosystem.
+The project integrates:
 
-The project combines blockchain technology with:
+SocialFi – social finance and digital reputation systems;
 
-- SocialFi
-- GameFi
-- Digital reputation systems
-- Charity initiatives
-- Community-driven economies
+GameFi – gaming economy and digital assets;
 
+Decentralized governance (DAO);
 
-The mission is to create a transparent and sustainable ecosystem where blockchain technology supports both digital innovation and measurable social impact.
+Transparent charitable initiatives with on‑chain reporting;
 
----
+Deflationary mechanisms for long‑term sustainability.
 
-# 3. Vision
+The mission is to create a transparent and sustainable ecosystem where blockchain technology drives both digital innovation and measurable social impact.
 
-## Vision Statement
+## 3. Vision
+Vision Statement
+To build a global Web3 ecosystem where communities create value through participation, contribution, and positive social impact.
 
-> To build a global Web3 ecosystem where communities create value through participation, contribution, and positive social impact.
+## 4. Mission
+CryptoTengo's mission is to:
 
----
+Develop accessible Web3 solutions;
 
-# 4. Mission
+Create meaningful token utility;
 
-CryptoTengo mission:
+Encourage community participation;
 
-- Develop accessible Web3 solutions
-- Create meaningful token utility
-- Encourage community participation
-- Support transparent social initiatives
-- Build long-term blockchain products
+Support transparent social initiatives;
 
----
+Build long‑term blockchain products.
 
-# 5. Core Values
+## 5. Core Values
+Transparency – open documentation, verified code, public wallets, and on‑chain transactions.
 
+Innovation – advancing SocialFi, gaming mechanics, digital identity, and community systems.
 
-## Transparency
+Social Impact – supporting charitable programs, tracking positive actions, and measuring outcomes.
 
-Commitment to:
+Security – non‑upgradeable contracts, independent audits, responsible risk management.
 
-- Open documentation
-- Blockchain transparency
-- Responsible communication
-
-
----
-
-## Innovation
-
-Focus areas:
-
-- SocialFi technology
-- Blockchain applications
-- Digital identity
-- Community systems
-
-
----
-
-## Social Impact
-
-Supporting:
-
-- Charity initiatives
-- Positive community actions
-- Impact measurement
-
-
----
-
-## Security
-
-Priorities:
-
-- Secure development
-- Risk management
-- Responsible technology practices
-
----
-
-# 6. PanjoCoin Ecosystem
-
-
-                CryptoTengo
-
-
-                     |
-
-                PanjoCoin
-
-
-                     |
-
-| | | |
-
-SocialFi GameFi Impact Utility
-
-                     |
-
-          Community Economy
-
----
-
-# 7. Main Product
-
-## PanjoCoin (PNJC)
-
-
-PanjoCoin is a utility token ecosystem built on Polygon PoS.
+## 6. PanjoCoin Ecosystem
+text
+            CryptoTengo
+                 |
+            PanjoCoin
+                 |
+   ┌─────────────┼─────────────┐
+   │             │             │
+SocialFi    GameFi      Impact (Charity)
+   │             │             │
+   └─────────────┼─────────────┘
+                 |
+    Community & Decentralized Governance (DAO)
+## 7. Flagship Product
+PanjoCoin (PNJC) – a utility token ecosystem built on Polygon PoS.
 
 Core components:
 
-- ERC-20 token
-- SocialFi mechanisms
-- Proof of Kindness
-- Impact Score
-- Charity ecosystem
-- GameFi development roadmap
+ERC‑20 token with a fixed total supply of 1 trillion PNJC, no minting capability;
 
----
+Zero transfer tax (0% on all transactions);
 
-# 8. Technology Foundation
+Built‑in burn (burn()) and gas‑free permit (permit()) functions;
 
+Ownerless contract – no administrative keys for maximum decentralisation;
 
-## Blockchain
+Planned modules: DAO Governor, GoldenPhoenixProtocol (deflationary engine), VestingVault, MerkleAirdrop, TreasuryVault, ONE+ Gaming Platform, and ClownCare Bridge (charity).
 
-Network:
+## 8. Technology Foundation
+Blockchain:
 
+Network: Polygon PoS
 
-Polygon PoS
+Advantages: scalability, low fees, energy‑efficient.
 
+Smart Contract Architecture:
 
+Transparent, security‑first design; fixed supply; open verification.
 
-Technology advantages:
+All contracts are non‑upgradeable; the base token has no owner.
 
-- Scalable infrastructure
-- Efficient transactions
-- Lower network costs
+## 9. Products & Services
+9.1. PNJC Token
+Purpose: ecosystem utility, rewards, and governance participation.
 
+9.2. Decentralized Governance (DAO)
+Token‑holder voting on treasury allocation, charitable programs, and ecosystem development.
 
----
+9.3. GoldenPhoenixProtocol (Q3 2026)
+Deflationary mechanism funded by external ecosystem revenue (USDT) – no transaction tax.
 
-## Smart Contract Architecture
+Automatic buy‑back and burn of PNJC; includes an insurance fund for volatility protection.
 
+Parameters adjustable via DAO vote.
 
-Principles:
+9.4. ONE+ Gaming Platform (design phase, launch Q3 2027)
+Gaming platform using PNJC for in‑game purchases, premium features, and rewards.
 
-- Transparency
-- Security-oriented development
-- Fixed supply model
-- Open verification
+9.5. ClownCare Bridge (design phase, launch Q2 2027)
+Transparent charitable payment system with on‑chain reporting.
 
+9.6. Vesting & Liquidity Lock
+50% of supply locked in liquidity for 12 months.
 
----
+Team and founder allocations subject to linear vesting with cliffs.
 
-# 9. Products & Services
-
-
-## 9.1 PNJC Token
-
-Purpose:
-
-- Ecosystem utility
-- Rewards
-- Community participation
-
-
----
-
-## 9.2 SocialFi Platform
-
-Potential services:
-
-- Community engagement
-- Social campaigns
-- Digital reputation
-
-
----
-
-## 9.3 Proof of Kindness
-
-Technology concept:
-
-- Verified positive actions
-- Social contribution records
-- Reputation development
-
-
----
-
-## 9.4 GameFi Ecosystem
-
-Planned:
-
-- Interactive gaming
-- Digital assets
-- Reward economy
-
-
----
-
-# 10. Social Impact Initiatives
-
-
+## 10. Social Impact Initiatives
 CryptoTengo develops:
 
+Charity Programs – supporting child healthcare, education, and community projects (public Charity Reserve wallet).
 
-## Charity Programs
+Transparency – all donations and fund movements are recorded on‑chain.
 
-Focus areas:
+Impact Measurement Systems – Proof of Kindness, Impact Score (in development).
 
-- Healthcare
-- Children support
-- Education
-- Community initiatives
+## 11. Business Model
+Potential revenue streams:
 
+ONE+ platform fees (gaming transactions, premium features);
 
----
+Partnership integrations;
 
-## Impact Measurement
+SocialFi and digital reputation services;
 
-Systems:
+Educational and enterprise programmes.
 
-- Proof of Kindness
-- Impact Score
-- ESG Framework
+All revenue is directed toward token buy‑backs and burns, ecosystem development, and charitable activities.
 
----
+## 12. Target Markets
+Web3 Users – seeking utility, community, and digital ownership.
 
-# 11. Business Model
+Social Communities – looking for engagement, recognition, and impact systems.
 
+Organisations & NGOs – interested in transparent blockchain solutions for charity and partnerships.
 
-Potential ecosystem activities:
-
-
-- Platform services
-- Partnerships
-- GameFi economy
-- SocialFi applications
-- Educational initiatives
-
-
----
-
-# 12. Target Markets
-
-
-## Web3 Users
-
-Needs:
-
-- Utility
-- Community
-- Digital ownership
-
-
----
-
-## Social Communities
-
-Needs:
-
-- Engagement
-- Recognition
-- Impact systems
-
-
----
-
-## Organizations
-
-Needs:
-
-- Web3 partnerships
-- Transparent impact programs
-
-
----
-
-# 13. Development Approach
-
-
+## 13. Development Approach
 CryptoTengo follows:
 
+Open Documentation – technical specs, economic models, security policies.
 
-## Open Documentation
+Community Development – feedback, participation, collaborative growth.
 
-Maintains:
+Responsible Innovation – transparency, security, regulatory awareness.
 
-- Technical documentation
-- Economic models
-- Security policies
-
-
----
-
-## Community Development
-
-Focus:
-
-- Feedback
-- Participation
-- Ecosystem growth
-
-
----
-
-## Responsible Innovation
-
-Principles:
-
-- Transparency
-- Security
-- Compliance awareness
-
----
-
-# 14. Governance Model
-
-
+## 14. Governance Model
 Current structure:
 
+text
+   Founder (Tengo Kalandia)
+            ↓
+    Multisig (3/5) for Treasury
+            ↓
+    Community Participation (votes)
+            ↓
+    Full Transition to DAO (Q4 2026)
+After DAO launch, all key parameters (deflationary settings, treasury spending, charity initiatives) will be decided by token‑holder votes.
 
+## 15. Security & Risk Management
+Code verified on PolygonScan and open on GitHub.
 
-Founder-Led Development
+All contracts undergo independent audits (CertiK / Hacken).
 
-↓
+No upgradeable or admin‑controlled functions.
 
-Multisignature Management
+Insurance through deflationary mechanism and reserve funds.
 
-↓
+## 16. Regulatory Approach
+CryptoTengo adheres to:
 
-Community Participation
+Legal transparency;
 
-↓
+Responsible disclosure;
 
-DAO Evolution
+Evaluation of Georgian and international regulations;
 
+Compliance with Web3 standards.
 
----
+## 17. Strategic Partnerships
+Planned collaborations with:
 
-# 15. Security & Risk Management
+Web3 companies and DEX aggregators;
 
+Technology providers;
 
-Framework includes:
+Charitable and educational organisations;
 
+Developer communities.
 
-- Smart contract documentation
-- Security policies
-- Risk analysis
-- Treasury management procedures
-- Incident response planning
+## 18. Growth Strategy
+Short‑term (2026): finalise audits, deploy liquidity lock, vesting contracts, deflationary protocol, and pilot programmes.
 
+Medium‑term (2027): launch DAO, charity bridge, ONE+ gaming platform, and expand community.
 
----
+Long‑term (2028+): global ecosystem, multi‑chain expansion, full decentralised governance.
 
-# 16. Regulatory Approach
-
-
-CryptoTengo follows principles of:
-
-
-- Legal transparency
-- Responsible communication
-- Risk disclosure
-- Compliance-oriented development
-
-
-The project evaluates:
-
-- Georgian legal environment
-- Regional requirements
-- International Web3 standards
-
----
-
-# 17. Strategic Partnerships
-
-
-Potential partners:
-
-
-- Web3 companies
-- Technology providers
-- Charitable organizations
-- Educational institutions
-- Community organizations
-
----
-
-# 18. Growth Strategy
-
-
-## Short Term
-
-Goals:
-
-- Community building
-- Product development
-- Ecosystem awareness
-
-
----
-
-## Medium Term
-
-Goals:
-
-- SocialFi implementation
-- Partnerships
-- User growth
-
-
----
-
-## Long Term
-
-Goals:
-
-- Global ecosystem
-- DAO governance
-- Multi-chain expansion
-
----
-
-# 19. Competitive Position
-
-
+## 19. Competitive Position
 CryptoTengo differentiates through:
 
+Social Impact Integration – unique combination of blockchain, community, and measurable charity.
 
-## Social Impact Integration
+Transparency – all wallets, transactions, and code are public.
 
-Combining:
+Security – ownerless contracts, zero tax, fixed supply.
 
-Blockchain
+Community‑Driven – development through DAO and incentive programmes.
 
-+
-
-Community
-
-+
-
-Positive Impact
-
-
----
-
-## Transparent Ecosystem Design
-
-Including:
-
-- Documentation
-- Public blockchain records
-- Clear economic models
-
-
----
-
-## Community-Driven Growth
-
-Building:
-
-- Users
-- Contributors
-- Partners
-
----
-
-# 20. Organization Structure
-
-
+## 20. Organizational Structure
 Initial structure:
 
+text
+   Founder / Project Lead
+   (Tengo Kalandia)
+            |
+   ┌────────┼────────┐
+   │        │        │
+Technical Business  Community
+  Block  Development & Marketing
+Planned expansion: developers, marketing specialists, legal advisors, partnership managers, security experts.
 
+## 21. Company Objectives
+Develop a fully functional PNJC ecosystem.
 
-Founder / Project Lead
+Build sustainable Web3 products with real utility.
 
-    |
+Grow a global community.
 
-| | |
+Implement blockchain solutions for measurable social impact.
 
-Technology Business Community
+Ensure long‑term ecosystem value.
 
+## 22. Contact Information
+Organization: CryptoTengo
+Project: PanjoCoin (PNJC)
+Token Contract Address: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF
+Website: www.cryptotengo.com
+GitHub: github.com/CryptoTengo/PanjoCoin
+Socials: X (Twitter), Telegram
 
+## 23. Summary
+CryptoTengo is developing PanjoCoin as a next‑generation Web3 ecosystem that combines:
 
-Future expansion:
+Blockchain technology (Polygon PoS);
 
-- Developers
-- Marketing specialists
-- Legal advisors
-- Partnership managers
-- Security experts
+SocialFi and digital reputation;
 
----
+GameFi and gaming economy;
 
-# 21. Company Objectives
+Decentralised governance (DAO);
 
+Deflationary mechanisms and an insurance fund;
 
-Main objectives:
+Transparent charity with on‑chain reporting.
 
+The goal is to build a sustainable, transparent, and community‑driven digital ecosystem where every participant can contribute and derive value.
 
-1. Develop PNJC ecosystem
-
-2. Create sustainable Web3 products
-
-3. Build global community
-
-4. Establish impact-based blockchain applications
-
-5. Create long-term ecosystem value
-
----
-
-# 22. Contact Information
-
-
-Organization:
-
-CryptoTengo
-
-Project:
-
-PanjoCoin (PNJC)
-
-
-Public resources:
-
-- Website
-- GitHub Repository
-- Documentation
-- Community Channels
-
----
-
-# 23. Summary
-
-
-CryptoTengo is developing PanjoCoin as a next-generation Web3 ecosystem combining:
-
-
-
-Blockchain Technology
-
-SocialFi
-
-GameFi
-
-Charity
-
-Impact Economy
-
-
-
-The goal is to build a transparent, sustainable, and community-driven digital ecosystem.
-
----
-
-# Disclaimer
-
-This document describes the organization and project vision.
-
+Disclaimer
+This document describes the organisation and project vision.
 Information may evolve as the ecosystem develops.
-
 No financial guarantees or investment promises are made.
 
----
-
-© 2026 CryptoTengo  
-PanjoCoin (PNJC)
+© 2026 CryptoTengo / PanjoCoin (PNJC)
+Document Version: 1.1 (Updated to match Whitepaper v2.1)
+Last Updated: July 25, 2026
