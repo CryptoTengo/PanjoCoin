@@ -1,443 +1,471 @@
-# PanjoCoin (PNJC)
-
 # Liquidity Risk Management Policy
 
-**Version:** 1.0
-**Effective Date:** July 2026
-**Project:** PanjoCoin (PNJC)
-**Blockchain:** Polygon PoS
-**Token Standard:** ERC-20
+## PanjoCoin (PNJC)
+
+**Version:** 1.1 (Updated)  
+**Effective Date:** July 25, 2026  
+**Project:** PanjoCoin (PNJC)  
+**Blockchain:** Polygon PoS  
+**Token Standard:** ERC-20 (ERC20Burnable + ERC20Permit)  
+**Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
 ---
 
-# 1. Introduction
+## 1. Introduction
 
-This Liquidity Risk Management Policy defines the approach used by PanjoCoin (PNJC) to identify, evaluate, monitor, and mitigate liquidity-related risks within the ecosystem.
+This **Liquidity Risk Management Policy** defines the approach used by PanjoCoin (PNJC) to identify, evaluate, monitor, and mitigate liquidity-related risks within the ecosystem.
 
 Liquidity is a critical component of digital asset markets because it affects:
 
-* trading efficiency;
-* price stability;
-* market confidence;
-* user experience;
-* ecosystem sustainability.
+- Trading efficiency;
+- Price stability;
+- Market confidence;
+- User experience;
+- Ecosystem sustainability.
 
-PanjoCoin recognizes that responsible liquidity management is essential for building a transparent and sustainable token ecosystem.
+PanjoCoin recognises that responsible liquidity management is essential for building a transparent and sustainable token ecosystem.
 
 ---
 
-# 2. Purpose
+## 2. Purpose
 
 The objectives of this policy are:
 
-* Identify liquidity risks.
-* Establish liquidity management principles.
-* Reduce excessive market instability.
-* Improve transparency.
-* Support sustainable ecosystem growth.
+- Identify liquidity risks;
+- Establish liquidity management principles;
+- Reduce excessive market instability;
+- Improve transparency;
+- Support sustainable ecosystem growth.
 
 ---
 
-# 3. Scope
+## 3. Scope
 
 This policy applies to:
 
-* PNJC liquidity pools;
-* decentralized exchange (DEX) activities;
-* liquidity providers;
-* treasury liquidity management;
-* market infrastructure;
-* future exchange integrations.
+- PNJC liquidity pools (Uniswap V2);
+- Decentralised exchange (DEX) activities;
+- Liquidity providers and participants;
+- Treasury liquidity management;
+- Market infrastructure;
+- Future exchange integrations.
 
 ---
 
-# 4. Liquidity Principles
+## 4. Liquidity Principles
 
-## 4.1 Transparency
+### 4.1. Transparency
 
 PNJC aims to maintain transparent information regarding:
 
-* liquidity allocation;
-* liquidity mechanisms;
-* lock arrangements;
-* ecosystem liquidity strategy.
+- Liquidity allocation (50% of total supply);
+- Liquidity mechanisms (Uniswap V2);
+- Lock arrangements (12-month lock);
+- Ecosystem liquidity strategy.
 
----
-
-## 4.2 Sustainability
+### 4.2. Sustainability
 
 Liquidity decisions should support:
 
-* long-term market health;
-* ecosystem adoption;
-* responsible growth.
+- Long-term market health;
+- Ecosystem adoption;
+- Responsible growth.
 
----
-
-## 4.3 Market Integrity
+### 4.3. Market Integrity
 
 PNJC does not intend to:
 
-* manipulate market price;
-* create artificial demand;
-* provide misleading liquidity information.
+- Manipulate market price;
+- Create artificial demand;
+- Provide misleading liquidity information.
 
----
-
-## 4.4 Risk Awareness
+### 4.4. Risk Awareness
 
 Liquidity management considers:
 
-* market volatility;
-* trading volume;
-* user behavior;
-* external market conditions.
+- Market volatility;
+- Trading volume;
+- User behaviour;
+- External market conditions.
 
 ---
 
-# 5. PNJC Liquidity Model Overview
+## 5. PNJC Liquidity Model Overview
 
-PanjoCoin follows a decentralized liquidity approach.
+PanjoCoin follows a decentralised liquidity approach.
 
-Key characteristics:
-
-| Category       | Description               |
-| -------------- | ------------------------- |
-| Blockchain     | Polygon PoS               |
-| Token Standard | ERC-20                    |
-| Trading Model  | Decentralized Exchange    |
-| Custody Model  | Non-custodial             |
-| Market Access  | Public blockchain markets |
-
----
-
-# 6. Liquidity Risk Categories
+| Category | Description |
+| :--- | :--- |
+| **Blockchain** | Polygon PoS |
+| **Token Standard** | ERC-20 + ERC20Burnable + ERC20Permit |
+| **Trading Model** | Decentralised Exchange (Uniswap V2) |
+| **Custody Model** | Non-custodial |
+| **Market Access** | Public blockchain markets |
+| **Liquidity Allocation** | 50% of total supply (500,000,000,000 PNJC) |
+| **Liquidity Lock** | 12 months (PNJCLiquidityLockerV2) |
+| **Contract Address** | `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF` |
 
 ---
 
-# 6.1 Insufficient Liquidity Risk
+## 6. Liquidity Risk Categories
 
-## Description
+### 6.1. Insufficient Liquidity Risk
 
-Risk that available liquidity is insufficient to support normal trading activity.
+**Description:** Risk that available liquidity is insufficient to support normal trading activity.
 
-Potential causes:
+**Potential Causes:**
+- Low liquidity pool size;
+- Limited market participation;
+- Low trading volume.
 
-* low liquidity pool size;
-* limited market participation;
-* low trading volume.
+**Potential Impact:**
+- Increased price volatility;
+- Higher slippage;
+- Reduced user confidence.
 
-## Potential Impact
+**Mitigation:**
+- Liquidity planning (50% allocation);
+- Ecosystem growth;
+- Community expansion;
+- Monitoring of trading conditions.
 
-* increased price volatility;
-* higher slippage;
-* reduced user confidence.
-
-## Mitigation
-
-Measures:
-
-* liquidity planning;
-* ecosystem growth;
-* community expansion;
-* monitoring of trading conditions.
+**Status:** ✅ Mitigated (50% allocation, 12-month lock)
 
 ---
 
-# 6.2 High Slippage Risk
+### 6.2. High Slippage Risk
 
-## Description
+**Description:** Risk that large trades significantly affect token price.
 
-Risk that large trades significantly affect token price.
+**Potential Causes:**
+- Shallow liquidity pools;
+- Sudden demand changes.
 
-Potential causes:
-
-* shallow liquidity pools;
-* sudden demand changes.
-
-## Impact
-
+**Impact:**
 Users may experience:
+- Unfavourable execution prices;
+- Reduced trading efficiency.
 
-* unfavorable execution prices;
-* reduced trading efficiency.
+**Mitigation:**
+- Encourage deeper liquidity;
+- Educate users about market conditions;
+- Monitor pool parameters.
 
-## Mitigation
-
-Measures:
-
-* encourage deeper liquidity;
-* educate users about market conditions;
-* monitor pool parameters.
+**Status:** 🔄 Ongoing
 
 ---
 
-# 6.3 Liquidity Provider Withdrawal Risk
+### 6.3. Liquidity Provider Withdrawal Risk
 
-## Description
+**Description:** Liquidity providers may remove liquidity from pools.
 
-Liquidity providers may remove liquidity from pools.
+**Potential Impacts:**
+- Reduced available liquidity;
+- Increased volatility;
+- Lower trading efficiency.
 
-Potential impacts:
+**Mitigation:**
+- 12-month liquidity lock (PNJCLiquidityLockerV2);
+- No emergency withdrawal;
+- Transparent liquidity strategy;
+- Ecosystem incentives.
 
-* reduced available liquidity;
-* increased volatility;
-* lower trading efficiency.
-
-## Mitigation
-
-Measures:
-
-* liquidity lock mechanisms where applicable;
-* transparent liquidity strategy;
-* ecosystem incentives.
+**Status:** ✅ Mitigated (lock mechanism)
 
 ---
 
-# 6.4 Liquidity Concentration Risk
+### 6.4. Liquidity Concentration Risk
 
-## Description
+**Description:** Risk caused by excessive dependence on a small number of liquidity providers.
 
-Risk caused by excessive dependence on a small number of liquidity providers.
+**Potential Impacts:**
+- Reduced market stability;
+- Increased dependency.
 
-Potential impacts:
+**Mitigation:**
+- Broader liquidity participation;
+- Decentralised liquidity strategy;
+- Monitoring concentration levels.
 
-* reduced market stability;
-* increased dependency.
-
-## Mitigation
-
-Measures:
-
-* broader liquidity participation;
-* decentralized liquidity strategy;
-* monitoring concentration levels.
+**Status:** 🔄 Ongoing
 
 ---
 
-# 6.5 Market Volatility Risk
+### 6.5. Market Volatility Risk
 
-## Description
+**Description:** Crypto markets experience significant price movements.
 
-Crypto markets experience significant price movements.
+**Factors Include:**
+- Market cycles;
+- Macroeconomic conditions;
+- Investor sentiment;
+- Regulatory changes.
 
-Factors include:
+**Mitigation:**
+- Long-term ecosystem development (24-month roadmap);
+- Utility creation (gaming, charity, governance);
+- Transparent communication.
 
-* market cycles;
-* macroeconomic conditions;
-* investor sentiment;
-* regulatory changes.
-
-## Mitigation
-
-Measures:
-
-* long-term ecosystem development;
-* utility creation;
-* transparent communication.
+**Status:** 🔄 Ongoing
 
 ---
 
-# 6.6 DEX Dependency Risk
+### 6.6. DEX Dependency Risk
 
-## Description
+**Description:** Dependence on decentralised exchange infrastructure.
 
-Dependence on decentralized exchange infrastructure.
+**Potential Issues:**
+- Protocol changes (Uniswap V2);
+- Technical failures;
+- Reduced trading activity.
 
-Potential issues:
+**Mitigation:**
+- Evaluate multiple liquidity venues (future);
+- Maintain ecosystem flexibility;
+- Monitor DEX developments.
 
-* protocol changes;
-* technical failures;
-* reduced trading activity.
-
-## Mitigation
-
-Measures:
-
-* evaluate multiple liquidity venues;
-* maintain ecosystem flexibility;
-* monitor DEX developments.
+**Status:** 🔄 Ongoing
 
 ---
 
-# 6.7 Impermanent Loss Risk
+### 6.7. Impermanent Loss Risk
 
-## Description
+**Description:** Liquidity providers may experience impermanent loss due to price changes between paired assets (PNJC / USDT).
 
-Liquidity providers may experience impermanent loss due to price changes between paired assets.
+**This risk primarily affects liquidity providers.**
 
-This risk primarily affects liquidity providers.
+**Mitigation:**
+- Transparent communication;
+- Educational materials;
+- Responsible liquidity design.
 
-## Mitigation
-
-Measures:
-
-* transparent communication;
-* educational materials;
-* responsible liquidity design.
+**Status:** 🔄 Ongoing
 
 ---
 
-# 6.8 Market Manipulation Risk
+### 6.8. Market Manipulation Risk
 
-## Description
+**Description:** Low liquidity markets may be more vulnerable to manipulation attempts.
 
-Low liquidity markets may be more vulnerable to manipulation attempts.
+**Potential Examples:**
+- Artificial volume;
+- Coordinated trading activity;
+- Misinformation.
 
-Potential examples:
+**Mitigation:**
+- Transparency (public pools);
+- Community monitoring;
+- Responsible communication.
 
-* artificial volume;
-* coordinated trading activity;
-* misinformation.
-
-## Mitigation
-
-Measures:
-
-* transparency;
-* community monitoring;
-* responsible communication.
+**Status:** 🔄 Ongoing
 
 ---
 
-# 6.9 Liquidity Lock and Trust Risk
+### 6.9. Liquidity Lock and Trust Risk
 
-## Description
+**Description:** Insufficient transparency regarding liquidity controls may reduce trust.
 
-Insufficient transparency regarding liquidity controls may reduce trust.
+**Mitigation:**
+- Public documentation (Liquidity Strategy);
+- Verification of liquidity arrangements (PolygonScan);
+- Clear communication.
 
-## Mitigation
-
-Measures:
-
-* public documentation;
-* verification of liquidity arrangements;
-* clear communication.
+**Status:** ✅ Mitigated (transparent lock)
 
 ---
 
-# 7. Liquidity Risk Register
+### 6.10. Liquidity Drain Risk
 
-| ID      | Risk                    | Probability | Impact | Level  | Mitigation                  |
-| ------- | ----------------------- | ----------- | ------ | ------ | --------------------------- |
-| LIQ-001 | Insufficient liquidity  | Medium      | High   | High   | Liquidity strategy          |
-| LIQ-002 | High slippage           | Medium      | Medium | Medium | Liquidity growth            |
-| LIQ-003 | LP withdrawal           | Medium      | High   | High   | Lock mechanisms             |
-| LIQ-004 | Liquidity concentration | Medium      | Medium | Medium | Diversification             |
-| LIQ-005 | DEX dependency          | Medium      | Medium | Medium | Multi-platform approach     |
-| LIQ-006 | Market volatility       | High        | Medium | High   | Long-term utility focus     |
-| LIQ-007 | Manipulation attempts   | Medium      | High   | High   | Monitoring and transparency |
+**Description:** Sudden removal of liquidity from the ecosystem.
+
+**Potential Causes:**
+- Market panic;
+- Economic attack;
+- Ecosystem disruption.
+
+**Mitigation:**
+- 12-month liquidity lock;
+- No emergency withdrawal;
+- Transparent monitoring.
+
+**Status:** ✅ Mitigated (lock mechanism)
 
 ---
 
-# 8. Liquidity Management Controls
+## 7. Liquidity Risk Register
 
-Recommended controls:
+| ID | Risk | Probability | Impact | Level | Mitigation | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **LIQ-001** | Insufficient liquidity | Medium | High | High | 50% allocation, 12-month lock | ✅ Mitigated |
+| **LIQ-002** | High slippage | Medium | Medium | Medium | Liquidity growth, education | 🔄 Ongoing |
+| **LIQ-003** | LP withdrawal | Medium | High | High | Lock mechanism, no withdrawal | ✅ Mitigated |
+| **LIQ-004** | Liquidity concentration | Medium | Medium | Medium | Decentralised strategy | 🔄 Ongoing |
+| **LIQ-005** | DEX dependency | Medium | Medium | Medium | Multi-platform approach | 🔄 Ongoing |
+| **LIQ-006** | Market volatility | High | Medium | High | Long-term utility focus | 🔄 Ongoing |
+| **LIQ-007** | Manipulation attempts | Medium | High | High | Monitoring, transparency | 🔄 Ongoing |
+| **LIQ-008** | Liquidity drain | Low | Critical | High | 12-month lock, no withdrawal | ✅ Mitigated |
+| **LIQ-009** | Liquidity lock trust | Low | Medium | Low | Public verification | ✅ Mitigated |
 
-## Liquidity Monitoring
+---
+
+## 8. Liquidity Management Controls
+
+### Liquidity Monitoring
 
 Track:
+- Pool depth (Uniswap V2);
+- Trading volume;
+- Price impact;
+- Liquidity changes.
 
-* pool depth;
-* trading volume;
-* price impact;
-* liquidity changes.
-
----
-
-## Transparency
+### Transparency
 
 Maintain public information regarding:
+- Liquidity allocation (50%);
+- Lock status (12-month lock);
+- Ecosystem strategy (Liquidity Strategy document).
 
-* liquidity allocation;
-* lock status;
-* ecosystem strategy.
-
----
-
-## Risk Review
+### Risk Review
 
 Liquidity conditions should be reviewed:
-
-* periodically;
-* before major announcements;
-* during market stress.
+- Periodically (quarterly);
+- Before major announcements;
+- During market stress.
 
 ---
 
-# 9. Liquidity During Market Stress
+## 9. Liquidity During Market Stress
 
 During significant market volatility, PNJC may evaluate:
 
-* preservation of ecosystem stability;
-* communication strategy;
-* operational priorities;
-* liquidity conditions.
+| Action | Description |
+| :--- | :--- |
+| **Preservation of Ecosystem Stability** | Protect core liquidity infrastructure. |
+| **Communication Strategy** | Transparent updates through official channels. |
+| **Operational Priorities** | Focus on critical functions. |
+| **Liquidity Conditions** | Monitor and assess market health. |
 
-The project does not guarantee:
-
-* token price;
-* liquidity levels;
-* trading volume.
+**The project does not guarantee:**
+- Token price;
+- Liquidity levels;
+- Trading volume.
 
 ---
 
-# 10. Liquidity and Token Economics
+## 10. Liquidity and Token Economics
 
 Liquidity management should consider:
 
-* total supply;
-* circulating supply;
-* token release schedules;
-* ecosystem incentives.
+| Factor | Description |
+| :--- | :--- |
+| **Total Supply** | 1,000,000,000,000 PNJC (fixed). |
+| **Circulating Supply** | Gradually released (5% annually). |
+| **Token Release Schedules** | Vesting and unlock schedules. |
+| **Ecosystem Incentives** | Community rewards and programs. |
 
-Poorly managed supply dynamics may negatively affect liquidity conditions.
+**Poorly managed supply dynamics may negatively affect liquidity conditions.**
 
 ---
 
-# 11. Liquidity Transparency Framework
+## 11. Liquidity Transparency Framework
 
 PNJC aims to provide:
 
-* clear tokenomics;
-* public contract information;
-* transparent ecosystem documentation;
-* responsible disclosures.
+| Element | Description |
+| :--- | :--- |
+| **Clear Tokenomics** | Public allocation breakdown. |
+| **Public Contract Information** | Verified on PolygonScan. |
+| **Transparent Ecosystem Documentation** | All documents publicly available. |
+| **Responsible Disclosures** | Risk communication and updates. |
 
 ---
 
-# 12. Future Liquidity Improvements
+## 12. Smart Contract Liquidity Risk Mitigation Summary
+
+| Risk | Mitigation | Status |
+| :--- | :--- | :--- |
+| **Liquidity Removal** | 12-month lock, no emergency withdrawal | ✅ |
+| **Unauthorised Supply Changes** | No `mint()` function, fixed supply | ✅ |
+| **Tax Manipulation** | 0% transfer tax | ✅ |
+| **Admin Abuse** | Ownerless contract | ✅ |
+| **Upgradeability Attack** | Non-upgradeable contracts | ✅ |
+| **Liquidity Pool Dependency** | Uniswap V2 with transparent monitoring | 🔄 Ongoing |
+
+---
+
+## 13. Future Liquidity Improvements
 
 As the ecosystem develops, PNJC may consider:
 
-* additional liquidity venues;
-* professional market analysis;
-* liquidity incentive programs;
-* institutional liquidity partnerships.
+| Improvement | Description | Timeline |
+| :--- | :--- | :--- |
+| **Additional Liquidity Venues** | Multi-DEX strategy. | Q1 2027 |
+| **Professional Market Analysis** | Enhanced liquidity monitoring. | Q4 2026 |
+| **Liquidity Incentive Programs** | Rewards for liquidity providers. | Q1 2027 |
+| **Institutional Liquidity Partnerships** | Professional market making. | Q1 2027 |
+| **Cross-Chain Liquidity** | Multi-chain expansion. | Q2 2028 |
 
 ---
 
-# 13. Conclusion
+## 14. Liquidity Risk Management Principles Summary
+
+PNJC liquidity risk management is based on:
+
+```
+Transparency (Public Allocation)
+        +
+Security (12-Month Lock, No Withdrawal)
+        +
+Sustainability (Long-Term Utility Focus)
+        +
+Decentralisation (Uniswap V2, Non-Custodial)
+        +
+Risk Awareness (Monitoring, Communication)
+```
+
+---
+
+## 15. Conclusion
 
 Liquidity management is a fundamental component of a sustainable blockchain ecosystem.
 
-PanjoCoin recognizes liquidity risk as an important operational and market consideration and aims to manage it through:
+PanjoCoin recognises liquidity risk as an important operational and market consideration and aims to manage it through:
 
-* transparency;
-* responsible planning;
-* ecosystem development;
-* continuous monitoring.
+- Transparency;
+- Responsible planning;
+- Ecosystem development;
+- Continuous monitoring.
 
 ---
 
-# Disclaimer
+## Disclaimer
 
 This Liquidity Risk Management Policy does not guarantee liquidity, price stability, market availability, or trading performance.
 
-Digital assets involve significant market risks.
+**It does not constitute:**
+- Investment advice;
+- Financial advice;
+- Legal advice;
+- Tax advice;
+- An offer to sell securities;
+- A solicitation to purchase financial instruments.
+
+Digital assets involve significant market risks. Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
 
 ---
 
-**PanjoCoin (PNJC)**
-Open-Source Utility Ecosystem
-Polygon PoS
+### Document Information
+
+| Property | Value |
+| :--- | :--- |
+| **Document** | Liquidity Risk Management Policy |
+| **Version** | 1.1 (Updated) |
+| **Effective Date** | July 25, 2026 |
+| **Status** | Official |
+| **Next Review** | Annually or after major changes |
+
+---
+
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
+**Document Version:** 1.1 (Updated)  
+**Last Updated:** July 25, 2026
