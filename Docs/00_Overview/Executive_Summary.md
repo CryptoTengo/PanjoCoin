@@ -267,5 +267,4 @@ Website: www.cryptotengo.com
 GitHub: github.com/CryptoTengo/PanjoCoin
 
 © 2026 PanjoCoin (PNJC). All rights reserved.
-Document Version: 1.2 (Updated – GoldenPhoenixProtocol removed)
 Last Updated: July 25, 2026
