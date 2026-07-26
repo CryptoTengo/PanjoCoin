@@ -150,7 +150,7 @@ Until the DAO is fully operational, key decisions are managed by a **3/5 multisi
 
 ### 5.2. Ownable2Step Contracts
 
-Contracts that require administrative functions (`GoldenPhoenixProtocol`, `MerkleAirdrop`) use OpenZeppelin's `Ownable2Step`:
+Contracts that require administrative functions (`MerkleAirdrop`) use OpenZeppelin's `Ownable2Step`:
 
 - Owner is a **multisig wallet (Gnosis Safe)** or, after DAO launch, the DAO contract itself.
 - Two-step ownership transfer prevents accidental or malicious transfer to the wrong address.
