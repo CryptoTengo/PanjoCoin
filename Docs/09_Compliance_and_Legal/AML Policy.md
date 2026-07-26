@@ -364,7 +364,7 @@ The ClownCare Bridge (Q2 2027) will provide:
 | Version | Date | Changes |
 | :--- | :--- | :--- |
 | **1.0** | July 23, 2026 | Initial release. |
-| **1.1** | July 25, 2026 | Updated contract address, removed references to GoldenPhoenixProtocol, aligned with Whitepaper v2.2. |
+| **1.1** | July 25, 2026 | Updated contract address, aligned with Whitepaper v2.2. |
 
 ---
 
