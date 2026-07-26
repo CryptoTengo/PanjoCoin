@@ -1,516 +1,519 @@
-# PanjoCoin (PNJC)
-
 # Smart Contract Risk Management Policy
 
-**Version:** 1.0
-**Effective Date:** July 2026
-**Project:** PanjoCoin (PNJC)
-**Blockchain:** Polygon PoS
-**Token Standard:** ERC-20
-**Smart Contract Language:** Solidity
+## PanjoCoin (PNJC)
+
+**Version:** 1.1 (Updated)  
+**Effective Date:** July 25, 2026  
+**Project:** PanjoCoin (PNJC)  
+**Blockchain:** Polygon PoS  
+**Token Standard:** ERC-20 (ERC20Burnable + ERC20Permit)  
+**Smart Contract Language:** Solidity 0.8.36  
+**Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
 ---
 
-# 1. Introduction
+## 1. Introduction
 
-This Smart Contract Risk Management Policy defines the approach used by PanjoCoin (PNJC) to identify, assess, mitigate, and monitor risks related to blockchain smart contracts.
+This **Smart Contract Risk Management Policy** defines the approach used by PanjoCoin (PNJC) to identify, assess, mitigate, and monitor risks related to blockchain smart contracts.
 
 Smart contracts represent a critical component of the PNJC ecosystem because they directly influence:
 
-* token functionality;
-* transaction execution;
-* ecosystem security;
-* user trust;
-* technical reliability.
+- Token functionality;
+- Transaction execution;
+- Ecosystem security;
+- User trust;
+- Technical reliability.
 
-PanjoCoin recognizes that smart contract security is essential for responsible Web3 development.
+PanjoCoin recognises that smart contract security is essential for responsible Web3 development.
 
 ---
 
-# 2. Purpose
+## 2. Purpose
 
 The objectives of this policy are:
 
-* Identify smart contract risks.
-* Establish security practices.
-* Reduce vulnerability exposure.
-* Improve transparency.
-* Support audit readiness.
-* Protect ecosystem participants.
+- Identify smart contract risks;
+- Establish security practices;
+- Reduce vulnerability exposure;
+- Improve transparency;
+- Support audit readiness;
+- Protect ecosystem participants.
 
 ---
 
-# 3. Scope
+## 3. Scope
 
 This policy applies to:
 
-* PNJC ERC-20 smart contract;
-* future ecosystem contracts;
-* liquidity-related contracts;
-* DAO contracts;
-* reward mechanisms;
-* GameFi/NFT contracts;
-* treasury-related contracts.
+- PNJC ERC-20 smart contract (PanjoCoin token);
+- PNJCLiquidityLockerV2 (liquidity lock);
+- PNJCVestingVault (vesting contracts);
+- PNJCAirdrop (Merkle tree distribution);
+- PNJCTreasuryVault (multisig treasury);
+- DAO Governor (decentralised governance);
+- ClownCare Bridge (charity, future);
+- ONE+ GameFi contracts (future).
 
 ---
 
-# 4. PNJC Smart Contract Overview
+## 4. PNJC Smart Contract Overview
 
-| Category       | Information                    |
-| -------------- | ------------------------------ |
-| Token          | PanjoCoin                      |
-| Symbol         | PNJC                           |
-| Network        | Polygon PoS                    |
-| Standard       | ERC-20                         |
-| Language       | Solidity                       |
-| Compiler       | Solidity 0.8.x                 |
-| Framework      | OpenZeppelin                   |
-| Supply Model   | Fixed Supply                   |
-| Upgradeability | Not implemented                |
-| Mint Function  | Not available after deployment |
+| Category | Information |
+| :--- | :--- |
+| **Token** | PanjoCoin |
+| **Symbol** | PNJC |
+| **Network** | Polygon PoS |
+| **Standard** | ERC-20 + ERC20Burnable + ERC20Permit |
+| **Language** | Solidity |
+| **Compiler** | Solidity 0.8.36 |
+| **Framework** | OpenZeppelin v5.5.0 |
+| **Supply Model** | Fixed Supply (1 trillion PNJC) |
+| **Upgradeability** | Not implemented |
+| **Mint Function** | Not available after deployment |
+| **Transfer Tax** | 0% |
+| **Owner** | None (ownerless) |
 
 ---
 
-# 5. Smart Contract Security Principles
+## 5. Smart Contract Security Principles
 
-## 5.1 Security by Design
+### 5.1. Security by Design
 
 Security considerations are integrated into:
 
-* contract architecture;
-* development;
-* testing;
-* deployment.
+- Contract architecture;
+- Development;
+- Testing;
+- Deployment.
 
----
-
-## 5.2 Transparency
+### 5.2. Transparency
 
 PNJC promotes:
 
-* public contract verification;
-* open documentation;
-* clear functionality descriptions.
+- Public contract verification (PolygonScan);
+- Open documentation;
+- Clear functionality descriptions;
+- NatSpec comments in code.
 
----
-
-## 5.3 Minimal Privileges
+### 5.3. Minimal Privileges
 
 Administrative capabilities should be limited.
 
-Security objectives:
+**Security objectives:**
+- Reduce attack surface;
+- Prevent unauthorised actions;
+- Avoid excessive control.
 
-* reduce attack surface;
-* prevent unauthorized actions;
-* avoid excessive control.
+**Implementation:**
+- Ownerless token contract (`owner = address(0)`);
+- Multisig for treasury operations (3/5);
+- No administrative functions in token contract.
 
----
-
-## 5.4 Immutability
+### 5.4. Immutability
 
 Where applicable, PNJC avoids unnecessary upgrade mechanisms.
 
-Benefits:
+**Benefits:**
+- Predictable behaviour;
+- Reduced administrative risk;
+- Improved transparency.
 
-* predictable behavior;
-* reduced administrative risk;
-* improved transparency.
-
----
-
-# 6. Smart Contract Risk Categories
-
----
-
-# 6.1 Coding Vulnerabilities
-
-## Description
-
-Errors in Solidity code may create unintended behavior.
-
-Examples:
-
-* logical mistakes;
-* incorrect calculations;
-* missing validation.
-
-## Potential Impact
-
-* incorrect token behavior;
-* loss of confidence;
-* ecosystem disruption.
-
-## Mitigation
-
-Controls:
-
-* secure coding practices;
-* peer review;
-* testing;
-* static analysis.
+**Implementation:**
+- Non-upgradeable contracts;
+- No proxy patterns;
+- No `delegatecall`.
 
 ---
 
-# 6.2 Access Control Risk
+## 6. Smart Contract Risk Categories
 
-## Description
+### 6.1. Coding Vulnerabilities
 
-Improper permission management may allow unauthorized actions.
+**Description:** Errors in Solidity code may create unintended behaviour.
 
-Potential issues:
+**Examples:**
+- Logical mistakes;
+- Incorrect calculations;
+- Missing validation.
 
-* excessive privileges;
-* compromised administrator accounts.
+**Potential Impact:**
+- Incorrect token behaviour;
+- Loss of confidence;
+- Ecosystem disruption.
 
-## Mitigation
-
-Measures:
-
-* role separation;
-* limited permissions;
-* secure key management.
-
----
-
-# 6.3 Integer and Arithmetic Risk
-
-## Description
-
-Incorrect numerical handling may affect contract behavior.
-
-Modern Solidity versions include built-in arithmetic protections.
-
-## Mitigation
-
-Measures:
-
-* Solidity 0.8+ protections;
-* testing;
-* code review.
+**Mitigation:**
+- Secure coding practices (Solidity 0.8.36);
+- Peer review (Code Review Policy);
+- Testing (Hardhat, Chai);
+- Static analysis (Slither, Mythril);
+- Independent audits (CertiK / Hacken).
 
 ---
 
-# 6.4 Reentrancy Risk
+### 6.2. Access Control Risk
 
-## Description
+**Description:** Improper permission management may allow unauthorised actions.
 
-A malicious contract may attempt repeated interaction before state updates are completed.
+**Potential Issues:**
+- Excessive privileges;
+- Compromised administrator accounts.
 
-## Potential Impact
-
-* unauthorized behavior;
-* incorrect state changes.
-
-## Mitigation
-
-Controls:
-
-* secure programming patterns;
-* checks-effects-interactions approach;
-* OpenZeppelin security mechanisms.
+**Mitigation:**
+- Role separation;
+- Limited permissions;
+- Secure key management (hardware wallets);
+- Multisig for treasury (3/5 approval).
 
 ---
 
-# 6.5 Token Transfer Logic Risk
+### 6.3. Integer and Arithmetic Risk
 
-## Description
+**Description:** Incorrect numerical handling may affect contract behaviour.
 
-ERC-20 transfer functionality must operate correctly.
+**Modern Solidity versions include built-in arithmetic protections.**
 
-Potential issues:
-
-* incorrect balances;
-* transfer restrictions;
-* unexpected fees.
-
-## Mitigation
-
-Measures:
-
-* ERC-20 standard compliance;
-* testing;
-* transparent documentation.
+**Mitigation:**
+- Solidity 0.8.36 protections (built-in overflow checks);
+- OpenZeppelin SafeMath (where applicable);
+- Testing;
+- Code review.
 
 ---
 
-# 6.6 Tax Mechanism Risk
+### 6.4. Reentrancy Risk
 
-## Description
+**Description:** A malicious contract may attempt repeated interaction before state updates are completed.
 
-Token tax systems may introduce complexity.
+**Potential Impact:**
+- Unauthorised behaviour;
+- Incorrect state changes.
 
-Potential risks:
-
-* incorrect tax calculations;
-* unexpected transaction behavior;
-* user confusion.
-
-## Mitigation
-
-Controls:
-
-* documented parameters;
-* testing;
-* transparent communication.
+**Mitigation:**
+- Checks-Effects-Interactions pattern;
+- OpenZeppelin ReentrancyGuard;
+- Secure programming patterns.
 
 ---
 
-# 6.7 Supply Management Risk
+### 6.5. Token Transfer Logic Risk
 
-## Description
+**Description:** ERC-20 transfer functionality must operate correctly.
 
-Incorrect supply controls may affect token economics.
+**Potential Issues:**
+- Incorrect balances;
+- Unexpected fees;
+- Transfer restrictions.
 
-Potential concerns:
-
-* unauthorized minting;
-* supply manipulation.
-
-## Mitigation
-
-PNJC principles:
-
-* fixed supply model;
-* no unauthorized mint mechanism;
-* transparent tokenomics.
+**Mitigation:**
+- ERC-20 standard compliance;
+- ERC20Burnable and ERC20Permit extensions;
+- Testing;
+- Transparent documentation.
 
 ---
 
-# 6.8 Liquidity Contract Interaction Risk
+### 6.6. Supply Management Risk
 
-## Description
+**Description:** Incorrect supply controls may affect token economics.
 
-Interactions with DEX liquidity mechanisms may create technical risks.
+**Potential Concerns:**
+- Unauthorised minting;
+- Supply manipulation.
 
-Potential issues:
-
-* incorrect integration;
-* unexpected external contract behavior.
-
-## Mitigation
-
-Measures:
-
-* careful integration;
-* testing;
-* external contract review.
+**PNJC Mitigation:**
+- Fixed supply model (1 trillion PNJC);
+- No `mint()` function;
+- Transparent tokenomics;
+- On-chain verification (`maxSupply()` function).
 
 ---
 
-# 6.9 Oracle and External Dependency Risk
+### 6.7. Liquidity Contract Interaction Risk
 
-## Description
+**Description:** Interactions with DEX liquidity mechanisms may create technical risks.
 
-External data dependencies may introduce additional risks.
+**Potential Issues:**
+- Incorrect integration;
+- Unexpected external contract behaviour.
 
-Potential issues:
-
-* inaccurate data;
-* service interruption.
-
-## Mitigation
-
-Measures:
-
-* minimize unnecessary dependencies;
-* evaluate external services.
+**Mitigation:**
+- Careful integration (Uniswap V2);
+- Testing;
+- External contract review;
+- PNJCLiquidityLockerV2 (immutable, ownerless).
 
 ---
 
-# 6.10 Future Contract Expansion Risk
+### 6.8. Oracle and External Dependency Risk
 
-## Description
+**Description:** External data dependencies may introduce additional risks.
 
-Additional ecosystem contracts may introduce new vulnerabilities.
+**Potential Issues:**
+- Inaccurate data;
+- Service interruption.
 
-Examples:
-
-* DAO;
-* GameFi;
-* NFT;
-* reward contracts.
-
-## Mitigation
-
-Requirements:
-
-* security review;
-* testing;
-* documentation;
-* audit preparation.
+**Mitigation:**
+- Minimise unnecessary dependencies;
+- Evaluate external services;
+- OpenZeppelin libraries (audited).
 
 ---
 
-# 7. Smart Contract Risk Register
+### 6.9. Future Contract Expansion Risk
 
-| ID     | Risk                            | Probability | Impact   | Level  | Mitigation            |
-| ------ | ------------------------------- | ----------- | -------- | ------ | --------------------- |
-| SC-001 | Code vulnerability              | Low         | Critical | High   | Review and testing    |
-| SC-002 | Access control failure          | Low         | Critical | High   | Permission management |
-| SC-003 | Reentrancy vulnerability        | Low         | High     | Medium | Secure patterns       |
-| SC-004 | Incorrect token logic           | Low         | High     | Medium | Testing               |
-| SC-005 | Supply manipulation             | Low         | Critical | High   | Fixed supply design   |
-| SC-006 | External contract risk          | Medium      | High     | High   | Dependency review     |
-| SC-007 | Future contract vulnerabilities | Medium      | High     | High   | Security audits       |
+**Description:** Additional ecosystem contracts may introduce new vulnerabilities.
+
+**Examples:**
+- DAO Governor;
+- ClownCare Bridge (charity);
+- ONE+ GameFi;
+- Reward contracts.
+
+**Mitigation:**
+- Security review (Code Review Policy);
+- Testing;
+- Documentation;
+- Audit preparation (CertiK / Hacken);
+- Gradual, phased deployment.
 
 ---
 
-# 8. Development Security Lifecycle
+## 7. Smart Contract Risk Register
+
+| ID | Risk | Probability | Impact | Level | Mitigation |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **SC-001** | Code vulnerability | Low | Critical | High | Review, testing, audits |
+| **SC-002** | Access control failure | Low | Critical | High | Permission management, multisig |
+| **SC-003** | Reentrancy vulnerability | Low | High | Medium | ReentrancyGuard, secure patterns |
+| **SC-004** | Incorrect token logic | Low | High | Medium | ERC-20 compliance, testing |
+| **SC-005** | Supply manipulation | Low | Critical | High | Fixed supply, no minting |
+| **SC-006** | External contract risk | Medium | High | High | Dependency review, audits |
+| **SC-007** | Future contract vulnerabilities | Medium | High | High | Security audits, phased deployment |
+| **SC-008** | Upgradeability risk | Low | Critical | High | Non-upgradeable contracts |
+| **SC-009** | Owner/admin abuse | Low | Critical | High | Ownerless token, multisig treasury |
+| **SC-010** | Liquidity removal | Low | High | Medium | 12-month lock, no emergency withdrawal |
+
+---
+
+## 8. Development Security Lifecycle
 
 PNJC follows a security-oriented development approach:
 
-## Design Phase
+### Design Phase
 
-Activities:
+**Activities:**
+- Architecture review;
+- Threat modeling;
+- Risk identification.
 
-* architecture review;
-* threat modeling;
-* risk identification.
+### Development Phase
 
----
+**Activities:**
+- Secure Solidity practices (0.8.36);
+- Dependency management (OpenZeppelin v5.5.0);
+- Code review (Code Review Policy).
 
-## Development Phase
+### Testing Phase
 
-Activities:
+**Activities:**
+- Functional testing (Hardhat, Chai);
+- Security testing (Slither, Mythril);
+- Edge-case validation;
+- Integration testing.
 
-* secure Solidity practices;
-* dependency management;
-* code review.
+### Deployment Phase
 
----
-
-## Testing Phase
-
-Activities:
-
-* functional testing;
-* security testing;
-* edge-case validation.
-
----
-
-## Deployment Phase
-
-Activities:
-
-* verification;
-* documentation;
-* monitoring.
+**Activities:**
+- Verification (PolygonScan);
+- Documentation;
+- Monitoring.
 
 ---
 
-# 9. Audit Readiness Framework
+## 9. Audit Readiness Framework
 
 Recommended audit preparation includes:
 
-## Documentation
+### Documentation
 
-* architecture description;
-* contract specification;
-* tokenomics;
-* risk analysis.
+- Architecture description;
+- Contract specification;
+- Tokenomics;
+- Risk analysis.
 
----
+### Technical Review
 
-## Technical Review
+- Source code review;
+- Vulnerability analysis;
+- Automated testing.
 
-Includes:
-
-* source code review;
-* vulnerability analysis;
-* automated testing.
-
----
-
-## External Assessment
+### External Assessment
 
 Future options:
-
-* independent security audit;
-* penetration testing;
-* bug bounty program.
+- Independent security audit (CertiK / Hacken);
+- Penetration testing;
+- Bug bounty program (planned Q4 2026).
 
 ---
 
-# 10. Incident Response for Smart Contracts
+## 10. Incident Response for Smart Contracts
 
 In case of a security issue:
 
-## Detection
+### Detection
 
-Identify abnormal behavior.
+Identify abnormal behaviour.
 
-## Assessment
+### Assessment
 
 Evaluate:
+- Severity (Critical / High / Medium / Low);
+- Affected functions;
+- User impact.
 
-* severity;
-* affected functions;
-* user impact.
-
-## Response
+### Response
 
 Implement appropriate actions.
 
-## Communication
+### Communication
 
 Provide transparent updates.
 
-## Improvement
+### Improvement
 
 Update procedures.
 
 ---
 
-# 11. Monitoring
+## 11. Monitoring
 
 Potential monitoring areas:
 
-* unusual transactions;
-* contract activity;
-* ecosystem integrations;
-* security alerts.
+| Area | Description |
+| :--- | :--- |
+| **Unusual Transactions** | Large or suspicious transfers. |
+| **Contract Activity** | Function calls and events. |
+| **Ecosystem Integrations** | DEX and wallet interactions. |
+| **Security Alerts** | Automated alert systems. |
+| **Burn Events** | Optional user-driven burns. |
 
 ---
 
-# 12. Best Practices Alignment
+## 12. Best Practices Alignment
 
 PNJC development considers:
 
-* Solidity security guidelines;
-* OpenZeppelin standards;
-* Ethereum ecosystem best practices;
-* Web3 security principles.
+| Standard | Description |
+| :--- | :--- |
+| **Solidity Security Guidelines** | Best practices for Solidity 0.8.x. |
+| **OpenZeppelin Standards** | Industry-standard audited libraries. |
+| **Ethereum Ecosystem Best Practices** | ERC-20 compliance. |
+| **Web3 Security Principles** | Ownerless, non-upgradeable design. |
 
 ---
 
-# 13. Future Improvements
+## 13. Smart Contract Security Checklist
+
+All PNJC smart contracts undergo verification against this checklist:
+
+| Check | Status |
+| :--- | :--- |
+| **OpenZeppelin libraries used** | ✅ |
+| **ReentrancyGuard applied** | ✅ |
+| **No selfdestruct** | ✅ |
+| **No delegatecall** | ✅ |
+| **No upgradeability** | ✅ |
+| **No owner (token)** | ✅ |
+| **No mint function** | ✅ |
+| **No blacklist** | ✅ |
+| **No freeze** | ✅ |
+| **Zero transfer tax** | ✅ |
+| **ERC20Burnable implemented** | ✅ |
+| **ERC20Permit (EIP-2612) implemented** | ✅ |
+| **Code verified on PolygonScan** | ✅ |
+| **Independent audit scheduled** | ✅ |
+
+---
+
+## 14. Future Improvements
 
 As the ecosystem expands, PNJC may implement:
 
-* formal verification;
-* external audits;
-* bug bounty programs;
-* continuous security monitoring.
+| Improvement | Description | Timeline |
+| :--- | :--- | :--- |
+| **Formal Verification** | Mathematical proof of contract correctness. | Q1 2027 |
+| **External Audits** | Independent audits (CertiK / Hacken). | Q2–Q4 2026 |
+| **Bug Bounty Programs** | Rewards for vulnerability discovery. | Q4 2026 |
+| **Continuous Security Monitoring** | Automated threat detection. | Q4 2026 |
+| **Penetration Testing** | Active security testing. | Q3 2026 |
 
 ---
 
-# 14. Conclusion
+## 15. Comparison: Document vs. Actual Contract
+
+| Parameter | Policy Value | Contract Implementation | Status |
+| :--- | :--- | :--- | :--- |
+| **Token Name** | PanjoCoin | `ERC20("PanjoCoin", "PNJC")` | ✅ |
+| **Ticker** | PNJC | ✅ | ✅ |
+| **Standard** | ERC-20 + Burnable + Permit | Inherits all three | ✅ |
+| **Total Supply** | 1,000,000,000,000 | `MAX_SUPPLY = 1_000_000_000_000 * 10**18` | ✅ |
+| **Decimals** | 18 | ERC20 default (18) | ✅ |
+| **Transfer Tax** | 0% | No custom tax logic | ✅ |
+| **Owner** | None (ownerless) | No Ownable inheritance | ✅ |
+| **Mint Function** | ❌ | ❌ Not implemented | ✅ |
+| **Upgradeability** | ❌ | ❌ No proxy | ✅ |
+| **Burn Function** | ✅ | ✅ `burn()` and `burnFrom()` | ✅ |
+| **Permit Function** | ✅ | ✅ EIP-2612 | ✅ |
+| **Code Verification** | ✅ | ✅ PolygonScan (Exact Match) | ✅ |
+
+---
+
+## 16. Conclusion
 
 Smart contract security is a fundamental component of the PanjoCoin ecosystem.
 
 Through transparent architecture, secure development practices, testing, and continuous improvement, PNJC aims to provide a reliable and resilient blockchain infrastructure.
 
+**Key Principles:**
+
+- Security by design;
+- Transparency;
+- Minimal privileges;
+- Immutability;
+- Continuous improvement.
+
 ---
 
-# Disclaimer
+## Disclaimer
 
 This Smart Contract Risk Management Policy describes security practices and risk considerations.
 
 It does not guarantee that smart contracts are free from all vulnerabilities.
 
+**It does not constitute:**
+- Investment advice;
+- Financial advice;
+- Legal advice;
+- Tax advice;
+- An offer to sell securities;
+- A solicitation to purchase financial instruments.
+
+Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
+
 ---
 
-**PanjoCoin (PNJC)**
-Open-Source Utility Ecosystem
-Polygon PoS
+### Document Information
+
+| Property | Value |
+| :--- | :--- |
+| **Document** | Smart Contract Risk Management Policy |
+| **Version** | 1.1 (Updated) |
+| **Effective Date** | July 25, 2026 |
+| **Status** | Official |
+| **Next Review** | After each major contract deployment |
+
+---
+
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
+**Document Version:** 1.1 (Updated)  
+**Last Updated:** July 25, 2026
