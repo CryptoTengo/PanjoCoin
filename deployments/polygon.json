@@ -4,9 +4,9 @@
 "network": "Polygon Mainnet",
 "chainId": 137,
 "standard": "ERC-20",
-"contractAddress": "0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848",
+"contractAddress": "0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF ",
 "contractVerified": true,
-"blockExplorer": "https://polygonscan.com/address/0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848",
+"blockExplorer": "https://polygonscan.com/address/0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF ",
 "repository": "https://github.com/CryptoTengo/PanjoCoin",
 "deploymentStatus": "Active"
 }
