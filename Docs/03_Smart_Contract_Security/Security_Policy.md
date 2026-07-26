@@ -1,414 +1,437 @@
-# PanjoCoin (PNJC)
-
 # Security Policy
 
-**Version:** 1.0
-**Effective Date:** July 2026
-**Project:** PanjoCoin (PNJC)
-**Blockchain:** Polygon PoS
-**Token Standard:** ERC-20
+## PanjoCoin (PNJC)
+
+**Version:** 1.1 (Updated)  
+**Effective Date:** July 25, 2026  
+**Project:** PanjoCoin (PNJC)  
+**Blockchain:** Polygon PoS  
+**Token Standard:** ERC-20 (ERC20Burnable + ERC20Permit)  
+**Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
 ---
 
-# 1. Introduction
+## 1. Introduction
 
-This Security Policy defines the security principles, controls, and practices adopted by PanjoCoin (PNJC) to protect the ecosystem, users, digital assets, infrastructure, and operational processes.
+This **Security Policy** defines the security principles, controls, and practices adopted by PanjoCoin (PNJC) to protect the ecosystem, users, digital assets, infrastructure, and operational processes.
 
 Security is a fundamental component of blockchain ecosystems due to the unique risks associated with:
 
-* smart contracts;
-* decentralized finance;
-* digital assets;
-* online infrastructure;
-* community platforms;
-* cyber threats.
+- Smart contracts;
+- Decentralised finance;
+- Digital assets;
+- Online infrastructure;
+- Community platforms;
+- Cyber threats.
 
-PanjoCoin is committed to implementing responsible security practices based on prevention, transparency, and continuous improvement.
+PanjoCoin is committed to implementing responsible security practices based on **prevention**, **transparency**, and **continuous improvement**.
 
 ---
 
-# 2. Purpose
+## 2. Purpose
 
 The objectives of this Security Policy are:
 
-* Establish security standards.
-* Protect ecosystem infrastructure.
-* Reduce cybersecurity risks.
-* Define security responsibilities.
-* Support operational resilience.
-* Increase user and partner confidence.
+- Establish security standards;
+- Protect ecosystem infrastructure;
+- Reduce cybersecurity risks;
+- Define security responsibilities;
+- Support operational resilience;
+- Increase user and partner confidence.
 
 ---
 
-# 3. Scope
+## 3. Scope
 
 This policy applies to:
 
-* PNJC smart contracts;
-* blockchain infrastructure;
-* websites;
-* GitHub repositories;
-* documentation systems;
-* social media accounts;
-* community platforms;
-* treasury systems;
-* third-party services;
-* project contributors.
+- PNJC smart contracts (token, liquidity locker, vesting, treasury, DAO);
+- Blockchain infrastructure (Polygon PoS);
+- Websites and documentation systems;
+- GitHub repositories;
+- Social media accounts (X, Telegram);
+- Community platforms;
+- Treasury systems (multisig wallets);
+- Third-party services;
+- Project contributors and developers.
 
 ---
 
-# 4. Security Principles
+## 4. Security Principles
 
-## 4.1 Security by Design
+### 4.1. Security by Design
 
 Security considerations are integrated into:
 
-* architecture;
-* development;
-* deployment;
-* operations.
+- Architecture;
+- Development;
+- Deployment;
+- Operations.
 
 Security should not be treated as an additional feature but as a core ecosystem requirement.
 
----
-
-## 4.2 Least Privilege
+### 4.2. Least Privilege
 
 Access rights should be limited according to:
 
-* role;
-* responsibility;
-* operational necessity.
+- Role;
+- Responsibility;
+- Operational necessity.
 
 Users should only have access required to perform assigned tasks.
 
----
-
-## 4.3 Defense in Depth
+### 4.3. Defense in Depth
 
 Security should rely on multiple protection layers:
 
-* technical controls;
-* operational procedures;
-* user awareness;
-* monitoring.
+- Technical controls;
+- Operational procedures;
+- User awareness;
+- Monitoring.
 
----
-
-## 4.4 Transparency
+### 4.4. Transparency
 
 PNJC supports transparent security practices through:
 
-* public documentation;
-* verified contracts;
-* responsible disclosure;
-* clear communication.
+- Public documentation;
+- Verified contracts on PolygonScan;
+- Responsible disclosure;
+- Clear communication.
 
----
-
-## 4.5 Continuous Improvement
+### 4.5. Continuous Improvement
 
 Security processes should evolve according to:
 
-* emerging threats;
-* ecosystem expansion;
-* technological changes;
-* security findings.
+- Emerging threats;
+- Ecosystem expansion;
+- Technological changes;
+- Security findings.
 
 ---
 
-# 5. Security Governance
+## 5. Security Governance
 
-## Project Leadership
+### Project Leadership
 
-Responsibilities:
+**Responsibilities:**
+- Define security priorities;
+- Approve security improvements;
+- Coordinate major security decisions.
 
-* define security priorities;
-* approve security improvements;
-* coordinate major security decisions.
+### Development Team
 
----
+**Responsibilities:**
+- Secure coding (Solidity 0.8.36);
+- Smart contract protection (OpenZeppelin);
+- Vulnerability resolution;
+- Technical reviews.
 
-## Development Team
+### Infrastructure Management
 
-Responsibilities:
+**Responsibilities:**
+- Account security;
+- Hosting protection;
+- Access control.
 
-* secure coding;
-* smart contract protection;
-* vulnerability resolution;
-* technical reviews.
+### Community Management
 
----
-
-## Infrastructure Management
-
-Responsibilities:
-
-* account security;
-* hosting protection;
-* access control.
-
----
-
-## Community Management
-
-Responsibilities:
-
-* security awareness;
-* scam prevention;
-* official communication.
+**Responsibilities:**
+- Security awareness;
+- Scam prevention;
+- Official communication.
 
 ---
 
-# 6. Smart Contract Security
+## 6. Smart Contract Security
 
-PNJC recognizes smart contracts as critical infrastructure.
+PNJC recognises smart contracts as critical infrastructure.
 
-Security objectives:
+### Security Objectives
 
-* predictable behavior;
-* minimized attack surface;
-* transparent functionality.
+- Predictable behaviour;
+- Minimised attack surface;
+- Transparent functionality.
 
-Security practices include:
+### Security Practices
 
-* Solidity secure development;
-* OpenZeppelin standards;
-* code review;
-* testing;
-* contract verification;
-* documentation.
+| Practice | Description |
+| :--- | :--- |
+| **Solidity Secure Development** | Best practices with Solidity 0.8.36. |
+| **OpenZeppelin Standards** | v5.5.0 audited libraries. |
+| **Code Review** | Structured review process. |
+| **Testing** | Hardhat, Chai, Slither, Mythril. |
+| **Contract Verification** | PolygonScan (Exact Match). |
+| **Documentation** | NatSpec comments and public docs. |
+
+### Smart Contract Protection
+
+| Protection | Status |
+| :--- | :--- |
+| **Fixed Supply** | ✅ |
+| **Mint Disabled** | ✅ |
+| **Upgradeability Disabled** | ✅ |
+| **Ownerless (Token)** | ✅ |
+| **No Blacklist** | ✅ |
+| **No Freeze** | ✅ |
+| **Zero Transfer Tax** | ✅ |
+| **ReentrancyGuard** | ✅ |
+| **No selfdestruct** | ✅ |
+| **No delegatecall** | ✅ |
+| **ERC20Burnable** | ✅ |
+| **ERC20Permit (EIP-2612)** | ✅ |
 
 ---
 
-# 7. Access Control Policy
+## 7. Access Control Policy
 
-Access management principles:
-
-## Authentication
+### Authentication
 
 Recommended controls:
 
-* strong passwords;
-* multi-factor authentication;
-* secure credentials.
+- Strong passwords;
+- Multi-factor authentication (MFA);
+- Secure credentials;
+- Hardware wallets for critical accounts.
 
----
-
-## Authorization
+### Authorization
 
 Access should be:
 
-* role-based;
-* limited;
-* reviewed periodically.
+- Role-based;
+- Limited;
+- Reviewed periodically.
 
----
-
-## Account Protection
+### Account Protection
 
 Critical accounts should use:
 
-* additional security layers;
-* restricted permissions;
-* secure recovery methods.
+- Additional security layers;
+- Restricted permissions;
+- Secure recovery methods.
 
 ---
 
-# 8. Digital Asset Security
+## 8. Digital Asset Security
 
 Protection of blockchain assets is a priority.
 
-Security measures:
+### Security Measures
 
-* secure wallet management;
-* controlled access;
-* transaction verification;
-* documented procedures.
+| Measure | Description |
+| :--- | :--- |
+| **Secure Wallet Management** | Hardware wallets for treasury. |
+| **Controlled Access** | Limited personnel. |
+| **Transaction Verification** | Multisig approval. |
+| **Documented Procedures** | Clear operational guidelines. |
 
 ---
 
-# 9. Treasury Security
+## 9. Treasury Security
 
 Treasury-related controls should include:
 
-* controlled wallet access;
-* transaction review;
-* transparent procedures;
-* appropriate security mechanisms.
-
-Where applicable, multisignature solutions may be used.
-
----
-
-# 10. Software Development Security
-
-Development security practices include:
-
-## Code Management
-
-* version control;
-* repository protection;
-* review procedures.
+| Control | Description |
+| :--- | :--- |
+| **Controlled Wallet Access** | 3/5 multisig approval. |
+| **Transaction Review** | All transactions reviewed. |
+| **Transparent Procedures** | Public on-chain reporting. |
+| **Multisignature Solutions** | At least 3 of 5 signers required. |
 
 ---
 
-## Testing
+## 10. Software Development Security
+
+### Code Management
+
+| Practice | Description |
+| :--- | :--- |
+| **Version Control** | GitHub with protected branches. |
+| **Repository Protection** | Limited write access. |
+| **Review Procedures** | Pull request reviews. |
+
+### Testing
 
 Security testing may include:
 
-* functional testing;
-* vulnerability review;
-* integration testing.
+- Functional testing;
+- Vulnerability review (Slither, Mythril);
+- Integration testing;
+- Unit testing (Hardhat, Chai).
 
----
-
-## Dependencies
+### Dependencies
 
 External libraries and tools should be evaluated for security risks.
 
----
-
-# 11. Website and Infrastructure Security
-
-Security objectives:
-
-* protect availability;
-* prevent unauthorized changes;
-* maintain reliable access.
-
-Recommended controls:
-
-* HTTPS;
-* secure hosting;
-* access restrictions;
-* updates;
-* monitoring.
+**Dependencies:**
+- OpenZeppelin v5.5.0 (audited);
+- Regular dependency scanning (Dependabot).
 
 ---
 
-# 12. GitHub Repository Security
+## 11. Website and Infrastructure Security
+
+### Security Objectives
+
+- Protect availability;
+- Prevent unauthorised changes;
+- Maintain reliable access.
+
+### Recommended Controls
+
+| Control | Description |
+| :--- | :--- |
+| **HTTPS** | TLS encryption for all traffic. |
+| **Secure Hosting** | Reputable cloud providers. |
+| **Access Restrictions** | Limited administrative access. |
+| **Updates** | Regular security patches. |
+| **Monitoring** | Continuous security monitoring. |
+
+---
+
+## 12. GitHub Repository Security
 
 Source code security practices include:
 
-* protected branches;
-* controlled access;
-* review before changes;
-* protection of sensitive information.
+| Practice | Description |
+| :--- | :--- |
+| **Protected Branches** | Main branch protected from direct pushes. |
+| **Controlled Access** | Limited write permissions. |
+| **Review Before Changes** | Pull request review required. |
+| **Protection of Sensitive Information** | No credentials in code. |
 
-Sensitive credentials should never be stored in public repositories.
+**Sensitive credentials should never be stored in public repositories.**
+
+**Repository:** [github.com/CryptoTengo/PanjoCoin](https://github.com/CryptoTengo/PanjoCoin)
 
 ---
 
-# 13. Social Media Security
+## 13. Social Media Security
 
 Official channels require protection against:
 
-* impersonation;
-* account takeover;
-* fake announcements.
+- Impersonation;
+- Account takeover;
+- Fake announcements.
 
-Controls:
+### Controls
 
-* multi-factor authentication;
-* limited administrator access;
-* verification procedures.
+| Control | Description |
+| :--- | :--- |
+| **Multi-Factor Authentication** | Required for all official accounts. |
+| **Limited Administrator Access** | Restricted to essential personnel. |
+| **Verification Procedures** | Official account verification. |
+
+**Official Channels:**
+- X (Twitter): @PanjoCoin
+- Telegram: Official community channel
+- Website: www.cryptotengo.com
 
 ---
 
-# 14. Community Security
+## 14. Community Security
 
 Community protection measures include:
 
-* official channel verification;
-* scam warnings;
-* moderation;
-* security education.
+| Measure | Description |
+| :--- | :--- |
+| **Official Channel Verification** | Clear identification of official channels. |
+| **Scam Warnings** | Regular security alerts. |
+| **Moderation** | Active community moderation. |
+| **Security Education** | User awareness campaigns. |
 
-Users should be informed about:
-
-* fake tokens;
-* phishing attempts;
-* fraudulent offers.
+**Users should be informed about:**
+- Fake tokens and websites;
+- Phishing attempts;
+- Fraudulent offers;
+- Impersonation scams.
 
 ---
 
-# 15. Data Protection
+## 15. Data Protection
 
 PNJC aims to protect information through:
 
-* responsible data handling;
-* access limitations;
-* privacy-aware practices.
+| Principle | Description |
+| :--- | :--- |
+| **Responsible Data Handling** | Only essential data collected. |
+| **Access Limitations** | Restricted data access. |
+| **Privacy-Aware Practices** | Data minimisation and encryption. |
 
-Only necessary information should be collected and processed.
+**Only necessary information should be collected and processed.**
 
 ---
 
-# 16. Third-Party Security
+## 16. Third-Party Security
 
 External services may introduce additional risks.
 
-Third-party evaluation should consider:
+### Third-Party Evaluation
 
-* security reputation;
-* reliability;
-* access requirements;
-* dependency risks.
+Should consider:
+
+- Security reputation;
+- Reliability;
+- Access requirements;
+- Dependency risks.
+
+### Examples
+
+- Hosting providers;
+- Analytics services;
+- APIs;
+- Infrastructure providers.
 
 ---
 
-# 17. Vulnerability Management
+## 17. Vulnerability Management
 
 Security issues should follow a structured process:
 
-## Identification
+### Identification
 
 Sources may include:
 
-* internal reviews;
-* security researchers;
-* community reports.
+- Internal reviews;
+- Security researchers;
+- Community reports.
 
----
-
-## Assessment
+### Assessment
 
 Evaluate:
 
-* severity;
-* impact;
-* affected components.
+- Severity (Critical / High / Medium / Low);
+- Impact;
+- Affected components.
 
----
-
-## Remediation
+### Remediation
 
 Actions may include:
 
-* fixes;
-* updates;
-* security improvements;
-* communication.
+- Fixes and patches;
+- Updates;
+- Security improvements;
+- Communication.
 
 ---
 
-# 18. Responsible Disclosure
+## 18. Responsible Disclosure
 
 PNJC encourages responsible reporting of security concerns.
 
-Reports should include:
+### Reports Should Include
 
-* description;
-* affected component;
-* potential impact;
-* supporting information.
+- Description;
+- Affected component;
+- Potential impact;
+- Supporting information.
+
+**Contact:** `security@cryptotengo.com`
 
 The project aims to handle legitimate security reports professionally.
 
 ---
 
-# 19. Security Incident Response
+## 19. Security Incident Response
 
 Security incidents should follow:
 
@@ -419,90 +442,150 @@ Security incidents should follow:
 5. Recovery.
 6. Review.
 
-Detailed procedures are described in:
+**Detailed procedures are described in:** Incident Response Plan (see SECURITY.md).
 
-**Incident_Response.md**
+### Incident Severity Levels
+
+| Level | Description | Response Time |
+| :--- | :--- | :--- |
+| **Critical** | Active exploit, loss of funds. | Immediate (within 1 hour) |
+| **High** | High-risk vulnerability. | Within 24 hours |
+| **Medium** | Moderate-risk issue. | Within 72 hours |
+| **Low** | Low-risk or informational. | Within 1 week |
 
 ---
 
-# 20. Security Monitoring
+## 20. Security Monitoring
 
 Potential monitoring areas:
 
-* smart contract activity;
-* infrastructure availability;
-* account activity;
-* suspicious behavior;
-* security alerts.
+| Area | Description |
+| :--- | :--- |
+| **Smart Contract Activity** | Transactions, events, burns. |
+| **Infrastructure Availability** | Uptime and performance. |
+| **Account Activity** | Unauthorised access attempts. |
+| **Suspicious Behaviour** | Anomaly detection. |
+| **Security Alerts** | Automated alert systems. |
 
 ---
 
-# 21. Security Awareness
+## 21. Security Awareness
 
 Contributors and community members should understand:
 
-* wallet safety;
-* phishing risks;
-* official communication channels;
-* verification procedures.
+- Wallet safety (hardware wallets recommended);
+- Phishing risks;
+- Official communication channels;
+- Verification procedures.
 
 ---
 
-# 22. Security Risk Management
+## 22. Security Risk Management
 
 Security risks are managed through:
 
-* Cybersecurity Risk Management Policy;
-* Smart Contract Risk Policy;
-* Incident Response Plan;
-* Disaster Recovery Plan.
+| Document | Description |
+| :--- | :--- |
+| **Cybersecurity Risk Management Policy** | Risk identification and mitigation. |
+| **Smart Contract Risk Policy** | Contract-specific risks. |
+| **Incident Response Plan** | Incident handling procedures. |
+| **Disaster Recovery Plan** | Recovery procedures. |
 
 ---
 
-# 23. Future Security Improvements
+## 23. Smart Contract Security Checklist
+
+All PNJC smart contracts undergo verification against this checklist:
+
+| Check | Status |
+| :--- | :--- |
+| **OpenZeppelin libraries used** | ✅ |
+| **ReentrancyGuard applied** | ✅ |
+| **No selfdestruct** | ✅ |
+| **No delegatecall** | ✅ |
+| **No upgradeability** | ✅ |
+| **No owner (token)** | ✅ |
+| **No mint function** | ✅ |
+| **No blacklist** | ✅ |
+| **No freeze** | ✅ |
+| **Zero transfer tax** | ✅ |
+| **ERC20Burnable implemented** | ✅ |
+| **ERC20Permit (EIP-2612) implemented** | ✅ |
+| **Code verified on PolygonScan** | ✅ |
+| **Independent audit scheduled** | ✅ |
+
+---
+
+## 24. Future Security Improvements
 
 As PNJC grows, additional measures may include:
 
-* independent security audits;
-* penetration testing;
-* bug bounty programs;
-* automated monitoring;
-* formal security management systems.
+| Improvement | Description | Timeline |
+| :--- | :--- | :--- |
+| **Independent Security Audits** | CertiK / Hacken audits. | Q2–Q4 2026 |
+| **Penetration Testing** | Active security testing. | Q3 2026 |
+| **Bug Bounty Programs** | Rewards for vulnerability discovery. | Q4 2026 |
+| **Automated Monitoring** | AI-driven threat detection (future). | Q4 2026 |
+| **Formal Security Management** | ISO 27001 alignment. | Q1 2027 |
 
 ---
 
-# 24. Alignment With Security Standards
+## 25. Alignment With Security Standards
 
 PNJC security practices may consider principles from:
 
-* secure software development lifecycle (SSDLC);
-* ISO 27001 information security principles;
-* blockchain security best practices.
+| Standard | Description |
+| :--- | :--- |
+| **Secure Software Development Lifecycle (SSDLC)** | Security integrated into development. |
+| **ISO 27001 Information Security Principles** | International security standard. |
+| **Blockchain Security Best Practices** | Industry-specific guidance. |
 
 ---
 
-# 25. Conclusion
+## 26. Conclusion
 
 Security is a fundamental requirement for sustainable blockchain ecosystem development.
 
 PanjoCoin aims to maintain a secure and resilient ecosystem through:
 
-* responsible development;
-* transparent practices;
-* access protection;
-* continuous monitoring;
-* ongoing improvement.
+- Responsible development;
+- Transparent practices;
+- Access protection;
+- Continuous monitoring;
+- Ongoing improvement.
 
 ---
 
-# Disclaimer
+## Disclaimer
 
 This Security Policy describes security principles and practices.
 
 It does not guarantee complete protection against all possible cybersecurity threats.
 
+**It does not constitute:**
+- Investment advice;
+- Financial advice;
+- Legal advice;
+- Tax advice;
+- An offer to sell securities;
+- A solicitation to purchase financial instruments.
+
+Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
+
 ---
 
-**PanjoCoin (PNJC)**
-Open-Source Utility Ecosystem
-Polygon PoS
+### Document Information
+
+| Property | Value |
+| :--- | :--- |
+| **Document** | Security Policy |
+| **Version** | 1.1 (Updated) |
+| **Effective Date** | July 25, 2026 |
+| **Status** | Official |
+| **Next Review** | Quarterly |
+
+---
+
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
+**Document Version:** 1.1 (Updated)  
+**Last Updated:** July 25, 2026
