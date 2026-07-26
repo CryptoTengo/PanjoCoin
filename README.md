@@ -1,15 +1,21 @@
 PanjoCoin (PNJC) — Decentralized Utility Token on Polygon
 
 https://img.shields.io/badge/License-MIT%2520%252B%2520Proprietary-blue.svg
+
 https://img.shields.io/badge/Solidity-0.8.36-blueviolet
+
 https://img.shields.io/badge/Network-Polygon_PoS-8247e5
+
 https://img.shields.io/badge/Contract-Verified-brightgreen
 
 PNJC is a utility token with a fixed supply, deployed on the Polygon PoS network. The project is inspired by the true story of a Shar Pei named Panjo, who brought joy to children at a hospital in Tbilisi. Our goal is to combine blockchain technology, a gaming ecosystem, and charitable giving.
 
 🔗 Token Contract: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF;  
+
 🌐 Website: cryptotengo.com;
+
 🐦 X (Twitter): @CryptoTengo;
+
 💬 Telegram: t.me/CryptoTengo;
 
 📌 Table of Contents
@@ -31,34 +37,57 @@ License
 
 Contacts
 
-🚀 Key Parameters
+🚀 Key Parameters:
 Parameter	Value
-Name	PanjoCoin
-Ticker	PNJC
-Network	Polygon PoS
-Standard	ERC-20 + ERC20Permit (EIP‑2612) + ERC20Burnable
-Total Supply	1 000 000 000 000 PNJC (fixed)
-Decimals	18
-Mint Function	Absent
-Admin Keys	None (ownerless contract)
-Upgradeability	None
-Transfer Tax	0%
-Blacklists / Freezing	None
-DEX	Uniswap V2
-Compiler	Solidity 0.8.36 (verified)
+
+Name:	PanjoCoin
+
+Ticker:	PNJC
+
+Network:	Polygon PoS
+
+Standard: 	ERC-20 + ERC20Permit (EIP‑2612) + ERC20Burnable
+
+Total Supply: 	1 000 000 000 000 PNJC (fixed)
+
+Decimals: 18
+
+Mint: Function	Absent
+
+Admin: Keys	None (ownerless contract)
+
+Upgradeability	: None
+
+Transfer: Tax	0%
+
+Blacklists / Freezing: None
+
+DEX: Uniswap V2
+
+Compiler: 	Solidity 0.8.36 (verified)
+
 📊 Tokenomics
 Distribution (fixed supply)
+
 Category	Share	Amount (PNJC)	Control
+
 Liquidity Pool	50%	500 bn	Locked via Locker for 12 months (code ready, date TBA)
+
 Treasury	12%	120 bn	Multisig 3/5
+
 DAO Treasury	10%	100 bn	DAO governance (launch Q4 2026)
+
 Team	10%	100 bn	12‑month vesting (code ready)
+
 Community	8%	80 bn	Airdrops, referral programs
 Founder	5%	50 bn	12‑month vesting (code ready)
+
 Charity Reserve	5%	50 bn	Public wallet (all transactions on‑chain)
+
 All wallets are public and verifiable on PolygonScan.
 
 Circulation Model
+
 At launch – 1% (10 bn PNJC) in circulation.
 
 Annually – 5% of the remaining locked supply is released.
