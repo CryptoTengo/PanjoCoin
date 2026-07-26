@@ -126,7 +126,6 @@ As of publication (July 2026), independent audit has not yet been conducted. It 
 Contract	Planned Auditor	Timeline
 PanjoCoin (token)	CertiK / Hacken	Q2 2026 (in progress)
 LiquidityLocker	CertiK / Hacken	Q2 2026
-GoldenPhoenixProtocol	CertiK / Hacken	Q3 2026
 VestingVault	CertiK / Hacken	Q3 2026
 Airdrop	CertiK / Hacken	Q2 2026
 TreasuryVault	CertiK / Hacken	Q3 2026
@@ -137,7 +136,6 @@ Audit results will be published on the website and GitHub.
 Period	Event
 July 2026	Audit of token and Locker, deploy liquidity lock, Merkle airdrop
 August 2026	Deploy VestingVault and TreasuryVault
-September 2026	Launch GoldenPhoenixProtocol (deflationary engine)
 October – December 2026	DAO Governor preparation, testing, and launch
 January – March 2027	Marketing, integration with aggregators, referral program
 April – July 2027	Design and launch ClownCare Bridge (charity platform)
