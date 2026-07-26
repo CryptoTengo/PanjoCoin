@@ -36,7 +36,7 @@ Establish project infrastructure and ensure public access to core documentation,
 | :--- | :--- | :--- |
 | **Token Deployment** | PNJC contract deployed on Polygon PoS. | ✅ Complete |
 | **Contract Verification** | Public verification of the PNJC smart contract source code on PolygonScan. | ✅ Complete |
-| **Website Deployment** | Launch of the official project landing page at [www.cryptotengo.com](https://www.cryptotengo.com). | ✅ Complete |
+| **Website Deployment** | Launch of the official project landing page at [www.cryptotengo.com](https://www.cryptotengo.com). | 🧩 In Progress |
 | **Documentation Suite** | Publication of Whitepaper, Tokenomics, Legal Disclaimer, and all supporting documents. | ✅ Complete |
 | **Infrastructure Setup** | Finalisation of communication channels (X, Telegram) and repository structure (GitHub). | ✅ Complete |
 | **Liquidity Lock** | Deployment of PNJCLiquidityLockerV2 with 50% supply locked for 12 months. | 🧩 In Progress |
