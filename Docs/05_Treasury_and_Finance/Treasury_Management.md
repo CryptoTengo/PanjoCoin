@@ -2,725 +2,569 @@
 
 ## PanjoCoin (PNJC)
 
-**Version:** 1.0  
-**Date:** July 2026  
+**Version:** 1.1 (Updated)  
+**Date:** July 25, 2026  
 **Network:** Polygon PoS  
 **Treasury Model:** Multisignature + Transparent Governance  
+**Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
 ---
 
-# 1. Overview
+## 1. Overview
 
-This document defines the operational treasury management framework of PanjoCoin (PNJC).
+This document defines the operational **Treasury Management** framework of PanjoCoin (PNJC).
 
 The purpose of Treasury Management is to establish a secure and transparent system for:
 
-- Managing ecosystem assets
-- Controlling treasury operations
-- Supporting project development
-- Funding ecosystem growth
-- Maintaining long-term financial sustainability
-
+- Managing ecosystem assets;
+- Controlling treasury operations;
+- Supporting project development;
+- Funding ecosystem growth;
+- Maintaining long-term financial sustainability.
 
 Treasury management follows:
 
-
-Security
-
-Transparency
-
-Efficiency
-
-Accountability
-
+| Principle | Description |
+| :--- | :--- |
+| **Security** | Multisig protection, hardware wallets. |
+| **Transparency** | On-chain verification, public reporting. |
+| **Efficiency** | Optimised resource allocation. |
+| **Accountability** | Clear roles and approval processes. |
 
 ---
 
-# 2. Treasury Mission
+## 2. Treasury Mission
 
 The PNJC Treasury exists to provide financial resources for:
 
-- Product development
-- Blockchain infrastructure
-- Security audits
-- Community growth
-- Marketing
-- Partnerships
-- Social impact initiatives
-- Ecosystem expansion
+- Product development (smart contracts, applications);
+- Blockchain infrastructure;
+- Security audits (CertiK / Hacken);
+- Community growth;
+- Marketing and brand awareness;
+- Partnerships;
+- Social impact initiatives (Charity Reserve);
+- Ecosystem expansion.
 
 ---
 
-# 3. Treasury Allocation
+## 3. Treasury Allocation
 
-## Initial Treasury Reserve
+### Initial Treasury Reserves
 
-Allocation:
+| Category | Share | Amount (PNJC) | Control Mechanism |
+| :--- | :--- | :--- | :--- |
+| **Operational Treasury** | 12% | 120,000,000,000 | 3/5 Multisig |
+| **DAO Treasury** | 10% | 100,000,000,000 | DAO (Q4 2026) |
+| **Charity Reserve** | 5% | 50,000,000,000 | Public wallet |
 
+**Verification:** 120 + 100 + 50 = 270 billion PNJC (27% of total supply).
 
-120,000,000,000 PNJC
-
-12% of total supply
-
-
-Purpose:
+### Purpose by Category
 
 | Category | Purpose |
-|-|-|
-| Development | Technology and infrastructure |
-| Marketing | Community and brand growth |
-| Partnerships | Ecosystem expansion |
-| Security | Audits and protection |
-| Operations | Project execution |
-| Social Impact | Charity programs |
+| :--- | :--- |
+| **Operational Treasury** | Development, marketing, partnerships, operations, security. |
+| **DAO Treasury** | Community grants, developer incentives, ecosystem initiatives. |
+| **Charity Reserve** | Social impact programs, charitable donations. |
 
 ---
 
-# 4. Treasury Architecture
+## 4. Treasury Architecture
 
 The treasury is structured into separated operational wallets.
 
-
-                PNJC Treasury
-
-
-                     |
-
-          Multisignature Vault
-
-
-                     |
-
-| | | |
-
-Development Marketing Ecosystem Reserve
-
-Wallet Wallet Wallet Wallet
-
+```
+            PNJC Treasury
+                 |
+        ┌────────┼────────┐
+        │        │        │
+  Operational  DAO      Charity
+   Treasury   Treasury  Reserve
+   (12%)      (10%)      (5%)
+        │        │        │
+    3/5 Multisig  DAO   Public
+    (Current)   (Future)  Wallet
+```
 
 ---
 
-# 5. Treasury Wallet Structure
+## 5. Treasury Wallet Structure
 
-## 5.1 Main Treasury Wallet
+### 5.1. Operational Treasury Wallet
 
-Purpose:
+**Purpose:**
+- Long-term asset storage;
+- Strategic reserves;
+- Major allocations.
 
-- Long-term asset storage
-- Strategic reserves
-- Major allocations
+**Security:**
+- 3/5 Multisig protection;
+- Hardware wallet storage;
+- Limited access.
 
-
-Security:
-
-- Multisignature protection
-- Hardware wallet storage
-- Limited access
-
+**Allocation:** 120,000,000,000 PNJC (12%)
 
 ---
 
-## 5.2 Operational Wallet
+### 5.2. DAO Treasury Wallet
 
-Purpose:
+**Purpose:**
+- Community governance funds;
+- Ecosystem grants;
+- Developer incentives.
 
-- Daily expenses
-- Service payments
-- Small transactions
+**Control:**
+- DAO Governance (Q4 2026);
+- Community voting (1 PNJC = 1 vote).
 
-
-Limitations:
-
-- Limited balance
-- Regular replenishment
-
+**Allocation:** 100,000,000,000 PNJC (10%)
 
 ---
 
-## 5.3 Development Wallet
+### 5.3. Charity Reserve Wallet
 
-Purpose:
+**Purpose:**
+- Social impact programs;
+- Charitable donations;
+- Proof of Kindness initiatives.
 
-Funding:
+**Security:**
+- Public wallet;
+- On-chain transparency.
 
-- Developers
-- Infrastructure
-- Software services
-- Technical operations
-
-
----
-
-## 5.4 Marketing Wallet
-
-Purpose:
-
-Funding:
-
-- Content creation
-- Advertising
-- Community campaigns
-- Partnerships
-
+**Allocation:** 50,000,000,000 PNJC (5%)
 
 ---
 
-## 5.5 Emergency Reserve Wallet
+## 6. Multisignature Security Model
 
-Purpose:
+**Recommended Configuration:**
 
-Protection against:
-
-- Security incidents
-- Unexpected expenses
-- Critical operations
-
-
----
-
-# 6. Multisignature Security Model
-
-Recommended configuration:
-
-
-
+```
 3 of 5 Multisig
+```
 
+**Meaning:**
+- 5 authorised participants;
+- Minimum 3 approvals required;
+- No single point of failure.
 
-Meaning:
+**Signers:**
 
-- 5 authorized participants
-- Minimum 3 approvals required
-- No single point of failure
+| Signer | Role | Status |
+| :--- | :--- | :--- |
+| **1** | Founder (Tengo Kalandia) | ✅ Active |
+| **2** | Technical advisor | 🔄 To be appointed |
+| **3** | Strategic advisor | 🔄 To be appointed |
+| **4** | Backup key (auditor) | 🔄 To be appointed |
+| **5** | Backup key (community representative) | 🔄 To be appointed |
 
-
----
-
-# 7. Treasury Roles
-
-
-## Treasury Administrator
-
-Responsibilities:
-
-- Prepare transactions
-- Maintain records
-- Coordinate approvals
-
-
-Restrictions:
-
-- Cannot execute transactions alone
-
+**Key Transfer Plan:**
+- After DAO launch (Q4 2026), keys will be transferred to elected community members.
+- Geographic distribution: Europe, North America, Asia.
 
 ---
 
-## Multisig Signers
+## 7. Treasury Roles
 
-Responsibilities:
+### Treasury Administrator
 
-- Review transactions
-- Approve or reject operations
+**Responsibilities:**
+- Prepare transactions;
+- Maintain records;
+- Coordinate approvals.
 
+**Restrictions:**
+- Cannot execute transactions alone.
+
+### Multisig Signers
+
+**Responsibilities:**
+- Review transactions;
+- Approve or reject operations.
+
+### Financial Controller
+
+**Responsibilities:**
+- Budget monitoring;
+- Expense verification;
+- Reporting.
+
+### Security Reviewer
+
+**Responsibilities:**
+- Transaction risk analysis;
+- Address verification;
+- Security checks.
 
 ---
 
-## Financial Controller
-
-Responsibilities:
-
-- Budget monitoring
-- Expense verification
-- Reporting
-
-
----
-
-## Security Reviewer
-
-Responsibilities:
-
-- Transaction risk analysis
-- Address verification
-- Security checks
-
-
----
-
-# 8. Treasury Operations Workflow
-
+## 8. Treasury Operations Workflow
 
 Every transaction follows:
 
-
-
+```
 Request Created
-
-    ↓
-
+        ↓
 Budget Verification
-
-    ↓
-
+        ↓
 Risk Review
-
-    ↓
-
-Multisig Approval
-
-    ↓
-
+        ↓
+Multisig Approval (3 of 5)
+        ↓
 Blockchain Execution
-
-    ↓
-
+        ↓
 Public Record Update
-
-
----
-
-# 9. Treasury Spending Categories
-
-## 9.1 Technology Development
-
-Examples:
-
-- Smart contract development
-- Website development
-- Backend infrastructure
-- Security improvements
-
+```
 
 ---
 
-## 9.2 Security
+## 9. Treasury Spending Categories
 
-Examples:
+### 9.1. Technology Development
 
-- Smart contract audits
-- Penetration testing
-- Monitoring tools
-- Bug bounty programs
+**Examples:**
+- Smart contract development (Solidity 0.8.36);
+- Website and application development;
+- Backend infrastructure;
+- Security improvements.
 
+### 9.2. Security
 
----
+**Examples:**
+- Smart contract audits (CertiK / Hacken);
+- Penetration testing;
+- Monitoring tools;
+- Bug bounty programs (planned Q4 2026).
 
-## 9.3 Marketing and Growth
+### 9.3. Marketing and Growth
 
-Examples:
+**Examples:**
+- Content production;
+- Community campaigns (airdrops);
+- Educational materials;
+- Social media operations.
 
-- Content production
-- Community campaigns
-- Educational materials
-- Social media operations
+### 9.4. Partnerships
 
+**Examples:**
+- Integrations;
+- Ecosystem collaborations;
+- Strategic agreements.
 
----
+### 9.5. Social Impact
 
-## 9.4 Partnerships
-
-Examples:
-
-- Integrations
-- Ecosystem collaborations
-- Strategic agreements
-
-
----
-
-## 9.5 Social Impact
-
-Examples:
-
-- Charity programs
-- Proof of Kindness initiatives
-- Community projects
-
+**Examples:**
+- Charity programs;
+- Proof of Kindness initiatives;
+- Community projects.
 
 ---
 
-# 10. Budget Management
+## 10. Budget Management
 
 The Treasury should operate using:
 
-
-## Annual Budget
+### Annual Budget
 
 Defines:
+- Strategic priorities;
+- Expected expenses;
+- Growth objectives.
 
-- Strategic priorities
-- Expected expenses
-- Growth objectives
-
-
----
-
-## Quarterly Review
+### Quarterly Review
 
 Evaluates:
+- Spending efficiency;
+- Project progress;
+- Remaining resources.
 
-- Spending efficiency
-- Project progress
-- Remaining resources
-
-
----
-
-## Monthly Tracking
+### Monthly Tracking
 
 Tracks:
-
-- Transactions
-- Expenses
-- Balances
-
+- Transactions;
+- Expenses;
+- Balances.
 
 ---
 
-# 11. Treasury Asset Management
-
+## 11. Treasury Asset Management
 
 Treasury assets may include:
 
-## PNJC
+### PNJC
 
-Used for:
+**Used for:**
+- Ecosystem incentives;
+- Community programs;
+- Strategic allocations.
 
-- Ecosystem incentives
-- Community programs
-- Strategic allocations
+**Allocation:** 120,000,000,000 PNJC (Operational Treasury)
 
+### Stablecoins
 
----
+**Used for:**
+- Operational expenses;
+- Service payments;
+- Budget stability.
 
-## Stablecoins
+### Other Digital Assets
 
-Used for:
-
-- Operational expenses
-- Service payments
-- Budget stability
-
-
----
-
-## Other Digital Assets
-
-Only allowed after:
-
-- Risk evaluation
-- Governance approval
+**Only allowed after:**
+- Risk evaluation;
+- Governance approval.
 
 ---
 
-# 12. Treasury Release Management
+## 12. Treasury Release Management
 
 Treasury tokens are released based on:
 
-
-
+```
 Strategic Need
-
+        +
 Development Progress
-
+        +
 Market Conditions
-
+        +
 Governance Approval
-
-
----
-
-# 13. Treasury Transparency Dashboard
-
-Recommended public dashboard:
-
-
-Displays:
-
-- Treasury wallet addresses
-- Token balances
-- Transaction history
-- Spending categories
-- Monthly reports
-
+```
 
 ---
 
-# 14. Treasury Reporting Framework
+## 13. Treasury Transparency Dashboard
 
+Recommended public dashboard displays:
 
-## Monthly Report
+| Information | Source |
+| :--- | :--- |
+| **Treasury Wallet Addresses** | PolygonScan |
+| **Token Balances** | PolygonScan |
+| **Transaction History** | PolygonScan |
+| **Spending Categories** | Public reports |
+| **Monthly Reports** | Website / GitHub |
+
+---
+
+## 14. Treasury Reporting Framework
+
+### Monthly Report
 
 Includes:
+- Starting balance;
+- Incoming funds;
+- Expenses;
+- Ending balance.
 
-- Starting balance
-- Incoming funds
-- Expenses
-- Ending balance
-
-
----
-
-## Quarterly Report
+### Quarterly Report
 
 Includes:
+- Budget performance;
+- Ecosystem development;
+- Strategic spending.
 
-- Budget performance
-- Ecosystem development
-- Strategic spending
-
-
----
-
-## Annual Report
+### Annual Report
 
 Includes:
-
-- Treasury health
-- Long-term strategy
-- Financial sustainability
-
+- Treasury health;
+- Long-term strategy;
+- Financial sustainability.
 
 ---
 
-# 15. Treasury Risk Management
+## 15. Treasury Risk Management
 
-
-## Risk: Unauthorized Access
-
-Severity:
-
-Critical
-
-
-Mitigation:
-
-- Multisig
-- Hardware wallets
-- Role separation
-
+| Risk | Severity | Mitigation |
+| :--- | :--- | :--- |
+| **Unauthorised Access** | Critical | Multisig (3/5), hardware wallets, role separation. |
+| **Incorrect Transaction** | High | Address verification, transaction review, approval workflow. |
+| **Market Volatility** | Medium | Stablecoin reserves, controlled exposure. |
+| **Poor Capital Allocation** | High | Budget planning, KPI monitoring, governance review. |
+| **Fund Mismanagement** | Critical | Transparent reporting, public verification. |
 
 ---
 
-## Risk: Incorrect Transaction
-
-Severity:
-
-High
-
-
-Mitigation:
-
-- Address verification
-- Transaction review
-- Approval workflow
-
-
----
-
-## Risk: Market Volatility
-
-Severity:
-
-Medium
-
-
-Mitigation:
-
-- Stablecoin reserves
-- Controlled exposure
-
-
----
-
-## Risk: Poor Capital Allocation
-
-Severity:
-
-High
-
-
-Mitigation:
-
-- Budget planning
-- KPI monitoring
-- Governance review
-
-
----
-
-# 16. Emergency Treasury Management
-
+## 16. Emergency Treasury Management
 
 Emergency situations:
+- Smart contract vulnerability;
+- Wallet compromise;
+- Infrastructure failure;
+- Regulatory issue.
 
+**Procedure:**
 
-- Smart contract vulnerability
-- Wallet compromise
-- Infrastructure failure
-- Regulatory issue
-
-
-Procedure:
-
-
-
+```
 Detection
-
-↓
-
+        ↓
 Emergency Assessment
-
-↓
-
-Multisig Decision
-
-↓
-
+        ↓
+Multisig Decision (3 of 5)
+        ↓
 Protective Action
-
-↓
-
+        ↓
 Public Communication
-
-↓
-
+        ↓
 Recovery Plan
-
+```
 
 ---
 
-# 17. Treasury Performance Metrics
-
+## 17. Treasury Performance Metrics
 
 Key metrics:
 
-
 | Metric | Purpose |
-|-|-|
-| Treasury Balance | Financial health |
-| Monthly Burn Rate | Expense control |
-| Runway | Sustainability |
-| Ecosystem ROI | Efficiency |
-| Allocation Usage | Transparency |
+| :--- | :--- |
+| **Treasury Balance** | Financial health. |
+| **Monthly Burn Rate** | Expense control. |
+| **Runway** | Sustainability (months of funding). |
+| **Ecosystem ROI** | Efficiency of spending. |
+| **Allocation Usage** | Transparency of categories. |
 
 ---
 
-# 18. Treasury Runway Management
-
+## 18. Treasury Runway Management
 
 The project should maintain:
 
-
-
-Operational Reserve
-
+```
+Operational Reserve (12+ months)
+        +
 Development Budget
-
+        +
 Emergency Reserve
+```
 
-
-Goal:
-
-Ensure continuity during:
-
-- Market downturns
-- Reduced activity
-- Unexpected expenses
-
+**Goal:** Ensure continuity during:
+- Market downturns;
+- Reduced activity;
+- Unexpected expenses.
 
 ---
 
-# 19. DAO Treasury Transition
-
+## 19. DAO Treasury Transition
 
 Future evolution:
 
-
-
+```
 Founder Controlled Treasury
+        ↓
+Multisig Governance (Current: 3/5)
+        ↓
+Community Governance (Q4 2026)
+        ↓
+DAO Treasury (Full Decentralisation)
+```
 
-↓
-
-Multisig Governance
-
-↓
-
-Community Governance
-
-↓
-
-DAO Treasury
-
+**Timeline:**
+- **Current:** 3/5 Multisig for Operational Treasury.
+- **Q4 2026:** DAO Governor launch.
+- **Post-DAO:** Full community governance of DAO Treasury.
 
 ---
 
-# 20. Compliance and Audit Readiness
-
+## 20. Compliance and Audit Readiness
 
 Treasury management supports:
+- Investor due diligence;
+- Exchange reviews;
+- Grant applications;
+- Regulatory transparency.
 
-- Investor due diligence
-- Exchange reviews
-- Grant applications
-- Regulatory transparency
-
-
-Required records:
-
-- Transaction history
-- Approval records
-- Reports
-- Wallet ownership documentation
-
+**Required records:**
+- Transaction history;
+- Approval records;
+- Reports;
+- Wallet ownership documentation.
 
 ---
 
-# 21. Future Improvements
+## 21. Smart Contract Treasury Integration
 
+| Contract | Purpose | Status |
+| :--- | :--- | :--- |
+| **PNJCTreasuryVault** | Multisig treasury management | 🧩 Code Ready (Q3 2026) |
+| **DAO Governor** | Decentralised governance | 🧩 Code Ready (Q4 2026) |
+| **Charity Reserve** | Public wallet | ✅ Active |
+
+---
+
+## 22. Future Improvements
 
 Planned enhancements:
 
-- Automated treasury analytics
-- On-chain governance
-- Timelock execution
-- Treasury management dashboard
-- AI-assisted financial monitoring
-
+| Improvement | Description | Timeline |
+| :--- | :--- | :--- |
+| **Automated Treasury Analytics** | Real-time financial monitoring. | Q4 2026 |
+| **On-Chain Governance** | Full DAO treasury control. | Q4 2026 |
+| **Timelock Execution** | 48-hour delay for proposals. | Q4 2026 |
+| **Treasury Management Dashboard** | Public transparency portal. | Q1 2027 |
+| **Enhanced Monitoring** | Real-time financial tracking. | Q1 2027 |
 
 ---
 
-# 22. Final Treasury Principles
+## 23. Treasury Management Principles Summary
 
+PNJC Treasury operates under:
 
-The PNJC Treasury operates under:
-
-
-
-Protect Capital
-
-Spend Responsibly
-
-Report Transparently
-
+```
+Protect Capital (Multisig, Hardware Wallets)
+        +
+Spend Responsibly (Budget, Approvals)
+        +
+Report Transparently (On-Chain, Public)
+        +
 Support Ecosystem Growth
-
+        +
+Align with Community (DAO Transition)
+```
 
 ---
 
-# 23. Conclusion
+## 24. Conclusion
 
 The PanjoCoin Treasury Management framework provides a structured operational system for protecting and deploying ecosystem resources.
 
 The model ensures:
 
-- Secure custody
-- Transparent operations
-- Responsible spending
-- Long-term sustainability
-
+- Secure custody (3/5 multisig);
+- Transparent operations (on-chain verification);
+- Responsible spending (budget and approval processes);
+- Long-term sustainability (runway management);
+- Community alignment (DAO transition).
 
 ---
 
-© 2026 CryptoTengo  
-PanjoCoin (PNJC)
+## Disclaimer
+
+This Treasury Management document describes operational principles and practices.
+
+**It does not constitute:**
+- Investment advice;
+- Financial advice;
+- Legal advice;
+- Tax advice;
+- An offer to sell securities;
+- A solicitation to purchase financial instruments.
+
+Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
+
+---
+
+### Document Information
+
+| Property | Value |
+| :--- | :--- |
+| **Document** | Treasury Management |
+| **Version** | 1.1 (Updated) |
+| **Date** | July 25, 2026 |
+| **Status** | Official |
+| **Next Review** | Annually or after major changes |
+
+---
+
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
+**Document Version:** 1.1 (Updated)  
+**Last Updated:** July 25, 2026
