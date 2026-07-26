@@ -128,7 +128,7 @@ All smart contract source code is available for independent verification:
 
 1. **PolygonScan:** Visit the token contract address and click "Contract" → "Read Contract" to verify.
 2. **GitHub:** Review the source code at `github.com/CryptoTengo/PanjoCoin`.
-3. **Local Verification:** Compile the code locally using Solidity 0.8.34 and compare the bytecode with the deployed contract.
+3. **Local Verification:** Compile the code locally using Solidity 0.8.36 and compare the bytecode with the deployed contract.
 
 ---
 
