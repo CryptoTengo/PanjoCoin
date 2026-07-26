@@ -1,394 +1,486 @@
-# PanjoCoin (PNJC)
-
 # FATF Compliance Framework
 
-**Version:** 1.0
-**Effective Date:** July 2026
+## PanjoCoin (PNJC)
+
+**Version:** 1.1 (Updated)
+**Effective Date:** July 25, 2026
 **Project:** PanjoCoin (PNJC)
 **Blockchain:** Polygon PoS
-**Token Standard:** ERC-20
+**Token Standard:** ERC-20 (ERC20Burnable + ERC20Permit)
+**Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
 ---
 
-# 1. Introduction
+## 1. Introduction
 
-This document describes the approach of PanjoCoin (PNJC) toward compliance with internationally recognized principles established by the Financial Action Task Force (FATF).
+This document describes the approach of PanjoCoin (PNJC) toward compliance with internationally recognised principles established by the **Financial Action Task Force (FATF)** .
 
 The purpose of this framework is to:
 
-* demonstrate awareness of global Anti-Money Laundering (AML) and Counter-Terrorist Financing (CTF) standards;
-* define compliance principles applicable to the PNJC ecosystem;
-* establish risk management expectations;
-* support institutional due diligence;
-* prepare the project for future regulatory expansion.
+- Demonstrate awareness of global Anti-Money Laundering (AML) and Counter-Terrorist Financing (CTF) standards;
+- Define compliance principles applicable to the PNJC ecosystem;
+- Establish risk management expectations;
+- Support institutional due diligence;
+- Prepare the project for future regulatory expansion.
 
-This document is not legal advice and does not create regulatory obligations beyond applicable law.
+**This document is not legal advice and does not create regulatory obligations beyond applicable law.**
 
 ---
 
-# 2. FATF Overview
+## 2. FATF Overview
 
-The Financial Action Task Force (FATF) is an international organization responsible for developing global standards to prevent:
+The Financial Action Task Force (FATF) is an international organisation responsible for developing global standards to prevent:
 
-* money laundering;
-* terrorist financing;
-* proliferation financing;
-* misuse of financial systems.
+- Money laundering;
+- Terrorist financing;
+- Proliferation financing;
+- Misuse of financial systems.
 
 FATF recommendations influence regulatory frameworks worldwide, including:
 
-* European Union AML frameworks;
-* national VASP regulations;
-* virtual asset compliance requirements.
+- European Union AML frameworks (MiCA, AML Directives);
+- National VASP regulations;
+- Virtual asset compliance requirements.
 
 ---
 
-# 3. PNJC Regulatory Position
+## 3. PNJC Regulatory Position
 
 PanjoCoin is designed as:
 
-* an open-source utility token;
-* a blockchain ecosystem;
-* a community-driven digital asset project.
+- An open-source utility token;
+- A blockchain ecosystem;
+- A community-driven digital asset project.
 
-Current activities:
+**Current activities:**
 
-* token development;
-* ecosystem development;
-* documentation;
-* community engagement;
-* technology development.
+| Activity | Status |
+| :--- | :--- |
+| Token development | ✅ Active |
+| Ecosystem development | ✅ Active |
+| Documentation | ✅ Active |
+| Community engagement | ✅ Active |
+| Technology development | ✅ Active |
 
-Current activities do not include:
+**Current activities do not include:**
 
-* custody of user assets;
-* exchange services;
-* fiat conversion services;
-* transfer services performed as a business;
-* portfolio management.
+- Custody of user assets;
+- Exchange services (centralised);
+- Fiat conversion services;
+- Transfer services performed as a business;
+- Portfolio management.
 
 ---
 
-# 4. FATF Virtual Asset Framework
+## 4. FATF Virtual Asset Framework
 
 FATF distinguishes between:
 
-## Virtual Assets (VA)
+### Virtual Assets (VA)
 
 Digital representations of value that can be digitally traded or transferred.
 
 PNJC may be considered a virtual asset depending on jurisdictional definitions.
 
----
-
-## Virtual Asset Service Providers (VASPs)
+### Virtual Asset Service Providers (VASPs)
 
 FATF identifies VASP activities including:
 
-* exchange between virtual assets and fiat currencies;
-* exchange between virtual assets;
-* transfer of virtual assets;
-* custody or administration;
-* participation in financial services related to issuance or sale.
+| Activity | Description |
+| :--- | :--- |
+| **Exchange** | Between virtual assets and fiat currencies, or between virtual assets. |
+| **Transfer** | Transfer of virtual assets on behalf of others. |
+| **Custody** | Custody or administration of virtual assets. |
+| **Issuance/Sale** | Participation in financial services related to issuance or sale. |
 
 ---
 
-# 5. PNJC VASP Assessment
+## 5. PNJC VASP Assessment
 
 Based on the current ecosystem design:
 
-| Activity                | Current Status |
-| ----------------------- | -------------- |
-| Token creation          | Yes            |
-| Open-source development | Yes            |
-| Community building      | Yes            |
-| Custody services        | No             |
-| Exchange operation      | No             |
-| Brokerage services      | No             |
-| User asset management   | No             |
+| Activity | Current Status |
+| :--- | :--- |
+| **Token creation** | Yes (fixed supply, deployed once) |
+| **Open-source development** | Yes (GitHub) |
+| **Community building** | Yes (X, Telegram) |
+| **Custody services** | No |
+| **Exchange operation** | No (decentralised, Uniswap V2) |
+| **Brokerage services** | No |
+| **User asset management** | No |
 
-Therefore, PNJC does not currently operate as a VASP based on its current model.
+**Therefore, PNJC does not currently operate as a VASP based on its current model.**
 
-Future activities require additional assessment.
+Future activities (e.g., regulated services) require additional assessment.
 
 ---
 
-# 6. Risk-Based Approach
+## 6. Risk-Based Approach
 
 FATF promotes a risk-based approach.
 
 PNJC applies this principle through:
 
-* identification of potential risks;
-* proportional compliance measures;
-* documentation;
-* partner assessment;
-* continuous improvement.
+- Identification of potential risks;
+- Proportional compliance measures;
+- Documentation (AML Policy, Compliance Program);
+- Partner assessment;
+- Continuous improvement.
 
 ---
 
-# 7. Anti-Money Laundering (AML)
+## 7. Anti-Money Laundering (AML)
 
 PNJC supports AML principles by maintaining:
 
-* AML Policy;
-* Compliance Program;
-* Risk Management Framework;
-* Sanctions Policy.
+| Document | Purpose |
+| :--- | :--- |
+| **AML Policy** | Anti-money laundering procedures. |
+| **Compliance Program** | Regulatory compliance framework. |
+| **Enterprise Risk Management Framework** | Risk identification and mitigation. |
+| **Sanctions Policy** | Sanctions compliance procedures. |
 
 The project does not support:
 
-* money laundering;
-* fraud;
-* illegal financial activity;
-* criminal use of blockchain technology.
+- Money laundering;
+- Fraud;
+- Illegal financial activity;
+- Criminal use of blockchain technology.
+
+**Refer to:** AML Policy, Compliance Program.
 
 ---
 
-# 8. Counter-Terrorist Financing (CTF)
+## 8. Counter-Terrorist Financing (CTF)
 
 PNJC does not intentionally facilitate:
 
-* terrorist financing;
-* extremist financing;
-* illegal fundraising;
-* prohibited financial activities.
+- Terrorist financing;
+- Extremist financing;
+- Illegal fundraising;
+- Prohibited financial activities.
 
 The project supports responsible ecosystem participation.
 
 ---
 
-# 9. Customer Due Diligence (CDD)
+## 9. Customer Due Diligence (CDD)
 
 Because PNJC currently does not provide regulated financial services, direct customer identification is not generally required for ordinary token holders.
 
-Enhanced verification may become necessary for:
+**Enhanced verification may become necessary for:**
 
-* institutional partners;
-* regulated services;
-* treasury relationships;
-* future financial products.
+- Institutional partners;
+- Regulated services;
+- Treasury relationships;
+- Future financial products.
+
+**Refer to:** AML Policy (CDD section).
 
 ---
 
-# 10. Know Your Customer (KYC)
+## 10. Know Your Customer (KYC)
 
 Future regulated services may require:
 
-* identity verification;
-* risk classification;
-* documentation;
-* customer screening.
+- Identity verification;
+- Risk classification;
+- Documentation;
+- Customer screening.
 
 KYC requirements will depend on:
 
-* jurisdiction;
-* service type;
-* regulatory classification.
+- Jurisdiction;
+- Service type;
+- Regulatory classification.
+
+**Current Status:** Not required for DEX trading or wallet-to-wallet transfers.
 
 ---
 
-# 11. Sanctions Compliance
+## 11. Sanctions Compliance
 
-PNJC recognizes international sanctions obligations.
+PNJC recognises international sanctions obligations.
 
 The project considers:
 
-* OFAC sanctions;
-* EU restrictive measures;
-* UK sanctions;
-* Georgian requirements;
-* international compliance standards.
+| Framework | Description |
+| :--- | :--- |
+| **OFAC** | US sanctions regime. |
+| **EU Restrictive Measures** | European Union sanctions. |
+| **UK Sanctions** | United Kingdom sanctions. |
+| **Georgian Requirements** | Local sanctions compliance. |
+| **International Compliance Standards** | FATF principles. |
 
 PNJC does not support:
 
-* sanctions evasion;
-* prohibited entities;
-* illegal financial activity.
+- Sanctions evasion;
+- Prohibited entities;
+- Illegal financial activity.
+
+**Restricted Countries:** Afghanistan, Algeria, Bangladesh, Bolivia, China, Egypt, Iraq, Morocco, Nepal, Qatar, Tunisia, North Macedonia.
+
+**Refer to:** AML Policy (Sanctions Compliance).
 
 ---
 
-# 12. Blockchain Transparency
+## 12. Blockchain Transparency
 
 Public blockchain infrastructure provides:
 
-* transparent transactions;
-* immutable records;
-* public verification.
+- Transparent transactions;
+- Immutable records;
+- Public verification (PolygonScan).
 
-PNJC recognizes that:
+PNJC recognises that:
 
-* blockchain addresses are pseudonymous;
-* ownership attribution may require additional information;
-* decentralized environments require risk-based controls.
+- Blockchain addresses are pseudonymous;
+- Ownership attribution may require additional information;
+- Decentralised environments require risk-based controls.
+
+**The PNJC token contract is:**
+- Ownerless (`owner = address(0)`);
+- Non-upgradeable;
+- Zero tax (0%);
+- Verified on PolygonScan.
 
 ---
 
-# 13. Travel Rule Considerations
+## 13. Travel Rule Considerations
 
-FATF recommends the implementation of the Travel Rule for VASPs.
+FATF recommends the implementation of the **Travel Rule** for VASPs.
 
 The Travel Rule generally applies to regulated virtual asset service providers transferring assets.
 
-Since PNJC does not currently operate as a VASP:
+**Since PNJC does not currently operate as a VASP:**
 
-* Travel Rule obligations are not currently directly applicable to the token ecosystem itself.
+- Travel Rule obligations are not currently directly applicable to the token ecosystem itself.
 
-If regulated services are introduced, Travel Rule requirements will be evaluated.
+**If regulated services are introduced, Travel Rule requirements will be evaluated.**
 
 ---
 
-# 14. Transaction Monitoring
+## 14. Transaction Monitoring
 
 Current PNJC activities do not include operating a transaction monitoring service.
 
-Future regulated activities may require:
+**Future regulated activities may require:**
 
-* blockchain analytics;
-* suspicious transaction detection;
-* risk scoring;
-* reporting procedures.
+- Blockchain analytics;
+- Suspicious transaction detection;
+- Risk scoring;
+- Reporting procedures.
 
----
+**Current Monitoring Tools:**
+- PolygonScan for public transaction monitoring;
+- Community reporting (voluntary);
+- Internal review of unusual activity.
 
-# 15. Risk Categories
-
-PNJC recognizes the following compliance risks:
-
-## Jurisdiction Risk
-
-Different countries may apply different digital asset rules.
+**Refer to:** AML Policy (Transaction Monitoring).
 
 ---
 
-## Technology Risk
+## 15. Risk Categories
 
-Including:
+PNJC recognises the following compliance risks:
 
-* smart contract vulnerabilities;
-* infrastructure risks;
-* cyber threats.
+| Risk Category | Description |
+| :--- | :--- |
+| **Jurisdiction Risk** | Different countries may apply different digital asset rules. |
+| **Technology Risk** | Smart contract vulnerabilities, infrastructure risks, cyber threats. |
+| **Transaction Risk** | Suspicious activity, misuse of blockchain infrastructure. |
+| **Partner Risk** | Third-party compliance failures, regulatory exposure. |
 
----
+**Mitigation:**
+- Risk-based approach;
+- Documentation (AML Policy, Compliance Program);
+- Partner due diligence;
+- Continuous improvement.
 
-## Transaction Risk
-
-Including:
-
-* suspicious activity;
-* misuse of blockchain infrastructure.
-
----
-
-## Partner Risk
-
-Including:
-
-* third-party compliance failures;
-* regulatory exposure.
+**Refer to:** Enterprise Risk Management Framework, Smart Contract Risk Management Policy.
 
 ---
 
-# 16. Governance and Accountability
+## 16. Governance and Accountability
 
 Compliance responsibilities include:
 
-## Project Leadership
+### Project Leadership
 
-Responsible for:
+**Responsible for:**
+- Compliance direction;
+- Policy approval;
+- Strategic decisions.
 
-* compliance direction;
-* policy approval;
-* strategic decisions.
+### Technical Team
+
+**Responsible for:**
+- Secure development (Solidity 0.8.36, OpenZeppelin v5.5.0);
+- Technical transparency;
+- Infrastructure protection.
+
+### Community Management
+
+**Responsible for:**
+- Responsible communication;
+- Moderation;
+- Prevention of abusive activity.
+
+### Compliance Function
+
+**Responsible for:**
+- Maintaining compliance documentation;
+- Monitoring regulatory developments;
+- Reviewing risks;
+- Improving internal procedures.
 
 ---
 
-## Technical Team
-
-Responsible for:
-
-* secure development;
-* technical transparency;
-* infrastructure protection.
-
----
-
-## Community Management
-
-Responsible for:
-
-* responsible communication;
-* moderation;
-* prevention of abusive activity.
-
----
-
-# 17. Documentation Framework
+## 17. Documentation Framework
 
 PNJC maintains compliance documentation including:
 
-* AML Policy;
-* Sanctions Policy;
-* Compliance Program;
-* Risk Disclosure;
-* Regulatory Assessments;
-* Privacy Documentation.
+| Document | Purpose |
+| :--- | :--- |
+| **AML Policy** | Anti-money laundering procedures. |
+| **Compliance Program** | Regulatory compliance framework. |
+| **Privacy Policy** | Data protection and privacy. |
+| **Risk Disclosure** | Comprehensive risk factors. |
+| **Enterprise Risk Management Framework** | Risk identification and mitigation. |
+| **Sanctions Policy** | Sanctions compliance procedures. |
+| **Legal Disclaimer** | Legal compliance and risk disclosure. |
+| **Cookie Policy** | Website and digital platform cookies. |
 
 ---
 
-# 18. Institutional Readiness
+## 18. Institutional Readiness
 
-To support future institutional cooperation, PNJC should maintain:
+To support future institutional cooperation, PNJC maintains:
 
-* transparent governance;
-* documented policies;
-* risk assessments;
-* security documentation;
-* regulatory analysis.
+| Element | Description |
+| :--- | :--- |
+| **Transparent Governance** | Multisig (3/5), DAO (Q4 2026). |
+| **Documented Policies** | AML, Compliance, Security, Privacy. |
+| **Risk Assessments** | Enterprise Risk Management Framework. |
+| **Security Documentation** | SECURITY.md, Security Model, Threat Model. |
+| **Regulatory Analysis** | MiCA, Georgian, international compliance. |
 
 ---
 
-# 19. Future VASP Readiness
+## 19. Future VASP Readiness
 
 If PNJC introduces regulated services, preparation may include:
 
-* legal assessment;
-* registration analysis;
-* AML procedures;
-* KYC framework;
-* transaction monitoring;
-* compliance officer function;
-* reporting procedures.
+| Element | Description |
+| :--- | :--- |
+| **Legal Assessment** | Regulatory classification and requirements. |
+| **Registration Analysis** | VASP licensing or registration. |
+| **AML Procedures** | Enhanced AML and CTF controls. |
+| **KYC Framework** | Customer identification and verification. |
+| **Transaction Monitoring** | Real-time monitoring and reporting. |
+| **Compliance Officer Function** | Dedicated compliance role. |
+| **Reporting Procedures** | Suspicious activity reporting. |
 
 ---
 
-# 20. Continuous Improvement
+## 20. Integration with PNJC Ecosystem Components
+
+### PNJC Token
+
+**Compliance Features:**
+- Ownerless contract (`owner = address(0)`);
+- Fixed supply (no minting);
+- 0% transfer tax;
+- Public verification (PolygonScan);
+- Open-source (GitHub).
+
+### DAO Governance (Q4 2026)
+
+**Compliance Features:**
+- Transparent voting (1 PNJC = 1 vote);
+- Quorum (4%);
+- 48-hour timelock;
+- Community oversight.
+
+### ClownCare Bridge (Q2 2027)
+
+**Compliance Features:**
+- Transparent charitable distribution;
+- On-chain reporting;
+- Full traceability of funds.
+
+### Charity Reserve (Active)
+
+**Compliance Features:**
+- Public wallet;
+- On-chain verification of all transactions;
+- Community oversight.
+
+---
+
+## 21. Continuous Improvement
 
 The FATF Compliance Framework should be reviewed according to:
 
-* regulatory changes;
-* ecosystem expansion;
-* technology changes;
-* international standards.
+| Factor | Description |
+| :--- | :--- |
+| **Regulatory Changes** | New laws and regulations (MiCA, Georgian, international). |
+| **Ecosystem Expansion** | New products and services (ONE+, ClownCare Bridge, DAO). |
+| **Technology Changes** | Smart contract updates, infrastructure changes. |
+| **International Standards** | Evolving FATF recommendations. |
 
 ---
 
-# 21. Conclusion
+## 22. FATF Compliance Summary
 
-PanjoCoin recognizes the importance of responsible blockchain development and international AML/CTF standards.
+PNJC FATF compliance is based on:
 
-Through transparency, risk awareness, and proactive compliance preparation, PNJC aims to build a trustworthy ecosystem aligned with global digital asset compliance principles.
+```
+Awareness of FATF Standards
+        +
+Risk-Based Approach
+        +
+Transparency (Open Documentation, On-Chain Verification)
+        +
+Regulatory Readiness (AML Policy, Compliance Program)
+        +
+Continuous Improvement (Monitoring, Updates)
+        +
+Community Responsibility (Code of Conduct, Education)
+```
 
 ---
 
-# Disclaimer
+## 23. Disclaimer
 
 This document provides general compliance information and does not constitute legal advice.
 
 FATF standards are implemented differently across jurisdictions. Specific obligations depend on business activities, location, and regulatory classification.
 
+**It does not constitute:**
+- Investment advice;
+- Financial advice;
+- Legal advice;
+- Tax advice;
+- An offer to sell securities;
+- A solicitation to purchase financial instruments.
+
+Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
+
 ---
 
-**PanjoCoin (PNJC)**
-Open-Source Utility Ecosystem
-Polygon PoS
+### Document Information
+
+| Property | Value |
+| :--- | :--- |
+| **Document** | FATF Compliance Framework |
+| **Version** | 1.1 (Updated) |
+| **Effective Date** | July 25, 2026 |
+| **Status** | Official |
+| **Next Review** | Annually or after major changes |
+
+---
+
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
+**Document Version:** 1.1 (Updated)  
+**Last Updated:** July 25, 2026
