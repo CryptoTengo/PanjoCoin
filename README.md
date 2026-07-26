@@ -7,10 +7,10 @@ https://img.shields.io/badge/Contract-Verified-brightgreen
 
 PNJC is a utility token with a fixed supply, deployed on the Polygon PoS network. The project is inspired by the true story of a Shar Pei named Panjo, who brought joy to children at a hospital in Tbilisi. Our goal is to combine blockchain technology, a gaming ecosystem, and charitable giving.
 
-🔗 Token Contract: 0x781C0d15347Cb0B94C42C65c7a67E70371205De5
-🌐 Website: cryptotengo.com
-🐦 X (Twitter): @CryptoTengo
-💬 Telegram: t.me/CryptoTengo
+🔗 Token Contract: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF;  
+🌐 Website: cryptotengo.com;
+🐦 X (Twitter): @CryptoTengo;
+💬 Telegram: t.me/CryptoTengo;
 
 📌 Table of Contents
 Key Parameters
@@ -112,7 +112,7 @@ Connect your wallet (e.g., MetaMask) to the Polygon PoS network.
 
 Go to Uniswap V2 and select Polygon network.
 
-Paste the contract address: 0x781C0d15347Cb0B94C42C65c7a67E70371205De5.
+Paste the contract address: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF.
 
 Ensure you have a small amount of MATIC for gas.
 
@@ -174,7 +174,7 @@ X (Twitter): @CryptoTengo
 
 GitHub: github.com/CryptoTengo/PanjoCoin
 
-PolygonScan: 0x781C0d15347Cb0B94C42C65c7a67E70371205De5
+PolygonScan: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF
 
 ⚠️ Important Notice
 PNJC is a utility token, NOT a security.
