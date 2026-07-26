@@ -1,7 +1,7 @@
 PanjoCoin (PNJC) — Decentralized Utility Token on Polygon
 
 https://img.shields.io/badge/License-MIT%2520%252B%2520Proprietary-blue.svg
-https://img.shields.io/badge/Solidity-0.8.34-blueviolet
+https://img.shields.io/badge/Solidity-0.8.36-blueviolet
 https://img.shields.io/badge/Network-Polygon_PoS-8247e5
 https://img.shields.io/badge/Contract-Verified-brightgreen
 
@@ -45,7 +45,7 @@ Upgradeability	None
 Transfer Tax	0%
 Blacklists / Freezing	None
 DEX	Uniswap V2
-Compiler	Solidity 0.8.34 (verified)
+Compiler	Solidity 0.8.36 (verified)
 📊 Tokenomics
 Distribution (fixed supply)
 Category	Share	Amount (PNJC)	Control
