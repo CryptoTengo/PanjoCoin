@@ -106,20 +106,17 @@ Purpose: ecosystem utility, rewards, and governance participation.
 9.2. Decentralized Governance (DAO)
 Token‑holder voting on treasury allocation, charitable programs, and ecosystem development.
 
-9.3. GoldenPhoenixProtocol (Q3 2026)
-Deflationary mechanism funded by external ecosystem revenue (USDT) – no transaction tax.
-
 Automatic buy‑back and burn of PNJC; includes an insurance fund for volatility protection.
 
 Parameters adjustable via DAO vote.
 
-9.4. ONE+ Gaming Platform (design phase, launch Q3 2027)
+9.3. ONE+ Gaming Platform (design phase, launch Q3 2027)
 Gaming platform using PNJC for in‑game purchases, premium features, and rewards.
 
-9.5. ClownCare Bridge (design phase, launch Q2 2027)
+9.4. ClownCare Bridge (design phase, launch Q2 2027)
 Transparent charitable payment system with on‑chain reporting.
 
-9.6. Vesting & Liquidity Lock
+9.5. Vesting & Liquidity Lock
 50% of supply locked in liquidity for 12 months.
 
 Team and founder allocations subject to linear vesting with cliffs.
