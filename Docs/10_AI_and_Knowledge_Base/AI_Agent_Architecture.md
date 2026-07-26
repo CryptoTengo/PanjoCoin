@@ -1,473 +1,625 @@
 # AI Agent Architecture
-PanjoCoin (PNJC)
 
-Version: 1.1
-Date: July 2026
-Organization: CryptoTengo
-System: PNJC AI Content Factory Enterprise
+## PanjoCoin (PNJC)
 
-# 1. Overview
+**Version:** 1.1 (Updated)
+**Date:** July 25, 2026
+**Organization:** CryptoTengo
+**Blockchain:** Polygon PoS
+**Token Standard:** ERC-20 (ERC20Burnable + ERC20Permit)
+**Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
+
+---
+
+## 1. Overview
 
 This document defines the architecture of the Artificial Intelligence Agent ecosystem supporting the PanjoCoin (PNJC) project.
 
-The PNJC AI Agent Architecture provides a modular AI-driven operating system designed to support:
+The PNJC AI Agent Architecture provides a modular AI-driven intelligence layer designed to support:
 
-Content production
-Market intelligence
-Community management
-Documentation maintenance
-Compliance monitoring
-Business development
-Data analysis
-Ecosystem operations
+- Content production and educational materials;
+- Market intelligence and analysis;
+- Community management and engagement;
+- Documentation maintenance;
+- Compliance monitoring;
+- Business development support;
+- Data analysis and reporting;
+- Ecosystem operations.
 
-The system is designed as an AI-assisted framework with human supervision and governance.
+The system is designed as an **AI-assisted framework with human supervision and governance**.
 
 AI agents provide recommendations, automation, and operational support. Strategic, legal, financial, and governance decisions remain under human control.
 
-# 2. Objectives
+---
+
+## 2. Objectives
 
 The AI Agent ecosystem aims to:
 
-Increase operational efficiency
-Automate repetitive workflows
-Maintain documentation quality
-Support global multilingual communication
-Improve community engagement
-Analyze ecosystem performance
-Monitor regulatory developments
-Support sustainable growth
-# 3. Architecture Principles
+| Objective | Description |
+| :--- | :--- |
+| **Increase Operational Efficiency** | Automate repetitive tasks and workflows. |
+| **Automate Repetitive Workflows** | Reduce manual effort for routine operations. |
+| **Maintain Documentation Quality** | Ensure consistency and accuracy of project documentation. |
+| **Support Global Multilingual Communication** | Enable content creation in multiple languages. |
+| **Improve Community Engagement** | Provide timely responses and support. |
+| **Analyze Ecosystem Performance** | Track key metrics and provide insights. |
+| **Monitor Regulatory Developments** | Stay informed on compliance requirements. |
+| **Support Sustainable Growth** | Enable scalable operations. |
+
+---
+
+## 3. Architecture Principles
 
 The system follows:
 
-Human-in-the-Loop
+### Human-in-the-Loop
 
 AI assists humans but does not replace:
+- Legal decisions;
+- Financial decisions;
+- Governance decisions;
+- Security approvals;
+- Strategic decisions.
 
-Legal decisions
-Financial decisions
-Governance decisions
-Security approvals
-Modular Design
+### Modular Design
 
 Each AI agent operates as an independent service with defined responsibilities.
 
-Security by Design
+### Security by Design
 
-The architecture prioritizes:
+The architecture prioritises:
+- Access control;
+- Data protection;
+- Audit logging;
+- Permission management;
+- Transparency.
 
-Access control
-Data protection
-Audit logging
-Permission management
-Transparency
+### Transparency
 
 AI-generated outputs should be:
+- Traceable;
+- Reviewable;
+- Documented.
 
-Traceable
-Reviewable
-Documented
-# 4. High-Level Architecture
+---
+
+## 4. High-Level Architecture
+
+```
                  External Data Sources
-
                          |
-
- ------------------------------------------------
-
- Market Data     Blockchain Data     Regulations
-
- News            GitHub              Community
-
- ------------------------------------------------
-
+   ┌─────────────────────┼─────────────────────┐
+   │                     │                     │
+ Market Data       Blockchain Data       Regulations
+   │                     │                     │
+ News                GitHub              Community
+   │                     │                     │
+   └─────────────────────┼─────────────────────┘
                          |
-
               Data Collection Layer
-
                          |
-
               PNJC Knowledge Base
-
                          |
-
               AI Orchestration Layer
-
                          |
-
- ------------------------------------------------
-
- |          |          |          |             |
-
-Research  Content   Compliance  Analytics   Operations
-
-Agents    Agents      Agents      Agents      Agents
-
- ------------------------------------------------
-
+   ┌──────────┼──────────┼──────────┼──────────┐
+   │          │          │          │          │
+Research   Content   Compliance  Analytics Operations
+ Agents    Agents     Agents     Agents    Agents
+   │          │          │          │          │
+   └──────────┼──────────┼──────────┼──────────┘
                          |
-
               Human Review Layer
-
                          |
+   ┌─────────────────────┼─────────────────────┐
+   │                     │                     │
+ Website    Social    Reports    Documentation  Community
+```
 
- ------------------------------------------------
+---
 
- Website  Social  Reports  Documentation  Community
+## 5. AI Agent Ecosystem
 
+The PNJC AI ecosystem consists of specialised agents.
 
-# 5. AI Agent Ecosystem
+| Agent Type | Purpose |
+| :--- | :--- |
+| **AI Orchestrator** | Central coordination and workflow management. |
+| **Research Intelligence** | Blockchain and market research. |
+| **Market Intelligence** | Ecosystem and sentiment monitoring. |
+| **Content Creation** | Educational and marketing content. |
+| **SEO Optimization** | Search visibility improvement. |
+| **Social Media Management** | Multi-platform communication. |
+| **Community Support** | User assistance and onboarding. |
+| **Documentation** | Knowledge-base maintenance. |
+| **Compliance Monitoring** | Regulatory awareness. |
+| **Security Intelligence** | Cybersecurity monitoring. |
+| **Smart Contract Analysis** | Technical monitoring. |
+| **Business Development** | Partnership and opportunity research. |
+| **Investor Relations** | Institutional communication. |
+| **Analytics** | Performance measurement. |
 
-The PNJC AI ecosystem consists of specialized agents.
+---
 
-# 6. AI Orchestrator Agent
-Purpose
+## 6. AI Orchestrator Agent
 
-Central coordination layer managing all AI agents.
+**Purpose:** Central coordination layer managing all AI agents.
 
-Responsibilities:
+**Responsibilities:**
+- Task distribution;
+- Workflow management;
+- Agent communication;
+- Priority management;
+- Output validation.
 
-Task distribution
-Workflow management
-Agent communication
-Priority management
-Output validation
-# 7. Research Intelligence Agent
-Purpose
+---
 
-Collect and analyze ecosystem information.
+## 7. Research Intelligence Agent
 
-Functions:
+**Purpose:** Collect and analyse ecosystem information.
 
-Blockchain trend analysis
-Web3 market research
-Competitor analysis
-Technology monitoring
-Industry reports
+**Functions:**
+- Blockchain trend analysis;
+- Web3 market research;
+- Competitor analysis (SocialFi, GameFi, charity);
+- Technology monitoring;
+- Industry reports.
 
-Outputs:
+**Outputs:**
+- Research summaries;
+- Opportunity reports;
+- Trend analysis.
 
-Research summaries
-Opportunity reports
-Trend analysis
-# 8. Market Intelligence Agent
-Purpose
+---
 
-Monitor market environment.
+## 8. Market Intelligence Agent
 
-Functions:
+**Purpose:** Monitor market environment.
 
-Crypto ecosystem monitoring
-Sector analysis
-Narrative tracking
-Community sentiment analysis
+**Functions:**
+- Crypto ecosystem monitoring;
+- Sector analysis (SocialFi, GameFi, Impact);
+- Narrative tracking;
+- Community sentiment analysis.
 
-The agent provides information only and does not provide financial advice.
+**Important:** The agent provides information only and does not provide financial advice.
 
-# 9. Content Creation Agent
-Purpose
+---
 
-Support PNJC Content Factory operations.
+## 9. Content Creation Agent
 
-Functions:
+**Purpose:** Support PNJC content production.
 
-Blog creation
-Social media drafts
-Educational articles
-Video scripts
-Newsletter creation
-Community announcements
+**Functions:**
+- Blog and article creation;
+- Social media drafts;
+- Educational articles;
+- Video scripts;
+- Newsletter creation;
+- Community announcements.
 
-Supported languages:
+**Supported Languages:**
+- English (primary);
+- Georgian;
+- Russian;
+- Additional languages as required.
 
-English
-Georgian
-Russian
-Additional languages as required
-# 10. SEO Optimization Agent
-Purpose
+**Content Principles:**
+- Accuracy (factual, verifiable);
+- Transparency (clear, honest);
+- Educational (informative);
+- Consistency (Brand Guidelines);
+- Compliance (no financial advice).
 
-Improve discoverability of educational materials.
+---
 
-Functions:
+## 10. SEO Optimization Agent
 
-Keyword research
-Content structure analysis
-Metadata recommendations
-Search visibility improvement
-# 11. Social Media Management Agent
-Purpose
+**Purpose:** Improve discoverability of educational materials.
 
-Assist multi-platform communication.
+**Functions:**
+- Keyword research;
+- Content structure analysis;
+- Metadata recommendations;
+- Search visibility improvement.
 
-Supported platforms:
+---
 
-X
-Telegram
-Discord
-Reddit
-LinkedIn
-YouTube
-Instagram
-TikTok
+## 11. Social Media Management Agent
 
-Functions:
+**Purpose:** Assist multi-platform communication.
 
-Content scheduling
-Post adaptation
-Engagement analysis
-Performance reporting
-# 12. Community Support Agent
-Purpose
+**Supported Platforms:**
+- X (Twitter);
+- Telegram;
+- Discord;
+- Reddit;
+- LinkedIn;
+- YouTube.
 
-Assist community members.
+**Functions:**
+- Content scheduling;
+- Post adaptation;
+- Engagement analysis;
+- Performance reporting.
 
-Functions:
+---
 
-FAQ responses
-Documentation search
-User onboarding
-Educational guidance
+## 12. Community Support Agent
 
-Escalation required for:
+**Purpose:** Assist community members.
 
-Legal questions
-Security incidents
-Sensitive complaints
-# 13. Documentation Agent
-Purpose
+**Functions:**
+- FAQ responses;
+- Documentation search;
+- User onboarding;
+- Educational guidance.
 
-Maintain project knowledge.
+**Escalation required for:**
+- Legal questions;
+- Security incidents;
+- Sensitive complaints.
 
-Functions:
+**Sources:**
+- AI Knowledge Base;
+- Whitepaper;
+- Tokenomics;
+- FAQ;
+- Glossary.
 
-Documentation review
-Version comparison
-Missing document detection
-Formatting assistance
-Knowledge-base synchronization
+---
 
-Sources:
+## 13. Documentation Agent
 
-GitHub repository
-Whitepaper
-Technical documents
-Policies
-FAQs
-# 14. Compliance Monitoring Agent
-Purpose
+**Purpose:** Maintain project knowledge.
 
-Support regulatory awareness.
+**Functions:**
+- Documentation review;
+- Version comparison;
+- Missing document detection;
+- Formatting assistance;
+- Knowledge-base synchronisation.
 
-Monitoring areas:
+**Sources:**
+- GitHub repository;
+- Whitepaper (v2.2);
+- Tokenomics (v2.1);
+- Technical documents;
+- Policies;
+- FAQs.
 
-Georgia regulations
-FATF developments
-MiCA updates
-Global digital asset regulations
-Sanctions updates
+---
 
-Important:
+## 14. Compliance Monitoring Agent
 
-The agent provides monitoring support and does not replace professional legal advice.
+**Purpose:** Support regulatory awareness.
 
-# 15. Security Intelligence Agent
-Purpose
+**Monitoring Areas:**
+- Georgia regulations;
+- FATF developments;
+- MiCA updates;
+- Global digital asset regulations;
+- Sanctions updates;
+- AML/CFT developments.
 
-Support cybersecurity awareness.
+**Important:** The agent provides monitoring support and does not replace professional legal advice.
 
-Functions:
+**Sources:**
+- AML Policy;
+- Compliance Program;
+- FATF Compliance Framework;
+- Georgia Regulatory Assessment;
+- MiCA Assessment.
 
-Security news monitoring
-Vulnerability tracking
-Smart contract risk monitoring
-Incident information collection
-# 16. Smart Contract Analysis Agent
-Purpose
+---
 
-Assist technical monitoring.
+## 15. Security Intelligence Agent
 
-Functions:
+**Purpose:** Support cybersecurity awareness.
 
-Contract documentation analysis
-Code review assistance
-Change tracking
-Risk identification
+**Functions:**
+- Security news monitoring;
+- Vulnerability tracking;
+- Smart contract risk monitoring;
+- Incident information collection.
 
-Human developers remain responsible for final decisions.
+**Sources:**
+- SECURITY.md;
+- Security Model;
+- Threat Model;
+- Cybersecurity Risk Management Policy.
 
-# 17. Business Development Agent
-Purpose
+---
 
-Support ecosystem expansion.
+## 16. Smart Contract Analysis Agent
 
-Functions:
+**Purpose:** Assist technical monitoring.
 
-Partner research
-Grant opportunity discovery
-Market mapping
-Partnership preparation
-# 18. Investor Relations Agent
-Purpose
+**Functions:**
+- Contract documentation analysis;
+- Code review assistance;
+- Change tracking;
+- Risk identification.
 
-Support institutional communication.
+**Human developers remain responsible for final decisions.**
 
-Functions:
+**Sources:**
+- Smart Contract Architecture;
+- Smart Contract Specification;
+- Technical Architecture Document.
 
-Investor document preparation
-Data organization
-Presentation assistance
-FAQ maintenance
-# 19. Analytics Agent
-Purpose
+**Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
-Measure ecosystem performance.
+---
 
-Metrics:
+## 17. Business Development Agent
 
-Community
-Users
-Engagement
-Growth
-Content
-Views
-Interactions
-Performance
-Development
-GitHub activity
-Releases
-Documentation updates
-# 20. Knowledge Base Architecture
+**Purpose:** Support ecosystem expansion.
 
-The AI system uses a centralized knowledge repository.
+**Functions:**
+- Partner research;
+- Grant opportunity discovery;
+- Market mapping;
+- Partnership preparation.
 
-Sources include:
+**Sources:**
+- Partnership Framework;
+- Business Model;
+- Business Plan.
 
-WhitePaper.md
-Tokenomics.md
-Technical Architecture
-Smart Contract Documentation
-Risk Documentation
-Compliance Documents
-FAQ.md
-AI Knowledge Base.md
-21. Data Flow
+---
+
+## 18. Investor Relations Agent
+
+**Purpose:** Support institutional communication.
+
+**Functions:**
+- Investor document preparation;
+- Data organisation;
+- Presentation assistance;
+- FAQ maintenance.
+
+**Sources:**
+- Investor Overview;
+- Investment Memo;
+- Investor Deck;
+- Financial Model.
+
+---
+
+## 19. Analytics Agent
+
+**Purpose:** Measure ecosystem performance.
+
+**Metrics:**
+
+| Category | Metrics |
+| :--- | :--- |
+| **Community** | Users, engagement, growth. |
+| **Content** | Views, interactions, performance. |
+| **Development** | GitHub activity, releases, documentation updates. |
+| **Financial** | Treasury balance, liquidity depth (where applicable). |
+| **Impact** | Charity activity, verified actions (conceptual). |
+
+---
+
+## 20. Knowledge Base Architecture
+
+The AI system uses a centralised knowledge repository.
+
+**Sources include:**
+- WhitePaper.md (v2.2);
+- Tokenomics.md (v2.1);
+- Technical Architecture Document;
+- Smart Contract Documentation;
+- Risk Documentation;
+- Compliance Documents;
+- FAQ.md;
+- AI Knowledge Base.md (v1.1);
+- Brand Guidelines;
+- Community Strategy.
+
+---
+
+## 21. Data Flow
+
+```
 Data Collection
-
-↓
-
+        ↓
 Processing
-
-↓
-
+        ↓
 Knowledge Storage
-
-↓
-
+        ↓
 AI Analysis
-
-↓
-
+        ↓
 Human Review
-
-↓
-
+        ↓
 Publication / Action
+```
 
+---
 
-# 22. Automation Workflows
+## 22. Automation Workflows
 
-Examples:
+### Daily Workflow
+- Market research;
+- News analysis;
+- Content recommendations;
+- Community monitoring.
 
-Daily Workflow
-Market research
-News analysis
-Content recommendations
-Community monitoring
-Weekly Workflow
-Performance reports
-Content planning
-Documentation review
-Monthly Workflow
-Ecosystem report
-Strategy analysis
-Improvement recommendations
-# 23. Security Model
+### Weekly Workflow
+- Performance reports;
+- Content planning;
+- Documentation review.
+
+### Monthly Workflow
+- Ecosystem report;
+- Strategy analysis;
+- Improvement recommendations.
+
+---
+
+## 23. Security Model
 
 AI systems should implement:
 
-Role-based access control
-Secure credentials management
-Data encryption
-Activity logging
-Permission isolation
-# 24. Privacy Management
+| Security Control | Description |
+| :--- | :--- |
+| **Role-Based Access Control** | Restrict access based on roles. |
+| **Secure Credentials Management** | Protect API keys and credentials. |
+| **Data Encryption** | Encrypt sensitive data. |
+| **Activity Logging** | Log all AI activities. |
+| **Permission Isolation** | Separate permissions per agent. |
+
+---
+
+## 24. Privacy Management
 
 The system should:
+- Minimise personal data processing;
+- Protect confidential information;
+- Follow applicable privacy regulations (GDPR, Georgian);
+- Never store private keys or seed phrases.
 
-Minimize personal data processing
-Protect confidential information
-Follow applicable privacy regulations
-# 25. Human Governance
+**Refer to:** Privacy Policy, Cookie Policy.
+
+---
+
+## 25. Human Governance
 
 Human approval is required for:
+- Public announcements;
+- Legal statements;
+- Financial communications;
+- Security disclosures;
+- Strategic decisions;
+- Governance decisions.
 
-Public announcements
-Legal statements
-Financial communications
-Security disclosures
-Strategic decisions
-# 26. AI Performance Metrics
+---
+
+## 26. AI Performance Metrics
 
 Evaluation criteria:
 
-Accuracy
-Response quality
-Task completion
-Error rate
-Automation efficiency
-User satisfaction
-# 27. Future Expansion
+| Metric | Description |
+| :--- | :--- |
+| **Accuracy** | Factual correctness of outputs. |
+| **Response Quality** | Clarity and usefulness. |
+| **Task Completion** | Successful task execution. |
+| **Error Rate** | Frequency of errors. |
+| **Automation Efficiency** | Time saved by automation. |
+| **User Satisfaction** | Community feedback. |
+
+---
+
+## 27. Integration with PNJC Ecosystem Components
+
+| Component | AI Support |
+| :--- | :--- |
+| **PNJC Token** | Documentation, education, technical analysis. |
+| **DAO Governance (Q4 2026)** | Governance support, proposal summaries. |
+| **ONE+ Gaming Platform (Q3 2027)** | Content creation, community engagement. |
+| **ClownCare Bridge (Q2 2027)** | Charity reporting, transparency documentation. |
+| **Charity Reserve** | Impact reporting, transparency. |
+| **Proof of Kindness (Conceptual)** | Educational content, community engagement. |
+| **Impact Score (Conceptual)** | Reputation system documentation. |
+
+---
+
+## 28. Key Token Features for AI Reference
+
+| Feature | Detail |
+| :--- | :--- |
+| **Token Name** | PanjoCoin |
+| **Ticker** | PNJC |
+| **Total Supply** | 1,000,000,000,000 PNJC (fixed) |
+| **Transfer Tax** | 0% (all transactions) |
+| **Owner** | None (ownerless) |
+| **Standard** | ERC-20 + ERC20Burnable + ERC20Permit |
+| **Network** | Polygon PoS |
+| **Contract Address** | `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF` |
+| **Liquidity Lock** | 50% locked for 12 months |
+| **Charity Reserve** | 5% (50B PNJC) |
+| **Burn Mechanism** | Optional, user-driven |
+
+---
+
+## 29. Future Expansion
 
 Potential future agents:
 
-Translation Agent
-Video Production Agent
-Graphic Design Agent
-Grant Writing Agent
-DAO Governance Agent
-Customer Relationship Agent
-Developer Assistant Agent
-# 28. Risk Management
+| Agent | Description |
+| :--- | :--- |
+| **Translation Agent** | Enhanced multilingual content. |
+| **Video Production Agent** | Educational video creation. |
+| **Graphic Design Agent** | Visual content generation. |
+| **Grant Writing Agent** | Grant proposal assistance. |
+| **DAO Governance Agent** | Governance proposal analysis. |
+| **Customer Relationship Agent** | Enhanced user support. |
+| **Developer Assistant Agent** | Technical documentation. |
 
-AI-related risks:
+---
 
-Incorrect information
-Automation errors
-Data leakage
-Bias
-Excessive automation dependence
+## 30. Risk Management
 
-Mitigation:
+### AI-Related Risks
 
-Human review
-Access controls
-Monitoring
-Regular evaluation
-# 29. Summary
+| Risk | Description | Mitigation |
+| :--- | :--- | :--- |
+| **Incorrect Information** | AI generates false or misleading content. | Human review, accuracy checks. |
+| **Automation Errors** | Workflow failures. | Monitoring, fallback procedures. |
+| **Data Leakage** | Exposure of sensitive information. | Access controls, encryption. |
+| **Bias** | Unfair or biased content. | Human oversight, diverse training data. |
+| **Excessive Automation Dependence** | Over-reliance on AI. | Clear governance, human-in-the-loop. |
+
+---
+
+## 31. Summary
 
 The PNJC AI Agent Architecture provides the foundation for an intelligent operating layer supporting the PanjoCoin ecosystem.
 
-The system enables:
-
-Automated content production
-Better decision support
-Improved documentation
-Global communication
-Community growth
-Operational scalability
+**The system enables:**
+- Automated content production and education;
+- Better decision support;
+- Improved documentation;
+- Global communication;
+- Community growth;
+- Operational scalability;
+- Regulatory awareness.
 
 The architecture combines artificial intelligence with human governance to create a transparent, secure, and sustainable Web3 operating model.
 
-© 2026 CryptoTengo
-PanjoCoin (PNJC)
+---
+
+## Disclaimer
+
+This AI Agent Architecture describes the conceptual framework and potential development directions.
+
+**It does not constitute:**
+- Investment advice;
+- Financial advice;
+- Legal advice;
+- Tax advice;
+- An offer to sell securities;
+- A solicitation to purchase financial instruments.
+
+Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
+
+---
+
+### Document Information
+
+| Property | Value |
+| :--- | :--- |
+| **Document** | AI Agent Architecture |
+| **Version** | 1.1 (Updated) |
+| **Date** | July 25, 2026 |
+| **Status** | Official |
+| **Next Review** | After major project updates |
+
+---
+
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
+**Document Version:** 1.1 (Updated)  
+**Last Updated:** July 25, 2026
