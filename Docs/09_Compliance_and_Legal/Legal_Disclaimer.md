@@ -1,191 +1,401 @@
-# PanjoCoin (PNJC) Legal Disclaimer
+# Legal Disclaimer
 
-Version: 1.0 Effective Date: July 2026
+## PanjoCoin (PNJC)
 
-# Project: PanjoCoin (PNJC) Blockchain: Polygon Network Token Standard: ERC-20
+**Version:** 1.1 (Updated)
+**Effective Date:** July 25, 2026
+**Project:** PanjoCoin (PNJC)
+**Blockchain:** Polygon PoS
+**Token Standard:** ERC-20 (ERC20Burnable + ERC20Permit)
+**Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
-# Introduction
-This Legal Disclaimer ("Disclaimer") applies to PanjoCoin (PNJC), an ERC-20 token deployed on the Polygon blockchain.
+---
 
-PanjoCoin is a community-driven digital asset designed to support a decentralized ecosystem combining:
+## 1. Introduction
 
-Community participation; Social impact initiatives; Digital utility applications; Future Web3 ecosystem development.
+This **Legal Disclaimer** ("Disclaimer") applies to PanjoCoin (PNJC), an ERC-20 token deployed on the Polygon PoS blockchain.
+
+PanjoCoin is a community-driven digital asset designed to support a decentralised ecosystem combining:
+
+- Community participation;
+- Social impact initiatives (Charity Reserve, ClownCare Bridge);
+- Digital utility applications (ONE+ Gaming Platform);
+- Decentralised governance (DAO);
+- Future Web3 ecosystem development.
 
 This Disclaimer explains the legal nature, limitations, risks, and responsibilities related to PNJC participation.
 
-# No Investment Advice
-PNJC is not:
+---
 
-Investment advice; Financial advice; Trading advice; A recommendation to buy, sell, or hold digital assets.
+## 2. No Investment Advice
+
+PNJC is **not**:
+
+- Investment advice;
+- Financial advice;
+- Trading advice;
+- A recommendation to buy, sell, or hold digital assets.
 
 Nothing published by PanjoCoin, CryptoTengo, contributors, community members, or associated platforms should be interpreted as a promise or guarantee of financial return.
 
 Users should conduct their own independent research and consult professional advisors before interacting with digital assets.
 
-# Nature of PNJC Token
+---
+
+## 3. Nature of PNJC Token
+
 PNJC is designed as a:
 
-# Utility token; Community ecosystem token; Digital asset operating on Polygon.
+- Utility token;
+- Community ecosystem token;
+- Digital asset operating on Polygon PoS.
 
-PNJC does not represent:
+**PNJC does not represent:**
 
-# Ownership in any company; Shares; Equity rights; Voting rights in a legal entity; Debt obligations; Guaranteed future income; Profit-sharing rights.
+- Ownership in any company;
+- Shares;
+- Equity rights;
+- Voting rights in a legal entity;
+- Debt obligations;
+- Guaranteed future income;
+- Profit-sharing rights.
 
-# Holding PNJC does not provide ownership or control over CryptoTengo or any associated organization.
+Holding PNJC does not provide ownership or control over CryptoTengo or any associated organisation.
 
-# No Guarantee of Value
+---
+
+## 4. No Guarantee of Value
+
 The market value of PNJC may change significantly due to:
 
-# Market conditions; Cryptocurrency volatility; Liquidity conditions; Regulatory developments; Technology risks; Community adoption.
+- Market conditions;
+- Cryptocurrency volatility;
+- Liquidity conditions;
+- Regulatory developments;
+- Technology risks;
+- Community adoption.
 
-There is no guarantee that:
+**There is no guarantee that:**
 
-PNJC will increase in value; PNJC will maintain liquidity; PNJC will be listed on exchanges; PNJC will achieve roadmap objectives.
+- PNJC will increase in value;
+- PNJC will maintain liquidity;
+- PNJC will be listed on exchanges (CEX);
+- PNJC will achieve roadmap objectives.
 
 Users participate at their own risk.
 
-# Regulatory Considerations
+---
+
+## 5. Regulatory Considerations
+
 Digital asset regulation differs between jurisdictions.
 
 PNJC is developed with consideration of:
 
-# Republic of Georgia
+### Republic of Georgia
 
 As the primary jurisdiction of project development.
 
-Applicable considerations include:
+**Applicable considerations include:**
 
-Virtual asset regulations; Financial crime prevention requirements; Consumer protection principles; Data protection requirements. International Regulatory Frameworks
+- Virtual asset regulations;
+- Financial crime prevention requirements;
+- Consumer protection principles;
+- Data protection requirements.
 
-# PNJC considers global regulatory approaches, including:
+### International Regulatory Frameworks
 
-FATF AML/CFT recommendations; European Union MiCA principles; United States digital asset classification approaches; International consumer protection standards.
+PNJC considers global regulatory approaches, including:
+
+- FATF AML/CFT recommendations;
+- European Union MiCA principles;
+- United States digital asset classification approaches (Howey Test);
+- International consumer protection standards.
 
 Regulatory treatment of PNJC may vary depending on jurisdiction.
 
-# No Securities Offering Statement
-PNJC is not intended to represent:
+---
 
-A security offering; A share issuance; A fundraising instrument providing ownership rights.
+## 6. No Securities Offering Statement
 
-The project does not promise:
+PNJC is **not** intended to represent:
 
-Dividends; Revenue distribution; Guaranteed returns; Investment profits.
+- A security offering;
+- A share issuance;
+- A fundraising instrument providing ownership rights.
+
+**The project does not promise:**
+
+- Dividends;
+- Revenue distribution;
+- Guaranteed returns;
+- Investment profits.
 
 Any jurisdiction-specific classification remains subject to applicable laws and regulatory interpretation.
 
-No Custodial Services
+**Conclusion:** PNJC is not a security under the Howey Test (see Whitepaper for detailed analysis).
+
+---
+
+## 7. No Custodial Services
+
 PanjoCoin does not currently provide:
 
-Custodial wallet services; Private key management; Fiat deposit services; Banking services; Asset management services.
+- Custodial wallet services;
+- Private key management;
+- Fiat deposit services;
+- Banking services;
+- Asset management services.
 
 Users remain solely responsible for:
 
-Their wallets; Private keys; Transaction approvals; Security practices. 8. Smart Contract Risks
+- Their wallets;
+- Private keys;
+- Transaction approvals;
+- Security practices.
+
+---
+
+## 8. Smart Contract Risks
 
 PNJC uses blockchain smart contract technology.
 
-Users acknowledge risks including:
+**Users acknowledge risks including:**
 
-Smart contract vulnerabilities; Blockchain network failures; Transaction errors; Gas fee changes; Wallet security risks; Third-party protocol risks.
+- Smart contract vulnerabilities (mitigated by OpenZeppelin and audits);
+- Blockchain network failures (Polygon PoS);
+- Transaction errors;
+- Gas fee changes;
+- Wallet security risks;
+- Third-party protocol risks (Uniswap V2).
 
-Although development follows security best practices, no smart contract can be guaranteed completely free of risk.
+Although development follows security best practices (OpenZeppelin v5.5.0, ownerless contracts, independent audits), no smart contract can be guaranteed completely free of risk.
 
-Market Risks
+**Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
+
+---
+
+## 9. Market Risks
+
 Cryptocurrency markets involve substantial risks.
 
 PNJC may be affected by:
 
-Price volatility; Low liquidity; Market sentiment; Speculative behavior; Regulatory changes; Macroeconomic events.
+- Price volatility;
+- Low liquidity;
+- Market sentiment;
+- Speculative behaviour;
+- Regulatory changes;
+- Macroeconomic events.
 
 Users should only interact with PNJC if they understand these risks.
 
-Third-Party Platforms
+---
+
+## 10. Third-Party Platforms
+
 PNJC may interact with third-party services including:
 
-Decentralized exchanges; Wallet providers; Blockchain explorers; Analytics platforms; Social platforms.
+- Decentralised exchanges (Uniswap V2);
+- Wallet providers (MetaMask, Trust Wallet, WalletConnect);
+- Blockchain explorers (PolygonScan);
+- Analytics platforms;
+- Social platforms (X, Telegram).
 
-PNJC is not responsible for:
+**PNJC is not responsible for:**
 
-Third-party failures; External security incidents; Platform availability; Third-party policies. 11. Geographic Restrictions
+- Third-party failures;
+- External security incidents;
+- Platform availability;
+- Third-party policies.
+
+---
+
+## 11. Geographic Restrictions
 
 Users are responsible for determining whether participation in PNJC is legal in their jurisdiction.
 
 PNJC does not encourage participation where:
 
-Digital assets are prohibited; Applicable regulations restrict participation; Sanctions apply. 12. Anti-Money Laundering Compliance
+- Digital assets are prohibited;
+- Applicable regulations restrict participation;
+- Sanctions apply.
+
+**Restricted Countries:** Afghanistan, Algeria, Bangladesh, Bolivia, China, Egypt, Iraq, Morocco, Nepal, Qatar, Tunisia, North Macedonia.
+
+Citizens and residents of these countries are **PROHIBITED** from owning, trading, or mining PNJC.
+
+**Refer to:** AML Policy (Restricted Countries List).
+
+---
+
+## 12. Anti-Money Laundering Compliance
 
 PNJC maintains an AML framework designed to reduce risks associated with:
 
-Money laundering; Fraud; Terrorist financing; Sanctions violations.
+- Money laundering;
+- Fraud;
+- Terrorist financing;
+- Sanctions violations.
 
 The AML framework does not guarantee that illegal activity is impossible within a public blockchain environment.
 
-Charity and Social Impact Disclaimer
+**Refer to:** AML Policy, Compliance Program, FATF Compliance Framework.
+
+---
+
+## 13. Charity and Social Impact Disclaimer
+
 PNJC may support social impact initiatives, including charitable activities.
 
-Charity-related activities:
+**Charity-related activities:**
 
-Do not represent guaranteed donations; Depend on available resources; Are subject to transparency and verification procedures.
+- Do not represent guaranteed donations;
+- Depend on available resources (Charity Reserve: 5%, 50B PNJC);
+- Are subject to transparency and verification procedures (on-chain);
+- Are governed by ClownCare Bridge (Q2 2027) and DAO (Q4 2026).
 
 Charity participation does not create investment rights.
 
-Roadmap Disclaimer
+**Refer to:** Charity Policy, Charity Program.
+
+---
+
+## 14. Roadmap Disclaimer
+
 The PNJC roadmap represents development intentions.
 
-Roadmap items:
+**Roadmap items:**
 
-Are subject to change; Depend on resources; May be delayed; May not be completed.
+- Are subject to change;
+- Depend on resources;
+- May be delayed;
+- May not be completed.
 
-Future ecosystem features may include:
+**Future ecosystem features may include:**
 
-SocialFi; Proof of Kindness; GameFi; NFT utilities; DAO governance mechanisms.
+- ONE+ Gaming Platform (Q3 2027);
+- ClownCare Bridge (Q2 2027);
+- DAO Governance (Q4 2026);
+- Proof of Kindness (conceptual);
+- Impact Score (conceptual).
 
 No future functionality is guaranteed.
 
-User Responsibility
+**Refer to:** Roadmap, Whitepaper.
+
+---
+
+## 15. User Responsibility
+
 Users are responsible for:
 
-Understanding blockchain technology; Protecting wallet credentials; Evaluating risks; Following local laws; Paying applicable taxes.
+- Understanding blockchain technology;
+- Protecting wallet credentials;
+- Evaluating risks;
+- Following local laws;
+- Paying applicable taxes.
 
 Users should not participate with funds they cannot afford to lose.
 
-Limitation of Liability
-To the maximum extent permitted by applicable law, CryptoTengo, PanjoCoin contributors, developers, and associated parties are not liable for:
+---
 
-Financial losses; Market losses; Blockchain failures; User mistakes; Third-party actions; Regulatory changes. 17. Intellectual Property
+## 16. Limitation of Liability
+
+To the maximum extent permitted by applicable law, CryptoTengo, PanjoCoin contributors, developers, and associated parties are **not liable** for:
+
+- Financial losses;
+- Market losses;
+- Blockchain failures;
+- User mistakes;
+- Third-party actions;
+- Regulatory changes.
+
+---
+
+## 17. Intellectual Property
 
 The PanjoCoin brand, documentation, designs, and related materials may be protected by applicable intellectual property laws.
 
-Unauthorized use of branding or materials may be restricted.
+Unauthorised use of branding or materials may be restricted.
 
-Changes to This Disclaimer
+**Refer to:** Intellectual Property Policy, Brand Guidelines.
+
+---
+
+## 18. Changes to This Disclaimer
+
 This Disclaimer may be updated due to:
 
-Regulatory developments; Ecosystem expansion; Security improvements; Legal requirements.
+- Regulatory developments;
+- Ecosystem expansion;
+- Security improvements;
+- Legal requirements.
 
 Users should review the latest version before participating.
 
-Contact
-Official Project:
+---
 
-PanjoCoin (PNJC)
+## 19. Official Resources
 
-Website:
+| Resource | Link |
+| :--- | :--- |
+| **Official Website** | [www.cryptotengo.com](https://www.cryptotengo.com) |
+| **GitHub Repository** | [github.com/CryptoTengo/PanjoCoin](https://github.com/CryptoTengo/PanjoCoin) |
+| **Smart Contract (PolygonScan)** | `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF` |
+| **Documentation** | Whitepaper, Tokenomics, Security, etc. |
+| **Social Channels** | X (Twitter), Telegram |
+| **Official Contact** | `info@cryptotengo.com` |
 
-https://cryptotengo.com
+---
 
-Repository:
+## 20. Disclaimer Summary
 
-https://github.com/CryptoTengo/PanjoCoin
+- PNJC is a **utility token**, not a security.
+- **No promises** of profit or price guarantees.
+- Price **may fall to zero** — risk only what you are prepared to lose.
+- All wallets are **public** — full transparency.
+- Each user is **responsible** for their own tax obligations.
+- Citizens of countries with **cryptocurrency prohibitions** are PROHIBITED from holding PNJC.
+- DEX trading (Uniswap V2) carries **additional risks**.
+- The project does **not** provide financial advice.
+- Token acquisition is **voluntary** and at your own risk.
+- All additional features (DAO, gaming, charity) — code is ready; deployment is scheduled in stages (may be partially implemented or delayed).
 
-Official Social Channels:
+---
 
-CryptoTengo official community channels.
+## 21. Final Acknowledgement
 
-Final Acknowledgement
 By interacting with PNJC, users acknowledge that:
 
+- They understand blockchain risks;
+- They are responsible for their own decisions;
+- PNJC does not guarantee financial returns;
+- Participation is voluntary and undertaken at their own risk.
+
+---
+
+## 22. Document Information
+
+| Property | Value |
+| :--- | :--- |
+| **Document** | Legal Disclaimer |
+| **Version** | 1.1 (Updated) |
+| **Effective Date** | July 25, 2026 |
+| **Status** | Official |
+| **Next Review** | Annually or after major changes |
+
+---
+
+**PanjoCoin (PNJC)**
+
+Building a community-driven Web3 ecosystem through technology, creativity, and social impact.
+
+---
+
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
+**Document Version:** 1.1 (Updated)  
+**Last Updated:** July 25, 2026
 They understand blockchain risks; They are responsible for their own decisions; PNJC does not guarantee financial returns; Participation is voluntary and undertaken at their own risk.
 
 PanjoCoin (PNJC) Building a community-driven Web3 ecosystem through technology, creativity, and social impact.
