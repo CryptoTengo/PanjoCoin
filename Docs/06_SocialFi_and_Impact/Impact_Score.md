@@ -2,623 +2,540 @@
 
 ## PanjoCoin (PNJC)
 
-**Version:** 1.0  
-**Date:** July 2026  
+**Version:** 1.1 (Updated)  
+**Date:** July 25, 2026  
 **Network:** Polygon PoS  
-**Framework:** Social Impact Reputation & Measurement System
+**Framework:** Social Impact Reputation & Measurement System  
+**Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
 ---
 
-# 1. Overview
+## 1. Overview
 
-This document defines the Impact Score system of PanjoCoin (PNJC).
+This document defines the **Impact Score** system of PanjoCoin (PNJC).
 
 Impact Score is a reputation and social contribution measurement mechanism designed to evaluate verified positive actions within the PNJC ecosystem.
 
 Impact Score connects:
 
-- Proof of Kindness (PoK)
-- Charity Program
-- SocialFi ecosystem
-- Community reputation
-- ESG impact measurement
-
+- Proof of Kindness (PoK);
+- Charity Program;
+- SocialFi ecosystem;
+- Community reputation;
+- ESG impact measurement.
 
 The purpose of Impact Score is:
 
-
+```
 Measure Contribution
-
+        +
 Verify Positive Actions
-
-Recognize Social Value
-
+        +
+Recognise Social Value
+        +
 Build Digital Reputation
+```
 
+**Status:** 🔄 Conceptual (not yet deployed)
 
 ---
 
-# 2. Mission
+## 2. Mission
 
 The mission of Impact Score:
 
-> To create a transparent measurement system where positive human contributions can be recognized, verified, and transformed into measurable social reputation.
+> To create a transparent measurement system where positive human contributions can be recognised, verified, and transformed into measurable social reputation.
 
 ---
 
-# 3. Core Principles
+## 3. Core Principles
 
-## 3.1 Contribution Over Wealth
+### 3.1. Contribution Over Wealth
 
 Impact Score is based on:
 
-- Positive actions
-- Social contribution
-- Verified impact
+- Positive actions;
+- Social contribution;
+- Verified impact.
 
-Not based on:
+**Not based on:**
+- Token ownership;
+- Financial status;
+- Trading activity.
 
-- Token ownership
-- Financial status
-- Trading activity
-
----
-
-## 3.2 Verification First
+### 3.2. Verification First
 
 Only verified actions contribute to Impact Score.
 
-Requirements:
+**Requirements:**
+- Evidence;
+- Validation;
+- Impact assessment.
 
-- Evidence
-- Validation
-- Impact assessment
-
----
-
-## 3.3 Long-Term Reputation
+### 3.3. Long-Term Reputation
 
 Impact Score rewards:
 
-- Consistency
-- Reliability
-- Continuous contribution
+- Consistency;
+- Reliability;
+- Continuous contribution.
 
----
-
-## 3.4 Anti-Manipulation
+### 3.4. Anti-Manipulation
 
 The system prevents:
 
-- Fake activities
-- Purchased reputation
-- Duplicate claims
-- Artificial score inflation
+- Fake activities;
+- Purchased reputation;
+- Duplicate claims;
+- Artificial score inflation.
 
 ---
 
-# 4. Impact Score Architecture
+## 4. Impact Score Architecture
 
-
-                Impact Score
-
-
-                     |
-
-| | | |
-
-Action Verification Impact History
-
-Value Quality Level Factor
-
-                     |
-
-              Final Score
-
-
-                     |
-
-          Reputation Profile
+```
+            Impact Score
+                 |
+   ┌─────────────┼─────────────┐
+   │             │             │
+ Action     Verification   Impact     History
+ Value         Quality      Level      Factor
+   │             │             │
+   └─────────────┼─────────────┘
+                 |
+           Final Score
+                 |
+         Reputation Profile
+```
 
 ---
 
-# 5. Impact Score Formula
+## 5. Impact Score Formula
 
-Conceptual model:
+**Conceptual model:**
 
+```
+IS = (A × 0.35) + (V × 0.25) + (B × 0.25) + (C × 0.15)
+```
 
+**Where:**
 
-IS =
-
-(A × 0.35)
-
-(V × 0.25)
-
-(B × 0.25)
-
-(C × 0.15)
-
-
-Where:
-
-
-IS = Impact Score
-
-A = Action Value
-
-V = Verification Quality
-
-B = Beneficiary Impact
-
-C = Contribution Consistency
-
+| Variable | Component | Weight |
+| :--- | :--- | :--- |
+| **IS** | Impact Score | 100% |
+| **A** | Action Value | 35% |
+| **V** | Verification Quality | 25% |
+| **B** | Beneficiary Impact | 25% |
+| **C** | Contribution Consistency | 15% |
 
 ---
 
-# 6. Score Components
+## 6. Score Components
 
-
-# 6.1 Action Value (35%)
+### 6.1. Action Value (35%)
 
 Measures the value of the contribution.
 
+**Factors:**
+- Time invested;
+- Resources provided;
+- Complexity;
+- Effort level.
 
-Factors:
-
-- Time invested
-- Resources provided
-- Complexity
-- Effort level
-
-
-Example:
+**Example:**
 
 | Action | Value |
-|-|-|
+| :--- | :--- |
 | Small community help | Low |
 | Verified volunteering | Medium |
 | Large impact initiative | High |
 
 ---
 
-# 6.2 Verification Quality (25%)
+### 6.2. Verification Quality (25%)
 
 Measures reliability of proof.
 
-
-Verification levels:
-
+**Verification Levels:**
 
 | Level | Description |
-|-|-|
-| Level 1 | Community verification |
-| Level 2 | Partner confirmation |
-| Level 3 | Verified organization |
-| Level 4 | Independent validation |
+| :--- | :--- |
+| **Level 1** | Community verification. |
+| **Level 2** | Partner confirmation. |
+| **Level 3** | Verified organisation. |
+| **Level 4** | Independent validation. |
 
 Higher verification increases score confidence.
 
 ---
 
-# 6.3 Beneficiary Impact (25%)
+### 6.3. Beneficiary Impact (25%)
 
 Measures social effect.
 
+**Factors:**
+- Number of beneficiaries;
+- Importance of support;
+- Long-term benefit.
 
-Factors:
+**Example:**
 
-- Number of beneficiaries
-- Importance of support
-- Long-term benefit
-
-
-Example:
-
-
-
+```
 Individual Support
-
-↓
-
+        ↓
 Community Support
-
-↓
-
+        ↓
 Regional Impact
-
-↓
-
+        ↓
 Global Impact
-
+```
 
 ---
 
-# 6.4 Contribution Consistency (15%)
+### 6.4. Contribution Consistency (15%)
 
 Measures long-term participation.
 
+**Factors:**
+- Frequency;
+- Duration;
+- Reliability.
 
-Factors:
-
-- Frequency
-- Duration
-- Reliability
-
-
-Purpose:
-
-Reward continuous positive behavior.
+**Purpose:** Reward continuous positive behaviour.
 
 ---
 
-# 7. Impact Score Range
+## 7. Impact Score Range
 
+**Initial model:** 0 – 1000 Points
 
-Initial model:
-
-
-
-0 - 1000 Points
-
-
-Levels:
-
+**Levels:**
 
 | Score | Level |
-|-|-|
-| 0-100 | Observer |
-| 101-300 | Contributor |
-| 301-600 | Helper |
-| 601-800 | Impact Builder |
-| 801-1000 | Kindness Ambassador |
+| :--- | :--- |
+| **0–100** | Observer |
+| **101–300** | Contributor |
+| **301–600** | Helper |
+| **601–800** | Impact Builder |
+| **801–1000** | Kindness Ambassador |
 
 ---
 
-# 8. Impact Categories
-
+## 8. Impact Categories
 
 Impact Score can include:
 
+### Social Impact
 
-## Social Impact
+**Examples:**
+- Charity participation;
+- Community assistance;
+- Volunteer activities.
 
-Examples:
+### Educational Impact
 
-- Charity
-- Community assistance
+**Examples:**
+- Teaching;
+- Knowledge sharing;
+- Educational programs.
 
+### Environmental Impact
 
----
+**Examples:**
+- Sustainability actions;
+- Green initiatives.
 
-## Educational Impact
+### Innovation Impact
 
-Examples:
-
-- Teaching
-- Knowledge sharing
-
-
----
-
-## Environmental Impact
-
-Examples:
-
-- Sustainability actions
-
-
----
-
-## Innovation Impact
-
-Examples:
-
-- Open-source contributions
-- Technology initiatives
+**Examples:**
+- Open-source contributions;
+- Technology initiatives;
+- Community building.
 
 ---
 
-# 9. Impact Score Decay
+## 9. Impact Score Decay
 
+To maintain accuracy, inactive reputation may gradually decrease.
 
-To maintain accuracy:
+**Purpose:**
+- Keep scores relevant;
+- Encourage continuous contribution.
 
-Inactive reputation may gradually decrease.
-
-Purpose:
-
-- Keep scores relevant
-- Encourage continuous contribution
-
-
-Example:
-
-
+**Example:**
+```
 No activity over extended period
-
-↓
-
+        ↓
 Gradual reputation adjustment
-
+```
 
 ---
 
-# 10. Impact Score Protection
-
+## 10. Impact Score Protection
 
 The system prevents:
 
+### Fake Contributions
 
-## Fake Contributions
+**Protection:**
+- Verification;
+- Evidence requirements.
 
-Protection:
+### Score Farming
 
-- Verification
-- Evidence requirements
+**Protection:**
+- Contribution limits;
+- Quality weighting.
 
+### Collusion
 
----
-
-## Score Farming
-
-Protection:
-
-- Contribution limits
-- Quality weighting
-
-
----
-
-## Collusion
-
-Protection:
-
-- Multiple verification sources
-- Reputation analysis
+**Protection:**
+- Multiple verification sources;
+- Reputation analysis.
 
 ---
 
-# 11. Impact Score and Rewards
-
+## 11. Impact Score and Rewards
 
 Impact Score may influence:
 
+- PNJC ecosystem rewards;
+- Community recognition;
+- Badges and achievements;
+- Access levels;
+- Social privileges.
 
-- PNJC ecosystem rewards
-- Community recognition
-- Badges
-- Access levels
-- Social privileges
-
-
-Important:
-
-Impact Score does not guarantee financial rewards.
+**Important:** Impact Score does not guarantee financial rewards.
 
 ---
 
-# 12. Impact Score and Proof of Kindness
+## 12. Impact Score and Proof of Kindness
 
+**Relationship:**
 
-Relationship:
-
-
-
+```
 Kind Action
-
-↓
-
+        ↓
 PoK Verification
-
-↓
-
+        ↓
 Impact Score Calculation
-
-↓
-
+        ↓
 Reputation Update
-
-↓
-
+        ↓
 Recognition
+```
 
+**Status:** 🔄 Conceptual
 
 ---
 
-# 13. Impact Score and SocialFi
-
+## 13. Impact Score and SocialFi
 
 Impact Score creates:
 
-
-
+```
 Social Contribution
-
+        +
 Digital Reputation
-
+        +
 Community Value
+```
 
+**Possible applications:**
+- Community ranking;
+- Reputation profiles;
+- Social challenges;
+- Impact campaigns.
 
-Possible applications:
-
-- Community ranking
-- Reputation profiles
-- Social challenges
-- Impact campaigns
+**Status:** 🔄 Conceptual
 
 ---
 
-# 14. Blockchain Implementation
-
+## 14. Blockchain Implementation
 
 Possible technical implementation:
 
+### Smart Contract
 
-## Smart Contract
+**Functions:**
+- Record verified actions;
+- Update scores;
+- Issue rewards.
 
-Functions:
+### Soulbound Reputation Token
 
-- Record verified actions
-- Update scores
-- Issue rewards
+**Future implementation:**
+- Non-transferable reputation;
+- Achievement history;
+- On-chain verification.
 
+### Off-Chain Verification Layer
 
----
-
-## Soulbound Reputation Token
-
-Future implementation:
-
-- Non-transferable reputation
-- Achievement history
-
-
----
-
-## Off-chain Verification Layer
-
-Purpose:
-
-- Protect privacy
-- Store evidence
-- Reduce blockchain costs
+**Purpose:**
+- Protect privacy;
+- Store evidence;
+- Reduce blockchain costs.
 
 ---
 
-# 15. Governance Model
-
+## 15. Governance Model
 
 Future changes require:
 
-
-
+```
 Proposal
-
-↓
-
+        ↓
 Impact Committee Review
-
-↓
-
-DAO Approval
-
-↓
-
+        ↓
+DAO Approval (Q4 2026)
+        ↓
 Implementation
-
-
----
-
-# 16. Transparency Framework
-
-
-Public information:
-
-- Total Impact Score statistics
-- Verified programs
-- Ecosystem impact reports
-
-
-Private information:
-
-- Sensitive personal data
-- Private evidence documents
+```
 
 ---
 
-# 17. Impact Score Metrics
+## 16. Transparency Framework
 
+### Public Information
+
+- Total Impact Score statistics;
+- Verified programs;
+- Ecosystem impact reports.
+
+### Private Information
+
+- Sensitive personal data (protected);
+- Private evidence documents (restricted).
+
+---
+
+## 17. Impact Score Metrics
 
 Key indicators:
 
-
 | Metric | Purpose |
-|-|-|
-| Average Impact Score | Community health |
-| Verified Actions | Activity level |
-| Active Contributors | Participation |
-| Impact Growth | Ecosystem development |
+| :--- | :--- |
+| **Average Impact Score** | Community health. |
+| **Verified Actions** | Activity level. |
+| **Active Contributors** | Participation. |
+| **Impact Growth** | Ecosystem development. |
 
 ---
 
-# 18. Impact Score Roadmap
+## 18. Smart Contract Impact Score Integration
 
-
-## Phase 1 — Foundation
-
-Goals:
-
-- Define methodology
-- Create documentation
-
-
----
-
-## Phase 2 — PoK Integration
-
-Goals:
-
-- Verification system
-- Reputation profiles
-
+| Component | Purpose | Status |
+| :--- | :--- | :--- |
+| **Proof of Kindness** | Verification of actions | 🔄 Conceptual |
+| **Impact Score** | Reputation measurement | 🔄 Conceptual |
+| **Charity Reserve** | Funding impact | ✅ Active |
+| **ClownCare Bridge** | Transparent charity | 🧩 Design Phase (Q2 2027) |
+| **DAO Governor** | Governance oversight | 🧩 Code Ready (Q4 2026) |
 
 ---
 
-## Phase 3 — Blockchain Layer
+## 19. Impact Score Roadmap
 
-Goals:
+### Phase 1 — Foundation (Q3–Q4 2026)
 
-- Smart contracts
-- Digital certificates
+**Goals:**
+- Define methodology;
+- Create documentation;
+- Initial governance setup.
 
+### Phase 2 — PoK Integration (Conceptual)
+
+**Goals:**
+- Verification system;
+- Reputation profiles;
+- Pilot programs.
+
+### Phase 3 — Blockchain Layer (Conceptual)
+
+**Goals:**
+- Smart contracts;
+- Digital certificates;
+- On-chain reputation.
+
+### Phase 4 — Global Impact Network (Conceptual)
+
+**Goals:**
+- International adoption;
+- DAO governance;
+- Cross-chain integration.
 
 ---
 
-## Phase 4 — Global Impact Network
+## 20. Impact Score and ESG Alignment
 
-Goals:
+Impact Score supports ESG principles:
 
-- International adoption
-- DAO governance
+| ESG Pillar | Contribution |
+| :--- | :--- |
+| **Environmental** | Green initiatives, sustainability actions. |
+| **Social** | Charity, community assistance, education. |
+| **Governance** | Transparent verification, DAO oversight. |
 
 ---
 
-# 19. Long-Term Vision
-
+## 21. Long-Term Vision
 
 Impact Score aims to become:
 
-
-
-A Global Digital Reputation Layer
-
-Based On Positive Human Contribution
-
+> A Global Digital Reputation Layer Based On Positive Human Contribution
 
 The objective is to create a future where:
 
-- Kindness is measurable
-- Contribution is recognized
-- Communities cooperate
-- Impact becomes transparent
+- Kindness is measurable;
+- Contribution is recognised;
+- Communities cooperate;
+- Impact becomes transparent.
 
 ---
 
-# 20. Final Statement
-
+## 22. Final Statement
 
 Impact Score is a foundational component of the PanjoCoin SocialFi ecosystem.
 
 Together with:
 
-- Proof of Kindness
-- Charity Program
-- ESG Framework
-- Sustainability Model
+- Proof of Kindness (conceptual);
+- Charity Program (Charity Reserve, ClownCare Bridge);
+- ESG Framework;
+- SocialFi ecosystem.
 
 Impact Score transforms social contribution into a transparent and verifiable digital reputation system.
 
 ---
 
-© 2026 CryptoTengo  
-PanjoCoin (PNJC)
+## Disclaimer
+
+This Impact Score document describes conceptual principles and practices.
+
+**It does not constitute:**
+- Investment advice;
+- Financial advice;
+- Legal advice;
+- Tax advice;
+- An offer to sell securities;
+- A solicitation to purchase financial instruments.
+
+Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
+
+---
+
+### Document Information
+
+| Property | Value |
+| :--- | :--- |
+| **Document** | Impact Score |
+| **Version** | 1.1 (Updated) |
+| **Date** | July 25, 2026 |
+| **Status** | Official |
+| **Next Review** | Annually or after major changes |
+
+---
+
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
+**Document Version:** 1.1 (Updated)  
+**Last Updated:** July 25, 2026
