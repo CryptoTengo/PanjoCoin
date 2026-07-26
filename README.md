@@ -124,7 +124,7 @@ Swap for PNJC.
 As of publication (July 2026), independent audit has not yet been conducted. It is scheduled for each module before activation:
 
 Contract	Planned Auditor	Timeline
-PanjoCoin (token)	CertiK / Hacken	Q2 2026 (in progress)
+PanjoCoin (token)	CertiK / Hacken	Q2 2026 
 LiquidityLocker	CertiK / Hacken	Q2 2026
 VestingVault	CertiK / Hacken	Q3 2026
 Airdrop	CertiK / Hacken	Q2 2026
