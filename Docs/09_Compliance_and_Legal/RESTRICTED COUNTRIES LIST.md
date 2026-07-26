@@ -2,7 +2,7 @@
 
 ## PanjoCoin (PNJC)
 
-**Version:** 1.1 (Updated)
+**Version:** 1.2 (Updated)
 **Effective Date:** July 25, 2026
 **Project:** PanjoCoin (PNJC)
 **Blockchain:** Polygon PoS
@@ -42,7 +42,7 @@ This List does not constitute legal advice. If you have questions, it is recomme
 
 ---
 
-## 3. Absolute Prohibition Countries
+## 3. Absolute Prohibition Countries (🔴)
 
 **Holding, trading, mining, and any use of cryptocurrencies are PROHIBITED.**
 
@@ -50,18 +50,17 @@ Citizens and residents of the following countries are **PROHIBITED** from holdin
 
 | # | Country | Note |
 | :--- | :--- | :--- |
-| 1 | **Afghanistan** | Complete cryptocurrency ban |
-| 2 | **Algeria** | Complete cryptocurrency ban |
-| 3 | **Bangladesh** | Complete cryptocurrency ban |
-| 4 | **Bolivia** | Complete cryptocurrency ban |
-| 5 | **China** | Complete cryptocurrency ban (including trading and mining) |
-| 6 | **Egypt** | Complete cryptocurrency ban |
-| 7 | **Iraq** | Complete cryptocurrency ban |
-| 8 | **Morocco** | Complete cryptocurrency ban |
-| 9 | **Nepal** | Complete cryptocurrency ban |
-| 10 | **Qatar** | Complete cryptocurrency ban |
-| 11 | **Tunisia** | Complete cryptocurrency ban |
-| 12 | **North Macedonia** | Complete cryptocurrency ban |
+| 1 | **Afghanistan** | 🇦🇫 Complete cryptocurrency ban |
+| 2 | **Algeria** | 🇩🇿 Complete cryptocurrency ban |
+| 3 | **Bangladesh** | 🇧🇩 Complete cryptocurrency ban |
+| 4 | **Bolivia** | 🇧🇴 Complete cryptocurrency ban |
+| 5 | **China** | 🇨🇳 Complete cryptocurrency ban (including trading and mining) |
+| 6 | **Egypt** | 🇪🇬 Complete cryptocurrency ban |
+| 7 | **Iraq** | 🇮🇶 Complete cryptocurrency ban |
+| 8 | **Morocco** | 🇲🇦 Complete cryptocurrency ban |
+| 9 | **Nepal** | 🇳🇵 Complete cryptocurrency ban |
+| 10 | **Qatar** | 🇶🇦 Complete cryptocurrency ban |
+| 11 | **Tunisia** | 🇹🇳 Complete cryptocurrency ban |
 
 ### 3.1. Consequences of Violating the Prohibition
 
@@ -73,7 +72,7 @@ Any use of PNJC by citizens or residents of the above-mentioned countries consti
 
 ---
 
-## 4. Restricted Countries (Partial Ban / Restrictions)
+## 4. Restricted Countries (🟡 — Partial Ban / Restrictions)
 
 **Holding and/or trading are permitted with substantial restrictions.**
 
@@ -81,11 +80,13 @@ Citizens and residents of the following countries must independently study local
 
 | # | Country | Restriction |
 | :--- | :--- | :--- |
-| 1 | **India** | 30% tax on cryptocurrency profits + 1% TDS (Tax Deducted at Source) |
-| 2 | **Indonesia** | Cryptocurrency payments prohibited; trading permitted |
-| 3 | **Turkey** | Cryptocurrency payments prohibited |
-| 4 | **Nigeria** | Banking channels disabled for crypto operations |
-| 5 | **Russia** | Partial restrictions. According to Federal Law No. 259, cryptocurrency is recognised as property, but settlements within the Russian Federation are prohibited. |
+| 1 | **India** | 🇮🇳 30% tax on cryptocurrency profits + 1% TDS (Tax Deducted at Source) |
+| 2 | **Indonesia** | 🇮🇩 Cryptocurrency payments prohibited; trading permitted |
+| 3 | **Nigeria** | 🇳🇬 Banking channels disabled for crypto operations; special requirements apply |
+| 4 | **Russia** | 🇷🇺 Partial restrictions. According to Federal Law No. 259, cryptocurrency is recognised as property, but settlements within the Russian Federation are prohibited. |
+| 5 | **Thailand** | 🇹🇭 Licensing required for exchanges and certain activities |
+| 6 | **Turkey** | 🇹🇷 Cryptocurrency payments prohibited |
+| 7 | **Vietnam** | 🇻🇳 Holding is permitted, but use as a legal payment method is prohibited |
 
 ### 4.1. Special Conditions for India
 
@@ -93,7 +94,7 @@ Citizens and residents of the following countries must independently study local
 - 1% TDS (Tax Deducted at Source) applies to all transactions exceeding the established threshold;
 - The User is obligated to independently maintain records of all transactions and file tax returns.
 
-### 4.2. Special Conditions for Indonesia, Turkey, and Nigeria
+### 4.2. Special Conditions for Indonesia, Nigeria, and Turkey
 
 - The use of cryptocurrencies for payment of goods and services is prohibited;
 - Cryptocurrency trading (buying/selling) is permitted but may be restricted by local banks;
@@ -101,31 +102,81 @@ Citizens and residents of the following countries must independently study local
 
 ---
 
-## 5. Permitted Circulation Countries
+## 5. Permitted Countries (🟢 — Subject to Local Legislation)
 
 **Holding, trading, and use are permitted within the framework of local legislation.**
 
 Citizens and residents of the following countries may hold and trade PNJC subject to compliance with local laws, including tax legislation:
 
-| # | Country / Region | Note |
+### 5.1. Americas
+
+| # | Country | Note |
 | :--- | :--- | :--- |
-| 1 | **United States** | Permitted, but regulated at the state level; tax obligations may apply |
-| 2 | **United Kingdom** | Permitted, regulated by FCA |
-| 3 | **Germany** | Permitted, regulated by BaFin |
-| 4 | **Japan** | Permitted, regulated by FSA |
-| 5 | **Brazil** | Permitted, regulated by BCB |
-| 6 | **Mexico** | Permitted |
-| 7 | **Philippines** | Permitted, regulated by BSP |
-| 8 | **Singapore** | Permitted, regulated by MAS |
-| 9 | **Switzerland** | Permitted, regulated by FINMA |
-| 10 | **United Arab Emirates** | Permitted, regulated by VARA / SCA |
-| 11 | **El Salvador** | Permitted (cryptocurrency is legal tender) |
-| 12 | **South Korea** | Permitted, regulated by FSC |
-| 13 | **All EU Countries** | Permitted under MiCA (Markets in Crypto-Assets Regulation) |
+| 1 | **Argentina** | 🇦🇷 Permitted |
+| 2 | **Brazil** | 🇧🇷 Permitted, regulated by BCB |
+| 3 | **Canada** | 🇨🇦 Permitted |
+| 4 | **Chile** | 🇨🇱 Permitted |
+| 5 | **Colombia** | 🇨🇴 Permitted |
+| 6 | **El Salvador** | 🇸🇻 Permitted (cryptocurrency is legal tender) |
+| 7 | **Mexico** | 🇲🇽 Permitted |
+| 8 | **Peru** | 🇵🇪 Permitted |
+| 9 | **United States** | 🇺🇸 Permitted, but regulated at the state level; tax obligations may apply |
+| 10 | **Uruguay** | 🇺🇾 Permitted |
 
-### 5.1. Special Conditions for EU Countries (MiCA)
+### 5.2. Asia-Pacific
 
-European Union member states regulate cryptocurrencies in accordance with the **MiCA Regulation** (Markets in Crypto-Assets Regulation), which came into effect in 2024–2025. PNJC holders are required to comply with all MiCA requirements, including potential disclosure and reporting obligations.
+| # | Country | Note |
+| :--- | :--- | :--- |
+| 1 | **Australia** | 🇦🇺 Permitted |
+| 2 | **Hong Kong** | 🇭🇰 Permitted |
+| 3 | **Japan** | 🇯🇵 Permitted, regulated by FSA |
+| 4 | **New Zealand** | 🇳🇿 Permitted |
+| 5 | **Philippines** | 🇵🇭 Permitted, regulated by BSP |
+| 6 | **Singapore** | 🇸🇬 Permitted, regulated by MAS |
+| 7 | **South Korea** | 🇰🇷 Permitted, regulated by FSC |
+| 8 | **United Arab Emirates** | 🇦🇪 Permitted, regulated by VARA / SCA |
+
+### 5.3. Europe (EU Member States — Under MiCA)
+
+All European Union member states regulate cryptocurrencies in accordance with the **MiCA Regulation** (Markets in Crypto-Assets Regulation), which came into effect in 2024–2025. PNJC holders are required to comply with all MiCA requirements, including potential disclosure and reporting obligations.
+
+| # | Country | Note |
+| :--- | :--- | :--- |
+| 1 | **Austria** | 🇦🇹 Permitted under MiCA |
+| 2 | **Belgium** | 🇧🇪 Permitted under MiCA |
+| 3 | **Bulgaria** | 🇧🇬 Permitted under MiCA |
+| 4 | **Croatia** | 🇭🇷 Permitted under MiCA |
+| 5 | **Cyprus** | 🇨🇾 Permitted under MiCA |
+| 6 | **Czech Republic** | 🇨🇿 Permitted under MiCA |
+| 7 | **Denmark** | 🇩🇰 Permitted under MiCA |
+| 8 | **Estonia** | 🇪🇪 Permitted under MiCA |
+| 9 | **Finland** | 🇫🇮 Permitted under MiCA |
+| 10 | **France** | 🇫🇷 Permitted under MiCA |
+| 11 | **Germany** | 🇩🇪 Permitted under MiCA |
+| 12 | **Greece** | 🇬🇷 Permitted under MiCA |
+| 13 | **Hungary** | 🇭🇺 Permitted under MiCA |
+| 14 | **Ireland** | 🇮🇪 Permitted under MiCA |
+| 15 | **Italy** | 🇮🇹 Permitted under MiCA |
+| 16 | **Latvia** | 🇱🇻 Permitted under MiCA |
+| 17 | **Lithuania** | 🇱🇹 Permitted under MiCA |
+| 18 | **Luxembourg** | 🇱🇺 Permitted under MiCA |
+| 19 | **Malta** | 🇲🇹 Permitted under MiCA |
+| 20 | **Netherlands** | 🇳🇱 Permitted under MiCA |
+| 21 | **Poland** | 🇵🇱 Permitted under MiCA |
+| 22 | **Portugal** | 🇵🇹 Permitted under MiCA |
+| 23 | **Romania** | 🇷🇴 Permitted under MiCA |
+| 24 | **Slovakia** | 🇸🇰 Permitted under MiCA |
+| 25 | **Slovenia** | 🇸🇮 Permitted under MiCA |
+| 26 | **Spain** | 🇪🇸 Permitted under MiCA |
+| 27 | **Sweden** | 🇸🇪 Permitted under MiCA |
+
+### 5.4. Other European Countries
+
+| # | Country | Note |
+| :--- | :--- | :--- |
+| 1 | **Georgia** | 🇬🇪 Permitted (primary jurisdiction) |
+| 2 | **Switzerland** | 🇨🇭 Permitted, regulated by FINMA |
+| 3 | **United Kingdom** | 🇬🇧 Permitted, regulated by FCA |
 
 ---
 
@@ -149,14 +200,13 @@ If your country is not included in any of the lists above, it is strongly recomm
 
 ---
 
-## 7. Summary Table by Country
+## 7. Summary Table by Category
 
-| Category | Countries | Status |
+| Category | Status | Countries |
 | :--- | :--- | :--- |
-| **Absolute Prohibition** | Afghanistan, Algeria, Bangladesh, Bolivia, China, Egypt, Iraq, Morocco, Nepal, Qatar, Tunisia, North Macedonia | ❌ **PROHIBITED** |
-| **Partial Restrictions** | India, Indonesia, Turkey, Nigeria, Russia | ⚠️ **RESTRICTED** |
-| **Permitted** | United States, United Kingdom, Germany, Japan, Brazil, Mexico, Philippines, Singapore, Switzerland, UAE, El Salvador, South Korea, all EU countries | ✅ **PERMITTED** |
-| **Undetermined Status** | All other countries | ❓ **REQUIRES REVIEW** |
+| **Absolute Prohibition** | 🔴 **PROHIBITED** | Afghanistan, Algeria, Bangladesh, Bolivia, China, Egypt, Iraq, Morocco, Nepal, Qatar, Tunisia |
+| **Restricted** | 🟡 **RESTRICTED** | India, Indonesia, Nigeria, Russia, Thailand, Turkey, Vietnam |
+| **Permitted** | 🟢 **PERMITTED** | Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, Colombia, Croatia, Cyprus, Czech Republic, Denmark, El Salvador, Estonia, Finland, France, Georgia, Germany, Greece, Hong Kong, Hungary, Ireland, Italy, Japan, Latvia, Lithuania, Luxembourg, Malta, Mexico, Netherlands, New Zealand, Peru, Philippines, Poland, Portugal, Romania, Singapore, Slovakia, Slovenia, South Korea, Spain, Sweden, Switzerland, United Arab Emirates, United Kingdom, United States, Uruguay |
 
 ---
 
@@ -248,11 +298,11 @@ Upon acquiring the Token, the User confirms:
 ```
 I, the undersigned, confirm that:
 
-1. I have reviewed the document "Restricted Countries List v1.1."
+1. I have reviewed the document "Restricted Countries List v1.2."
 
-2. My country of residence/citizenship is NOT included in the list of countries with an absolute cryptocurrency ban (Afghanistan, Algeria, Bangladesh, Bolivia, China, Egypt, Iraq, Morocco, Nepal, Qatar, Tunisia, North Macedonia).
+2. My country of residence/citizenship is NOT included in the list of countries with an absolute cryptocurrency ban (Afghanistan, Algeria, Bangladesh, Bolivia, China, Egypt, Iraq, Morocco, Nepal, Qatar, Tunisia).
 
-3. I understand that if my country is included in the list of restricted countries (India, Indonesia, Turkey, Nigeria, Russia), I am obligated to independently study local legislation.
+3. I understand that if my country is included in the list of restricted countries (India, Indonesia, Nigeria, Russia, Thailand, Turkey, Vietnam), I am obligated to independently study local legislation.
 
 4. I bear full responsibility for compliance with the laws of my country.
 
@@ -268,8 +318,6 @@ Date: _________________  Signature: _________________
 ---
 
 ## 13. References to Official Documents
-
-This List is inextricably linked to the following documents:
 
 | Document | Link |
 | :--- | :--- |
@@ -328,7 +376,7 @@ Participation in blockchain ecosystems involves significant risks. Individuals s
 | Property | Value |
 | :--- | :--- |
 | **Document** | Restricted Countries List |
-| **Version** | 1.1 (Updated) |
+| **Version** | 1.2 (Updated) |
 | **Effective Date** | July 25, 2026 |
 | **Status** | Official |
 | **Next Review** | Annually or after major changes |
@@ -336,5 +384,5 @@ Participation in blockchain ecosystems involves significant risks. Individuals s
 ---
 
 © 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
-**Document Version:** 1.1 (Updated)  
+**Document Version:** 1.2 (Updated)  
 **Last Updated:** July 25, 2026
