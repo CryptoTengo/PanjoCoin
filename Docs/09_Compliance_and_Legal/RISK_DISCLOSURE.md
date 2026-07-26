@@ -2,7 +2,7 @@
 
 ## PanjoCoin (PNJC)
 
-**Version:** 1.1 (Updated)
+**Version:** 1.2 (Updated)
 **Effective Date:** July 25, 2026
 **Project:** PanjoCoin (PNJC)
 **Blockchain:** Polygon PoS
@@ -134,7 +134,7 @@ This Disclosure does not constitute legal, financial, investment, or tax advice.
   - Registration, licensing, or disclosure requirements.
 - Such changes may make holding or using the Token illegal or economically unviable.
 
-### 5.2. Prohibitions in Certain Countries
+### 5.2. Prohibitions in Certain Countries (🔴)
 
 - Citizens and residents of countries with an absolute cryptocurrency ban are **PROHIBITED** from holding, trading, or mining PNJC. The list of such countries is specified in the **Restricted Countries List** document and includes:
 
@@ -151,17 +151,40 @@ This Disclosure does not constitute legal, financial, investment, or tax advice.
 | 9 | Nepal |
 | 10 | Qatar |
 | 11 | Tunisia |
-| 12 | North Macedonia |
 
-- Users from restricted countries (India, Indonesia, Turkey, Nigeria, Russia) must independently study local legislation before acquiring the Token.
+### 5.3. Restricted Countries (🟡)
 
-### 5.3. Token Classification
+- Users from restricted countries must independently study local legislation before acquiring the Token:
+
+| # | Country | Restriction |
+| :--- | :--- | :--- |
+| 1 | **India** | 🇮🇳 30% tax on cryptocurrency profits + 1% TDS |
+| 2 | **Indonesia** | 🇮🇩 Cryptocurrency payments prohibited; trading permitted |
+| 3 | **Nigeria** | 🇳🇬 Banking channels disabled for crypto operations |
+| 4 | **Russia** | 🇷🇺 Partial restrictions. Settlements within the Russian Federation prohibited |
+| 5 | **Thailand** | 🇹🇭 Licensing required for exchanges and certain activities |
+| 6 | **Turkey** | 🇹🇷 Cryptocurrency payments prohibited |
+| 7 | **Vietnam** | 🇻🇳 Holding permitted, use as legal payment prohibited |
+
+### 5.4. Permitted Countries (🟢)
+
+- Citizens and residents of the following countries may hold and trade PNJC subject to compliance with local laws:
+
+**Americas:** Argentina, Brazil, Canada, Chile, Colombia, El Salvador, Mexico, Peru, United States, Uruguay
+
+**Asia-Pacific:** Australia, Hong Kong, Japan, New Zealand, Philippines, Singapore, South Korea, United Arab Emirates
+
+**Europe (EU Member States — Under MiCA):** Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden
+
+**Other European:** Georgia, Switzerland, United Kingdom
+
+### 5.5. Token Classification
 
 - Currently, PNJC is classified as a **utility token** based on analysis under the Howey Test and is **not a security** (as stated in the Legal Disclaimer).
 - However, regulatory authorities (e.g., the SEC in the United States) may reassess the classification and deem similar assets to be securities.
 - Reclassification may entail registration obligations, stricter disclosure requirements, and other consequences.
 
-### 5.4. Tax Risks
+### 5.6. Tax Risks
 
 - Holding, selling, and using cryptocurrencies may be subject to taxation in various jurisdictions.
 - The User bears full responsibility for the payment of taxes related to transactions with the Token.
@@ -423,7 +446,7 @@ Upon acquiring the Token, the User confirms acknowledgment of the risks:
 ```
 I, the undersigned, confirm that:
 
-1. I have read and fully understood the document "Risk Disclosure v1.1."
+1. I have read and fully understood the document "Risk Disclosure v1.2."
 
 2. I understand that the acquisition of PNJC is not an investment and does not guarantee income or profit.
 
@@ -467,7 +490,7 @@ Date: _________________  Signature: _________________
 | Property | Value |
 | :--- | :--- |
 | **Document** | Risk Disclosure |
-| **Version** | 1.1 (Updated) |
+| **Version** | 1.2 (Updated) |
 | **Effective Date** | July 25, 2026 |
 | **Status** | Official |
 | **Next Review** | Annually or after major changes |
@@ -475,5 +498,5 @@ Date: _________________  Signature: _________________
 ---
 
 © 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
-**Document Version:** 1.1 (Updated)  
+**Document Version:** 1.2 (Updated)  
 **Last Updated:** July 25, 2026
