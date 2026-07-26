@@ -445,7 +445,7 @@ Responsible economic management.
 Version	Date	Changes
 v1.0	July 2026	Initial release.
 v2.0	July 23, 2026	Fixed allocation totals, removed burn tax references, updated DEX to Uniswap V2 only, added module status labels.
-v2.1	July 25, 2026	Removed all references to GoldenPhoenixProtocol; updated burn mechanism to reflect optional, user-driven burning; aligned with WhitePaper v2.1; updated contract address.
+WhitePaper v2.1; updated contract address.
 Disclaimer
 This document is provided for informational purposes only.
 
