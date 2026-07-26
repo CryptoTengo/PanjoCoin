@@ -6,7 +6,7 @@ https://www.instagram.com/crypto.tengo/
 
 https://x.com/CryptoTengo/
 
-https://telegram.org/crypto.tengo/
+https://t.me/crypto.tengo/
 
 https://www.tiktok.com/@cryptotengo/
 
