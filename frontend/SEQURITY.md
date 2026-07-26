@@ -55,7 +55,6 @@ In case of conflicts between documents, the following hierarchy applies:
 |---|---|---|
 | **PanjoCoin (PNJC)** | ✅ Active | ERC-20 token with Permit and Burnable. Ownerless (`owner = address(0)`). No mint function. |
 | **PNJCLiquidityLockerV2** | 🧩 Code Ready | Immutable LP lock contract with no emergency withdrawal. Protected against reentrancy. |
-| **GoldenPhoenixProtocol** | 🧩 Code Ready | Deflationary engine with automatic buyback and burn. Uses Ownable2Step with multisig owner. |
 | **PNJCVestingVault** | 🧩 Code Ready | Linear token vesting for team and founder allocations. |
 | **PNJCAirdrop** | 🧩 Code Ready | Merkle tree-based gas-efficient token distribution. |
 | **PNJCTreasuryVault** | 🧩 Code Ready | Multisig treasury management with transparent reporting. |
@@ -78,7 +77,7 @@ All PanjoCoin contracts incorporate the following security measures:
 
 ### 3.3. Token Contract Security
 
-The PNJC token contract (`0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848`) implements the following security guarantees:
+The PNJC token contract (`0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`) implements the following security guarantees:
 
 - **No Mint Function** — `mint()` is physically absent from the code. New tokens can never be created.
 - **No Owner** — The contract does not inherit from OpenZeppelin's `Ownable`. `owner = address(0)`.
@@ -116,7 +115,6 @@ All contracts (both deployed and code-ready) will be reviewed by independent aud
 |---|---|---|
 | PanjoCoin (token) | CertiK | Q2 2026 |
 | PNJCLiquidityLockerV2 | CertiK | Q2 2026 |
-| GoldenPhoenixProtocol | CertiK / Hacken | Q3 2026 |
 | PNJCVestingVault | CertiK / Hacken | Q3 2026 |
 | PNJCAirdrop | CertiK / Hacken | Q2 2026 |
 | PNJCTreasuryVault | CertiK / Hacken | Q3 2026 |
@@ -309,7 +307,7 @@ Official channels for security announcements:
 ### 10.2. Transaction Safety
 
 - Always verify the **contract address** before interacting:
-  - `0x45522cD96EA7eBAF28fc760952b1AD9d5fffc848`
+  - `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 - Double-check transaction details before signing.
 - Use **official sources** for contract addresses and information.
 - Be cautious of **phishing attempts** — always verify URLs.
