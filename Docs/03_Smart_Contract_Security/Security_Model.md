@@ -2,787 +2,615 @@
 
 ## PanjoCoin (PNJC)
 
-**Version:** 1.0  
-**Date:** July 2026  
+**Version:** 1.1 (Updated)  
+**Date:** July 25, 2026  
 **Security Framework:** Defense-in-Depth  
 **Blockchain:** Polygon PoS  
-**Smart Contract:** ERC-20  
+**Smart Contract:** ERC-20 (ERC20Burnable + ERC20Permit)  
+**Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
 ---
 
-# 1. Overview
+## 1. Overview
 
-This document defines the security model of the PanjoCoin (PNJC) ecosystem.
+This document defines the **security model** of the PanjoCoin (PNJC) ecosystem.
 
 The security model is designed to protect:
 
-- Smart contracts
-- User assets
-- Infrastructure
-- APIs
-- Databases
-- Treasury operations
-- Community platforms
-- AI systems
-- Development processes
+- Smart contracts;
+- User assets and wallets;
+- Infrastructure and APIs;
+- Databases and data storage;
+- Treasury operations (multisig);
+- Community platforms and communication channels;
+- Development processes and code repositories.
 
-
-The PNJC security architecture follows a:
-
-**Defense-in-Depth Security Approach**
-
-where multiple independent security layers protect the ecosystem.
+The PNJC security architecture follows a **Defense-in-Depth Security Approach**, where multiple independent security layers protect the ecosystem.
 
 ---
 
-# 2. Security Objectives
+## 2. Security Objectives
 
 The primary security objectives are:
 
-## Confidentiality
+### Confidentiality
 
 Protection of:
 
-- Private infrastructure information
-- Administrative credentials
-- User personal data
+- Private infrastructure information;
+- Administrative credentials;
+- User personal data.
 
-
-## Integrity
+### Integrity
 
 Ensuring:
 
-- Correct smart contract execution
-- Accurate blockchain data
-- Reliable ecosystem operations
+- Correct smart contract execution;
+- Accurate blockchain data;
+- Reliable ecosystem operations.
 
-
-## Availability
+### Availability
 
 Maintaining:
 
-- API availability
-- Website accessibility
-- Community services
-- Blockchain integrations
-
+- API availability;
+- Website accessibility;
+- Community services;
+- Blockchain integrations.
 
 ---
 
-# 3. Security Architecture Overview
+## 3. Security Architecture Overview
 
-             Users
-
-               |
-
-         Frontend Security
-
-               |
-
+```
+            Users
+              |
+        Frontend Security
+              |
           API Gateway
-
-               |
-
-| | |
-
-Application Database Blockchain
-
-Security Security Security
-
-               |
-
-        Smart Contract Layer
-
-
-               |
-
-         Polygon Network
+              |
+   ┌──────────┼──────────┐
+   │          │          │
+Application  Database  Blockchain
+  Security   Security  Security
+              │
+       Smart Contract Layer
+              │
+        Polygon Network
+```
 
 ---
 
-# 4. Security Layers
+## 4. Security Layers
 
 The PNJC ecosystem security consists of:
 
-
-Layer 1:
-Blockchain Security
-
-Layer 2:
-Smart Contract Security
-
-Layer 3:
-Infrastructure Security
-
-Layer 4:
-Application Security
-
-Layer 5:
-Data Security
-
-Layer 6:
-Operational Security
-
-Layer 7:
-Governance Security
-
+| Layer | Description |
+| :--- | :--- |
+| **Layer 1: Blockchain Security** | Polygon PoS network security. |
+| **Layer 2: Smart Contract Security** | Ownerless, non-upgradeable, OpenZeppelin. |
+| **Layer 3: Infrastructure Security** | Hosting, firewalls, DDoS protection. |
+| **Layer 4: Application Security** | HTTPS, CSP, secure authentication. |
+| **Layer 5: Data Security** | Encryption, access control, data minimisation. |
+| **Layer 6: Operational Security** | Code reviews, testing, audits. |
+| **Layer 7: Governance Security** | Multisig, DAO, timelocks. |
 
 ---
 
-# 5. Smart Contract Security
+## 5. Smart Contract Security
 
-## 5.1 Contract Security Principles
+### 5.1. Contract Security Principles
 
 PNJC smart contracts follow:
 
-- OpenZeppelin standards
-- Solidity best practices
-- Minimal privilege principle
-- Transparent logic
-- Immutable core contract design
+- OpenZeppelin v5.5.0 standards;
+- Solidity 0.8.36 best practices;
+- Minimal privilege principle (ownerless);
+- Transparent logic (verified code);
+- Immutable core contract design (no upgrades).
 
-
----
-
-# 5.2 Smart Contract Protection
+### 5.2. Smart Contract Protection
 
 Implemented protections:
 
-
 | Protection | Status |
-|-|-|
-| Fixed Supply | Enabled |
-| Mint Disabled | Enabled |
-| Upgradeability Disabled | Enabled |
-| Overflow Protection | Enabled |
-| Tax Limits | Enabled |
-| Anti-bot Logic | Enabled |
-| Source Verification | Enabled |
+| :--- | :--- |
+| **Fixed Supply** | ✅ Enabled |
+| **Mint Disabled** | ✅ Enabled |
+| **Upgradeability Disabled** | ✅ Enabled |
+| **Overflow Protection** | ✅ Enabled |
+| **Source Verification** | ✅ Enabled |
+| **ReentrancyGuard** | ✅ Enabled |
+| **No selfdestruct** | ✅ Enabled |
+| **No delegatecall** | ✅ Enabled |
+| **Zero Transfer Tax** | ✅ Enabled |
+| **ERC20Burnable** | ✅ Enabled (optional) |
+| **ERC20Permit (EIP-2612)** | ✅ Enabled (gasless approvals) |
 
+### 5.3. Forbidden Operations
 
----
+The PNJC core contract **does not** allow:
 
-# 5.3 Forbidden Operations
-
-The PNJC core contract does not allow:
-
-
-❌ Hidden minting
-
-❌ Unlimited token creation
-
-❌ Arbitrary balance modification
-
-❌ User blacklist control
-
-❌ Unauthorized freezing
-
-❌ Hidden ownership privileges
-
+| Operation | Status |
+| :--- | :--- |
+| ❌ Hidden minting | Prohibited |
+| ❌ Unlimited token creation | Prohibited |
+| ❌ Arbitrary balance modification | Prohibited |
+| ❌ User blacklist control | Prohibited |
+| ❌ Unauthorised freezing | Prohibited |
+| ❌ Hidden ownership privileges | Prohibited |
+| ❌ Contract upgrades | Prohibited |
 
 ---
 
-# 6. Access Control Model
+## 6. Access Control Model
 
-PNJC follows the:
+PNJC follows the **Principle of Least Privilege** — every system component receives only the permissions required for its function.
 
-## Principle of Least Privilege
+### 6.1. Administrative Roles
 
-Every system component receives only required permissions.
-
-
----
-
-# 6.1 Administrative Roles
-
-
+```
 Founder
+    │
+    ▼
+Multisig Treasury (3/5)
+    │
+    ├── Operational Roles
+    │       │
+    │       └── Development Team
+    │
+    └── DAO Governance (Q4 2026)
+```
 
-|
+### 6.2. Role Separation
 
-Multisig Treasury
-
-|
-
-Operational Roles
-
-|
-
-Developers
-
-
----
-
-# 6.2 Role Separation
-
-Roles:
-
-
-## Founder
-
-Responsibilities:
-
-- Strategic decisions
-- Ecosystem direction
-
+| Role | Responsibilities | Permissions |
+| :--- | :--- | :--- |
+| **Founder** | Strategic decisions, ecosystem direction. | No direct control over user funds. |
+| **Multisig Treasury** | Treasury operations, fund management. | Requires 3/5 approval for any transaction. |
+| **Developers** | Code maintenance, testing, deployment support. | No direct treasury access. |
 
 ---
 
-## Multisig Treasury
+## 7. Wallet Security Model
 
-Responsibilities:
+### Supported Wallets
 
-- Treasury operations
-- Fund management
+| Wallet | Compatibility |
+| :--- | :--- |
+| **MetaMask** | ✅ |
+| **Trust Wallet** | ✅ |
+| **WalletConnect** | ✅ |
+| **Phantom** | ✅ |
+| **Other EVM Wallets** | ✅ |
 
+### 7.1. Wallet Protection
 
-Recommended:
+**Users are responsible for:**
 
+- Private key security;
+- Seed phrase protection;
+- Transaction verification.
 
-3 of 5 multisig approval
+**PNJC never requests:**
 
-
----
-
-## Developers
-
-Permissions:
-
-- Code maintenance
-- Testing
-- Deployment support
-
-
-Restrictions:
-
-- No direct treasury access
-
+| Item | Status |
+| :--- | :--- |
+| ❌ Private keys | Never requested |
+| ❌ Seed phrases | Never requested |
+| ❌ Passwords | Never requested |
 
 ---
 
-# 7. Wallet Security Model
+## 8. Treasury Security
 
-## Supported Wallets
-
-- MetaMask
-- WalletConnect
-- Phantom
-
-
----
-
-# 7.1 Wallet Protection
-
-Users are responsible for:
-
-- Private key security
-- Seed phrase protection
-- Transaction verification
-
-
-PNJC never requests:
-
-
-❌ Private keys
-
-❌ Seed phrases
-
-❌ Passwords
-
-
----
-
-# 8. Treasury Security
-
-## Treasury Protection
+### Treasury Protection
 
 Treasury assets must use:
 
+| Measure | Description |
+| :--- | :--- |
+| **Multisignature Wallets** | 3/5 approval for any transaction. |
+| **Hardware Wallets** | Keys stored on Ledger/Trezor. |
+| **Transaction Approval Policies** | Clear approval procedures. |
 
-- Multisignature wallets
-- Hardware wallets
-- Transaction approval policies
+### 8.1. Treasury Rules
 
-
----
-
-# 8.1 Treasury Rules
-
-Required:
-
-
-Multiple approvals
-
-Transaction review
-
-Public transparency
-
-Emergency procedures
-
+| Rule | Description |
+| :--- | :--- |
+| **Multiple Approvals** | At least 3 of 5 signers required. |
+| **Transaction Review** | All transactions reviewed before execution. |
+| **Public Transparency** | All movements on-chain and verifiable. |
+| **Emergency Procedures** | Defined incident response plan. |
 
 ---
 
-# 9. Liquidity Security
+## 9. Liquidity Security
 
-Liquidity protection mechanisms:
+### Liquidity Protection Mechanisms
 
+| Mechanism | Description |
+| :--- | :--- |
+| **Liquidity Lock** | Prevents unauthorised liquidity removal. |
+| **Lock Period** | 12 months (no early withdrawal). |
+| **Contract** | PNJCLiquidityLockerV2 (immutable, ownerless). |
 
-## Liquidity Lock
-
-Purpose:
-
-- Prevent liquidity removal
-- Increase investor confidence
-
-
-Protection:
-
-
-PNJCLiquidityLocker
-
+**Purpose:**
+- Prevent liquidity removal;
+- Increase investor confidence;
+- Reduce rug-pull risk.
 
 ---
 
-# 10. API Security
+## 10. API Security
 
-API security requirements:
+### Authentication
 
+| Method | Description |
+| :--- | :--- |
+| **API Keys** | For authorised services. |
+| **OAuth2** | For user authentication. |
+| **Wallet Signatures** | For blockchain-based authentication. |
 
-## Authentication
+### Protection Measures
 
-Methods:
-
-- API keys
-- OAuth2
-- Wallet signatures
-
-
----
-
-## Protection Measures
-
-Implemented:
-
-- Rate limiting
-- Request validation
-- Input sanitization
-- Logging
-
+| Measure | Description |
+| :--- | :--- |
+| **Rate Limiting** | Prevents abuse and DDoS. |
+| **Request Validation** | Ensures valid input. |
+| **Input Sanitisation** | Prevents injection attacks. |
+| **Logging** | Auditable access logs. |
 
 ---
 
-# 11. Database Security
+## 11. Database Security
 
-Database protection:
+### Encryption
 
+| Measure | Description |
+| :--- | :--- |
+| **Encryption at Rest** | All database content encrypted. |
+| **TLS Connections** | Encrypted data transmission. |
+| **Encrypted Backups** | All backups secured. |
 
-## Encryption
+### Access Control
 
-Required:
-
-- Encryption at rest
-- TLS connections
-- Encrypted backups
-
-
----
-
-## Access Control
-
-Database roles:
-
-
-ADMIN
-
-DEVELOPER
-
-ANALYST
-
-READ_ONLY
-
+| Role | Permissions |
+| :--- | :--- |
+| **ADMIN** | Full system access. |
+| **DEVELOPER** | Schema and application access. |
+| **ANALYST** | Read-only for analytics. |
+| **READ_ONLY** | Limited view access. |
 
 ---
 
-# 12. Infrastructure Security
+## 12. Infrastructure Security
 
-Infrastructure protection:
+### Server Security
 
+| Requirement | Description |
+| :--- | :--- |
+| **Firewall Rules** | Restricted access to servers. |
+| **Secure SSH Access** | Key-based authentication only. |
+| **Automatic Updates** | Regular security patches. |
+| **Vulnerability Monitoring** | Continuous scanning. |
 
-## Server Security
+### Cloud Security
 
-Requirements:
-
-- Firewall rules
-- Secure SSH access
-- Automatic updates
-- Vulnerability monitoring
-
-
----
-
-## Cloud Security
-
-Recommended:
-
-- Private networks
-- Secrets management
-- Identity management
-
+| Measure | Description |
+| :--- | :--- |
+| **Private Networks** | Isolated cloud environments. |
+| **Secrets Management** | Encrypted credential storage. |
+| **Identity Management** | Controlled access to resources. |
 
 ---
 
-# 13. Application Security
+## 13. Application Security
 
-Frontend protection:
+### Frontend Protection
 
-
-Implemented:
-
-- HTTPS only
-- Content Security Policy
-- Secure authentication
-- Dependency scanning
-
+| Measure | Description |
+| :--- | :--- |
+| **HTTPS Only** | Encrypted web traffic. |
+| **Content Security Policy** | Prevents XSS attacks. |
+| **Secure Authentication** | Wallet-based authentication. |
+| **Dependency Scanning** | Regular vulnerability checks. |
 
 ---
 
-# 14. Data Protection
+## 14. Data Protection
 
 PNJC follows:
 
-- Data minimization
-- Privacy by design
-- Secure storage principles
+| Principle | Description |
+| :--- | :--- |
+| **Data Minimisation** | Only essential data collected. |
+| **Privacy by Design** | Privacy integrated from the start. |
+| **Secure Storage Principles** | Encrypted and access-controlled. |
 
+**The system must never store:**
 
-The system must never store:
-
-
-Private keys
-
-Seed phrases
-
-Unencrypted passwords
-
-
----
-
-# 15. AI System Security
-
-For PNJC AI Content Factory:
-
-
-Protection measures:
-
-- Prompt injection protection
-- Access control
-- Content validation
-- Audit logging
-
-
-AI systems must not:
-
-- Access private user data
-- Execute financial transactions
-- Control treasury wallets
-
+| Item | Status |
+| :--- | :--- |
+| ❌ Private keys | Never stored |
+| ❌ Seed phrases | Never stored |
+| ❌ Unencrypted passwords | Never stored |
 
 ---
 
-# 16. Development Security
+## 15. Development Security
 
-Secure Development Lifecycle (SDLC):
+### Secure Development Lifecycle (SDLC)
 
-
+```
 Planning
-
-↓
-
+    │
+    ▼
 Development
-
-↓
-
+    │
+    ▼
 Code Review
-
-↓
-
+    │
+    ▼
 Testing
-
-↓
-
+    │
+    ▼
 Security Analysis
-
-↓
-
+    │
+    ▼
 Deployment
-
-
----
-
-# 17. Code Security
-
-Required practices:
-
-
-## Version Control
-
-- Protected branches
-- Code reviews
-- Commit verification
-
+```
 
 ---
 
-## Testing
+## 16. Code Security
 
-Required:
+### Version Control
 
-- Unit tests
-- Integration tests
-- Security tests
+| Practice | Description |
+| :--- | :--- |
+| **Protected Branches** | Main branch protected from direct pushes. |
+| **Code Reviews** | At least two reviewers before merge. |
+| **Commit Verification** | Signed commits where applicable. |
 
+### Testing
 
----
-
-# 18. Monitoring and Detection
-
-Security monitoring includes:
-
-
-## Blockchain Monitoring
-
-Tracking:
-
-- Large transfers
-- Contract events
-- Suspicious activity
-
+| Type | Description |
+| :--- | :--- |
+| **Unit Tests** | Hardhat, Chai. |
+| **Integration Tests** | End-to-end workflows. |
+| **Security Tests** | Slither, Mythril. |
 
 ---
 
-## Infrastructure Monitoring
+## 17. Monitoring and Detection
 
-Tracking:
+### Blockchain Monitoring
 
-- Server health
-- Failed requests
-- Unauthorized access attempts
+| Activity | Description |
+| :--- | :--- |
+| **Large Transfers** | Monitor for unusual movements. |
+| **Contract Events** | Track Transfer, Approval, and Burn events. |
+| **Suspicious Activity** | Alerts for anomalies. |
 
+### Infrastructure Monitoring
+
+| Activity | Description |
+| :--- | :--- |
+| **Server Health** | Uptime and performance. |
+| **Failed Requests** | Error tracking and analysis. |
+| **Unauthorised Access Attempts** | Security event alerts. |
 
 ---
 
-# 19. Incident Response Model
+## 18. Incident Response Model
 
 Security incidents follow:
 
-
+```
 Detection
-
-↓
-
+    │
+    ▼
 Classification
-
-↓
-
+    │
+    ▼
 Containment
-
-↓
-
+    │
+    ▼
 Investigation
-
-↓
-
+    │
+    ▼
 Recovery
-
-↓
-
+    │
+    ▼
 Post-Incident Review
-
-
----
-
-# 20. Incident Categories
-
-
-## Critical
-
-Examples:
-
-- Smart contract vulnerability
-- Treasury compromise
-
-
-## High
-
-Examples:
-
-- API breach
-- Infrastructure compromise
-
-
-## Medium
-
-Examples:
-
-- Service interruption
-
-
-## Low
-
-Examples:
-
-- Documentation issues
-
+```
 
 ---
 
-# 21. Backup and Recovery
+## 19. Incident Categories
 
-Recovery requirements:
-
-
-## Backup Frequency
-
-
-Daily full backup
-
-Hourly incremental backup
-
+| Severity | Examples | Response Time |
+| :--- | :--- | :--- |
+| **Critical** | Smart contract vulnerability, treasury compromise. | Immediate (within 1 hour) |
+| **High** | API breach, infrastructure compromise. | Within 24 hours |
+| **Medium** | Service interruption, data exposure. | Within 72 hours |
+| **Low** | Documentation issues, minor vulnerabilities. | Within 1 week |
 
 ---
 
-## Recovery Targets
+## 20. Backup and Recovery
 
+### Backup Frequency
 
-RPO:
-< 1 hour
+| Type | Frequency |
+| :--- | :--- |
+| **Full Backup** | Daily |
+| **Incremental Backup** | Hourly |
 
-RTO:
-< 4 hours
+### Recovery Targets
 
-
----
-
-# 22. Security Testing
-
-Required:
-
-
-## Automated Testing
-
-Tools:
-
-- Slither
-- Mythril
-- Foundry
-- Hardhat
-
+| Target | Value |
+| :--- | :--- |
+| **RPO** | < 1 hour |
+| **RTO** | < 4 hours |
 
 ---
 
-## Manual Review
+## 21. Security Testing
 
-Includes:
+### Automated Testing
 
-- Logic analysis
-- Economic attack analysis
-- Access control review
+| Tool | Purpose |
+| :--- | :--- |
+| **Slither** | Static analysis for Solidity. |
+| **Mythril** | Security analysis for smart contracts. |
+| **Hardhat** | Development and testing framework. |
+| **Chai** | Assertion library. |
 
+### Manual Review
 
----
-
-# 23. External Security Audit
-
-Recommended auditors:
-
-
-- CertiK
-- Hacken
-- Quantstamp
-- OpenZeppelin Security Review
-
-
-Audit scope:
-
-- Smart contracts
-- Tokenomics logic
-- Infrastructure
-- API security
-
+| Area | Description |
+| :--- | :--- |
+| **Logic Analysis** | Business logic verification. |
+| **Economic Attack Analysis** | Market manipulation scenarios. |
+| **Access Control Review** | Permission verification. |
 
 ---
 
-# 24. Compliance Security Alignment
+## 22. External Security Audit
+
+### Recommended Auditors
+
+| Auditor | Specialisation |
+| :--- | :--- |
+| **CertiK** | Smart contract security. |
+| **Hacken** | Blockchain security. |
+| **Quantstamp** | Smart contract auditing. |
+| **OpenZeppelin Security Review** | Solidity best practices. |
+
+### Audit Scope
+
+| Area | Description |
+| :--- | :--- |
+| **Smart Contracts** | All deployed and planned contracts. |
+| **Tokenomics Logic** | Supply, distribution, vesting. |
+| **Infrastructure** | APIs, databases, hosting. |
+| **API Security** | Authentication, rate limiting. |
+
+---
+
+## 23. Compliance Security Alignment
 
 The security model supports:
 
-- MiCA readiness
-- VASP due diligence
-- Investor security review
-- Enterprise partnerships
-
+| Requirement | Description |
+| :--- | :--- |
+| **MiCA Readiness** | Prepared for EU regulation. |
+| **VASP Due Diligence** | Virtual Asset Service Provider requirements. |
+| **Investor Security Review** | Transparency for due diligence. |
+| **Enterprise Partnerships** | Meets enterprise security standards. |
 
 ---
 
-# 25. Security Risk Matrix
+## 24. Security Risk Matrix
 
 | Risk | Impact | Mitigation |
-|-|-|-|
-| Smart Contract Bug | Critical | Audit + Testing |
-| Wallet Compromise | Critical | Multisig |
-| API Attack | High | Authentication |
-| Data Breach | High | Encryption |
-| Liquidity Attack | High | Lock Mechanism |
-| Social Engineering | Medium | Awareness |
+| :--- | :--- | :--- |
+| **Smart Contract Bug** | Critical | Audit + Testing + OpenZeppelin |
+| **Wallet Compromise** | Critical | Multisig + Hardware Wallets |
+| **API Attack** | High | Authentication + Rate Limiting |
+| **Data Breach** | High | Encryption + Access Control |
+| **Liquidity Attack** | High | Lock Mechanism (12 months) |
+| **Social Engineering** | Medium | User Education + Awareness |
 
 ---
 
-# 26. Future Security Improvements
+## 25. Smart Contract Security Checklist
 
-Planned:
+All PNJC smart contracts undergo verification against this checklist:
 
-
-## Advanced Monitoring
-
-- AI threat detection
-- Automated anomaly detection
-
-
-## Governance Security
-
-- DAO security modules
-- Timelock execution
-
-
-## Infrastructure
-
-- Zero Trust Architecture
-- Hardware security modules
-
+| Check | Status |
+| :--- | :--- |
+| **OpenZeppelin libraries used** | ✅ |
+| **ReentrancyGuard applied** | ✅ |
+| **No selfdestruct** | ✅ |
+| **No delegatecall** | ✅ |
+| **No upgradeability** | ✅ |
+| **No owner (token)** | ✅ |
+| **No mint function** | ✅ |
+| **No blacklist** | ✅ |
+| **No freeze** | ✅ |
+| **Zero transfer tax** | ✅ |
+| **ERC20Burnable implemented** | ✅ |
+| **ERC20Permit (EIP-2612) implemented** | ✅ |
+| **Code verified on PolygonScan** | ✅ |
+| **Independent audit scheduled** | ✅ |
 
 ---
 
-# 27. Final Statement
+## 26. Future Security Improvements
 
-The PanjoCoin Security Model establishes a comprehensive protection framework for a decentralized Web3 ecosystem.
+Planned improvements:
 
-The architecture prioritizes:
+| Improvement | Description | Timeline |
+| :--- | :--- | :--- |
+| **Advanced Monitoring** | AI-driven threat detection (future). | Q4 2026 |
+| **Governance Security** | DAO security modules, timelock. | Q4 2026 |
+| **Infrastructure** | Zero Trust Architecture. | Q1 2027 |
+| **Hardware Security Modules** | Enhanced key protection. | Q1 2027 |
+| **Bug Bounty Program** | Rewards for vulnerability discovery. | Q4 2026 |
 
-- Smart contract safety
-- User protection
-- Infrastructure resilience
-- Transparent governance
-- Operational security
+---
+
+## 27. Final Statement
+
+The PanjoCoin Security Model establishes a comprehensive protection framework for a decentralised Web3 ecosystem.
+
+The architecture prioritises:
+
+- Smart contract safety;
+- User protection;
+- Infrastructure resilience;
+- Transparent governance;
+- Operational security.
 
 Security is treated as a continuous process requiring:
 
-- Monitoring
-- Testing
-- Auditing
-- Improvement
-
+- Monitoring;
+- Testing;
+- Auditing;
+- Improvement.
 
 ---
 
-© 2026 CryptoTengo  
-PanjoCoin (PNJC)
+## Disclaimer
+
+This Security Model describes security principles and practices and does not constitute a guarantee against all security threats.
+
+**It does not constitute:**
+- Investment advice;
+- Financial advice;
+- Legal advice;
+- Tax advice;
+- An offer to sell securities;
+- A solicitation to purchase financial instruments.
+
+Participation in blockchain ecosystems involves significant risks. Individuals should conduct independent research and seek professional advice where appropriate before making financial or legal decisions.
+
+---
+
+### Document Information
+
+| Property | Value |
+| :--- | :--- |
+| **Document** | Security Model |
+| **Version** | 1.1 (Updated) |
+| **Date** | July 25, 2026 |
+| **Status** | Official |
+
+---
+
+© 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.  
+**Document Version:** 1.1 (Updated)  
+**Last Updated:** July 25, 2026
