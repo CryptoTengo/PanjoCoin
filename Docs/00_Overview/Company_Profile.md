@@ -84,7 +84,7 @@ Built‑in burn (burn()) and gas‑free permit (permit()) functions;
 
 Ownerless contract – no administrative keys for maximum decentralisation;
 
-Planned modules: DAO Governor, GoldenPhoenixProtocol (deflationary engine), VestingVault, MerkleAirdrop, TreasuryVault, ONE+ Gaming Platform, and ClownCare Bridge (charity).
+Planned modules: DAO Governor, VestingVault, MerkleAirdrop, TreasuryVault, ONE+ Gaming Platform, and ClownCare Bridge (charity).
 
 ## 8. Technology Foundation
 Blockchain:
