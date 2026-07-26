@@ -26,8 +26,6 @@ PNJC_Token.sol
 
 PNJC_LiquidityLocker.sol
 
-PNJC_GoldenPhoenixProtocol.sol
-
 PNJCAirdrop.sol
 
 PNJCVestingVault.sol
