@@ -1,9 +1,8 @@
 ### PanjoCoin (PNJC) — WHITEPAPER
-Version: 2.2
-Date: August 2, 2026 
+Version: 2.0 (Reconciled with README v2.0)
+Date: August 2, 2026 (original v2.2: July 25, 2026)
 Network: Polygon PoS
 
-> **Revision note (v2.2):** This version corrects statements that described the Liquidity Locker, VestingVault, TreasuryVault, MerkleAirdrop, DAO Governor, and the operational multisig as already active/operational. As of this revision, only the PanjoCoin token contract is deployed and verified — every other module is code-complete but **not yet deployed to mainnet**. Wording throughout the document has been changed from present tense ("is locked", "is protected") to future/conditional tense ("will be locked once deployed") wherever a mechanism is not yet live. For the current, frequently-updated deployment status of every module, see the **"Current Project Status"** table in the project [README](https://github.com/CryptoTengo/PanjoCoin), which now takes precedence over this document for real-time status (see Section 14).
 
 ## 1. THE LEGEND OF PANJO
 In the heart of Tbilisi, in the courtyard of the Iashvili Central Children's Clinical Hospital, a Shar Pei named Panjo appeared one day. He belonged to no one and seemed to have wandered in by chance — to a place where chance usually does not bring visitors. He stopped in the courtyard, raised his head, and gazed for a long time at the sky where clouds drifted slowly — as if searching for something familiar among them.
@@ -354,5 +353,5 @@ Join us — every step brings us closer to a child's smile and a sustainable eco
 | Socials | X (Twitter), Telegram |
 
 © 2026 PanjoCoin. All rights reserved.
-Document Version: 2.3 (Reconciled with README v2.0)
+Document Version: 2.0 (Reconciled with README v2.0)
 Last Updated: August 2, 2026
