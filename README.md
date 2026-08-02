@@ -1,18 +1,27 @@
 # PanjoCoin (PNJC) — Decentralized Utility Token on Polygon
 
 ![License](https://img.shields.io/badge/License-MIT%20%2B%20Proprietary-blue.svg)
+
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.36-blueviolet)
+
 ![Network](https://img.shields.io/badge/Network-Polygon_PoS-8247e5)
+
 ![Contract](https://img.shields.io/badge/Contract-Verified-brightgreen)
+
 ![Audit](https://img.shields.io/badge/Audit-Automated%20(Slither)%20Completed-yellow)
 
+
 PanjoCoin (PNJC) is a **utility token** with a **fixed supply**, an **ownerless, non‑upgradeable smart contract**, and a **0% transfer tax**, deployed on the Polygon PoS network. The project is inspired by the true story of a Shar Pei named Panjo, who brought comfort to children at the Iashvili Central Children's Clinical Hospital in Tbilisi. The ecosystem combines a utility token, a planned gaming platform (ONE+), and a transparent, on‑chain charitable initiative (ClownCare Bridge).
+
 
 > **PNJC is not a deflationary token.** There is no burn tax, no transaction fee, and no staking module live today. If you see PNJC described elsewhere as a "deflationary meme token with burn/tax/staking features," that description is outdated and incorrect — see [Key Parameters](#-key-parameters) below for the actual, contract-verified specification.
 
 🔗 Token Contract: `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
+
 🌐 Website: cryptotengo.com
+
 🐦 X (Twitter): @CryptoTengo
+
 💬 Telegram: t.me/CryptoTengo
 
 ---
