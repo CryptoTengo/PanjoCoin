@@ -3,9 +3,13 @@
 ## PanjoCoin (PNJC)
 
 **Version:** 1.0 
-**Date:** August 2, 2026 
+
+**Date:** August 2, 2026
+
 **Network:** Polygon PoS
+
 **Token Standard:** ERC-20 (ERC20Burnable + ERC20Permit)
+
 **Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
 > **Revision note (v1.2):** This version brings the Legal Disclaimer in line with the other reconciled project documents. Three changes were made:
