@@ -13,8 +13,11 @@
 **Smart Contract Address:** `0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF`
 
 > **Revision note (v1.0):** This version brings the Legal Disclaimer in line with the other reconciled project documents. Three changes were made:
+> 
 >  (1) the Howey Test conclusion in Section 2 is now explicitly labeled as the project's own preliminary self‑assessment rather than a qualified legal opinion;
+> 
 >  (2) the country restriction list in Section 4.2 now carries a clear caveat that it has not been verified by local counsel and may be outdated;
+> 
 >  (3) references to "active" governance and compliance mechanisms have been corrected to reflect actual deployment status — see the "Current Project Status" table in the project README, which takes precedence over this document per the Whitepaper's Source of Truth hierarchy (Whitepaper Section 14).
 
 ---
