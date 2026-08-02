@@ -1,7 +1,5 @@
 # PanjoCoin (PNJC) — Tokenomics
 
-![PanjoCoin](../../Assets/panjo-logo.png)
-
 **Version:** 1.0  
 **Date:** August 2026  
 
