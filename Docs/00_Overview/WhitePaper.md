@@ -214,7 +214,6 @@ This table is split by contract scope to avoid ambiguity about ownership, since 
 | Measure | Status |
 |---|---|
 | OpenZeppelin 5.5.0 | ✅ |
-| ReentrancyGuard | ✅ |
 | No selfdestruct | ✅ |
 | No delegatecall | ✅ |
 | No upgradeability | ✅ |
