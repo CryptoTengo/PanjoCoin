@@ -122,7 +122,8 @@ PanjoCoin is committed to:
 | Zero Tax | ✅ 0% on all transactions |
 | No Upgradeability | ✅ Immutable contracts |
 | Automated Audit (Slither, all 5 contracts) | ✅ Completed — 95/100, no critical/high findings |
-| Independent Professional Audits (CertiK / Hacken) | ⏳ Not yet started — original Q2 2026 targets for the token, Locker, and Airdrop contracts have passed and are being rescheduled; see Tokenomics Section 5.3 |
+| Independent Professional Audits (CertiK / Hacken) | ⏳ Not yet started — original Q2 2026 targets for the token and Locker contracts, and the July 2026 target for the Airdrop contract, have passed and are being rescheduled; see Tokenomics Section 5.3 |
+
 | Operational Multisig (3/5) | ⏳ Not yet fully operational — 1 of 5 signers currently appointed |
 
 ## Regulatory Awareness
