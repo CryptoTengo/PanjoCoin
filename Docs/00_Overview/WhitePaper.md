@@ -237,7 +237,7 @@ This table is split by contract scope to avoid ambiguity about ownership, since 
 |---|---|
 | Verification on PolygonScan | ✅ Completed |
 | Internal testing (Hardhat) | ✅ Completed |
-| Automated static analysis (Slither, all 5 contracts) | ✅ Completed — 95/100, no critical or high-severity findings. Bilingual (Georgian/Russian) reports available. |
+| Automated static analysis (Slither, all 6 contracts) | ✅ Completed — 95/100, no critical or high-severity findings. Bilingual (Georgian/Russian) reports available. |
 | Community code review | 🔄 Available |
 
 Automated static analysis is a useful preliminary sanity check. It is **not** a substitute for an independent professional audit and should not be presented or interpreted as one.
@@ -253,8 +253,7 @@ Automated static analysis is a useful preliminary sanity check. It is **not** a 
 | TreasuryVault | CertiK / Hacken | Q3 2026 | ⏳ Not started |
 | DAO Governor | CertiK / Hacken | Q4 2026 | ⏳ Not started |
 
-Audit results will be published on the website and GitHub repository in full and unedited, regardless of outcome. None of these five modules will be deployed to mainnet prior to completion of its respective independent audit.
-
+Audit results will be published on the website and GitHub repository in full and unedited, regardless of outcome. The PanjoCoin token contract was deployed prior to the establishment of this audit-first policy and has not yet undergone an independent audit; this is disclosed as a Technical Risk in Section 12. None of the remaining five modules (PNJCLiquidityLockerV2, VestingVault, Airdrop, TreasuryVault, DAO Governor) will be deployed to mainnet prior to completion of its respective independent audit.
 ## 10. ROADMAP (24 MONTHS)
 
 | Month | Period | Module / Stage | Details | Actual Status (as of Aug 2026) |
