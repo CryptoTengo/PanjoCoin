@@ -6,7 +6,7 @@ Token Standard: ERC-20 (ERC20Burnable + ERC20Permit)
 Total Supply: 1,000,000,000,000 PNJC (Fixed Supply)
 Smart Contract Address: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF
 
-> **Revision note (v1.2):** This version aligns the One‑Pager with the corrected Whitepaper (v2.3) and Tokenomics (v2.2). Statements describing liquidity locking, vesting, the operational multisig, and independent audits as already active have been changed to reflect their real deployment status: **only the token contract is live on mainnet.** All other modules are code‑complete but not yet deployed. See the "Current Project Status" table in the project README for real‑time status.
+> **Revision note (v1.1):** This version aligns the One‑Pager with the corrected Whitepaper (v2.3) and Tokenomics (v2.2). Statements describing liquidity locking, vesting, the operational multisig, and independent audits as already active have been changed to reflect their real deployment status: **only the token contract is live on mainnet.** All other modules are code‑complete but not yet deployed. See the "Current Project Status" table in the project README for real‑time status.
 
 ## Overview
 PanjoCoin (PNJC) is an open‑source utility token built on the Polygon PoS blockchain to support a transparent, community‑driven ecosystem focused on blockchain technology, gaming, charitable initiatives, and decentralised governance.
