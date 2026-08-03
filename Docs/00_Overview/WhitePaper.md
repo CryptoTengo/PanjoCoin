@@ -354,5 +354,5 @@ Join us — every step brings us closer to a child's smile and a sustainable eco
 | Socials | X (Twitter), Telegram |
 
 © 2026 PanjoCoin. All rights reserved.
-Document Version: 2.0 (Reconciled with README v2.0)
+Document Version: 2.2 (Reconciled with README v2.0)
 Last Updated: August 2, 2026
