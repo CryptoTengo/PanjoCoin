@@ -160,7 +160,7 @@ By focusing on transparency, practical utility, and responsible innovation — i
 
 | Resource | Link |
 |---|---|
-| Official Website | www.cryptotengo.netlify.app |
+| Official Website | http://cryptotengo.netlify.app/ |
 | Smart Contract (Token) | 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF |
 | GitHub Repository | github.com/CryptoTengo/PanjoCoin |
 | Documentation | White Paper • Tokenomics • Legal Disclaimer • AML Policy • Privacy Policy • Risk Disclosure • Restricted Countries • Terms of Use |
