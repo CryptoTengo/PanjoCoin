@@ -198,7 +198,7 @@ Year	Locked (Billion)	In Circulation (Billion)	% in Circulation
 
 | Contract | Status | Link |
 |---|---|---|
-| PanjoCoin (token) | ✅ Active | PolygonScan |
+| PanjoCoin (token) | ✅ Active — deployed prior to the independent-audit-first policy (see Section 9.2) | PolygonScan |
 | PNJCLiquidityLockerV2 | 🧩 Code Ready — not deployed | GitHub |
 | PNJCAirdrop | 🧩 Code Ready — not deployed | GitHub |
 | PNJCVestingVault | 🧩 Code Ready — not deployed | GitHub |
