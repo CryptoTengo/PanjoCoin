@@ -1,12 +1,12 @@
 ## PanjoCoin (PNJC) — One Pager
-Version: 1.1 
+Version: 1.2 
 Date: August 2, 2026
 Blockchain: Polygon PoS
 Token Standard: ERC-20 (ERC20Burnable + ERC20Permit)
 Total Supply: 1,000,000,000,000 PNJC (Fixed Supply)
 Smart Contract Address: 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF
 
-> **Revision note (v1.1):** This version aligns the One‑Pager with the corrected Whitepaper (v2.3) and Tokenomics (v2.2). Statements describing liquidity locking, vesting, the operational multisig, and independent audits as already active have been changed to reflect their real deployment status: **only the token contract is live on mainnet.** All other modules are code‑complete but not yet deployed. See the "Current Project Status" table in the project README for real‑time status.
+> **Revision note (v1.2):** This version aligns the One‑Pager with the corrected Whitepaper (v2.3) and Tokenomics (v2.2). Statements describing liquidity locking, vesting, the operational multisig, and independent audits as already active have been changed to reflect their real deployment status: **only the token contract is live on mainnet.** All other modules are code‑complete but not yet deployed. See the "Current Project Status" table in the project README for real‑time status.
 
 ## Overview
 PanjoCoin (PNJC) is an open‑source utility token built on the Polygon PoS blockchain to support a transparent, community‑driven ecosystem focused on blockchain technology, gaming, charitable initiatives, and decentralised governance.
@@ -160,7 +160,7 @@ By focusing on transparency, practical utility, and responsible innovation — i
 
 | Resource | Link |
 |---|---|
-| Official Website | www.cryptotengo.com |
+| Official Website | www.cryptotengo.netlify.app |
 | Smart Contract (Token) | 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF |
 | GitHub Repository | github.com/CryptoTengo/PanjoCoin |
 | Documentation | White Paper • Tokenomics • Legal Disclaimer • AML Policy • Privacy Policy • Risk Disclosure • Restricted Countries • Terms of Use |
@@ -183,11 +183,11 @@ Participation in blockchain ecosystems involves significant risks. Several mecha
 | Property | Value |
 |---|---|
 | Document | One Pager |
-| Version | 1.1 
+| Version | 1.2 
 | Date | August 2, 2026 |
 | Status | Official |
 
 © 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.
-Document Version: 1.1 (Reconciled)
+Document Version: 1.2 (Reconciled)
 Last Updated: August 2, 2026
 
