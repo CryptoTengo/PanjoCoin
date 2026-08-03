@@ -107,7 +107,7 @@ PNJC addresses these issues through:
 |---|---|---|---|
 | DAO Governor | Decentralized token holder voting (quorum 4%, 7-day period) | Q4 2026 | 🧩 Code ready — not yet deployed |
 | VestingVault | Linear token distribution schedule for team and founder | Q3 2026 | 🧩 Code ready — not yet deployed |
-| MerkleAirdrop | Gas-efficient token distribution to pre-determined addresses | Q2 2026 (original target — has passed; timeline under revision) | 🧩 Code ready — not yet deployed |
+| MerkleAirdrop | Gas-efficient token distribution to pre-determined addresses | July 2026  (original target — has passed; timeline under revision) | 🧩 Code ready — not yet deployed |
 | TreasuryVault | Treasury management with transparent reporting (multisig) | Q3 2026 | 🧩 Code ready — not yet deployed |
 | ONE+ Gaming Platform | Access to games, in-game items, and rewards | Q3 2027 | 🔄 Design phase |
 | ClownCare Bridge | Transparent charitable payment system with on-chain reporting | Q2 2027 | 🔄 Design phase |
@@ -345,7 +345,7 @@ Join us — every step brings us closer to a child's smile and a sustainable eco
 
 | Resource | Link |
 |---|---|
-| Website | www.cryptotengo.com |
+| Website | https://cryptotengo.netlify.app|
 | Smart Contract (token) | 0x51ba27A6EB41D879B03ed28eD0A5d6a2982B0BcF |
 | GitHub | github.com/CryptoTengo/PanjoCoin |
 | Liquidity Lock | Not yet deployed — to be added after locker deployment |
