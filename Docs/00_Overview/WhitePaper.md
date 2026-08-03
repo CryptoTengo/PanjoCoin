@@ -1,5 +1,5 @@
 ### PanjoCoin (PNJC) — WHITEPAPER
-Version: 2.0 (Reconciled with README v2.0)
+Version: 2.2 (Reconciled with README v2.0)
 Date: August 2, 2026 (original v2.2: July 25, 2026)
 Network: Polygon PoS
 
