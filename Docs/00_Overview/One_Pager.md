@@ -88,7 +88,7 @@ PanjoCoin addresses these challenges by combining:
 |---|---|---|
 | PNJC Utility Token | ✅ Active | Fixed supply, zero tax, ownerless, burnable. Live on mainnet. |
 | Charity Reserve | ✅ Active | Public wallet accepting transparent, on‑chain donations. |
-| MerkleAirdrop | 🧩 Code ready — not deployed | Gas‑efficient token distribution. Original target Q2 2026 has passed; timeline under revision. |
+| MerkleAirdrop | 🧩 Code ready — not deployed | Gas‑efficient token distribution. Original target July 2026 has passed; timeline under revision. |
 | VestingVault | 🧩 Code ready — not deployed | Linear vesting for team and founder. Targeted Q3 2026. |
 | TreasuryVault | 🧩 Code ready — not deployed | Multisig treasury management. Targeted Q3 2026. |
 | DAO Governance | 🧩 Code ready — not deployed | Community voting (quorum 4%, 7‑day period). Targeted Q4 2026. |
@@ -106,7 +106,7 @@ PanjoCoin addresses these challenges by combining:
 | Transparent | All wallets, transactions, and code are public, including honest disclosure of what is and isn't deployed. |
 | Community‑Driven (planned) | DAO governance will enable decentralised control once deployed. |
 | Utility‑Focused | Real intended use cases: gaming, charity, governance — currently at varying stages of development. |
-| Preliminary Audit Complete | Automated static analysis (Slither) completed across all 5 contracts — 95/100, no critical or high‑severity findings. |
+| Preliminary Audit Complete | Automated static analysis (Slither) completed across all 6 contracts — 95/100, no critical or high‑severity findings. |
 | Polygon Infrastructure | Low fees, fast transactions, EVM compatible. |
 
 ## Security & Transparency
@@ -121,7 +121,7 @@ PanjoCoin is committed to:
 | No Admin Keys (token) | ✅ Ownerless contract |
 | Zero Tax | ✅ 0% on all transactions |
 | No Upgradeability | ✅ Immutable contracts |
-| Automated Audit (Slither, all 5 contracts) | ✅ Completed — 95/100, no critical/high findings |
+| Automated Audit (Slither, all 6 contracts) | ✅ Completed — 95/100, no critical/high findings |
 | Independent Professional Audits (CertiK / Hacken) | ⏳ Not yet started — original Q2 2026 targets for the token and Locker contracts, and the July 2026 target for the Airdrop contract, have passed and are being rescheduled; see Tokenomics Section 5.3 |
 | Operational Multisig (3/5) | ⏳ Not yet fully operational — 1 of 5 signers currently appointed |
 
@@ -190,4 +190,3 @@ Participation in blockchain ecosystems involves significant risks. Several mecha
 © 2026 PanjoCoin (PNJC) / CryptoTengo. All rights reserved.
 Document Version: 1.2 (Reconciled)
 Last Updated: August 2, 2026
-
