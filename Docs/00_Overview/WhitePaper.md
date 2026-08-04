@@ -192,7 +192,7 @@ Year	Locked (Billion)	In Circulation (Billion)	% in Circulation
 | ONE+ Platform | Access to games, in-game items, and rewards | Q3 2027 | 🔄 Design phase |
 | ClownCare Bridge | Transparent fund distribution with on-chain reporting | Q2 2027 | 🔄 Design phase |
 
-### 7.3. ## 7.3. Proof of Kindness (PoK)
+### 7.3. Proof of Kindness (PoK)
 
 The core utility of the PanjoCoin ecosystem.
 
