@@ -192,6 +192,57 @@ Year	Locked (Billion)	In Circulation (Billion)	% in Circulation
 | ONE+ Platform | Access to games, in-game items, and rewards | Q3 2027 | 🔄 Design phase |
 | ClownCare Bridge | Transparent fund distribution with on-chain reporting | Q2 2027 | 🔄 Design phase |
 
+### 7.3. ## 7.3. Proof of Kindness (PoK)
+
+The core utility of the PanjoCoin ecosystem.
+
+Instead of traditional cryptocurrency mining driven by computing power, **Proof of Kindness (PoK)** introduces an entirely different concept: **mining good deeds**.
+
+PoK incentivizes individuals for making a positive impact on the real world by recognizing and validating acts of kindness.
+
+Users can participate by performing actions such as:
+
+* Helping a child in need
+* Participating in charitable initiatives
+* Assisting the elderly
+* Engaging in environmental or local community clean-up campaigns
+* Providing support to individuals facing difficult life situations
+* Engaging in volunteer activities approved by the local community
+
+---
+
+### How "Proof of Kindness" Works
+
+1. **Perform a Good Deed** — Complete a real-world action that benefits another person, animals, or the environment.
+2. **Provide Evidence** — Upload a photo, video, or other acceptable confirmation through the PanjoCoin platform.
+3. **Verification** — The submitted information is verified by the community and/or platform moderation to ensure its authenticity.
+4. **Earn Impact Points** — Verified actions receive **Impact Points**, reflecting the quality and significance of the contribution.
+5. **Future Ecosystem Rewards** — In future ecosystem updates, Impact Points may unlock community recognition, achievements, governance reputation, ecosystem benefits, and other non-guaranteed rewards determined by the DAO.
+
+---
+
+### Why It Matters
+
+The **Proof of Kindness** program transforms compassion into measurable social impact.
+
+Instead of rewarding computational power, PoK rewards **human kindness**, encouraging people worldwide to help others and strengthening the PanjoCoin community.
+
+The long-term goal is to build a decentralized reputation system where positive actions become a meaningful part of the ecosystem, and to demonstrate that blockchain technology can create value not only in the financial sphere, but in society as a whole.
+
+> **"Proof of Kindness"** is the heart of the PanjoCoin ecosystem, turning kindness into a measurable outcome and making every verified good deed part of a global movement for positive change.
+
+---
+
+### Why This Version is Better
+
+It:
+
+* Aligns with the style of the rest of the Whitepaper;
+* Looks like a Tier-1 Web3 project document;
+* Conveys not only **what** it is, but **how** it works;
+* Avoids promises of financial returns (critical for MiCA and the Howey Test);
+* Establishes the PNJC mission-driven effect and makes PoK the central part of the ecosystem.
+
 ## 8. TECHNOLOGY AND SECURITY
 
 ### 8.1. Deployed Contracts
