@@ -393,7 +393,6 @@ The Charity Reserve supports PanjoCoin's social impact mission.
 Potential areas:
 
 - children support;
-- animal welfare;
 - education;
 - humanitarian initiatives.
 
